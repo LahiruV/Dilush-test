@@ -1,0 +1,1 @@
+export const docker_backup_data_generator = 'Trigger/DockerBackupDataGenerator'

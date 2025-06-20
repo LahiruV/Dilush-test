@@ -1,0 +1,49 @@
+{
+  "files": [],
+  "references": [
+    {
+      "path": "./tsconfig.app.json"
+    },
+    {
+      "path": "./tsconfig.node.json"
+    }
+  ],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@zenra/components": [
+        "./src/components/index.ts"
+      ],
+      "@zenra/layouts": [
+        "./src/layout/index.ts"
+      ],
+      "@zenra/configs": [
+        "./src/libs/configs/index.ts"
+      ],
+      "@zenra/widgets": [
+        "./src/libs/widgets/index.ts"
+      ],
+      "@zenra/pages": [
+        "./src/pages/index.ts"
+      ],
+      "@zenra/api": [
+        "./src/libs/api/index.ts"
+      ],
+      "@zenra/model": [
+        "./src/libs/models/index.ts"
+      ],
+      "@zenra/controller": [
+        "./src/libs/controllers/index.ts"
+      ],
+      "@zenra/functions": [
+        "./src/libs/functions/index.ts"
+      ],
+      "@zenra/services": [
+        "./src/libs/services/index.ts"
+      ],
+      "@zenra/store": [
+        "./src/libs/store/index.ts"
+      ],
+    }
+  }
+}

@@ -1,0 +1,18 @@
+.custom-data-grid .MuiDataGrid-root {
+    border-color: #FF5733 !important;
+    /* Custom border color */
+}
+
+.custom-data-grid .MuiDataGrid-columnHeaders {
+    color: var(--page-main-color);
+    /* Use CSS variables for colors if available */
+    font-weight: bold !important;
+}
+
+.custom-data-grid .MuiDataGrid-cell {
+    color: var(--dark-font-color) !important;
+}
+
+.custom-data-grid .MuiDataGrid-row:hover {
+    background-color: var(--dark-background-color) !important;
+}

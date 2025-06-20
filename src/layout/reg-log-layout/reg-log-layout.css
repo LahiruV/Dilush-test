@@ -1,0 +1,40 @@
+.reg-log-base-layout {
+    display: flex;
+    height: 100vh;
+    margin: -8px;
+}
+
+@media (max-width: 768px) {
+    .reg-log-base-layout {
+        flex-direction: column;
+    }
+}
+
+.reg-log-left {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../../assets/login-reg-image.avif');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: #fff;
+    padding: 80px;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: darken;
+}
+
+.reg-log-right {
+    flex: 1;
+    overflow-y: auto;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    background-image: url('../../assets/log-image.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}

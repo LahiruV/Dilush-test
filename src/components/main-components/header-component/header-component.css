@@ -1,0 +1,16 @@
+.main-header {
+    height: 68px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    background-color: #fff;
+}
+
+.dark-main-header {
+    border-bottom: 1px solid #343b428f;
+}
+
+.light-main-header {
+    border-bottom: 1px solid #eaeaea;
+}

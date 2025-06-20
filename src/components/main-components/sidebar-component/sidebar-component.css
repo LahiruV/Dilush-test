@@ -1,0 +1,51 @@
+.side-bar-layout {
+    width: 200px;
+    overflow-x: hidden;
+}
+
+.side-bar-layout h2 {
+    margin-top: 0px;
+}
+
+.side-bar-layout ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.side-bar-layout li {
+    padding: 10px 0;
+    transition: background 0.3s ease;
+}
+
+.side-bar-layout a {
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    font-size: 16px;
+}
+
+.side-bar-layout svg {
+    padding-left: 25px;
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
+
+.side-bar-header {
+    margin-top: 3.5px !important;
+}
+
+.log-out-button {
+    margin-top: auto;
+}
+
+.log-out-button li {
+    background-color: #de3024;
+    transition: background 0.3s ease;
+}
+
+.log-out-button li:hover {
+    background-color: #de3024da;
+}

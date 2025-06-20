@@ -1,0 +1,25 @@
+.main-base-layout {
+    height: 100vh;
+    margin: -8px;
+}
+
+.main-base-layout-children {
+    overflow-y: auto;
+}
+
+.light-border-right-sidebar {
+    border-right: 1px solid #eaeaea;
+}
+
+.dark-border-right-sidebar {
+    border-right: 1px solid #343b428f;
+}
+
+.main-header-routes {
+    height: 38px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    background-color: #fff;
+}

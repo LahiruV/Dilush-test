@@ -1,0 +1,12 @@
+.home-card-width {
+    width: 240px !important;
+}
+
+.icon-button {
+    width: 100px !important;
+    height: 100px !important;
+}
+
+.card-title {
+    flex-grow: 1;
+}
