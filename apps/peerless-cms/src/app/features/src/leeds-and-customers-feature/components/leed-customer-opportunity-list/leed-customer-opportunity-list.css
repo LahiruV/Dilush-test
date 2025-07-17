@@ -1,0 +1,62 @@
+.btn-oppportunity-tbl-options{
+    background: none;
+    border: none;
+    color: #8f9a9e;
+}
+
+.custom-confirm-dialog .confirmation-box {
+    text-align: center;
+    padding: 20px;
+}
+
+.confirmation-box .confirmation-text {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.button-container .yes-button,
+.button-container .no-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.no-button, .button-green {
+    background-color: #28a745;
+    color: white;
+    border: 1px solid #d5d7d8;
+    border-radius: 5px;
+    font-size: 12px;
+    padding: 5px 10px;
+}
+
+.no-button:hover, .button-green:hover {
+    background-color: #218838;
+}
+
+.yes-button, .button-red {
+    background-color: #dc3545;
+    color: white;
+    border: 1px solid #d5d7d8;
+    border-radius: 5px;
+    font-size: 12px;
+    padding: 5px 10px;
+}
+
+.yes-button:hover, .button-red:hover {
+    background-color: #c82333;
+}
+
+.padding-right-10{
+    padding-right: 10px;
+}

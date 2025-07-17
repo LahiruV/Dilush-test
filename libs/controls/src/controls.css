@@ -1,0 +1,49 @@
+.form-field {
+  margin-bottom: 1rem !important;
+}
+
+.form-field label {
+  display: block !important;
+  margin-bottom: 0.4rem !important;
+  font: var(--font-xs) !important;
+  color: #595959 !important;
+}
+
+.form-field input.error {
+  border: 1px solid red !important;
+}
+
+input:disabled,
+.form-control:disabled {
+  border-color: transparent !important;
+  padding-inline: 0 !important;
+  color: rgb(139, 139, 139) !important;
+  background-color: transparent !important;
+  resize: none !important;
+}
+
+.form-check-box input {
+  width: 14.8px !important;
+  height: 14.8px !important;
+}
+
+.form-check-box label {
+  line-height: 20px !important;
+  margin-left: 5px !important;
+}
+
+.form-vertical-group {
+  display: flex !important;
+  justify-content: space-between !important;
+}
+
+.form-check {
+  padding-left: 1em !important;
+  margin-bottom: 10px !important;
+}
+
+.required-indicator {
+  display: inline !important;
+  color: red !important;
+  border: none !important;
+}

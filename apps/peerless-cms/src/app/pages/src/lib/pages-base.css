@@ -1,0 +1,20 @@
+.pages-base {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  overflow: auto;
+}
+
+.pages-base > header {
+  overflow-y: auto;
+  grid-row: 1;
+}
+
+.pages-base > main {
+  overflow-y: auto;
+  grid-row: 2;
+}
+
+.pages-base > footer {
+  overflow-y: auto;
+  grid-row: 3;
+}

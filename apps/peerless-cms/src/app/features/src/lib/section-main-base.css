@@ -1,0 +1,33 @@
+.section-main-base {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  overflow: auto;
+  height: 100%;
+}
+
+.section-main-base>header {
+  overflow-y: auto;
+  grid-row: 1;
+}
+
+.section-main-base>header>div {
+  background-color: bisque;
+  padding: 3px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.section-main-base>main {
+  overflow-y: auto;
+  grid-row: 2;
+  /* padding: 10px; */
+}
+
+.section-main-base>footer {
+  overflow-y: auto;
+  grid-row: 3;
+}
+
+.filter-area {
+  margin-right: 45px;
+}

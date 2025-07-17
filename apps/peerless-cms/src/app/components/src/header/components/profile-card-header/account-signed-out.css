@@ -1,0 +1,18 @@
+.log-out-button {
+    background-color: #de3024 !important;
+    transition: background 0.3s ease !important;
+    color: white !important;
+    border: none !important;
+}
+
+.log-out-button:hover {
+    background-color: #de3024da !important;
+}
+
+.custom-account-popover .MuiTypography-root {
+    color: #212529 !important;
+}
+
+.custom-account-popover .MuiTypography-caption {
+    color: #338588 !important;
+}

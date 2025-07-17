@@ -1,0 +1,21 @@
+.eu-date-string{
+    font-weight: 700;
+    display: inline-block;
+    padding-top: 10px;
+    padding-left: 10px;
+    font-size: 12px;
+    padding-bottom: 10px;
+}
+
+.eu-date-string-data{
+    font-size: 12px;
+}
+
+.eu-date-string:nth-of-type(3){
+    padding-left: 20px;
+}
+
+.empty-table{
+    font-size: 11px;
+    padding: 10px;
+}

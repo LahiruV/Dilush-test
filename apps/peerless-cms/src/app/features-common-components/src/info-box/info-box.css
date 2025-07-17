@@ -1,0 +1,253 @@
+:root {
+
+  /* common */
+  --px-10: 10px;
+  --px-14: 14px;
+  --active-color: #15B748;
+  --deactive-color: #b53939;
+
+
+  /* layout */
+  --border: 1px solid #dbdbdb;
+  --border-none: none;
+  --padding-top: 20px;
+  --info-box-padding-bottom: 20px;
+
+  /* info header */
+  --display-flex: flex;
+  --justify-content-space-between: space-between;
+  --align-items-center: center;
+  --margin-0: 0;
+  --a-color: #babed8;
+  --cursor-pointer: pointer;
+
+
+  /* title 1 */
+  --info-title-padding-left: 15px;
+  --info-title-color: #007f49;
+  --info-title-font-size: 11px;
+
+
+
+  /* title 2 - header */
+  --info-header-padding-left: 30px;
+  --info-header-color: #9499a3;
+
+  /* content text */
+  --content-font-size: 12px;
+  --content-font-color: #95999e;
+  --info-text-padding-left: 30px;
+  --info-text-padding-right: 30px;
+
+  /* content list */
+  --list-style: none;
+  --list-margin: none;
+  --info-list-padding-left: 30px;
+  --list-li-margine-top: 10px;
+  --list-label-padding-right: 10px;
+
+  --font-name: 'Product Sans';
+  --font-weight-titles: 700;
+  --font-weight-content: 400;
+
+}
+
+
+.info-box-container {
+  border: var(--border);
+  padding-bottom: var(--info-box-padding-bottom);
+}
+
+.info-box-container .title-1 {
+  padding-left: var(--info-title-padding-left);
+  color: var(--info-title-color);
+  font-size: var(--info-title-font-size);
+  font-weight: var(--font-weight-titles);
+}
+
+.info-box-container .title-2 {
+  padding-left: var(--info-header-padding-left);
+  color: var(--info-header-color);
+  font-size: 17px;
+  margin-top: 10px;
+}
+
+.info-text {
+  font-size: var(--content-font-size);
+  color: var(--content-font-color);
+  padding-left: var(--info-text-padding-left);
+  padding-right: var(--info-text-padding-right);
+  font-weight: var(--font-weight-content);
+}
+
+.info-list ul {
+  list-style: var(--list-style);
+  margin-bottom: var(--list-margin) !important;
+  padding-left: var(--info-list-padding-left);
+  color: var(--content-font-color);
+  font-size: var(--content-font-size);
+}
+
+.info-list ul li {
+  margin-top: var(--list-li-margine-top);
+  font-size: 12px;
+  font-weight: var(--font-weight-content);
+}
+
+.info-list ul label {
+  padding-right: var(--list-label-padding-right);
+}
+
+.border-top-none {
+  border-top: var(--border-none) !important;
+}
+
+.border-left-none {
+  border-left: var(--border-none) !important;
+}
+
+.border-right-none {
+  border-right: var(--border-none) !important;
+}
+
+.border-bottom-none {
+  border-bottom: var(--border-none) !important;
+}
+
+.info-title {
+  display: var(--display-flex);
+  justify-content: var(--justify-content-space-between);
+  align-items: var(--align-items-center);
+  padding-top: var(--padding-top);
+  padding-right: var(--px-10);
+}
+
+.info-title .title-1 {
+  margin: var(--margin-0);
+}
+
+.info-title a {
+  color: var(--a-color);
+  cursor: var(--cursor-pointer);
+  font-size: var(--font-size-main);
+}
+
+.info-header {
+  margin-top: 10px;
+  align-items: var(--align-items-center);
+  font-size: var(--font-size-main);
+}
+
+.info-header .title-2 {
+  margin-right: var(--px-10);
+  font-size: 14px;
+  font-weight: var(--font-weight-titles);
+}
+
+.info-header .title-1 {
+color: var(--info-title-color);
+}
+
+.info-header .title-2-span {
+  color: var(--info-header-color);
+  font-size: 14px;
+  font-weight: var(--font-weight-titles);
+}
+
+.info-header .active-tag, .active-tag {
+  color: var(--active-color);
+}
+
+.deactive-tag {
+  color: var(--deactive-color);
+}
+
+.header-icon-txt {
+  margin-left: 2px;
+}
+
+.flex-104 {
+  flex: 0 0 104px !important;
+}
+
+.w-80 {
+  width: 80px !important;
+}
+
+.w-65 {
+  width: 65px !important;
+}
+
+.w-110 {
+  width: 110px !important;
+}
+
+.w-114 {
+  width: 114px !important;
+}
+
+.w-120 {
+  width: 120px !important;
+}
+
+.w-130 {
+  width: 130px !important;
+}
+
+.w-140 {
+  width: 140px !important;
+}
+
+.w-150 {
+  width: 150px !important;
+}
+
+.w-160 {
+  width: 160px !important;
+}
+
+.w-170 {
+  width: 170px !important;
+}
+
+.w-180 {
+  width: 180px !important;
+}
+
+.w-190 {
+  width: 190px !important;
+}
+
+.w-200 {
+  width: 200px !important;
+}
+
+.w-92 {
+  width: 92px !important;
+}
+
+.w-40 {
+  width: 40px !important;
+}
+
+.display-block {
+  display: block !important;
+}
+
+.padding-top-10 {
+  padding-top: 10px;
+}
+.padding-right-30 {
+  padding-right: 30px;
+}
+.padding-left-none {
+  padding-left: 0 !important;
+}
+
+.text-right {
+  text-align: right !important;
+}
+
+.description-container:last-child .font-bold-last {
+  font-weight: bold;
+}

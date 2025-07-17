@@ -1,0 +1,120 @@
+
+.transfer-enduser-modal {
+    width: 300px;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 0px 20px;
+  }
+  
+  .modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .modal-title {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .modal-body {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .customer-form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-label {
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 5px;
+    display: block;
+  }  
+    
+  .success-button {
+    background-color: #008C51;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    text-align: center;
+    width: auto;
+  }
+  
+  .success-button:hover {
+    background-color: #32b46b;
+  }
+
+  .success-button-disabled {
+    background-color: #cac8c8;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    text-align: center;
+    width: auto;
+  }
+  
+  .selected-transfer-customer-container {
+    font-size: 11px;
+  }
+
+  .selected-transfer-customer-container label{
+    font-weight: 700;
+  }
+  
+  .customer-info {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .customer-info-row {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 5px;
+  }
+  
+  .lbl-title {
+    width: 30px; 
+    font-weight: 700;
+  }
+  
+  .lbl-value {
+    margin-left: 10px;
+  }
+
+
+
+.enduser-transfer-customer-ddl{
+  font-size: 11px !important;
+}
+
+.item-disabled {
+  color: gray;
+  pointer-events: none;
+  cursor: not-allowed;
+}
+
+.spn{
+  display: unset;
+  width: 100%;
+  margin: 10px;
+  padding: 0px 5px;
+  border-radius: 3px;
+}
+
+.filter-align-left{
+  width: 150px !important;
+  margin-left: 15px !important;
+  margin-top: 5.5px !important;
+  font-size: 12px !important;
+}

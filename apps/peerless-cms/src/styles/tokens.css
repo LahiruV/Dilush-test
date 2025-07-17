@@ -1,0 +1,53 @@
+:root {
+  /* margin around Page */
+  --page-margin-x: var(--spacing-12);
+  --page-margin-y: var(--spacing-12);
+  /* gap between Grids (e.g. between Story Teaser Cards) */
+  --grid-row-gap: var(--spacing-12);
+  --grid-column-gap: var(--spacing-12);
+
+  --break-point-1440: 1440px;
+
+  --border-dotted-primary-horizontal: var(--border-dotted-purple-x);
+  --border-dotted-primary-vertical: var(--border-dotted-purple-y);
+  --border-dotted-primary-translucent-horizontal: var(
+    --border-dotted-purple-translucent-x
+  );
+  --border-dotted-primary-translucent-vertical: var(
+    --border-dotted-purple-translucent-y
+  );
+  --border-dotted-horizontal: var(--border-dotted-gray-x);
+  --border-dotted-vertical: var(--border-dotted-gray-y);
+}
+
+/* sm-specific: 576px ~ 767.9999px */
+@media screen and (min-width: 576px) {
+}
+
+/* md-specific: 768px ~ 991.9999px */
+@media screen and (min-width: 768px) {
+  :root {
+    --page-margin-x: var(--spacing-16);
+    --page-margin-y: var(--spacing-16);
+    --grid-row-gap: var(--spacing-16);
+    --grid-column-gap: var(--spacing-16);
+  }
+}
+
+/* lg-specific: 992px ~ 1199.999px */
+@media screen and (min-width: 992px) {
+  :root {
+    --page-margin-x: var(--spacing-32);
+    --page-margin-y: var(--spacing-32);
+    --grid-row-gap: var(--spacing-24);
+    --grid-column-gap: var(--spacing-24);
+  }
+}
+
+/* xl-specific: 1200px ~ 1439.999px */
+@media screen and (min-width: 1200px) {
+}
+
+/* xxl-specific: 1440px ~ */
+@media screen and (min-width: 1440px) {
+}

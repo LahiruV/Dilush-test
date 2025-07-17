@@ -1,0 +1,150 @@
+body {
+  font-size: 16px;
+}
+:root {
+  /* Font Family - Prefix : ff  */
+  font-family: 'Raleway', 'Sans-Serif', 'Arial', sans-serif;
+  --ff-raleway: 'Raleway', 'Sans-Serif', sans-serif;
+
+  --ff-product-sans: var(--ff-raleway);
+
+  /* Font Size - Prefix : fs */
+  --fs-10: 0.625rem; /* 10px */
+  --fs-12: 0.75rem; /* 12px */
+  --fs-13: 0.8125rem; /* 13px */
+  --fs-14: 0.875rem; /* 14px; */
+  --fs-16: 1rem; /* 16px */
+  --fs-18: 1.125rem; /* 18px */
+  --fs-20: 1.25rem; /* 20px */
+  --fs-22: 1.375rem; /* 22px */
+  --fs-23: 1.4375rem; /* 23px */
+  --fs-24: 1.5125rem; /* 24px */
+  --fs-26: 1.625rem; /* 26px */
+  --fs-28: 1.75rem; /* 28px */
+  --fs-32: 2rem; /* 32px*/
+  --fs-34: 2.125rem; /* 34px*/
+  --fs-36: 2.25rem; /* 36px*/
+  --fs-38: 2.375rem; /* 38px*/
+  --fs-40: 2.5rem; /* 40px*/
+  --fs-42: 2.625rem; /* 42px */
+  --fs-48: 3rem; /* 48px */
+  --fs-50: 3.125rem; /* 50px */
+  --fs-60: 3.75rem; /* 60px */
+  --fs-62: 3.875rem; /* 62px */
+  --fs-77: 4.844rem; /* 77.5px */
+
+  /* Font Weight - Prefix : fw */
+  --fw-200: 200; /* lighter */
+  --fw-300: 300; /* light */
+  --fw-400: 400; /* normal */
+  --fw-500: 500; /* medium */
+  --fw-600: 600; /* semi-bold */
+  --fw-700: 700; /* bold */
+  --fw-800: 800; /* extra bold */
+  --fw-900: 900; /* bolder */
+
+  /* Line height - Prefix : lh */
+  /* To obtain this in the dimensionless unit solve for x: (size in px) * x = line weight. */
+  --lh-100: 1; /* 100% */
+  --lh-110: 1.1; /* 110% */
+  --lh-120: 1.2; /* 120 %*/
+  --lh-125: 1.25; /* 125 %*/
+  --lh-130: 1.3; /* 130% */
+  --lh-140: 1.4; /* 140% */
+  --lh-150: 1.5; /* 150% */
+  --lh-160: 1.6; /* 160% */
+  --lh-170: 1.7; /* 170% */
+  --lh-180: 1.8; /* 180% */
+  --lh-190: 1.9; /* 190% */
+
+  /* Font Style - Prefix : fst */
+  --fst-normal: normal;
+  --fst-italic: italic;
+
+  --green-500: #008c51;
+  --green-500-2: #008c51;
+
+  /* Mint & Purple */
+  --purple-100: #dccaff;
+  --purple-300: #b2a1d5;
+  --purple-400: #6443ab;
+  --purple-800: #503689;
+  --purple-translucent-10: rgba(100, 67, 171, 0.08);
+  --purple-translucent-80: rgba(100, 67, 171, 0.8);
+
+  --mint-200: #e2fbf1;
+  --mint-400: #c6f7e2;
+  --mint-800: #637c71;
+  --mint-translucent-10: rgba(198, 247, 226, 0.1);
+  --mint-translucent-20: rgba(198, 247, 226, 0.251);
+
+  /* Neutral Colors */
+  --white: #ffffff;
+  --gray-50: #f2f2f2;
+  --gray-80: #ebebeb;
+  --gray-100: #e5e5e5;
+  --gray-200: #cccccc;
+  --gray-300: #b3b3b3;
+  --gray-400: #999999;
+  --gray-450: #8c8c8c;
+  --gray-500: #808080;
+  --gray-550: #737373;
+  --gray-600: #666666;
+  --gray-700: #4c4c4c;
+  --gray-800: #333333;
+  --gray-850: #262626;
+  --gray-900: #1a1a1a;
+  --gray-950: #0d0d0d;
+  --black: #000000;
+
+  --black-translucent-95: rgba(0, 0, 0, 0.95);
+
+  /* Accent Colors */
+  --red-100: #fad1d0;
+  --red-400: #e61716;
+  --orange-400: #ff911a;
+  --yellow-400: #fff160;
+
+  /* TODO: Color code must be redefined after release */
+  --maroon-05: #fbf2f5;
+  --maroon-50: #d6809a;
+  --maroon-100: #ae0035;
+
+  --opacity-0: 0;
+  --opacity-10: 0.1;
+  --opacity-50: 0.5;
+  --opacity-80: 0.8;
+
+  /* Spacing */
+  --spacing-0: 0; /* 0 */
+  --spacing-2: 2px; /* 0.125rem */
+  --spacing-4: 4px; /* 0.25rem */
+  --spacing-8: 8px; /* 0.5rem */
+  --spacing-12: 12px; /* 0.75rem */
+  --spacing-16: 16px; /* 1rem */
+  --spacing-24: 24px; /* 1.5rem */
+  --spacing-32: 32px; /* 2rem */
+  --spacing-48: 48px; /* 3rem */
+  --spacing-64: 64px; /* 4rem */
+
+  /* Border */
+  --border-width-1: 1px;
+  --border-width-2: 2px;
+  --border-width-4: 4px;
+
+  --border-radius-50: 50%;
+
+  /* Z-index */
+  --z-index-0: 0;
+  --z-index-10: 10;
+  --z-index-20: 20;
+  --z-index-100: 100;
+  --z-index-200: 200;
+  --z-index-300: 300;
+  --z-index-400: 400;
+  --z-index-500: 500;
+  --z-index-600: 600;
+  --z-index-700: 700;
+  --z-index-800: 800;
+  --z-index-900: 900;
+}

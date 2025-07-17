@@ -1,0 +1,18 @@
+{
+  "name": "peerless-cms-components",
+  "$schema": "../../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/peerless-cms/src/app/components/src",
+  "projectType": "library",
+  "tags": ["scope:peerless-cms"],
+  "targets": {
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "apps/peerless-cms/src/app/components/**/*.{ts,tsx,js,jsx}"
+        ]
+      }
+    }
+  }
+}

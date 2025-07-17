@@ -1,0 +1,21 @@
+.datepicker-custom {
+  width: 100px !important;
+  margin-left: 0 !important;
+}
+
+.datepicker-custom.datepicker-custom-nsp {
+  margin-left: 8px !important;
+}
+
+.k-input-button {
+  width: calc(1.4285714286em + 0px) !important;
+  padding: 0 !important;
+}
+
+.filters-container {
+  width: 100%;
+}
+.filter-form-filter {
+  width: 208px !important;
+  margin-left: 0 !important;
+}

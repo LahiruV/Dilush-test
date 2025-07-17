@@ -1,0 +1,26 @@
+.multi-select-list-box{
+    font-size: 11px;   
+}
+
+.multi-select-list-box ul{   
+    padding: 0px;
+}
+
+.prev-ordered-products{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+}
+
+.faded {
+    opacity: 0.5;
+    pointer-events: none; 
+}
+
+.disabled {
+    pointer-events: none;
+}
+
+.prev-ordered{
+    color: #1142b5;
+}

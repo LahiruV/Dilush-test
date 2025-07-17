@@ -1,0 +1,42 @@
+.pantry-list-products-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 5px 5.5px;
+    font-size: 12px;
+}
+
+.catalog-title {
+    padding-left: 25px;
+}
+
+.pantry-type-template {
+    display: flex;
+    align-items: center;
+    padding-left: 5.5px;
+    padding-top: 5px;
+    font-size: 12px;
+}
+
+.pantry-list-products-dropdown {
+    width: 250px !important;
+    font-size: 12px !important;
+    margin-left: -16.5px !important;
+}
+
+.pantry-type-dropdown {
+    width: 100px !important;
+    font-size: 12px !important;
+    margin-left: 5px !important;
+}
+
+.pantry-list-products-add-button {
+    font-size: 12px !important;
+    margin-top: 5.5px !important;
+    margin-bottom: 5.5px !important;
+}
+
+.pantry-error-message {
+    color: red;
+    font-size: 12px !important;
+}
