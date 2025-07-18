@@ -1,5 +1,5 @@
 import { messageTypeEnum, pageModeEnum, RootState, setContactPersonPageMode, setIsAddContactModalOpen, setSelectedContactPerson, setSelectedContactPersonImage, showMessage } from "@peerless-cms/store";
-import { ButtonWidget, ComboBoxProps, FormInput, ToastManager } from "@peerless/controls";
+import { ButtonWidget, ComboBoxProps, CustomToastMessage, FormInput, ToastManager } from "@peerless/controls";
 import { ReadOnlyProvider } from "@peerless/providers";
 import MessageBox from "apps/peerless-cms/src/app/features-common-components/src/message-box/message-box";
 import { useRef, useState } from "react";
@@ -34,6 +34,10 @@ export function LeedCustomerContactPersonForm(props: LeedCustomerContactPersonFo
   const messagesRef = useRef<any>(null);
   const messageMgr = new ToastManager(messagesRef);
   const [isSaving, setIsSave] = useState(false);
+  const [status, setStatus] = useState<string>('');
+  const [labelText, setLabelText] = useState<string>('');
+  const [triggerKey, setTriggerKey] = useState(0);
+  const [open, setOpen] = useState(false);
 
   const { selectedLeedOrCustomer, readonly, originator, loggedUser, contactPersonPageMode,
     selectedContactPerson, selectedContactPersonImage, contactType, selectedOrganisation } = useSelector((state: RootState) => ({
@@ -247,20 +251,42 @@ export function LeedCustomerContactPersonForm(props: LeedCustomerContactPersonFo
 
           if (props.isPopup != null && props.isPopup) {
             dispatch(setIsAddContactModalOpen(false));
+            setStatus('success-notification-color');
+            setLabelText(
+              (contactPersonPageMode == pageModeEnum.New ? 'Contact Person Saved Successfully' : 'Contact Person Updated Successfully')
+            );
+            setTriggerKey((prevKey) => prevKey + 1);
           }
           else {
             dispatch(setContactPersonPageMode(pageModeEnum.List));
-            navigate(`${sectionPathMap[contactType]}${contactType == contactTypeEnum.organisation ? selectedOrganisation?.[contactId[contactType]] : selectedLeedOrCustomer?.[contactId[contactType]]}/contact-person`);
+            setStatus('success-notification-color');
+            setLabelText(
+              (contactPersonPageMode == pageModeEnum.New ? 'Contact Person Saved Successfully' : 'Contact Person Updated Successfully')
+            );
+            setTriggerKey((prevKey) => prevKey + 1);
+            setTimeout(() => {
+              navigate(`${sectionPathMap[contactType]}${contactType == contactTypeEnum.organisation ? selectedOrganisation?.[contactId[contactType]] : selectedLeedOrCustomer?.[contactId[contactType]]}/contact-person`);
+            }, 800);
           }
 
 
         }
         else {
           if (props.isPopup != null && props.isPopup) {
-            props.messageMgr?.showMessage('error', 'Error: ', (contactPersonPageMode == pageModeEnum.New ? 'Error occured while saving.' : 'Error occured while updating.'));
+            setStatus('error-notification-color');
+            setLabelText(
+              (contactPersonPageMode === pageModeEnum.New ? 'Error occured while saving' : 'Error occured while updating')
+            );
+            setTriggerKey((prevKey) => prevKey + 1);
+            // props.messageMgr?.showMessage('error', 'Error: ', (contactPersonPageMode == pageModeEnum.New ? 'Error occured while saving.' : 'Error occured while updating.'));
           }
           else {
-            messageMgr.showMessage('error', 'Error: ', (contactPersonPageMode == pageModeEnum.New ? 'Error occured while saving.' : 'Error occured while updating.'));
+            setStatus('error-notification-color');
+            setLabelText(
+              (contactPersonPageMode === pageModeEnum.New ? 'Error occured while saving' : 'Error occured while updating')
+            );
+            setTriggerKey((prevKey) => prevKey + 1);
+            // messageMgr.showMessage('error', 'Error: ', (contactPersonPageMode == pageModeEnum.New ? 'Error occured while saving.' : 'Error occured while updating.'));
           }
         }
       },
@@ -268,10 +294,20 @@ export function LeedCustomerContactPersonForm(props: LeedCustomerContactPersonFo
         setIsSave(false);
         console.error('Failed to update');
         if (props.isPopup != null && props.isPopup) {
-          props.messageMgr?.showMessage('error', 'Error: ', (contactPersonPageMode == pageModeEnum.New ? 'Error occured while saving.' : 'Error occured while updating.'));
+          setStatus('error-notification-color');
+          setLabelText(
+            (contactPersonPageMode === pageModeEnum.New ? 'Contact Person Save Failed' : 'Contact Person Update Failed')
+          );
+          setTriggerKey((prevKey) => prevKey + 1);
+          // props.messageMgr?.showMessage('error', 'Error: ', (contactPersonPageMode == pageModeEnum.New ? 'Error occured while saving.' : 'Error occured while updating.'));
         }
         else {
-          messageMgr.showMessage('error', 'Error: ', (contactPersonPageMode == pageModeEnum.New ? 'Error occured while saving.' : 'Error occured while updating.'));
+          setStatus('error-notification-color');
+          setLabelText(
+            (contactPersonPageMode === pageModeEnum.New ? 'Contact Person Save Failed' : 'Contact Person Update Failed')
+          );
+          setTriggerKey((prevKey) => prevKey + 1);
+          // messageMgr.showMessage('error', 'Error: ', (contactPersonPageMode == pageModeEnum.New ? 'Error occured while saving.' : 'Error occured while updating.'));
         }
       }
     });
@@ -377,6 +413,7 @@ export function LeedCustomerContactPersonForm(props: LeedCustomerContactPersonFo
               name={isSaving ? 'Updating...' : 'Update Details'}
             />)}
         </div>
+        <CustomToastMessage status={status || ''} labelText={labelText} state={open} setState={setOpen} triggerKey={triggerKey} />
       </footer>
 
 

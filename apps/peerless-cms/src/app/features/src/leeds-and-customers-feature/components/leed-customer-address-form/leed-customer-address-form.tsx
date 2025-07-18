@@ -1,6 +1,6 @@
 import { zodResolver } from "@hookform/resolvers/zod";
 import { pageModeEnum, messageTypeEnum, RootState, setAddressPageMode, setSelectedAddress, showMessage } from "@peerless-cms/store";
-import { ButtonWidget, FormInput, PageLoader, ToastManager } from "@peerless/controls";
+import { ButtonWidget, CustomToastMessage, FormInput, PageLoader, ToastManager } from "@peerless/controls";
 import { ReadOnlyProvider } from "@peerless/providers";
 import { saveLeadCustomerAddress, useCountryData, useStatesData } from "@peerless/queries";
 import { contactId, contactTypeEnum, sectionPathMap } from "@peerless/utils";
@@ -27,6 +27,10 @@ export function LeedCustomerAddressForm(props: LeedCustomerAddressFormProps) {
   const messageMgr = new ToastManager(messagesRef);
   const [isProcessing, setIsProcessing] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
+  const [status, setStatus] = useState<string>('');
+  const [labelText, setLabelText] = useState<string>('');
+  const [triggerKey, setTriggerKey] = useState(0);
+  const [open, setOpen] = useState(false);
 
   const { selectedLeedOrCustomer, readonly, originator, loggedUser, addressMode, selectedAddress, contactType, selectedOrganisation } = useSelector((state: RootState) => ({
     selectedLeedOrCustomer: state.leedsAndCustomers.selectedLeedOrCustomer,
@@ -213,13 +217,23 @@ export function LeedCustomerAddressForm(props: LeedCustomerAddressFormProps) {
             dispatch(setSelectedAddress(updatedAddress));
           }
           dispatch(setAddressPageMode(pageModeEnum.List));
-          navigate(`${sectionPathMap[contactType]}${contactType == contactTypeEnum.organisation ? selectedOrganisation?.[contactId[contactType]] : selectedLeedOrCustomer?.[contactId[contactType]]}/addresses`);
+          setStatus('success-notification-color');
+          setLabelText(
+            (addressMode === pageModeEnum.New ? 'Address Saved Successfully' : 'Address Updated Successfully')
+          );
+          setTriggerKey((prevKey) => prevKey + 1);
+          setTimeout(() => {
+            navigate(`${sectionPathMap[contactType]}${contactType == contactTypeEnum.organisation ? selectedOrganisation?.[contactId[contactType]] : selectedLeedOrCustomer?.[contactId[contactType]]}/addresses`);
+          }, 800);
         }
       },
       onError: (error) => {
         setIsProcessing(false);
-        messageMgr.showMessage('error', 'Error: ', 'Error occured while updating');
-        console.error('Failed to update lead');
+        setStatus('error-notification-color');
+        setLabelText(
+          (addressMode === pageModeEnum.New ? 'Address Save Failed' : 'Address Update Failed')
+        );
+        setTriggerKey((prevKey) => prevKey + 1);
       }
     });
   };
@@ -288,6 +302,7 @@ export function LeedCustomerAddressForm(props: LeedCustomerAddressFormProps) {
                 name={isProcessing ? 'Updating...' : 'Update Details'}
               />)}
           </div>
+          <CustomToastMessage status={status || ''} labelText={labelText} state={open} setState={setOpen} triggerKey={triggerKey} />
         </footer>
 
 
