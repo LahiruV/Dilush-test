@@ -1,0 +1,888 @@
+<i> [1m[32m[webpack-dev-server] Project is running at:[39m[22m
+<i> [1m[32m[webpack-dev-server] Loopback: [36mhttp://localhost:4200/[39m, [36mhttp://[::1]:4200/[39m[39m[22m
+<i> [1m[32m[webpack-dev-server] 404s will fallback to '[36m/index.html[39m'[39m[22m
+
+[36m>[39m [7m[1m[36m NX [39m[22m[27m [1mWeb Development Server is listening at http://localhost:4200/[22m
+
+<i> [1m[32m[webpack-dev-middleware] wait until bundle finished: /leeds-and-customers[39m[22m
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.8 MiB (29.1 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mvendor.css[39m[22m 1.54 MiB [1m[32mvendor.js[39m[22m 13.9 MiB [1m[32mmain.css[39m[22m 946 KiB [1m[32mmain.js[39m[22m 4.34 MiB 12 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 484 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mstyles.css[39m[22m 32.9 KiB [1m[32mstyles.js[39m[22m 401 KiB 40 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m (main) 3 MiB (javascript) 946 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.8 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13.1 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+
+[1mLOG from ../../node_modules/sass-loader/dist/cjs.js sass-loader ../../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[5].use[1]!../../node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[5].use[2]!../../node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[5].use[3]!./src/styles/crm-custom-theme.scss[39m[22m
+<w> [1m[33mDeprecation The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/legacy-js-api[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnull[39m[22m
+<w> [1m[33mDeprecation Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info and automated migrator: https://sass-lang.com/d/import[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9  root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.[39m[22m
+<w> [1m[33mUse map.get instead.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info and automated migrator: https://sass-lang.com/d/import[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 1218:15  k-map-get()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 1835:22  @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9            root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation Using / for division outside of calc() is deprecated and will be removed in Dart Sass 2.0.0.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mRecommendation: math.div($a, $b) or calc($a / $b)[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info and automated migrator: https://sass-lang.com/d/slash-div[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 1051:15  k-math-div()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 1940:21  @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9            root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.[39m[22m
+<w> [1m[33mUse map.merge instead.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info and automated migrator: https://sass-lang.com/d/import[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 2280:22  @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9            root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.[39m[22m
+<w> [1m[33mUse map.merge instead.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info and automated migrator: https://sass-lang.com/d/import[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 2283:23  @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9            root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.[39m[22m
+<w> [1m[33mUse map.merge instead.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info and automated migrator: https://sass-lang.com/d/import[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 2286:26  @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9            root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.[39m[22m
+<w> [1m[33mUse map.merge instead.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info and automated migrator: https://sass-lang.com/d/import[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 2289:23  @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9            root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation red() is deprecated. Suggestion:[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mcolor.channel($color, "red", $space: rgb)[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/color-functions[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 31:13    k-color-red()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 482:48   k-color-luminance()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 572:12   k-contrast-legacy()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 2507:32  @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9            root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation green() is deprecated. Suggestion:[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mcolor.channel($color, "green", $space: rgb)[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/color-functions[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 41:13    k-color-green()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 483:50   k-color-luminance()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 572:12   k-contrast-legacy()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 2507:32  @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9            root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation blue() is deprecated. Suggestion:[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mcolor.channel($color, "blue", $space: rgb)[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/color-functions[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 51:13    k-color-blue()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 484:49   k-color-luminance()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 572:12   k-contrast-legacy()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 2507:32  @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9            root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation darken() is deprecated. Suggestions:[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mcolor.scale($color, $lightness: -7%)[39m[22m
+<w> [1m[33mcolor.adjust($color, $lightness: -7%)[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/color-functions[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 104:13     k-color-darken()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 17920:119  @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9              root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation Passing percentage units to the global abs() function is deprecated.[39m[22m
+<w> [1m[33mIn the future, this will emit a CSS abs() function to be resolved by the browser.[39m[22m
+<w> [1m[33mTo preserve current behavior: math.abs(65%)[39m[22m
+<w> [1m[33mTo emit a CSS abs() now: abs(#{65%})[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/abs-percent[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 993:13    k-math-abs()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 597:13    k-color-level()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 630:13    k-color-shade()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 646:13    k-try-shade()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19663:83  kendo-chip--theme-base()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19778:5   kendo-chip--theme()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19795:9   @content[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 5109:9    module-render()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19793:5   kendo-chip--styles()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19800:5   @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9             root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation Passing percentage units to the global abs() function is deprecated.[39m[22m
+<w> [1m[33mIn the future, this will emit a CSS abs() function to be resolved by the browser.[39m[22m
+<w> [1m[33mTo preserve current behavior: math.abs(-80%)[39m[22m
+<w> [1m[33mTo emit a CSS abs() now: abs(#{-80%})[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/abs-percent[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 993:13    k-math-abs()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 597:13    k-color-level()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 617:13    k-color-tint()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 662:13    k-try-tint()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19664:80  kendo-chip--theme-base()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19778:5   kendo-chip--theme()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19795:9   @content[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 5109:9    module-render()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19793:5   kendo-chip--styles()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19800:5   @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9             root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation Passing percentage units to the global abs() function is deprecated.[39m[22m
+<w> [1m[33mIn the future, this will emit a CSS abs() function to be resolved by the browser.[39m[22m
+<w> [1m[33mTo preserve current behavior: math.abs(-25%)[39m[22m
+<w> [1m[33mTo emit a CSS abs() now: abs(#{-25%})[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/abs-percent[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 993:13    k-math-abs()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 597:13    k-color-level()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 617:13    k-color-tint()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 662:13    k-try-tint()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19665:82  kendo-chip--theme-base()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19778:5   kendo-chip--theme()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19795:9   @content[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 5109:9    module-render()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19793:5   kendo-chip--styles()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19800:5   @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9             root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation Passing percentage units to the global abs() function is deprecated.[39m[22m
+<w> [1m[33mIn the future, this will emit a CSS abs() function to be resolved by the browser.[39m[22m
+<w> [1m[33mTo preserve current behavior: math.abs(-65%)[39m[22m
+<w> [1m[33mTo emit a CSS abs() now: abs(#{-65%})[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/abs-percent[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 993:13     k-math-abs()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 597:13     k-color-level()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 617:13     k-color-tint()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 662:13     k-try-tint()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19676:106  kendo-chip--theme-base()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19778:5    kendo-chip--theme()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19795:9    @content[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 5109:9     module-render()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19793:5    kendo-chip--styles()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19800:5    @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9              root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation Passing percentage units to the global abs() function is deprecated.[39m[22m
+<w> [1m[33mIn the future, this will emit a CSS abs() function to be resolved by the browser.[39m[22m
+<w> [1m[33mTo preserve current behavior: math.abs(-50%)[39m[22m
+<w> [1m[33mTo emit a CSS abs() now: abs(#{-50%})[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/abs-percent[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 993:13     k-math-abs()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 597:13     k-color-level()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 617:13     k-color-tint()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 662:13     k-try-tint()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19680:107  kendo-chip--theme-base()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19778:5    kendo-chip--theme()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19795:9    @content[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 5109:9     module-render()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19793:5    kendo-chip--styles()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19800:5    @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9              root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation darken() is deprecated. Suggestions:[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mcolor.scale($color, $lightness: -8%)[39m[22m
+<w> [1m[33mcolor.adjust($color, $lightness: -8%)[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/color-functions[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 104:13    k-color-darken()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 44198:84  @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9             root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33m35 repetitive deprecation warnings omitted.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnull[39m[22m
+
+webpack compiled [1m[32msuccessfully[39m[22m (aeaa018a5c7f6901)
+[36mType-checking in progress...[39m
+[32mNo errors found.[39m
+Entrypoint [1mmain[39m[22m = 8 assets 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m = [1m[32mruntime.js[39m[22m [1m[32mruntime.aeaa018a5c7f6901.hot-update.js[39m[22m [1m[32mstyles.css[39m[22m [1m[32mstyles.js[39m[22m 41 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32mmain.aeaa018a5c7f6901.hot-update.js[39m[22m (main) 3 MiB (javascript) 946 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.aeaa018a5c7f6901.hot-update.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.8 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m, [1m[32mvendor.aeaa018a5c7f6901.hot-update.js[39m[22m (vendor) (id hint: vendor) 12.7 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./src/app/components/src/header/components/profile-card-header/account-signed-out.tsx[39m[22m
+[1mModule build [1m[31mfailed[39m[22m[1m (from ../../node_modules/@nx/webpack/src/utils/web-babel-loader.js):
+[1m[31mError[39m[22m[1m: ENOENT: no such file or directory, open 'C:\Peerless\Peerless-CRM-Frontend\apps\peerless-cms\src\app\components\src\header\components\profile-card-header\account-signed-out.tsx'[39m[22m
+
+webpack compiled with [1m[31m1 error[39m[22m (422f0ad3671fbebd)
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/components/src/header/Header.tsx[22m:[32m[1m12:34[22m[39m
+[90mTS2307: [39mCannot find module './components/profile-card-header/account-signed-out' or its corresponding type declarations.
+  [0m [90m 10 |[39m [36mimport[39m { [33mGetChildOriginatorsList[39m } [36mfrom[39m [32m'@peerless/queries'[39m[33m;[39m
+   [90m 11 |[39m [36mimport[39m { [33mOriginator[39m } [36mfrom[39m [32m'@peerless/models'[39m[33m;[39m
+  [31m[1m>[22m[39m[90m 12 |[39m
+   [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 13 |[39m [36mexport[39m [36minterface[39m [33mOriginatorEntity[39m {
+   [90m 14 |[39m   originator[33m:[39m string[33m;[39m
+   [90m 15 |[39m   childOriginators[33m:[39m string[33m;[39m[0m
+
+Found [31m[1m1 error[22m[39m in 8671 ms.
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 21.8 MiB (30 MiB) = 8 assets 15 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 485 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mruntime.aeaa018a5c7f6901.hot-update.js[39m[22m 343 bytes [1m[32mstyles.css[39m[22m 32.7 KiB [1m[32mstyles.js[39m[22m 401 KiB [1m[32mstyles.aeaa018a5c7f6901.hot-update.js[39m[22m 915 bytes 42 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32mmain.aeaa018a5c7f6901.hot-update.js[39m[22m (main) 2.68 MiB (javascript) 941 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.aeaa018a5c7f6901.hot-update.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m, [1m[32mstyles.aeaa018a5c7f6901.hot-update.js[39m[22m (styles) 384 KiB (javascript) 32.6 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m, [1m[32mvendor.aeaa018a5c7f6901.hot-update.js[39m[22m (vendor) (id hint: vendor) 12.7 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+
+[1mLOG from ../../node_modules/sass-loader/dist/cjs.js sass-loader ../../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[5].use[1]!../../node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[5].use[2]!../../node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[5].use[3]!./src/styles/crm-custom-theme.scss[39m[22m
+<w> [1m[33mDeprecation The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/legacy-js-api[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnull[39m[22m
+<w> [1m[33mDeprecation Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info and automated migrator: https://sass-lang.com/d/import[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9  root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.[39m[22m
+<w> [1m[33mUse map.get instead.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info and automated migrator: https://sass-lang.com/d/import[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 1218:15  k-map-get()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 1835:22  @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9            root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation Using / for division outside of calc() is deprecated and will be removed in Dart Sass 2.0.0.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mRecommendation: math.div($a, $b) or calc($a / $b)[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info and automated migrator: https://sass-lang.com/d/slash-div[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 1051:15  k-math-div()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 1940:21  @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9            root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.[39m[22m
+<w> [1m[33mUse map.merge instead.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info and automated migrator: https://sass-lang.com/d/import[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 2280:22  @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9            root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.[39m[22m
+<w> [1m[33mUse map.merge instead.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info and automated migrator: https://sass-lang.com/d/import[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 2283:23  @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9            root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.[39m[22m
+<w> [1m[33mUse map.merge instead.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info and automated migrator: https://sass-lang.com/d/import[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 2286:26  @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9            root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.[39m[22m
+<w> [1m[33mUse map.merge instead.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info and automated migrator: https://sass-lang.com/d/import[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 2289:23  @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9            root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation red() is deprecated. Suggestion:[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mcolor.channel($color, "red", $space: rgb)[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/color-functions[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 31:13    k-color-red()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 482:48   k-color-luminance()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 572:12   k-contrast-legacy()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 2507:32  @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9            root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation green() is deprecated. Suggestion:[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mcolor.channel($color, "green", $space: rgb)[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/color-functions[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 41:13    k-color-green()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 483:50   k-color-luminance()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 572:12   k-contrast-legacy()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 2507:32  @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9            root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation blue() is deprecated. Suggestion:[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mcolor.channel($color, "blue", $space: rgb)[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/color-functions[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 51:13    k-color-blue()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 484:49   k-color-luminance()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 572:12   k-contrast-legacy()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 2507:32  @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9            root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation darken() is deprecated. Suggestions:[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mcolor.scale($color, $lightness: -7%)[39m[22m
+<w> [1m[33mcolor.adjust($color, $lightness: -7%)[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/color-functions[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 104:13     k-color-darken()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 17920:119  @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9              root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation Passing percentage units to the global abs() function is deprecated.[39m[22m
+<w> [1m[33mIn the future, this will emit a CSS abs() function to be resolved by the browser.[39m[22m
+<w> [1m[33mTo preserve current behavior: math.abs(65%)[39m[22m
+<w> [1m[33mTo emit a CSS abs() now: abs(#{65%})[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/abs-percent[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 993:13    k-math-abs()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 597:13    k-color-level()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 630:13    k-color-shade()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 646:13    k-try-shade()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19663:83  kendo-chip--theme-base()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19778:5   kendo-chip--theme()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19795:9   @content[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 5109:9    module-render()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19793:5   kendo-chip--styles()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19800:5   @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9             root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation Passing percentage units to the global abs() function is deprecated.[39m[22m
+<w> [1m[33mIn the future, this will emit a CSS abs() function to be resolved by the browser.[39m[22m
+<w> [1m[33mTo preserve current behavior: math.abs(-80%)[39m[22m
+<w> [1m[33mTo emit a CSS abs() now: abs(#{-80%})[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/abs-percent[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 993:13    k-math-abs()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 597:13    k-color-level()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 617:13    k-color-tint()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 662:13    k-try-tint()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19664:80  kendo-chip--theme-base()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19778:5   kendo-chip--theme()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19795:9   @content[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 5109:9    module-render()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19793:5   kendo-chip--styles()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19800:5   @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9             root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation Passing percentage units to the global abs() function is deprecated.[39m[22m
+<w> [1m[33mIn the future, this will emit a CSS abs() function to be resolved by the browser.[39m[22m
+<w> [1m[33mTo preserve current behavior: math.abs(-25%)[39m[22m
+<w> [1m[33mTo emit a CSS abs() now: abs(#{-25%})[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/abs-percent[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 993:13    k-math-abs()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 597:13    k-color-level()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 617:13    k-color-tint()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 662:13    k-try-tint()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19665:82  kendo-chip--theme-base()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19778:5   kendo-chip--theme()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19795:9   @content[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 5109:9    module-render()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19793:5   kendo-chip--styles()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19800:5   @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9             root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation Passing percentage units to the global abs() function is deprecated.[39m[22m
+<w> [1m[33mIn the future, this will emit a CSS abs() function to be resolved by the browser.[39m[22m
+<w> [1m[33mTo preserve current behavior: math.abs(-65%)[39m[22m
+<w> [1m[33mTo emit a CSS abs() now: abs(#{-65%})[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/abs-percent[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 993:13     k-math-abs()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 597:13     k-color-level()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 617:13     k-color-tint()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 662:13     k-try-tint()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19676:106  kendo-chip--theme-base()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19778:5    kendo-chip--theme()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19795:9    @content[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 5109:9     module-render()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19793:5    kendo-chip--styles()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19800:5    @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9              root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation Passing percentage units to the global abs() function is deprecated.[39m[22m
+<w> [1m[33mIn the future, this will emit a CSS abs() function to be resolved by the browser.[39m[22m
+<w> [1m[33mTo preserve current behavior: math.abs(-50%)[39m[22m
+<w> [1m[33mTo emit a CSS abs() now: abs(#{-50%})[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/abs-percent[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 993:13     k-math-abs()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 597:13     k-color-level()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 617:13     k-color-tint()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 662:13     k-try-tint()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19680:107  kendo-chip--theme-base()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19778:5    kendo-chip--theme()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19795:9    @content[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 5109:9     module-render()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19793:5    kendo-chip--styles()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19800:5    @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9              root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation darken() is deprecated. Suggestions:[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mcolor.scale($color, $lightness: -8%)[39m[22m
+<w> [1m[33mcolor.adjust($color, $lightness: -8%)[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/color-functions[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 104:13    k-color-darken()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 44198:84  @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9             root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33m35 repetitive deprecation warnings omitted.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnull[39m[22m
+
+webpack compiled [1m[32msuccessfully[39m[22m (5ab252dd89b2483b)
+[36mType-checking in progress...[39m
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features-common-components/src/header-filter-container/header-filter-container.tsx[22m:[32m[1m8:3[22m[39m
+[90mTS2305: [39mModule '"@peerless-cms/features-common-components"' has no exported member 'FilterHeaderTop'.
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features-common-components/src/header-filter-container/header-filter-container.tsx[22m:[32m[1m9:3[22m[39m
+[90mTS2305: [39mModule '"@peerless-cms/features-common-components"' has no exported member 'ContainerHeader'.
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features-common-components/src/header-filter-container/header-filter-container.tsx[22m:[32m[1m97:13[22m[39m
+[90mTS2322: [39mType '{ id: string; state: boolean; setState: Dispatch<SetStateAction<boolean>>; isIconButton: boolean; buttonIcon: IconDefinition; iconButtonStyles: { ...; }; }' is not assignable to type 'IntrinsicAttributes & ButtonWidgetCollapseProps'.
+  Property 'isIconButton' does not exist on type 'IntrinsicAttributes & ButtonWidgetCollapseProps'.
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/activity-planner/components/activity-planner-component/activity-planner-filter.tsx[22m:[32m[1m2:103[22m[39m
+[90mTS2305: [39mModule '"@peerless-cms/store"' has no exported member 'setTriggerActivityPlannerFormSubmit'.
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/activity-planner/components/activity-planner-component/activity-planner-filter.tsx[22m:[32m[1m4:20[22m[39m
+[90mTS2305: [39mModule '"@peerless/controls"' has no exported member 'FilterNonButton'.
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/activity-planner/components/activity-planner-component/activity-planner-filter.tsx[22m:[32m[1m5:10[22m[39m
+[90mTS2305: [39mModule '"@peerless-cms/features-common-components"' has no exported member 'FilterForm'.
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/activity-planner/components/activity-planner-component/activity-planner-filter.tsx[22m:[32m[1m5:22[22m[39m
+[90mTS2305: [39mModule '"@peerless-cms/features-common-components"' has no exported member 'FilterFormGroup'.
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/activity-planner/components/activity-planner-component/activity-planner-filter.tsx[22m:[32m[1m7:10[22m[39m
+[90mTS2305: [39mModule '"@peerless-cms/features"' has no exported member 'useFilterForm'.
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/activity-planner/components/activity-planner-component/activity-planner-filter.tsx[22m:[32m[1m29:62[22m[39m
+[90mTS2339: [39mProperty 'isFormSubmit' does not exist on type 'ActivityPlannerState'.
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/activity-planner/components/activity-planner-component/activity-planner-filter.tsx[22m:[32m[1m49:83[22m[39m
+[90mTS7006: [39mParameter 'value' implicitly has an 'any' type.
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/administrator/components/administartor-component/administrator-rep-market/administrator-rep-market-filter.tsx[22m:[32m[1m7:10[22m[39m
+[90mTS2305: [39mModule '"@peerless-cms/features-common-components"' has no exported member 'FilterFormGroup'.
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/administrator/components/administartor-component/administrator-rep-proxy/administrator-rep-proxy-filter.tsx[22m:[32m[1m7:10[22m[39m
+[90mTS2305: [39mModule '"@peerless-cms/features-common-components"' has no exported member 'FilterFormGroup'.
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/dashboard-feature/components/dashboard-achievement-by-region/dashboard-achievement-by-region-filter.tsx[22m:[32m[1m2:166[22m[39m
+[90mTS2305: [39mModule '"@peerless-cms/store"' has no exported member 'setTriggerAcByRegFormSubmit'.
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/dashboard-feature/components/dashboard-achievement-by-region/dashboard-achievement-by-region-filter.tsx[22m:[32m[1m4:34[22m[39m
+[90mTS2305: [39mModule '"@peerless/controls"' has no exported member 'FilterNonButton'.
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/dashboard-feature/components/dashboard-achievement-by-region/dashboard-achievement-by-region-filter.tsx[22m:[32m[1m5:10[22m[39m
+[90mTS2305: [39mModule '"@peerless-cms/features-common-components"' has no exported member 'FilterForm'.
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/dashboard-feature/components/dashboard-achievement-by-region/dashboard-achievement-by-region-filter.tsx[22m:[32m[1m5:22[22m[39m
+[90mTS2305: [39mModule '"@peerless-cms/features-common-components"' has no exported member 'FilterFormGroup'.
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/dashboard-feature/components/dashboard-achievement-by-region/dashboard-achievement-by-region-filter.tsx[22m:[32m[1m7:10[22m[39m
+[90mTS2305: [39mModule '"@peerless-cms/features"' has no exported member 'useFilterForm'.
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/dashboard-feature/components/dashboard-achievement-by-region/dashboard-achievement-by-region-filter.tsx[22m:[32m[1m40:29[22m[39m
+[90mTS2339: [39mProperty 'isFormSubmit' does not exist on type 'DashboardAchievementByRegionState'.
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/dashboard-feature/components/dashboard-achievement-by-region/dashboard-achievement-by-region-filter.tsx[22m:[32m[1m75:83[22m[39m
+[90mTS7006: [39mParameter 'value' implicitly has an 'any' type.
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/dashboard-feature/components/dashboard-activity-analysis/dashboard-activity-filter.tsx[22m:[32m[1m2:165[22m[39m
+[90mTS2305: [39mModule '"@peerless-cms/store"' has no exported member 'setTriggerActivityAnalysisFormSubmit'.
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/dashboard-feature/components/dashboard-activity-analysis/dashboard-activity-filter.tsx[22m:[32m[1m6:52[22m[39m
+[90mTS2305: [39mModule '"@peerless/controls"' has no exported member 'FilterNonButton'.
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/dashboard-feature/components/dashboard-activity-analysis/dashboard-activity-filter.tsx[22m:[32m[1m7:10[22m[39m
+[90mTS2305: [39mModule '"@peerless-cms/features-common-components"' has no exported member 'FilterForm'.
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/dashboard-feature/components/dashboard-activity-analysis/dashboard-activity-filter.tsx[22m:[32m[1m7:22[22m[39m
+[90mTS2305: [39mModule '"@peerless-cms/features-common-components"' has no exported member 'FilterFormGroup'.
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/dashboard-feature/components/dashboard-activity-analysis/dashboard-activity-filter.tsx[22m:[32m[1m9:10[22m[39m
+[90mTS2305: [39mModule '"@peerless-cms/features"' has no exported member 'useFilterForm'.
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/dashboard-feature/components/dashboard-activity-analysis/dashboard-activity-filter.tsx[22m:[32m[1m82:128[22m[39m
+[90mTS2339: [39mProperty 'isFormSubmit' does not exist on type 'DashActivityState'.
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/dashboard-feature/components/dashboard-activity-analysis/dashboard-activity-filter.tsx[22m:[32m[1m175:83[22m[39m
+[90mTS7006: [39mParameter 'value' implicitly has an 'any' type.
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/dashboard-feature/components/dashboard-business-sales-enquiry/dashboard-business-sales-enquiry-filter.tsx[22m:[32m[1m2:177[22m[39m
+[90mTS2305: [39mModule '"@peerless-cms/store"' has no exported member 'setTriggerBusinessSalesEnqFormSubmit'.
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/dashboard-feature/components/dashboard-business-sales-enquiry/dashboard-business-sales-enquiry-filter.tsx[22m:[32m[1m2:215[22m[39m
+[90mTS2305: [39mModule '"@peerless-cms/store"' has no exported member 'setBusinessSalesmarket'.
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/dashboard-feature/components/dashboard-business-sales-enquiry/dashboard-business-sales-enquiry-filter.tsx[22m:[32m[1m2:239[22m[39m
+[90mTS2305: [39mModule '"@peerless-cms/store"' has no exported member 'setBusinessSalesiCostPeriod'.
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/dashboard-feature/components/dashboard-business-sales-enquiry/dashboard-business-sales-enquiry-filter.tsx[22m:[32m[1m2:268[22m[39m
+[90mTS2724: [39m'"@peerless-cms/store"' has no exported member named 'setBusinessSalesYear'. Did you mean 'setBusinessSalesEnqSales'?
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/dashboard-feature/components/dashboard-business-sales-enquiry/dashboard-business-sales-enquiry-filter.tsx[22m:[32m[1m5:20[22m[39m
+[90mTS2305: [39mModule '"@peerless/controls"' has no exported member 'FilterNonButton'.
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/dashboard-feature/components/dashboard-business-sales-enquiry/dashboard-business-sales-enquiry-filter.tsx[22m:[32m[1m6:10[22m[39m
+[90mTS2305: [39mModule '"@peerless-cms/features-common-components"' has no exported member 'FilterForm'.
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/dashboard-feature/components/dashboard-business-sales-enquiry/dashboard-business-sales-enquiry-filter.tsx[22m:[32m[1m6:22[22m[39m
+[90mTS2305: [39mModule '"@peerless-cms/features-common-components"' has no exported member 'FilterFormGroup'.
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/dashboard-feature/components/dashboard-business-sales-enquiry/dashboard-business-sales-enquiry-filter.tsx[22m:[32m[1m8:10[22m[39m
+[90mTS2305: [39mModule '"@peerless-cms/features"' has no exported member 'useFilterForm'.
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/dashboard-feature/components/dashboard-business-sales-enquiry/dashboard-business-sales-enquiry-filter.tsx[22m:[32m[1m54:13[22m[39m
+[90mTS2339: [39mProperty 'isFormSubmit' does not exist on type 'DashBoardBusinessSalesEnquiryState'.
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/dashboard-feature/components/dashboard-business-sales-enquiry/dashboard-business-sales-enquiry-filter.tsx[22m:[32m[1m54:99[22m[39m
+[90mTS2339: [39mProperty 'businessSalesmarket' does not exist on type 'DashBoardBusinessSalesEnquiryState'.
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/dashboard-feature/components/dashboard-business-sales-enquiry/dashboard-business-sales-enquiry-filter.tsx[22m:[32m[1m54:120[22m[39m
+[90mTS2339: [39mProperty 'businessSalesiCostPeriod' does not exist on type 'DashBoardBusinessSalesEnquiryState'.
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/dashboard-feature/components/dashboard-business-sales-enquiry/dashboard-business-sales-enquiry-filter.tsx[22m:[32m[1m54:146[22m[39m
+[90mTS2339: [39mProperty 'businessSalesYear' does not exist on type 'DashBoardBusinessSalesEnquiryState'.
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/dashboard-feature/components/dashboard-business-sales-enquiry/dashboard-business-sales-enquiry-filter.tsx[22m:[32m[1m110:83[22m[39m
+[90mTS7006: [39mParameter 'value' implicitly has an 'any' type.
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/dashboard-feature/components/dashboard-call-cycles-analysis/dashboard-call-cycles-analysis-filter.tsx[22m:[32m[1m2:220[22m[39m
+[90mTS2305: [39mModule '"@peerless-cms/store"' has no exported member 'setTriggerCallCycleAnalysisFormSubmit'.
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/dashboard-feature/components/dashboard-call-cycles-analysis/dashboard-call-cycles-analysis-filter.tsx[22m:[32m[1m7:38[22m[39m
+[90mTS2305: [39mModule '"@peerless/controls"' has no exported member 'FilterNonButton'.
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/dashboard-feature/components/dashboard-call-cycles-analysis/dashboard-call-cycles-analysis-filter.tsx[22m:[32m[1m8:10[22m[39m
+[90mTS2305: [39mModule '"@peerless-cms/features-common-components"' has no exported member 'FilterForm'.
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/dashboard-feature/components/dashboard-call-cycles-analysis/dashboard-call-cycles-analysis-filter.tsx[22m:[32m[1m8:22[22m[39m
+[90mTS2305: [39mModule '"@peerless-cms/features-common-components"' has no exported member 'FilterFormGroup'.
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/dashboard-feature/components/dashboard-call-cycles-analysis/dashboard-call-cycles-analysis-filter.tsx[22m:[32m[1m10:10[22m[39m
+[90mTS2305: [39mModule '"@peerless-cms/features"' has no exported member 'useFilterForm'.
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/dashboard-feature/components/dashboard-call-cycles-analysis/dashboard-call-cycles-analysis-filter.tsx[22m:[32m[1m32:158[22m[39m
+[90mTS2339: [39mProperty 'isFormSubmit' does not exist on type 'DashCallCyclesState'.
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/dashboard-feature/components/dashboard-call-cycles-analysis/dashboard-call-cycles-analysis-filter.tsx[22m:[32m[1m103:83[22m[39m
+[90mTS7006: [39mParameter 'value' implicitly has an 'any' type.
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/dashboard-feature/components/dashboard-end-user-price-report/dashboard-end-user-price-report-filter.tsx[22m:[32m[1m2:171[22m[39m
+[90mTS2305: [39mModule '"@peerless-cms/store"' has no exported member 'setTriggerEndUserPriceFormSubmit'.
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/dashboard-feature/components/dashboard-end-user-price-report/dashboard-end-user-price-report-filter.tsx[22m:[32m[1m5:42[22m[39m
+[90mTS2305: [39mModule '"@peerless/controls"' has no exported member 'FilterNonButton'.
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/dashboard-feature/components/dashboard-end-user-price-report/dashboard-end-user-price-report-filter.tsx[22m:[32m[1m6:10[22m[39m
+[90mTS2305: [39mModule '"@peerless-cms/features-common-components"' has no exported member 'FilterForm'.
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/dashboard-feature/components/dashboard-end-user-price-report/dashboard-end-user-price-report-filter.tsx[22m:[32m[1m6:22[22m[39m
+[90mTS2305: [39mModule '"@peerless-cms/features-common-components"' has no exported member 'FilterFormGroup'.
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/dashboard-feature/components/dashboard-end-user-price-report/dashboard-end-user-price-report-filter.tsx[22m:[32m[1m10:10[22m[39m
+[90mTS2305: [39mModule '"@peerless-cms/features"' has no exported member 'useFilterForm'.
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/dashboard-feature/components/dashboard-end-user-price-report/dashboard-end-user-price-report-filter.tsx[22m:[32m[1m22:69[22m[39m
+[90mTS2339: [39mProperty 'isFormSubmit' does not exist on type 'DashEndUserPriceState'.
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/dashboard-feature/components/dashboard-end-user-price-report/dashboard-end-user-price-report-filter.tsx[22m:[32m[1m92:83[22m[39m
+[90mTS7006: [39mParameter 'value' implicitly has an 'any' type.
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/dashboard-feature/components/dashboard-end-user-sales-report/dashboard-end-user-sales-filter.tsx[22m:[32m[1m6:5[22m[39m
+[90mTS2305: [39mModule '"@peerless-cms/store"' has no exported member 'setTriggerEndUserSalesFormSubmit'.
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/dashboard-feature/components/dashboard-end-user-sales-report/dashboard-end-user-sales-filter.tsx[22m:[32m[1m8:20[22m[39m
+[90mTS2305: [39mModule '"@peerless/controls"' has no exported member 'FilterNonButton'.
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/dashboard-feature/components/dashboard-end-user-sales-report/dashboard-end-user-sales-filter.tsx[22m:[32m[1m12:10[22m[39m
+[90mTS2305: [39mModule '"@peerless-cms/features-common-components"' has no exported member 'FilterForm'.
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/dashboard-feature/components/dashboard-end-user-sales-report/dashboard-end-user-sales-filter.tsx[22m:[32m[1m12:22[22m[39m
+[90mTS2305: [39mModule '"@peerless-cms/features-common-components"' has no exported member 'FilterFormGroup'.
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/dashboard-feature/components/dashboard-end-user-sales-report/dashboard-end-user-sales-filter.tsx[22m:[32m[1m14:10[22m[39m
+[90mTS2305: [39mModule '"@peerless-cms/features"' has no exported member 'useFilterForm'.
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/dashboard-feature/components/dashboard-end-user-sales-report/dashboard-end-user-sales-filter.tsx[22m:[32m[1m75:49[22m[39m
+[90mTS2339: [39mProperty 'isFormSubmit' does not exist on type 'EnduserSalesFilterState'.
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/dashboard-feature/components/dashboard-end-user-sales-report/dashboard-end-user-sales-filter.tsx[22m:[32m[1m152:83[22m[39m
+[90mTS7006: [39mParameter 'value' implicitly has an 'any' type.
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/dashboard-feature/components/dashboard-enduser-transferlogs/dashboard-enduser-transferlogs-filter.tsx[22m:[32m[1m3:150[22m[39m
+[90mTS2305: [39mModule '"@peerless-cms/store"' has no exported member 'setTriggerEndUserTransferLogsFormSubmit'.
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/dashboard-feature/components/dashboard-enduser-transferlogs/dashboard-enduser-transferlogs-filter.tsx[22m:[32m[1m6:28[22m[39m
+[90mTS2305: [39mModule '"@peerless/controls"' has no exported member 'FilterNonButton'.
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/dashboard-feature/components/dashboard-enduser-transferlogs/dashboard-enduser-transferlogs-filter.tsx[22m:[32m[1m7:10[22m[39m
+[90mTS2305: [39mModule '"@peerless-cms/features-common-components"' has no exported member 'FilterForm'.
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/dashboard-feature/components/dashboard-enduser-transferlogs/dashboard-enduser-transferlogs-filter.tsx[22m:[32m[1m7:22[22m[39m
+[90mTS2305: [39mModule '"@peerless-cms/features-common-components"' has no exported member 'FilterFormGroup'.
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/dashboard-feature/components/dashboard-enduser-transferlogs/dashboard-enduser-transferlogs-filter.tsx[22m:[32m[1m9:10[22m[39m
+[90mTS2305: [39mModule '"@peerless-cms/features"' has no exported member 'useFilterForm'.
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/dashboard-feature/components/dashboard-enduser-transferlogs/dashboard-enduser-transferlogs-filter.tsx[22m:[32m[1m22:119[22m[39m
+[90mTS2339: [39mProperty 'isFormSubmit' does not exist on type 'DashEndUserTransferLogState'.
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/dashboard-feature/components/dashboard-enduser-transferlogs/dashboard-enduser-transferlogs-filter.tsx[22m:[32m[1m62:83[22m[39m
+[90mTS7006: [39mParameter 'value' implicitly has an 'any' type.
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/dashboard-feature/components/dashboard-opportunity-analysis/dashboard-opportunity-filter.tsx[22m:[32m[1m2:61[22m[39m
+[90mTS2724: [39m'"@peerless-cms/store"' has no exported member named 'setIsDashboardOpportunityAnalysisFetchHeader'. Did you mean 'setIsDashboardOpportunityAnalysisFetch'?
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/dashboard-feature/components/dashboard-opportunity-analysis/dashboard-opportunity-filter.tsx[22m:[32m[1m2:202[22m[39m
+[90mTS2305: [39mModule '"@peerless-cms/store"' has no exported member 'setTriggerOpportunityAnalysisFormSubmit'.
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/dashboard-feature/components/dashboard-opportunity-analysis/dashboard-opportunity-filter.tsx[22m:[32m[1m4:34[22m[39m
+[90mTS2305: [39mModule '"@peerless/controls"' has no exported member 'FilterNonButton'.
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/dashboard-feature/components/dashboard-opportunity-analysis/dashboard-opportunity-filter.tsx[22m:[32m[1m5:10[22m[39m
+[90mTS2305: [39mModule '"@peerless-cms/features-common-components"' has no exported member 'FilterForm'.
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/dashboard-feature/components/dashboard-opportunity-analysis/dashboard-opportunity-filter.tsx[22m:[32m[1m5:22[22m[39m
+[90mTS2305: [39mModule '"@peerless-cms/features-common-components"' has no exported member 'FilterFormGroup'.
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/dashboard-feature/components/dashboard-opportunity-analysis/dashboard-opportunity-filter.tsx[22m:[32m[1m7:10[22m[39m
+[90mTS2305: [39mModule '"@peerless-cms/features"' has no exported member 'useFilterForm'.
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/dashboard-feature/components/dashboard-opportunity-analysis/dashboard-opportunity-filter.tsx[22m:[32m[1m27:31[22m[39m
+[90mTS2339: [39mProperty 'isFormSubmit' does not exist on type 'DashOpportunityState'.
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/dashboard-feature/components/dashboard-opportunity-analysis/dashboard-opportunity-filter.tsx[22m:[32m[1m46:83[22m[39m
+[90mTS7006: [39mParameter 'value' implicitly has an 'any' type.
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/dashboard-feature/components/dashboard-opportunity-conversion/dashboard-opportunity-conversion-filter.tsx[22m:[32m[1m2:317[22m[39m
+[90mTS2305: [39mModule '"@peerless-cms/store"' has no exported member 'setTriggerOpportunityConversionFormSubmit'.
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/dashboard-feature/components/dashboard-opportunity-conversion/dashboard-opportunity-conversion-filter.tsx[22m:[32m[1m6:38[22m[39m
+[90mTS2305: [39mModule '"@peerless/controls"' has no exported member 'FilterNonButton'.
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/dashboard-feature/components/dashboard-opportunity-conversion/dashboard-opportunity-conversion-filter.tsx[22m:[32m[1m7:10[22m[39m
+[90mTS2305: [39mModule '"@peerless-cms/features-common-components"' has no exported member 'FilterForm'.
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/dashboard-feature/components/dashboard-opportunity-conversion/dashboard-opportunity-conversion-filter.tsx[22m:[32m[1m7:22[22m[39m
+[90mTS2305: [39mModule '"@peerless-cms/features-common-components"' has no exported member 'FilterFormGroup'.
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/dashboard-feature/components/dashboard-opportunity-conversion/dashboard-opportunity-conversion-filter.tsx[22m:[32m[1m9:10[22m[39m
+[90mTS2305: [39mModule '"@peerless-cms/features"' has no exported member 'useFilterForm'.
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/dashboard-feature/components/dashboard-opportunity-conversion/dashboard-opportunity-conversion-filter.tsx[22m:[32m[1m20:13[22m[39m
+[90mTS2339: [39mProperty 'isFormSubmit' does not exist on type 'DashOpportunityConversionState'.
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/dashboard-feature/components/dashboard-opportunity-conversion/dashboard-opportunity-conversion-filter.tsx[22m:[32m[1m64:83[22m[39m
+[90mTS7006: [39mParameter 'value' implicitly has an 'any' type.
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/dashboard-feature/components/dashboard-rep-performance/dashboard-rep-filter.tsx[22m:[32m[1m4:10[22m[39m
+[90mTS2305: [39mModule '"@peerless-cms/features-common-components"' has no exported member 'FilterFormGroup'.
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/hooks/useFilterForm.ts[22m:[32m[1m2:10[22m[39m
+[90mTS2305: [39mModule '"@peerless-cms/features-common-components"' has no exported member 'FormComponentHandles'.
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/leave-feature/components/leave-feature-component/leave-list/leavelist-filters.tsx[22m:[32m[1m1:10[22m[39m
+[90mTS2305: [39mModule '"@peerless-cms/features-common-components"' has no exported member 'FilterForm'.
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/leave-feature/components/leave-feature-component/leave-list/leavelist-filters.tsx[22m:[32m[1m1:22[22m[39m
+[90mTS2305: [39mModule '"@peerless-cms/features-common-components"' has no exported member 'FilterFormGroup'.
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/leave-feature/components/leave-feature-component/leave-list/leavelist-filters.tsx[22m:[32m[1m4:34[22m[39m
+[90mTS2305: [39mModule '"@peerless/controls"' has no exported member 'FilterNonButton'.
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/leave-feature/components/leave-feature-component/leave-list/leavelist-filters.tsx[22m:[32m[1m9:147[22m[39m
+[90mTS2305: [39mModule '"@peerless-cms/store"' has no exported member 'setTriggerLeaveListFormSubmit'.
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/leave-feature/components/leave-feature-component/leave-list/leavelist-filters.tsx[22m:[32m[1m11:10[22m[39m
+[90mTS2305: [39mModule '"@peerless-cms/features"' has no exported member 'useFilterForm'.
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/leave-feature/components/leave-feature-component/leave-list/leavelist-filters.tsx[22m:[32m[1m36:83[22m[39m
+[90mTS2339: [39mProperty 'isFormSubmit' does not exist on type 'LeaveEntryState'.
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/leave-feature/components/leave-feature-component/leave-list/leavelist-filters.tsx[22m:[32m[1m94:46[22m[39m
+[90mTS2554: [39mExpected 2 arguments, but got 4.
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/leave-feature/components/leave-feature-component/leave-list/leavelist-filters.tsx[22m:[32m[1m100:83[22m[39m
+[90mTS7006: [39mParameter 'value' implicitly has an 'any' type.
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/sales-enquiry/components/sales-enquiry-component/sales-enquiry-customer-pricelist/sales-enquiry-customer-pricelist-filters.tsx[22m:[32m[1m4:120[22m[39m
+[90mTS2724: [39m'"@peerless-cms/store"' has no exported member named 'setCustomerPriceListEndDate'. Did you mean 'setCustomerPriceListAsAtDate'?
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/sales-enquiry/components/sales-enquiry-component/sales-enquiry-customer-pricelist/sales-enquiry-customer-pricelist-filters.tsx[22m:[32m[1m4:241[22m[39m
+[90mTS2305: [39mModule '"@peerless-cms/store"' has no exported member 'setTriggerCustomerPriceListFiltersFormSubmit'.
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/sales-enquiry/components/sales-enquiry-component/sales-enquiry-customer-pricelist/sales-enquiry-customer-pricelist-filters.tsx[22m:[32m[1m6:38[22m[39m
+[90mTS2305: [39mModule '"@peerless/controls"' has no exported member 'FilterNonButton'.
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/sales-enquiry/components/sales-enquiry-component/sales-enquiry-customer-pricelist/sales-enquiry-customer-pricelist-filters.tsx[22m:[32m[1m9:10[22m[39m
+[90mTS2305: [39mModule '"@peerless-cms/features-common-components"' has no exported member 'FilterForm'.
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/sales-enquiry/components/sales-enquiry-component/sales-enquiry-customer-pricelist/sales-enquiry-customer-pricelist-filters.tsx[22m:[32m[1m9:22[22m[39m
+[90mTS2305: [39mModule '"@peerless-cms/features-common-components"' has no exported member 'FilterFormGroup'.
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/sales-enquiry/components/sales-enquiry-component/sales-enquiry-customer-pricelist/sales-enquiry-customer-pricelist-filters.tsx[22m:[32m[1m10:10[22m[39m
+[90mTS2305: [39mModule '"@peerless-cms/features"' has no exported member 'useFilterForm'.
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/sales-enquiry/components/sales-enquiry-component/sales-enquiry-customer-pricelist/sales-enquiry-customer-pricelist-filters.tsx[22m:[32m[1m28:11[22m[39m
+[90mTS2339: [39mProperty 'isFormSubmit' does not exist on type 'SalesEnquiryPriceListState'.
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/sales-enquiry/components/sales-enquiry-component/sales-enquiry-customer-pricelist/sales-enquiry-customer-pricelist-filters.tsx[22m:[32m[1m28:169[22m[39m
+[90mTS2339: [39mProperty 'customerPriceListEndDate' does not exist on type 'SalesEnquiryPriceListState'.
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/sales-enquiry/components/sales-enquiry-component/sales-enquiry-customer-pricelist/sales-enquiry-customer-pricelist-filters.tsx[22m:[32m[1m113:81[22m[39m
+[90mTS7006: [39mParameter 'value' implicitly has an 'any' type.
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/sales-enquiry/components/sales-enquiry-component/sales-enquiry-customer-pricelist/sales-enquiry-customer-pricelist-table/sales-enquiry-customer-pricelist-table.tsx[22m:[32m[1m22:11[22m[39m
+[90mTS2741: [39mProperty 'endDate' is missing in type '{ repCode: any; custCode: any; asAtDate: string; additionalParams: string; orderBy: string; ignorePagination: false; startIndex: number; rowCount: number; filterPara: any; }' but required in type 'GetCustomerPricelistParameters'.
+  [0m [90m 20 |[39m     [36mconst[39m isInitialRender [33m=[39m useRef([36mtrue[39m)[33m;[39m
+   [90m 21 |[39m
+  [31m[1m>[22m[39m[90m 22 |[39m     [36mconst[39m payload[33m:[39m [33mGetCustomerPricelistParameters[39m [33m=[39m {
+   [90m    |[39m           [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 23 |[39m         repCode[33m:[39m customerPriceListRepGroup[33m?[39m[33m.[39mvalue [33m||[39m [32m''[39m[33m,[39m
+   [90m 24 |[39m         custCode[33m:[39m customerPriceListCustomerCode[33m?[39m[33m.[39mvalue [33m||[39m [32m''[39m[33m,[39m
+   [90m 25 |[39m         [90m// effectiveDate: customerPriceListEffectiveDate?.value || '',[39m[0m
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/sales-enquiry/components/sales-enquiry-component/sales-enquiry-deal-enquiry/sales-enquiry-deal-enquiry-filter.tsx[22m:[32m[1m2:284[22m[39m
+[90mTS2305: [39mModule '"@peerless-cms/store"' has no exported member 'setTriggerDealEnquiryFiltersFormSubmit'.
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/sales-enquiry/components/sales-enquiry-component/sales-enquiry-deal-enquiry/sales-enquiry-deal-enquiry-filter.tsx[22m:[32m[1m3:75[22m[39m
+[90mTS2305: [39mModule '"@peerless/controls"' has no exported member 'FilterNonButton'.
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/sales-enquiry/components/sales-enquiry-component/sales-enquiry-deal-enquiry/sales-enquiry-deal-enquiry-filter.tsx[22m:[32m[1m7:10[22m[39m
+[90mTS2305: [39mModule '"@peerless-cms/features-common-components"' has no exported member 'FilterFormGroup'.
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/sales-enquiry/components/sales-enquiry-component/sales-enquiry-deal-enquiry/sales-enquiry-deal-enquiry-filter.tsx[22m:[32m[1m7:27[22m[39m
+[90mTS2305: [39mModule '"@peerless-cms/features-common-components"' has no exported member 'FilterForm'.
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/sales-enquiry/components/sales-enquiry-component/sales-enquiry-deal-enquiry/sales-enquiry-deal-enquiry-filter.tsx[22m:[32m[1m9:10[22m[39m
+[90mTS2305: [39mModule '"@peerless-cms/features"' has no exported member 'useFilterForm'.
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/sales-enquiry/components/sales-enquiry-component/sales-enquiry-deal-enquiry/sales-enquiry-deal-enquiry-filter.tsx[22m:[32m[1m31:13[22m[39m
+[90mTS2339: [39mProperty 'isFormSubmit' does not exist on type 'SalesEnquiryDealEnquiryState'.
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/sales-enquiry/components/sales-enquiry-component/sales-enquiry-deal-enquiry/sales-enquiry-deal-enquiry-filter.tsx[22m:[32m[1m90:83[22m[39m
+[90mTS7006: [39mParameter 'value' implicitly has an 'any' type.
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/sales-enquiry/components/sales-enquiry-component/sales-enquiry-invoice-enquiry/sales-enquiry-invoice-enquiry-filter.tsx[22m:[32m[1m4:252[22m[39m
+[90mTS2724: [39m'"@peerless-cms/store"' has no exported member named 'setInvoiceRadio2'. Did you mean 'setInvoiceRadio'?
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/sales-enquiry/components/sales-enquiry-component/sales-enquiry-invoice-enquiry/sales-enquiry-invoice-enquiry-filter.tsx[22m:[32m[1m4:373[22m[39m
+[90mTS2724: [39m'"@peerless-cms/store"' has no exported member named 'setSelectedInvoiceEnquiry'. Did you mean 'setSelectedStockEnquiry'?
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/sales-enquiry/components/sales-enquiry-component/sales-enquiry-invoice-enquiry/sales-enquiry-invoice-enquiry-filter.tsx[22m:[32m[1m4:400[22m[39m
+[90mTS2305: [39mModule '"@peerless-cms/store"' has no exported member 'setTriggerInvoiceEnquiryFiltersFormSubmit'.
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/sales-enquiry/components/sales-enquiry-component/sales-enquiry-invoice-enquiry/sales-enquiry-invoice-enquiry-filter.tsx[22m:[32m[1m5:52[22m[39m
+[90mTS2305: [39mModule '"@peerless/controls"' has no exported member 'FilterNonButton'.
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/sales-enquiry/components/sales-enquiry-component/sales-enquiry-invoice-enquiry/sales-enquiry-invoice-enquiry-filter.tsx[22m:[32m[1m9:10[22m[39m
+[90mTS2305: [39mModule '"@peerless-cms/features-common-components"' has no exported member 'FilterFormGroup'.
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/sales-enquiry/components/sales-enquiry-component/sales-enquiry-invoice-enquiry/sales-enquiry-invoice-enquiry-filter.tsx[22m:[32m[1m9:27[22m[39m
+[90mTS2305: [39mModule '"@peerless-cms/features-common-components"' has no exported member 'FilterForm'.
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/sales-enquiry/components/sales-enquiry-component/sales-enquiry-invoice-enquiry/sales-enquiry-invoice-enquiry-filter.tsx[22m:[32m[1m10:10[22m[39m
+[90mTS2305: [39mModule '"@peerless-cms/features"' has no exported member 'useFilterForm'.
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/sales-enquiry/components/sales-enquiry-component/sales-enquiry-invoice-enquiry/sales-enquiry-invoice-enquiry-filter.tsx[22m:[32m[1m41:13[22m[39m
+[90mTS2339: [39mProperty 'isFormSubmit' does not exist on type 'SalesEnquiryInvoiceEnquiryState'.
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/sales-enquiry/components/sales-enquiry-component/sales-enquiry-invoice-enquiry/sales-enquiry-invoice-enquiry-filter.tsx[22m:[32m[1m41:261[22m[39m
+[90mTS2339: [39mProperty 'invoiceRadio2' does not exist on type 'SalesEnquiryInvoiceEnquiryState'.
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/sales-enquiry/components/sales-enquiry-component/sales-enquiry-invoice-enquiry/sales-enquiry-invoice-enquiry-filter.tsx[22m:[32m[1m226:83[22m[39m
+[90mTS7006: [39mParameter 'value' implicitly has an 'any' type.
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/sales-enquiry/components/sales-enquiry-component/sales-enquiry-invoice-enquiry/sales-enquiry-invoice-enquiry-filter.tsx[22m:[32m[1m253:254[22m[39m
+[90mTS2322: [39mType '{ id: string; className: string; setValue: (e: any) => void; value: string; type: string; required: true; }' is not assignable to type 'IntrinsicAttributes & InputWidgetProps'.
+  Property 'required' does not exist on type 'IntrinsicAttributes & InputWidgetProps'.
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/sales-enquiry/components/sales-enquiry-component/sales-enquiry-invoice-enquiry/sales-enquiry-invoice-enquiry-table/sales-enquiry-invoice-enquiry-table.tsx[22m:[32m[1m21:9[22m[39m
+[90mTS2322: [39mType '{ cutomerCode: any; catalogueType: any; state: any; customerRep: number; invoicedRep: number; fromDate: string; toDate: string; productGroup: any; invoiceNo: number; invoiceCreditNotesStatus: string; ... 11 more ...; clientType: string; }' is not assignable to type 'GetInvoiceEnquiryParameters'.
+  Object literal may only specify known properties, and 'state' does not exist in type 'GetInvoiceEnquiryParameters'.
+  [0m [90m 19 |[39m         cutomerCode[33m:[39m invoiceCustomer[33m.[39mvalue[33m,[39m
+   [90m 20 |[39m         catalogueType[33m:[39m invoiceCatalogueType[33m.[39mvalue[33m,[39m
+  [31m[1m>[22m[39m[90m 21 |[39m         state[33m:[39m invoiceState[33m.[39mvalue[33m,[39m
+   [90m    |[39m         [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 22 |[39m         customerRep[33m:[39m [35m0[39m[33m,[39m
+   [90m 23 |[39m         invoicedRep[33m:[39m [35m0[39m[33m,[39m
+   [90m 24 |[39m         fromDate[33m:[39m invoiceFromDate[33m,[39m[0m
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/sales-enquiry/components/sales-enquiry-component/sales-enquiry-outstanding-orders/sales-enquiry-outstanding-orders-filter.tsx[22m:[32m[1m7:115[22m[39m
+[90mTS2724: [39m'"@peerless-cms/store"' has no exported member named 'setOutstandingOrdersSubParent'. Did you mean 'setOutstandingOrdersParent'?
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/sales-enquiry/components/sales-enquiry-component/sales-enquiry-outstanding-orders/sales-enquiry-outstanding-orders-filter.tsx[22m:[32m[1m8:5[22m[39m
+[90mTS2305: [39mModule '"@peerless-cms/store"' has no exported member 'setTriggerOutstandingOrdersFiltersFormSubmit'.
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/sales-enquiry/components/sales-enquiry-component/sales-enquiry-outstanding-orders/sales-enquiry-outstanding-orders-filter.tsx[22m:[32m[1m10:38[22m[39m
+[90mTS2305: [39mModule '"@peerless/controls"' has no exported member 'FilterNonButton'.
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/sales-enquiry/components/sales-enquiry-component/sales-enquiry-outstanding-orders/sales-enquiry-outstanding-orders-filter.tsx[22m:[32m[1m14:10[22m[39m
+[90mTS2305: [39mModule '"@peerless-cms/features-common-components"' has no exported member 'FilterForm'.
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/sales-enquiry/components/sales-enquiry-component/sales-enquiry-outstanding-orders/sales-enquiry-outstanding-orders-filter.tsx[22m:[32m[1m14:22[22m[39m
+[90mTS2305: [39mModule '"@peerless-cms/features-common-components"' has no exported member 'FilterFormGroup'.
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/sales-enquiry/components/sales-enquiry-component/sales-enquiry-outstanding-orders/sales-enquiry-outstanding-orders-filter.tsx[22m:[32m[1m15:10[22m[39m
+[90mTS2305: [39mModule '"@peerless-cms/features"' has no exported member 'useFilterForm'.
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/sales-enquiry/components/sales-enquiry-component/sales-enquiry-outstanding-orders/sales-enquiry-outstanding-orders-filter.tsx[22m:[32m[1m60:13[22m[39m
+[90mTS2339: [39mProperty 'isFormSubmit' does not exist on type 'SalesEnquiryOutstandingOrdersState'.
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/sales-enquiry/components/sales-enquiry-component/sales-enquiry-outstanding-orders/sales-enquiry-outstanding-orders-filter.tsx[22m:[32m[1m61:9[22m[39m
+[90mTS2339: [39mProperty 'outstandingOrdersSubParent' does not exist on type 'SalesEnquiryOutstandingOrdersState'.
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/sales-enquiry/components/sales-enquiry-component/sales-enquiry-outstanding-orders/sales-enquiry-outstanding-orders-filter.tsx[22m:[32m[1m198:83[22m[39m
+[90mTS7006: [39mParameter 'value' implicitly has an 'any' type.
+
+Found [31m[1m130 errors[22m[39m in 20407 ms.
+<i> [1m[32m[webpack-dev-server] Gracefully shutting down. To force exit, press ^C again. Please wait...[39m[22m

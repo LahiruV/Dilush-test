@@ -1,0 +1,606 @@
+<i> [1m[32m[webpack-dev-server] Project is running at:[39m[22m
+<i> [1m[32m[webpack-dev-server] Loopback: [36mhttp://localhost:4200/[39m, [36mhttp://[::1]:4200/[39m[39m[22m
+<i> [1m[32m[webpack-dev-server] 404s will fallback to '[36m/index.html[39m'[39m[22m
+
+[36m>[39m [7m[1m[36m NX [39m[22m[27m [1mWeb Development Server is listening at http://localhost:4200/[22m
+
+<i> [1m[32m[webpack-dev-middleware] wait until bundle finished: /sales-enquiry/customer-pricelist[39m[22m
+<i> [1m[32m[webpack-dev-middleware] wait until bundle finished: /favicon.ico[39m[22m
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.3 MiB (28.6 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mvendor.css[39m[22m 1.54 MiB [1m[32mvendor.js[39m[22m 13.9 MiB [1m[32mmain.css[39m[22m 941 KiB [1m[32mmain.js[39m[22m 3.87 MiB 12 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 484 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mstyles.css[39m[22m 32.7 KiB [1m[32mstyles.js[39m[22m 401 KiB 40 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m (main) 2.68 MiB (javascript) 941 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.6 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+
+[1mLOG from ../../node_modules/sass-loader/dist/cjs.js sass-loader ../../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[5].use[1]!../../node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[5].use[2]!../../node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[5].use[3]!./src/styles/crm-custom-theme.scss[39m[22m
+<w> [1m[33mDeprecation The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/legacy-js-api[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnull[39m[22m
+<w> [1m[33mDeprecation Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info and automated migrator: https://sass-lang.com/d/import[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9  root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.[39m[22m
+<w> [1m[33mUse map.get instead.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info and automated migrator: https://sass-lang.com/d/import[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 1218:15  k-map-get()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 1835:22  @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9            root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation Using / for division outside of calc() is deprecated and will be removed in Dart Sass 2.0.0.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mRecommendation: math.div($a, $b) or calc($a / $b)[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info and automated migrator: https://sass-lang.com/d/slash-div[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 1051:15  k-math-div()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 1940:21  @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9            root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.[39m[22m
+<w> [1m[33mUse map.merge instead.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info and automated migrator: https://sass-lang.com/d/import[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 2280:22  @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9            root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.[39m[22m
+<w> [1m[33mUse map.merge instead.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info and automated migrator: https://sass-lang.com/d/import[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 2283:23  @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9            root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.[39m[22m
+<w> [1m[33mUse map.merge instead.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info and automated migrator: https://sass-lang.com/d/import[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 2286:26  @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9            root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.[39m[22m
+<w> [1m[33mUse map.merge instead.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info and automated migrator: https://sass-lang.com/d/import[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 2289:23  @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9            root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation red() is deprecated. Suggestion:[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mcolor.channel($color, "red", $space: rgb)[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/color-functions[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 31:13    k-color-red()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 482:48   k-color-luminance()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 572:12   k-contrast-legacy()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 2507:32  @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9            root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation green() is deprecated. Suggestion:[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mcolor.channel($color, "green", $space: rgb)[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/color-functions[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 41:13    k-color-green()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 483:50   k-color-luminance()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 572:12   k-contrast-legacy()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 2507:32  @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9            root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation blue() is deprecated. Suggestion:[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mcolor.channel($color, "blue", $space: rgb)[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/color-functions[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 51:13    k-color-blue()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 484:49   k-color-luminance()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 572:12   k-contrast-legacy()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 2507:32  @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9            root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation darken() is deprecated. Suggestions:[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mcolor.scale($color, $lightness: -7%)[39m[22m
+<w> [1m[33mcolor.adjust($color, $lightness: -7%)[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/color-functions[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 104:13     k-color-darken()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 17920:119  @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9              root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation Passing percentage units to the global abs() function is deprecated.[39m[22m
+<w> [1m[33mIn the future, this will emit a CSS abs() function to be resolved by the browser.[39m[22m
+<w> [1m[33mTo preserve current behavior: math.abs(65%)[39m[22m
+<w> [1m[33mTo emit a CSS abs() now: abs(#{65%})[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/abs-percent[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 993:13    k-math-abs()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 597:13    k-color-level()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 630:13    k-color-shade()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 646:13    k-try-shade()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19663:83  kendo-chip--theme-base()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19778:5   kendo-chip--theme()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19795:9   @content[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 5109:9    module-render()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19793:5   kendo-chip--styles()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19800:5   @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9             root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation Passing percentage units to the global abs() function is deprecated.[39m[22m
+<w> [1m[33mIn the future, this will emit a CSS abs() function to be resolved by the browser.[39m[22m
+<w> [1m[33mTo preserve current behavior: math.abs(-80%)[39m[22m
+<w> [1m[33mTo emit a CSS abs() now: abs(#{-80%})[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/abs-percent[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 993:13    k-math-abs()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 597:13    k-color-level()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 617:13    k-color-tint()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 662:13    k-try-tint()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19664:80  kendo-chip--theme-base()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19778:5   kendo-chip--theme()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19795:9   @content[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 5109:9    module-render()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19793:5   kendo-chip--styles()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19800:5   @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9             root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation Passing percentage units to the global abs() function is deprecated.[39m[22m
+<w> [1m[33mIn the future, this will emit a CSS abs() function to be resolved by the browser.[39m[22m
+<w> [1m[33mTo preserve current behavior: math.abs(-25%)[39m[22m
+<w> [1m[33mTo emit a CSS abs() now: abs(#{-25%})[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/abs-percent[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 993:13    k-math-abs()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 597:13    k-color-level()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 617:13    k-color-tint()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 662:13    k-try-tint()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19665:82  kendo-chip--theme-base()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19778:5   kendo-chip--theme()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19795:9   @content[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 5109:9    module-render()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19793:5   kendo-chip--styles()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19800:5   @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9             root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation Passing percentage units to the global abs() function is deprecated.[39m[22m
+<w> [1m[33mIn the future, this will emit a CSS abs() function to be resolved by the browser.[39m[22m
+<w> [1m[33mTo preserve current behavior: math.abs(-65%)[39m[22m
+<w> [1m[33mTo emit a CSS abs() now: abs(#{-65%})[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/abs-percent[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 993:13     k-math-abs()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 597:13     k-color-level()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 617:13     k-color-tint()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 662:13     k-try-tint()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19676:106  kendo-chip--theme-base()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19778:5    kendo-chip--theme()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19795:9    @content[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 5109:9     module-render()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19793:5    kendo-chip--styles()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19800:5    @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9              root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation Passing percentage units to the global abs() function is deprecated.[39m[22m
+<w> [1m[33mIn the future, this will emit a CSS abs() function to be resolved by the browser.[39m[22m
+<w> [1m[33mTo preserve current behavior: math.abs(-50%)[39m[22m
+<w> [1m[33mTo emit a CSS abs() now: abs(#{-50%})[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/abs-percent[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 993:13     k-math-abs()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 597:13     k-color-level()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 617:13     k-color-tint()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 662:13     k-try-tint()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19680:107  kendo-chip--theme-base()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19778:5    kendo-chip--theme()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19795:9    @content[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 5109:9     module-render()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19793:5    kendo-chip--styles()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19800:5    @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9              root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation darken() is deprecated. Suggestions:[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mcolor.scale($color, $lightness: -8%)[39m[22m
+<w> [1m[33mcolor.adjust($color, $lightness: -8%)[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/color-functions[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 104:13    k-color-darken()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 44198:84  @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9             root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33m35 repetitive deprecation warnings omitted.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnull[39m[22m
+
+webpack compiled [1m[32msuccessfully[39m[22m (232262aeb19886d8)
+[36mType-checking in progress...[39m
+[32mNo errors found.[39m
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.3 MiB (28.7 MiB) = 7 assets 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 484 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mruntime.232262aeb19886d8.hot-update.js[39m[22m 343 bytes [1m[32mstyles.css[39m[22m 32.7 KiB [1m[32mstyles.js[39m[22m 401 KiB 41 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32mmain.232262aeb19886d8.hot-update.js[39m[22m (main) 2.68 MiB (javascript) 941 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.232262aeb19886d8.hot-update.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.6 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (277ddf43377a22f9)
+[36mType-checking in progress...[39m
+[32mNo errors found.[39m
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.3 MiB (28.7 MiB) = 7 assets 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 484 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mruntime.277ddf43377a22f9.hot-update.js[39m[22m 343 bytes [1m[32mstyles.css[39m[22m 32.7 KiB [1m[32mstyles.js[39m[22m 401 KiB 41 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32mmain.277ddf43377a22f9.hot-update.js[39m[22m (main) 2.68 MiB (javascript) 941 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.277ddf43377a22f9.hot-update.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.6 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (7f14873b48859bf5)
+[36mType-checking in progress...[39m
+[32mNo errors found.[39m
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.3 MiB (28.6 MiB) = 7 assets 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 484 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mruntime.7f14873b48859bf5.hot-update.js[39m[22m 343 bytes [1m[32mstyles.css[39m[22m 32.7 KiB [1m[32mstyles.js[39m[22m 401 KiB 41 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32mmain.7f14873b48859bf5.hot-update.js[39m[22m (main) 2.68 MiB (javascript) 942 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.7f14873b48859bf5.hot-update.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.6 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (76ae446b7b98110d)
+<i> [1m[32m[webpack-dev-middleware] wait until bundle finished: /runtime.7f14873b48859bf5.hot-update.json[39m[22m
+[36mType-checking in progress...[39m
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 22.1 MiB (30.4 MiB) = 7 assets 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 485 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mruntime.76ae446b7b98110d.hot-update.js[39m[22m 343 bytes [1m[32mstyles.css[39m[22m 32.8 KiB [1m[32mstyles.js[39m[22m 401 KiB [1m[32mstyles.76ae446b7b98110d.hot-update.js[39m[22m 915 bytes 42 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32mmain.76ae446b7b98110d.hot-update.js[39m[22m (main) 2.95 MiB (javascript) 945 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.76ae446b7b98110d.hot-update.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m, [1m[32mstyles.76ae446b7b98110d.hot-update.js[39m[22m (styles) 384 KiB (javascript) 32.7 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+
+[1mLOG from ../../node_modules/sass-loader/dist/cjs.js sass-loader ../../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[5].use[1]!../../node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[5].use[2]!../../node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[5].use[3]!./src/styles/crm-custom-theme.scss[39m[22m
+<w> [1m[33mDeprecation The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/legacy-js-api[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnull[39m[22m
+<w> [1m[33mDeprecation Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info and automated migrator: https://sass-lang.com/d/import[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9  root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.[39m[22m
+<w> [1m[33mUse map.get instead.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info and automated migrator: https://sass-lang.com/d/import[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 1218:15  k-map-get()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 1835:22  @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9            root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation Using / for division outside of calc() is deprecated and will be removed in Dart Sass 2.0.0.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mRecommendation: math.div($a, $b) or calc($a / $b)[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info and automated migrator: https://sass-lang.com/d/slash-div[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 1051:15  k-math-div()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 1940:21  @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9            root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.[39m[22m
+<w> [1m[33mUse map.merge instead.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info and automated migrator: https://sass-lang.com/d/import[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 2280:22  @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9            root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.[39m[22m
+<w> [1m[33mUse map.merge instead.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info and automated migrator: https://sass-lang.com/d/import[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 2283:23  @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9            root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.[39m[22m
+<w> [1m[33mUse map.merge instead.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info and automated migrator: https://sass-lang.com/d/import[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 2286:26  @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9            root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.[39m[22m
+<w> [1m[33mUse map.merge instead.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info and automated migrator: https://sass-lang.com/d/import[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 2289:23  @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9            root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation red() is deprecated. Suggestion:[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mcolor.channel($color, "red", $space: rgb)[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/color-functions[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 31:13    k-color-red()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 482:48   k-color-luminance()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 572:12   k-contrast-legacy()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 2507:32  @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9            root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation green() is deprecated. Suggestion:[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mcolor.channel($color, "green", $space: rgb)[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/color-functions[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 41:13    k-color-green()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 483:50   k-color-luminance()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 572:12   k-contrast-legacy()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 2507:32  @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9            root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation blue() is deprecated. Suggestion:[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mcolor.channel($color, "blue", $space: rgb)[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/color-functions[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 51:13    k-color-blue()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 484:49   k-color-luminance()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 572:12   k-contrast-legacy()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 2507:32  @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9            root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation darken() is deprecated. Suggestions:[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mcolor.scale($color, $lightness: -7%)[39m[22m
+<w> [1m[33mcolor.adjust($color, $lightness: -7%)[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/color-functions[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 104:13     k-color-darken()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 17920:119  @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9              root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation Passing percentage units to the global abs() function is deprecated.[39m[22m
+<w> [1m[33mIn the future, this will emit a CSS abs() function to be resolved by the browser.[39m[22m
+<w> [1m[33mTo preserve current behavior: math.abs(65%)[39m[22m
+<w> [1m[33mTo emit a CSS abs() now: abs(#{65%})[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/abs-percent[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 993:13    k-math-abs()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 597:13    k-color-level()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 630:13    k-color-shade()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 646:13    k-try-shade()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19663:83  kendo-chip--theme-base()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19778:5   kendo-chip--theme()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19795:9   @content[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 5109:9    module-render()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19793:5   kendo-chip--styles()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19800:5   @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9             root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation Passing percentage units to the global abs() function is deprecated.[39m[22m
+<w> [1m[33mIn the future, this will emit a CSS abs() function to be resolved by the browser.[39m[22m
+<w> [1m[33mTo preserve current behavior: math.abs(-80%)[39m[22m
+<w> [1m[33mTo emit a CSS abs() now: abs(#{-80%})[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/abs-percent[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 993:13    k-math-abs()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 597:13    k-color-level()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 617:13    k-color-tint()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 662:13    k-try-tint()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19664:80  kendo-chip--theme-base()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19778:5   kendo-chip--theme()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19795:9   @content[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 5109:9    module-render()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19793:5   kendo-chip--styles()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19800:5   @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9             root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation Passing percentage units to the global abs() function is deprecated.[39m[22m
+<w> [1m[33mIn the future, this will emit a CSS abs() function to be resolved by the browser.[39m[22m
+<w> [1m[33mTo preserve current behavior: math.abs(-25%)[39m[22m
+<w> [1m[33mTo emit a CSS abs() now: abs(#{-25%})[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/abs-percent[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 993:13    k-math-abs()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 597:13    k-color-level()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 617:13    k-color-tint()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 662:13    k-try-tint()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19665:82  kendo-chip--theme-base()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19778:5   kendo-chip--theme()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19795:9   @content[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 5109:9    module-render()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19793:5   kendo-chip--styles()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19800:5   @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9             root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation Passing percentage units to the global abs() function is deprecated.[39m[22m
+<w> [1m[33mIn the future, this will emit a CSS abs() function to be resolved by the browser.[39m[22m
+<w> [1m[33mTo preserve current behavior: math.abs(-65%)[39m[22m
+<w> [1m[33mTo emit a CSS abs() now: abs(#{-65%})[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/abs-percent[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 993:13     k-math-abs()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 597:13     k-color-level()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 617:13     k-color-tint()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 662:13     k-try-tint()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19676:106  kendo-chip--theme-base()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19778:5    kendo-chip--theme()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19795:9    @content[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 5109:9     module-render()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19793:5    kendo-chip--styles()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19800:5    @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9              root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation Passing percentage units to the global abs() function is deprecated.[39m[22m
+<w> [1m[33mIn the future, this will emit a CSS abs() function to be resolved by the browser.[39m[22m
+<w> [1m[33mTo preserve current behavior: math.abs(-50%)[39m[22m
+<w> [1m[33mTo emit a CSS abs() now: abs(#{-50%})[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/abs-percent[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 993:13     k-math-abs()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 597:13     k-color-level()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 617:13     k-color-tint()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 662:13     k-try-tint()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19680:107  kendo-chip--theme-base()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19778:5    kendo-chip--theme()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19795:9    @content[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 5109:9     module-render()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19793:5    kendo-chip--styles()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19800:5    @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9              root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation darken() is deprecated. Suggestions:[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mcolor.scale($color, $lightness: -8%)[39m[22m
+<w> [1m[33mcolor.adjust($color, $lightness: -8%)[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/color-functions[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 104:13    k-color-darken()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 44198:84  @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9             root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33m35 repetitive deprecation warnings omitted.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnull[39m[22m
+
+webpack compiled [1m[32msuccessfully[39m[22m (f2d528eec423ed6e)
+[36mType-checking in progress...[39m
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/components/src/main-navigation/main-navigation.tsx[22m:[32m[1m236:15[22m[39m
+[90mTS2339: [39mProperty 'subNavData' does not exist on type 'Navigation'.
+  [0m [90m 234 |[39m   useEffect(() [33m=>[39m {
+   [90m 235 |[39m     navigationData[33m.[39mforEach((nav[33m:[39m [33mNavigation[39m) [33m=>[39m {
+  [31m[1m>[22m[39m[90m 236 |[39m       [36mif[39m (nav[33m.[39msubNavData) {
+   [90m     |[39m               [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 237 |[39m         nav[33m.[39msubNavData[33m.[39mforEach((link) [33m=>[39m {
+   [90m 238 |[39m           [36mif[39m (link[33m.[39mid [33m===[39m selectedArea) {
+   [90m 239 |[39m             setExpandedPath(nav[33m.[39mpath)[33m;[39m[0m
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/components/src/main-navigation/main-navigation.tsx[22m:[32m[1m237:13[22m[39m
+[90mTS2339: [39mProperty 'subNavData' does not exist on type 'Navigation'.
+  [0m [90m 235 |[39m     navigationData[33m.[39mforEach((nav[33m:[39m [33mNavigation[39m) [33m=>[39m {
+   [90m 236 |[39m       [36mif[39m (nav[33m.[39msubNavData) {
+  [31m[1m>[22m[39m[90m 237 |[39m         nav[33m.[39msubNavData[33m.[39mforEach((link) [33m=>[39m {
+   [90m     |[39m             [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 238 |[39m           [36mif[39m (link[33m.[39mid [33m===[39m selectedArea) {
+   [90m 239 |[39m             setExpandedPath(nav[33m.[39mpath)[33m;[39m
+   [90m 240 |[39m           }[0m
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/components/src/main-navigation/main-navigation.tsx[22m:[32m[1m237:33[22m[39m
+[90mTS7006: [39mParameter 'link' implicitly has an 'any' type.
+  [0m [90m 235 |[39m     navigationData[33m.[39mforEach((nav[33m:[39m [33mNavigation[39m) [33m=>[39m {
+   [90m 236 |[39m       [36mif[39m (nav[33m.[39msubNavData) {
+  [31m[1m>[22m[39m[90m 237 |[39m         nav[33m.[39msubNavData[33m.[39mforEach((link) [33m=>[39m {
+   [90m     |[39m                                 [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 238 |[39m           [36mif[39m (link[33m.[39mid [33m===[39m selectedArea) {
+   [90m 239 |[39m             setExpandedPath(nav[33m.[39mpath)[33m;[39m
+   [90m 240 |[39m           }[0m
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/components/src/main-navigation/main-navigation.tsx[22m:[32m[1m253:21[22m[39m
+[90mTS2339: [39mProperty 'subNavData' does not exist on type 'Navigation'.
+  [0m [90m 251 |[39m           {navigationData[33m?[39m[33m.[39mmap((nav[33m:[39m [33mNavigation[39m) [33m=>[39m (
+   [90m 252 |[39m             [33m<[39m[33mli[39m key[33m=[39m{nav[33m.[39mid} id[33m=[39m{nav[33m.[39micon} className[33m=[39m[32m"nav-item"[39m[33m>[39m
+  [31m[1m>[22m[39m[90m 253 |[39m               {nav[33m?[39m[33m.[39msubNavData [33m?[39m (
+   [90m     |[39m                     [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 254 |[39m                 [33m<[39m[33m>[39m
+   [90m 255 |[39m                   [33m<[39m[33mdiv[39m
+   [90m 256 |[39m                     id[33m=[39m{nav[33m.[39micon}[0m
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/components/src/main-navigation/main-navigation.tsx[22m:[32m[1m279:26[22m[39m
+[90mTS2339: [39mProperty 'subNavData' does not exist on type 'Navigation'.
+  [0m [90m 277 |[39m [32m                      }`[39m}
+   [90m 278 |[39m                   [33m>[39m
+  [31m[1m>[22m[39m[90m 279 |[39m                     {nav[33m.[39msubNavData[33m.[39mmap((link) [33m=>[39m (
+   [90m     |[39m                          [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 280 |[39m                       [33m<[39m[33mli[39m key[33m=[39m{link[33m.[39mid}[33m>[39m
+   [90m 281 |[39m                         [33m<[39m[33mNavLink[39m
+   [90m 282 |[39m                           id[33m=[39m{link[33m.[39mid}[0m
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/components/src/main-navigation/main-navigation.tsx[22m:[32m[1m279:42[22m[39m
+[90mTS7006: [39mParameter 'link' implicitly has an 'any' type.
+  [0m [90m 277 |[39m [32m                      }`[39m}
+   [90m 278 |[39m                   [33m>[39m
+  [31m[1m>[22m[39m[90m 279 |[39m                     {nav[33m.[39msubNavData[33m.[39mmap((link) [33m=>[39m (
+   [90m     |[39m                                          [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 280 |[39m                       [33m<[39m[33mli[39m key[33m=[39m{link[33m.[39mid}[33m>[39m
+   [90m 281 |[39m                         [33m<[39m[33mNavLink[39m
+   [90m 282 |[39m                           id[33m=[39m{link[33m.[39mid}[0m
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/dashboard-feature/components/dashboard-business-sales-enquiry/dashboard-business-sales-enquiry-list/dashboard-business-sales-enquiry-table.tsx[22m:[32m[1m16:21[22m[39m
+[90mTS2352: [39mConversion of type '{ args: { rowCount: number; startIndex: number; orderBy: string; additionalParams: string; repCode: string; }; busSalesEnqSrc: { cDisplayOption: any; sLastFlag: string; detailType: any; catalogType: string; ... 4 more ...; market: any; }; }' to type 'SalesInfoDetailParameters' may be a mistake because neither type sufficiently overlaps with the other. If this was intentional, convert the expression to 'unknown' first.
+  Type '{ args: { rowCount: number; startIndex: number; orderBy: string; additionalParams: string; repCode: string; }; busSalesEnqSrc: { cDisplayOption: any; sLastFlag: string; detailType: any; catalogType: string; ... 4 more ...; market: any; }; }' is missing the following properties from type 'SalesInfoDetailParameters': startIndex, rowCount
+  [0m [90m 14 |[39m [36mconst[39m [33mDashBoardBusinessSalesEnquiryTable[39m[33m:[39m [33mReact[39m[33m.[39m[33mFC[39m[33m<[39m[33mDashBoardBusinessSalesEnquiryTableProps[39m[33m>[39m [33m=[39m ({ heightOffset }) [33m=>[39m {
+   [90m 15 |[39m     [36mconst[39m { businessSalesEnqSales[33m,[39m businessSalesEnqSortBy[33m,[39m businessSalesEnqGroupBy[33m,[39m isBusinessSalesEnqListFetch[33m,[39m selectedOriginatorBusinessSalesEnquiry[33m,[39m businessSalesmarket } [33m=[39m useSelector((state[33m:[39m [33mRootState[39m) [33m=>[39m state[33m.[39mdashBoardBusinessSalesEnquiry)[33m;[39m
+  [31m[1m>[22m[39m[90m 16 |[39m     [36mconst[39m payload [33m=[39m {
+   [90m    |[39m                     [31m[1m^[22m[39m
+  [31m[1m>[22m[39m[90m 17 |[39m         args[33m:[39m {
+   [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+  [31m[1m>[22m[39m[90m 18 |[39m             rowCount[33m:[39m [35m200000[39m[33m,[39m
+   [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+  [31m[1m>[22m[39m[90m 19 |[39m             startIndex[33m:[39m [35m1[39m[33m,[39m
+   [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+  [31m[1m>[22m[39m[90m 20 |[39m             orderBy[33m:[39m [32m""[39m[33m,[39m
+   [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+  [31m[1m>[22m[39m[90m 21 |[39m             additionalParams[33m:[39m [32m""[39m[33m,[39m
+   [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+  [31m[1m>[22m[39m[90m 22 |[39m             repCode[33m:[39m selectedOriginatorBusinessSalesEnquiry[33m.[39muserName
+   [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+  [31m[1m>[22m[39m[90m 23 |[39m         }[33m,[39m
+   [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+  [31m[1m>[22m[39m[90m 24 |[39m         busSalesEnqSrc[33m:[39m {
+   [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+  [31m[1m>[22m[39m[90m 25 |[39m             cDisplayOption[33m:[39m businessSalesEnqSales[33m.[39mvalue[33m,[39m
+   [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+  [31m[1m>[22m[39m[90m 26 |[39m             sLastFlag[33m:[39m [32m"n"[39m[33m,[39m
+   [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+  [31m[1m>[22m[39m[90m 27 |[39m             detailType[33m:[39m businessSalesEnqGroupBy[33m.[39mvalue[33m,[39m
+   [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+  [31m[1m>[22m[39m[90m 28 |[39m             catalogType[33m:[39m [32m"F"[39m[33m,[39m
+   [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+  [31m[1m>[22m[39m[90m 29 |[39m             repType[33m:[39m [32m"F"[39m[33m,[39m
+   [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+  [31m[1m>[22m[39m[90m 30 |[39m             backeryOption[33m:[39m [35m0[39m[33m,[39m
+   [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+  [31m[1m>[22m[39m[90m 31 |[39m             iCostPeriod[33m:[39m [35m11[39m[33m,[39m
+   [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+  [31m[1m>[22m[39m[90m 32 |[39m             sortField[33m:[39m businessSalesEnqSortBy[33m.[39mvalue[33m,[39m
+   [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+  [31m[1m>[22m[39m[90m 33 |[39m             market[33m:[39m businessSalesmarket[33m.[39mvalue[33m,[39m
+   [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+  [31m[1m>[22m[39m[90m 34 |[39m         }
+   [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+  [31m[1m>[22m[39m[90m 35 |[39m     } [36mas[39m [33mSalesInfoDetailParameters[39m
+   [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 36 |[39m
+   [90m 37 |[39m     [36mconst[39m { businessSalesEnqSalesData[33m,[39m error[33m,[39m status } [33m=[39m [33mGetSalesInfoDetailViewState[39m(payload[33m,[39m [35m999999[39m[33m,[39m isBusinessSalesEnqListFetch)[33m;[39m
+   [90m 38 |[39m[0m
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/sales-enquiry/components/sales-enquiry-component/sales-enquiry-invoice-enquiry/sales-enquiry-invoice-enquiry-table/sales-enquiry-invoice-enquiry-table.tsx[22m:[32m[1m54:9[22m[39m
+[90mTS2322: [39mType '{ cutomerCode: any; catalogueType: any; customerRep: number; invoicedRep: number; fromDate: string; toDate: string; warehouse: any; invoiceNo: number; invoiceCreditNotesStatus: string; parent: any; ... 11 more ...; repCodeDelection: string; }' is not assignable to type 'GetInvoiceEnquiryParameters'.
+  Object literal may only specify known properties, and 'subParentGroup' does not exist in type 'GetInvoiceEnquiryParameters'.
+  [0m [90m 52 |[39m         priceGroup[33m:[39m invoicePriceGroup[33m?[39m[33m.[39mvalue[33m,[39m
+   [90m 53 |[39m         market[33m:[39m invoiceMarket[33m?[39m[33m.[39mvalue[33m,[39m
+  [31m[1m>[22m[39m[90m 54 |[39m         subParentGroup[33m:[39m invoiceBrand[33m?[39m[33m.[39mvalue[33m,[39m
+   [90m    |[39m         [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 55 |[39m         orderBy[33m:[39m [32m"ivce_no asc"[39m[33m,[39m
+   [90m 56 |[39m         additionalParams[33m:[39m [32m""[39m[33m,[39m
+   [90m 57 |[39m         [90m// repCode: invoiceRep?.value,[39m[0m
+
+Found [31m[1m8 errors[22m[39m in 19397 ms.
+<i> [1m[32m[webpack-dev-server] Gracefully shutting down. To force exit, press ^C again. Please wait...[39m[22m

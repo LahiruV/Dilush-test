@@ -1,0 +1,101 @@
+name: NodeJS with Nx
+
+on:
+  push:
+    branches: ["QA_version"]
+  pull_request:
+    branches: ["QA_version"]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [22.x]
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Cache Nx and Node.js modules
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.nx
+            node_modules
+          key: ${{ runner.os }}-nx-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-nx-
+
+      - name: Install Dependencies
+        run: npm install --legacy-peer-deps --force
+
+      - name: Write and Activate Kendo UI License
+        run: |
+          mkdir -p ~/.telerik
+          echo "${{ secrets.KENDO_KEY }}" > ~/.telerik/kendo-ui-license.txt
+          npx kendo-ui-license activate
+
+      - name: Create new .env file
+        run: |
+          echo "Checking for existing .env files..."
+          ls -la .env || echo "No .env file in root"
+          ls -la apps/peerless-cms/.env || echo "No .env file in apps/peerless-cms/"
+          echo "Deleting .env files..."
+          rm -f .env
+          rm -f apps/peerless-cms/.env
+          echo "Verifying deletion..."
+          ls -la .env || echo "Confirmed: No .env file in root"
+          ls -la apps/peerless-cms/.env || echo "Confirmed: No .env file in apps/peerless-cms/"
+          echo "Creating new .env file..."
+          echo "NX_PEERLESS_KEY=api" > .env
+          echo "NX_PEERLESS_PROD=false" >> .env
+          echo "NX_PEERLESS_KEYWORDS='[\"PerlessFoods\", \"Peerless app\", \"E-commerce\", \"E-commerce app\", \"E-commerce website\", \"E-c\"]'" >> .env
+          echo "NX_PEERLESS_API_PATH=http://172.16.128.204:1318" >> .env
+          echo "NX_PEERLESS_CRYSTAL_API_PATH=http://172.16.128.204:10028" >> .env
+          echo "New .env file contents:"
+          cat .env
+
+      - name: Build
+        run: npx nx build peerless-cms || exit 1
+
+      - name: Create web.config file
+        run: |
+          cat > dist/apps/peerless-cms/web.config << 'EOF'
+          <?xml version="1.0" encoding="utf-8"?>
+          <configuration>
+            <system.webServer>
+              <staticContent>
+                <remove fileExtension=".json" />
+                <remove fileExtension=".js" />
+                <remove fileExtension=".css" />
+                <mimeMap fileExtension=".json" mimeType="application/json" />
+                <mimeMap fileExtension=".js" mimeType="application/javascript" />
+                <mimeMap fileExtension=".css" mimeType="text/css" />
+              </staticContent>
+              <rewrite>
+                <rules>
+                  <rule name="React Routes" stopProcessing="true">
+                    <match url=".*" />
+                    <conditions logicalGrouping="MatchAll">
+                      <add input="{REQUEST_FILENAME}" matchType="IsFile" negate="true" />
+                      <add input="{REQUEST_FILENAME}" matchType="IsDirectory" negate="true" />
+                    </conditions>
+                    <action type="Rewrite" url="/" />
+                  </rule>
+                </rules>
+              </rewrite>
+            </system.webServer>
+          </configuration>
+          EOF
+
+      - name: Upload Build Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: peerless-cms-build
+          path: dist/apps/peerless-cms/

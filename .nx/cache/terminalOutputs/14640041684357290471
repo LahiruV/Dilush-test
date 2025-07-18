@@ -1,0 +1,458 @@
+<i> [1m[32m[webpack-dev-server] Project is running at:[39m[22m
+<i> [1m[32m[webpack-dev-server] Loopback: [36mhttp://localhost:4200/[39m, [36mhttp://[::1]:4200/[39m[39m[22m
+<i> [1m[32m[webpack-dev-server] 404s will fallback to '[36m/index.html[39m'[39m[22m
+
+[36m>[39m [7m[1m[36m NX [39m[22m[27m [1mWeb Development Server is listening at http://localhost:4200/[22m
+
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.7 MiB (29.1 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mvendor.css[39m[22m 1.54 MiB [1m[32mvendor.js[39m[22m 13.9 MiB [1m[32mmain.css[39m[22m 946 KiB [1m[32mmain.js[39m[22m 4.29 MiB 12 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 484 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mstyles.css[39m[22m 32.8 KiB [1m[32mstyles.js[39m[22m 401 KiB 40 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m (main) 2.97 MiB (javascript) 945 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.7 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+
+[1mLOG from ../../node_modules/sass-loader/dist/cjs.js sass-loader ../../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[5].use[1]!../../node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[5].use[2]!../../node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[5].use[3]!./src/styles/crm-custom-theme.scss[39m[22m
+<w> [1m[33mDeprecation The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/legacy-js-api[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnull[39m[22m
+<w> [1m[33mDeprecation Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info and automated migrator: https://sass-lang.com/d/import[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9  root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.[39m[22m
+<w> [1m[33mUse map.get instead.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info and automated migrator: https://sass-lang.com/d/import[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 1218:15  k-map-get()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 1835:22  @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9            root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation Using / for division outside of calc() is deprecated and will be removed in Dart Sass 2.0.0.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mRecommendation: math.div($a, $b) or calc($a / $b)[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info and automated migrator: https://sass-lang.com/d/slash-div[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 1051:15  k-math-div()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 1940:21  @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9            root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.[39m[22m
+<w> [1m[33mUse map.merge instead.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info and automated migrator: https://sass-lang.com/d/import[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 2280:22  @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9            root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.[39m[22m
+<w> [1m[33mUse map.merge instead.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info and automated migrator: https://sass-lang.com/d/import[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 2283:23  @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9            root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.[39m[22m
+<w> [1m[33mUse map.merge instead.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info and automated migrator: https://sass-lang.com/d/import[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 2286:26  @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9            root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.[39m[22m
+<w> [1m[33mUse map.merge instead.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info and automated migrator: https://sass-lang.com/d/import[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 2289:23  @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9            root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation red() is deprecated. Suggestion:[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mcolor.channel($color, "red", $space: rgb)[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/color-functions[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 31:13    k-color-red()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 482:48   k-color-luminance()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 572:12   k-contrast-legacy()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 2507:32  @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9            root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation green() is deprecated. Suggestion:[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mcolor.channel($color, "green", $space: rgb)[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/color-functions[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 41:13    k-color-green()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 483:50   k-color-luminance()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 572:12   k-contrast-legacy()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 2507:32  @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9            root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation blue() is deprecated. Suggestion:[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mcolor.channel($color, "blue", $space: rgb)[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/color-functions[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 51:13    k-color-blue()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 484:49   k-color-luminance()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 572:12   k-contrast-legacy()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 2507:32  @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9            root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation darken() is deprecated. Suggestions:[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mcolor.scale($color, $lightness: -7%)[39m[22m
+<w> [1m[33mcolor.adjust($color, $lightness: -7%)[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/color-functions[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 104:13     k-color-darken()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 17920:119  @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9              root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation Passing percentage units to the global abs() function is deprecated.[39m[22m
+<w> [1m[33mIn the future, this will emit a CSS abs() function to be resolved by the browser.[39m[22m
+<w> [1m[33mTo preserve current behavior: math.abs(65%)[39m[22m
+<w> [1m[33mTo emit a CSS abs() now: abs(#{65%})[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/abs-percent[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 993:13    k-math-abs()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 597:13    k-color-level()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 630:13    k-color-shade()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 646:13    k-try-shade()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19663:83  kendo-chip--theme-base()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19778:5   kendo-chip--theme()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19795:9   @content[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 5109:9    module-render()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19793:5   kendo-chip--styles()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19800:5   @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9             root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation Passing percentage units to the global abs() function is deprecated.[39m[22m
+<w> [1m[33mIn the future, this will emit a CSS abs() function to be resolved by the browser.[39m[22m
+<w> [1m[33mTo preserve current behavior: math.abs(-80%)[39m[22m
+<w> [1m[33mTo emit a CSS abs() now: abs(#{-80%})[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/abs-percent[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 993:13    k-math-abs()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 597:13    k-color-level()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 617:13    k-color-tint()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 662:13    k-try-tint()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19664:80  kendo-chip--theme-base()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19778:5   kendo-chip--theme()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19795:9   @content[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 5109:9    module-render()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19793:5   kendo-chip--styles()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19800:5   @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9             root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation Passing percentage units to the global abs() function is deprecated.[39m[22m
+<w> [1m[33mIn the future, this will emit a CSS abs() function to be resolved by the browser.[39m[22m
+<w> [1m[33mTo preserve current behavior: math.abs(-25%)[39m[22m
+<w> [1m[33mTo emit a CSS abs() now: abs(#{-25%})[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/abs-percent[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 993:13    k-math-abs()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 597:13    k-color-level()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 617:13    k-color-tint()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 662:13    k-try-tint()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19665:82  kendo-chip--theme-base()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19778:5   kendo-chip--theme()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19795:9   @content[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 5109:9    module-render()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19793:5   kendo-chip--styles()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19800:5   @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9             root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation Passing percentage units to the global abs() function is deprecated.[39m[22m
+<w> [1m[33mIn the future, this will emit a CSS abs() function to be resolved by the browser.[39m[22m
+<w> [1m[33mTo preserve current behavior: math.abs(-65%)[39m[22m
+<w> [1m[33mTo emit a CSS abs() now: abs(#{-65%})[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/abs-percent[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 993:13     k-math-abs()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 597:13     k-color-level()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 617:13     k-color-tint()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 662:13     k-try-tint()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19676:106  kendo-chip--theme-base()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19778:5    kendo-chip--theme()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19795:9    @content[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 5109:9     module-render()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19793:5    kendo-chip--styles()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19800:5    @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9              root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation Passing percentage units to the global abs() function is deprecated.[39m[22m
+<w> [1m[33mIn the future, this will emit a CSS abs() function to be resolved by the browser.[39m[22m
+<w> [1m[33mTo preserve current behavior: math.abs(-50%)[39m[22m
+<w> [1m[33mTo emit a CSS abs() now: abs(#{-50%})[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/abs-percent[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 993:13     k-math-abs()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 597:13     k-color-level()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 617:13     k-color-tint()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 662:13     k-try-tint()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19680:107  kendo-chip--theme-base()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19778:5    kendo-chip--theme()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19795:9    @content[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 5109:9     module-render()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19793:5    kendo-chip--styles()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19800:5    @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9              root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation darken() is deprecated. Suggestions:[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mcolor.scale($color, $lightness: -8%)[39m[22m
+<w> [1m[33mcolor.adjust($color, $lightness: -8%)[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/color-functions[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 104:13    k-color-darken()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 44198:84  @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9             root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33m35 repetitive deprecation warnings omitted.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnull[39m[22m
+
+webpack compiled [1m[32msuccessfully[39m[22m (d762e68c66ff1c4e)
+[36mType-checking in progress...[39m
+[32mNo errors found.[39m
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.7 MiB (29.1 MiB) = 7 assets 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 484 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mruntime.d762e68c66ff1c4e.hot-update.js[39m[22m 343 bytes [1m[32mstyles.css[39m[22m 32.8 KiB [1m[32mstyles.js[39m[22m 401 KiB 41 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32mmain.d762e68c66ff1c4e.hot-update.js[39m[22m (main) 2.97 MiB (javascript) 945 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.d762e68c66ff1c4e.hot-update.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.7 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (b25a2dc18574f2c2)
+[36mType-checking in progress...[39m
+<i> [1m[32m[webpack-dev-middleware] wait until bundle finished: /runtime.d762e68c66ff1c4e.hot-update.json[39m[22m
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.7 MiB (29.1 MiB) = 7 assets 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 484 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mruntime.b25a2dc18574f2c2.hot-update.js[39m[22m 343 bytes [1m[32mstyles.css[39m[22m 32.8 KiB [1m[32mstyles.js[39m[22m 401 KiB 41 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32mmain.b25a2dc18574f2c2.hot-update.js[39m[22m (main) 2.97 MiB (javascript) 945 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.b25a2dc18574f2c2.hot-update.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.7 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (13d6ee38df682943)
+<i> [1m[32m[webpack-dev-middleware] wait until bundle finished: /main.d762e68c66ff1c4e.hot-update.js[39m[22m
+<i> [1m[32m[webpack-dev-middleware] wait until bundle finished: /runtime.d762e68c66ff1c4e.hot-update.js[39m[22m
+[36mType-checking in progress...[39m
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.7 MiB (29.1 MiB) = 7 assets 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 484 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mruntime.13d6ee38df682943.hot-update.js[39m[22m 343 bytes [1m[32mstyles.css[39m[22m 32.8 KiB [1m[32mstyles.js[39m[22m 401 KiB 41 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32mmain.13d6ee38df682943.hot-update.js[39m[22m (main) 2.97 MiB (javascript) 945 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.13d6ee38df682943.hot-update.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.7 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (3e02ef1310550e56)
+[36mType-checking in progress...[39m
+[32mNo errors found.[39m
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.7 MiB (29.2 MiB) = 7 assets 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 484 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mruntime.3e02ef1310550e56.hot-update.js[39m[22m 343 bytes [1m[32mstyles.css[39m[22m 32.8 KiB [1m[32mstyles.js[39m[22m 401 KiB 41 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32mmain.3e02ef1310550e56.hot-update.js[39m[22m (main) 2.97 MiB (javascript) 945 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.3e02ef1310550e56.hot-update.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.7 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (a4f8876833b12439)
+[32mNo errors found.[39m
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.7 MiB (29.1 MiB) = 7 assets 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 484 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mruntime.a4f8876833b12439.hot-update.js[39m[22m 343 bytes [1m[32mstyles.css[39m[22m 32.8 KiB [1m[32mstyles.js[39m[22m 401 KiB 41 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32mmain.a4f8876833b12439.hot-update.js[39m[22m (main) 2.97 MiB (javascript) 945 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.a4f8876833b12439.hot-update.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.7 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (885de54e0bfeb429)
+[32mNo errors found.[39m
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.7 MiB (29.2 MiB) = 7 assets 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 484 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mruntime.885de54e0bfeb429.hot-update.js[39m[22m 343 bytes [1m[32mstyles.css[39m[22m 32.8 KiB [1m[32mstyles.js[39m[22m 401 KiB 41 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32mmain.885de54e0bfeb429.hot-update.js[39m[22m (main) 2.97 MiB (javascript) 945 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.885de54e0bfeb429.hot-update.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.7 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (2a9a0ee4e2449db6)
+[32mNo errors found.[39m
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.7 MiB (29.2 MiB) = 7 assets 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 484 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mruntime.2a9a0ee4e2449db6.hot-update.js[39m[22m 343 bytes [1m[32mstyles.css[39m[22m 32.8 KiB [1m[32mstyles.js[39m[22m 401 KiB 41 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32mmain.2a9a0ee4e2449db6.hot-update.js[39m[22m (main) 2.97 MiB (javascript) 945 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.2a9a0ee4e2449db6.hot-update.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.7 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (e0764f34821f5f72)
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/dashboard-feature/components/dashboard-business-sales-enquiry/dashboard-business-sales-enquiry-list/dashboard-business-sales-enquiry-table.tsx[22m:[32m[1m73:17[22m[39m
+[90mTS2322: [39mType '((businessSalesEnqGroupBy: any) => { field: string; title: any; width: number; filterable: boolean; cell: (props: GridCellProps) => Element; footer: (data: any[]) => Element; }[]) | { ...; }[]' is not assignable to type 'ColumnDefinition[]'.
+  Type '(businessSalesEnqGroupBy: any) => { field: string; title: any; width: number; filterable: boolean; cell: (props: GridCellProps) => JSX.Element; footer: (data: any[]) => JSX.Element; }[]' is not assignable to type 'ColumnDefinition[]'.
+  [0m [90m 71 |[39m                 className[33m=[39m[32m"kendo-header-green"[39m
+   [90m 72 |[39m                 data[33m=[39m{businessSalesEnqSalesData [33m&&[39m businessSalesEnqSalesData[33m.[39mlength [33m>[39m [35m0[39m [33m?[39m businessSalesEnqSalesData[[35m0[39m][33m.[39mlstCustomizedTableGrid [33m||[39m [] [33m:[39m []}
+  [31m[1m>[22m[39m[90m 73 |[39m                 columns[33m=[39m{
+   [90m    |[39m                 [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 74 |[39m                     (businessSalesEnqSales[33m.[39mvalue [33m===[39m [32m'D'[39m) [33m?[39m
+   [90m 75 |[39m                         dashBusinessDColumns [33m:[39m
+   [90m 76 |[39m                         (businessSalesEnqSales[33m.[39mvalue [33m===[39m [32m'T'[39m) [33m?[39m[0m
+
+Found [31m[1m1 error[22m[39m in 1738 ms.
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.7 MiB (29.1 MiB) = 7 assets 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 484 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mruntime.e0764f34821f5f72.hot-update.js[39m[22m 343 bytes [1m[32mstyles.css[39m[22m 32.8 KiB [1m[32mstyles.js[39m[22m 401 KiB 41 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32mmain.e0764f34821f5f72.hot-update.js[39m[22m (main) 2.97 MiB (javascript) 945 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.e0764f34821f5f72.hot-update.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.7 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (f868fc9c2b8d80ca)
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/dashboard-feature/components/dashboard-business-sales-enquiry/dashboard-business-sales-enquiry-list/dashboard-business-sales-enquiry-table.tsx[22m:[32m[1m73:17[22m[39m
+[90mTS2322: [39mType '((businessSalesEnqGroupBy: any) => { field: string; title: any; width: number; filterable: boolean; cell: (props: GridCellProps) => Element; footer: (data: any[]) => Element; }[]) | { ...; }[]' is not assignable to type 'ColumnDefinition[]'.
+  Type '(businessSalesEnqGroupBy: any) => { field: string; title: any; width: number; filterable: boolean; cell: (props: GridCellProps) => JSX.Element; footer: (data: any[]) => JSX.Element; }[]' is not assignable to type 'ColumnDefinition[]'.
+  [0m [90m 71 |[39m                 className[33m=[39m[32m"kendo-header-green"[39m
+   [90m 72 |[39m                 data[33m=[39m{businessSalesEnqSalesData [33m&&[39m businessSalesEnqSalesData[33m.[39mlength [33m>[39m [35m0[39m [33m?[39m businessSalesEnqSalesData[[35m0[39m][33m.[39mlstCustomizedTableGrid [33m||[39m [] [33m:[39m []}
+  [31m[1m>[22m[39m[90m 73 |[39m                 columns[33m=[39m{
+   [90m    |[39m                 [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 74 |[39m                     (businessSalesEnqSales[33m.[39mvalue [33m===[39m [32m'D'[39m) [33m?[39m
+   [90m 75 |[39m                         dashBusinessDColumns [33m:[39m
+   [90m 76 |[39m                         (businessSalesEnqSales[33m.[39mvalue [33m===[39m [32m'T'[39m) [33m?[39m[0m
+
+Found [31m[1m1 error[22m[39m in 1392 ms.
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.7 MiB (29.1 MiB) = 7 assets 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 484 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mruntime.f868fc9c2b8d80ca.hot-update.js[39m[22m 343 bytes [1m[32mstyles.css[39m[22m 32.8 KiB [1m[32mstyles.js[39m[22m 401 KiB 41 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32mmain.f868fc9c2b8d80ca.hot-update.js[39m[22m (main) 2.97 MiB (javascript) 945 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.f868fc9c2b8d80ca.hot-update.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.7 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (057722f2dc0cd929)
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/dashboard-feature/components/dashboard-business-sales-enquiry/dashboard-business-sales-enquiry-list/dashboard-business-sales-enquiry-table.tsx[22m:[32m[1m73:17[22m[39m
+[90mTS2322: [39mType '((businessSalesEnqGroupBy: any) => { field: string; title: any; width: number; filterable: boolean; cell: (props: GridCellProps) => Element; footer: (data: any[]) => Element; }[]) | { ...; }[]' is not assignable to type 'ColumnDefinition[]'.
+  Type '(businessSalesEnqGroupBy: any) => { field: string; title: any; width: number; filterable: boolean; cell: (props: GridCellProps) => JSX.Element; footer: (data: any[]) => JSX.Element; }[]' is not assignable to type 'ColumnDefinition[]'.
+  [0m [90m 71 |[39m                 className[33m=[39m[32m"kendo-header-green"[39m
+   [90m 72 |[39m                 data[33m=[39m{businessSalesEnqSalesData [33m&&[39m businessSalesEnqSalesData[33m.[39mlength [33m>[39m [35m0[39m [33m?[39m businessSalesEnqSalesData[[35m0[39m][33m.[39mlstCustomizedTableGrid [33m||[39m [] [33m:[39m []}
+  [31m[1m>[22m[39m[90m 73 |[39m                 columns[33m=[39m{
+   [90m    |[39m                 [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 74 |[39m                     (businessSalesEnqSales[33m.[39mvalue [33m===[39m [32m'D'[39m) [33m?[39m
+   [90m 75 |[39m                         dashBusinessDColumns [33m:[39m
+   [90m 76 |[39m                         (businessSalesEnqSales[33m.[39mvalue [33m===[39m [32m'T'[39m) [33m?[39m[0m
+
+Found [31m[1m1 error[22m[39m in 1176 ms.
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.7 MiB (29.1 MiB) = 7 assets 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 484 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mruntime.057722f2dc0cd929.hot-update.js[39m[22m 343 bytes [1m[32mstyles.css[39m[22m 32.8 KiB [1m[32mstyles.js[39m[22m 401 KiB 41 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32mmain.057722f2dc0cd929.hot-update.js[39m[22m (main) 2.97 MiB (javascript) 945 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.057722f2dc0cd929.hot-update.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.7 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (64df3d173a6fb915)
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/dashboard-feature/components/dashboard-business-sales-enquiry/dashboard-business-sales-enquiry-list/dashboard-business-sales-enquiry-table.tsx[22m:[32m[1m73:17[22m[39m
+[90mTS2322: [39mType '((businessSalesEnqGroupBy: any) => { field: string; title: any; width: number; filterable: boolean; cell: (props: GridCellProps) => Element; footer: (data: any[]) => Element; }[]) | { ...; }[]' is not assignable to type 'ColumnDefinition[]'.
+  Type '(businessSalesEnqGroupBy: any) => { field: string; title: any; width: number; filterable: boolean; cell: (props: GridCellProps) => JSX.Element; footer: (data: any[]) => JSX.Element; }[]' is not assignable to type 'ColumnDefinition[]'.
+  [0m [90m 71 |[39m                 className[33m=[39m[32m"kendo-header-green"[39m
+   [90m 72 |[39m                 data[33m=[39m{businessSalesEnqSalesData [33m&&[39m businessSalesEnqSalesData[33m.[39mlength [33m>[39m [35m0[39m [33m?[39m businessSalesEnqSalesData[[35m0[39m][33m.[39mlstCustomizedTableGrid [33m||[39m [] [33m:[39m []}
+  [31m[1m>[22m[39m[90m 73 |[39m                 columns[33m=[39m{
+   [90m    |[39m                 [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 74 |[39m                     (businessSalesEnqSales[33m.[39mvalue [33m===[39m [32m'D'[39m) [33m?[39m
+   [90m 75 |[39m                         dashBusinessDColumns [33m:[39m
+   [90m 76 |[39m                         (businessSalesEnqSales[33m.[39mvalue [33m===[39m [32m'T'[39m) [33m?[39m[0m
+
+Found [31m[1m1 error[22m[39m in 1542 ms.
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.7 MiB (29.1 MiB) = 7 assets 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 484 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mruntime.64df3d173a6fb915.hot-update.js[39m[22m 343 bytes [1m[32mstyles.css[39m[22m 32.8 KiB [1m[32mstyles.js[39m[22m 401 KiB 41 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32mmain.64df3d173a6fb915.hot-update.js[39m[22m (main) 2.97 MiB (javascript) 945 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.64df3d173a6fb915.hot-update.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.7 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (886104d2f5dc260f)
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/dashboard-feature/components/dashboard-business-sales-enquiry/dashboard-business-sales-enquiry-list/dashboard-business-sales-enquiry-table.tsx[22m:[32m[1m73:17[22m[39m
+[90mTS2322: [39mType '((businessSalesEnqGroupBy: any) => { field: string; title: any; width: number; filterable: boolean; cell: (props: GridCellProps) => Element; footer: (data: any[]) => Element; }[]) | { ...; }[]' is not assignable to type 'ColumnDefinition[]'.
+  Type '(businessSalesEnqGroupBy: any) => { field: string; title: any; width: number; filterable: boolean; cell: (props: GridCellProps) => JSX.Element; footer: (data: any[]) => JSX.Element; }[]' is not assignable to type 'ColumnDefinition[]'.
+  [0m [90m 71 |[39m                 className[33m=[39m[32m"kendo-header-green"[39m
+   [90m 72 |[39m                 data[33m=[39m{businessSalesEnqSalesData [33m&&[39m businessSalesEnqSalesData[33m.[39mlength [33m>[39m [35m0[39m [33m?[39m businessSalesEnqSalesData[[35m0[39m][33m.[39mlstCustomizedTableGrid [33m||[39m [] [33m:[39m []}
+  [31m[1m>[22m[39m[90m 73 |[39m                 columns[33m=[39m{
+   [90m    |[39m                 [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 74 |[39m                     (businessSalesEnqSales[33m.[39mvalue [33m===[39m [32m'D'[39m) [33m?[39m
+   [90m 75 |[39m                         dashBusinessDColumns [33m:[39m
+   [90m 76 |[39m                         (businessSalesEnqSales[33m.[39mvalue [33m===[39m [32m'T'[39m) [33m?[39m[0m
+
+Found [31m[1m1 error[22m[39m in 1390 ms.
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.7 MiB (29.1 MiB) = 7 assets 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 484 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mruntime.886104d2f5dc260f.hot-update.js[39m[22m 343 bytes [1m[32mstyles.css[39m[22m 32.8 KiB [1m[32mstyles.js[39m[22m 401 KiB 41 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32mmain.886104d2f5dc260f.hot-update.js[39m[22m (main) 2.97 MiB (javascript) 945 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.886104d2f5dc260f.hot-update.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.7 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (da454c699947e36c)
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/dashboard-feature/components/dashboard-business-sales-enquiry/dashboard-business-sales-enquiry-list/dashboard-business-sales-enquiry-table.tsx[22m:[32m[1m73:17[22m[39m
+[90mTS2322: [39mType '((businessSalesEnqGroupBy: any) => { field: string; title: any; width: number; filterable: boolean; cell: (props: GridCellProps) => Element; footer: (data: any[]) => Element; }[]) | { ...; }[]' is not assignable to type 'ColumnDefinition[]'.
+  Type '(businessSalesEnqGroupBy: any) => { field: string; title: any; width: number; filterable: boolean; cell: (props: GridCellProps) => JSX.Element; footer: (data: any[]) => JSX.Element; }[]' is not assignable to type 'ColumnDefinition[]'.
+  [0m [90m 71 |[39m                 className[33m=[39m[32m"kendo-header-green"[39m
+   [90m 72 |[39m                 data[33m=[39m{businessSalesEnqSalesData [33m&&[39m businessSalesEnqSalesData[33m.[39mlength [33m>[39m [35m0[39m [33m?[39m businessSalesEnqSalesData[[35m0[39m][33m.[39mlstCustomizedTableGrid [33m||[39m [] [33m:[39m []}
+  [31m[1m>[22m[39m[90m 73 |[39m                 columns[33m=[39m{
+   [90m    |[39m                 [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 74 |[39m                     (businessSalesEnqSales[33m.[39mvalue [33m===[39m [32m'D'[39m) [33m?[39m
+   [90m 75 |[39m                         dashBusinessDColumns [33m:[39m
+   [90m 76 |[39m                         (businessSalesEnqSales[33m.[39mvalue [33m===[39m [32m'T'[39m) [33m?[39m[0m
+
+Found [31m[1m1 error[22m[39m in 1438 ms.
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.7 MiB (29.1 MiB) = 7 assets 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 484 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mruntime.da454c699947e36c.hot-update.js[39m[22m 343 bytes [1m[32mstyles.css[39m[22m 32.8 KiB [1m[32mstyles.js[39m[22m 401 KiB 41 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32mmain.da454c699947e36c.hot-update.js[39m[22m (main) 2.97 MiB (javascript) 945 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.da454c699947e36c.hot-update.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.7 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (5b81a09f8042177f)
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/dashboard-feature/components/dashboard-business-sales-enquiry/dashboard-business-sales-enquiry-list/dashboard-business-sales-enquiry-table.tsx[22m:[32m[1m73:25[22m[39m
+[90mTS2322: [39mType '(businessSalesEnqGroupBy: any) => { field: string; title: any; width: number; filterable: boolean; cell: (props: GridCellProps) => JSX.Element; footer: (data: any[]) => JSX.Element; }[]' is not assignable to type 'ColumnDefinition[]'.
+  [0m [90m 71 |[39m                 className[33m=[39m[32m"kendo-header-green"[39m
+   [90m 72 |[39m                 data[33m=[39m{businessSalesEnqSalesData [33m&&[39m businessSalesEnqSalesData[33m.[39mlength [33m>[39m [35m0[39m [33m?[39m businessSalesEnqSalesData[[35m0[39m][33m.[39mlstCustomizedTableGrid [33m||[39m [] [33m:[39m []}
+  [31m[1m>[22m[39m[90m 73 |[39m                 columns[33m=[39m{
+   [90m    |[39m                         [31m[1m^[22m[39m
+  [31m[1m>[22m[39m[90m 74 |[39m                     (businessSalesEnqSales[33m.[39mvalue [33m===[39m [32m'D'[39m) [33m?[39m
+   [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+  [31m[1m>[22m[39m[90m 75 |[39m                         dashBusinessDColumns [33m:[39m
+   [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+  [31m[1m>[22m[39m[90m 76 |[39m                         (businessSalesEnqSales[33m.[39mvalue [33m===[39m [32m'T'[39m) [33m?[39m
+   [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+  [31m[1m>[22m[39m[90m 77 |[39m                             dashBusinessTColumns [33m:[39m
+   [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+  [31m[1m>[22m[39m[90m 78 |[39m                             dashBusinessUColumns
+   [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+  [31m[1m>[22m[39m[90m 79 |[39m                 }
+   [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 80 |[39m                 pageable[33m=[39m{[36mfalse[39m}
+   [90m 81 |[39m                 sortable[33m=[39m{[36mfalse[39m}
+   [90m 82 |[39m                 filterable[33m=[39m{[36mfalse[39m}[0m
+
+Found [31m[1m1 error[22m[39m in 1305 ms.
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.7 MiB (29.1 MiB) = 7 assets 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 484 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mruntime.5b81a09f8042177f.hot-update.js[39m[22m 343 bytes [1m[32mstyles.css[39m[22m 32.8 KiB [1m[32mstyles.js[39m[22m 401 KiB 41 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32mmain.5b81a09f8042177f.hot-update.js[39m[22m (main) 2.97 MiB (javascript) 945 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.5b81a09f8042177f.hot-update.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.7 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (27e2e389daac6aee)
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/dashboard-feature/components/dashboard-business-sales-enquiry/dashboard-business-sales-enquiry-list/dashboard-business-sales-enquiry-table.tsx[22m:[32m[1m73:25[22m[39m
+[90mTS2322: [39mType '(businessSalesEnqGroupBy: any) => { field: string; title: any; width: number; filterable: boolean; cell: (props: GridCellProps) => JSX.Element; footer: (data: any[]) => JSX.Element; }[]' is not assignable to type 'ColumnDefinition[]'.
+  [0m [90m 71 |[39m                 className[33m=[39m[32m"kendo-header-green"[39m
+   [90m 72 |[39m                 data[33m=[39m{businessSalesEnqSalesData [33m&&[39m businessSalesEnqSalesData[33m.[39mlength [33m>[39m [35m0[39m [33m?[39m businessSalesEnqSalesData[[35m0[39m][33m.[39mlstCustomizedTableGrid [33m||[39m [] [33m:[39m []}
+  [31m[1m>[22m[39m[90m 73 |[39m                 columns[33m=[39m{
+   [90m    |[39m                         [31m[1m^[22m[39m
+  [31m[1m>[22m[39m[90m 74 |[39m                     (businessSalesEnqSales[33m.[39mvalue [33m===[39m [32m'D'[39m) [33m?[39m
+   [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+  [31m[1m>[22m[39m[90m 75 |[39m                         dashBusinessDColumns [33m:[39m
+   [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+  [31m[1m>[22m[39m[90m 76 |[39m                         (businessSalesEnqSales[33m.[39mvalue [33m===[39m [32m'T'[39m) [33m?[39m
+   [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+  [31m[1m>[22m[39m[90m 77 |[39m                             dashBusinessTColumns [33m:[39m
+   [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+  [31m[1m>[22m[39m[90m 78 |[39m                             dashBusinessUColumns
+   [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+  [31m[1m>[22m[39m[90m 79 |[39m                 }
+   [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 80 |[39m                 pageable[33m=[39m{[36mfalse[39m}
+   [90m 81 |[39m                 sortable[33m=[39m{[36mfalse[39m}
+   [90m 82 |[39m                 filterable[33m=[39m{[36mfalse[39m}[0m
+
+Found [31m[1m1 error[22m[39m in 1457 ms.
+<i> [1m[32m[webpack-dev-server] Gracefully shutting down. To force exit, press ^C again. Please wait...[39m[22m

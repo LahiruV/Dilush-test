@@ -1,0 +1,576 @@
+<i> [1m[32m[webpack-dev-server] Project is running at:[39m[22m
+<i> [1m[32m[webpack-dev-server] Loopback: [36mhttp://localhost:4200/[39m, [36mhttp://[::1]:4200/[39m[39m[22m
+<i> [1m[32m[webpack-dev-server] 404s will fallback to '[36m/index.html[39m'[39m[22m
+
+[36m>[39m [7m[1m[36m NX [39m[22m[27m [1mWeb Development Server is listening at http://localhost:4200/[22m
+
+<i> [1m[32m[webpack-dev-middleware] wait until bundle finished: /leave/leave-list[39m[22m
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.8 MiB (29.2 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mvendor.css[39m[22m 1.54 MiB [1m[32mvendor.js[39m[22m 13.9 MiB [1m[32mmain.css[39m[22m 947 KiB [1m[32mmain.js[39m[22m 4.34 MiB 12 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 484 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mstyles.css[39m[22m 32.9 KiB [1m[32mstyles.js[39m[22m 401 KiB 40 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m (main) 3.01 MiB (javascript) 947 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.8 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13.1 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+
+[1mLOG from ../../node_modules/sass-loader/dist/cjs.js sass-loader ../../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[5].use[1]!../../node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[5].use[2]!../../node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[5].use[3]!./src/styles/crm-custom-theme.scss[39m[22m
+<w> [1m[33mDeprecation The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/legacy-js-api[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnull[39m[22m
+<w> [1m[33mDeprecation Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info and automated migrator: https://sass-lang.com/d/import[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9  root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.[39m[22m
+<w> [1m[33mUse map.get instead.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info and automated migrator: https://sass-lang.com/d/import[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 1218:15  k-map-get()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 1835:22  @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9            root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation Using / for division outside of calc() is deprecated and will be removed in Dart Sass 2.0.0.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mRecommendation: math.div($a, $b) or calc($a / $b)[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info and automated migrator: https://sass-lang.com/d/slash-div[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 1051:15  k-math-div()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 1940:21  @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9            root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.[39m[22m
+<w> [1m[33mUse map.merge instead.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info and automated migrator: https://sass-lang.com/d/import[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 2280:22  @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9            root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.[39m[22m
+<w> [1m[33mUse map.merge instead.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info and automated migrator: https://sass-lang.com/d/import[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 2283:23  @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9            root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.[39m[22m
+<w> [1m[33mUse map.merge instead.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info and automated migrator: https://sass-lang.com/d/import[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 2286:26  @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9            root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.[39m[22m
+<w> [1m[33mUse map.merge instead.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info and automated migrator: https://sass-lang.com/d/import[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 2289:23  @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9            root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation red() is deprecated. Suggestion:[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mcolor.channel($color, "red", $space: rgb)[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/color-functions[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 31:13    k-color-red()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 482:48   k-color-luminance()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 572:12   k-contrast-legacy()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 2507:32  @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9            root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation green() is deprecated. Suggestion:[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mcolor.channel($color, "green", $space: rgb)[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/color-functions[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 41:13    k-color-green()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 483:50   k-color-luminance()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 572:12   k-contrast-legacy()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 2507:32  @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9            root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation blue() is deprecated. Suggestion:[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mcolor.channel($color, "blue", $space: rgb)[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/color-functions[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 51:13    k-color-blue()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 484:49   k-color-luminance()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 572:12   k-contrast-legacy()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 2507:32  @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9            root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation darken() is deprecated. Suggestions:[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mcolor.scale($color, $lightness: -7%)[39m[22m
+<w> [1m[33mcolor.adjust($color, $lightness: -7%)[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/color-functions[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 104:13     k-color-darken()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 17920:119  @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9              root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation Passing percentage units to the global abs() function is deprecated.[39m[22m
+<w> [1m[33mIn the future, this will emit a CSS abs() function to be resolved by the browser.[39m[22m
+<w> [1m[33mTo preserve current behavior: math.abs(65%)[39m[22m
+<w> [1m[33mTo emit a CSS abs() now: abs(#{65%})[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/abs-percent[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 993:13    k-math-abs()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 597:13    k-color-level()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 630:13    k-color-shade()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 646:13    k-try-shade()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19663:83  kendo-chip--theme-base()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19778:5   kendo-chip--theme()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19795:9   @content[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 5109:9    module-render()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19793:5   kendo-chip--styles()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19800:5   @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9             root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation Passing percentage units to the global abs() function is deprecated.[39m[22m
+<w> [1m[33mIn the future, this will emit a CSS abs() function to be resolved by the browser.[39m[22m
+<w> [1m[33mTo preserve current behavior: math.abs(-80%)[39m[22m
+<w> [1m[33mTo emit a CSS abs() now: abs(#{-80%})[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/abs-percent[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 993:13    k-math-abs()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 597:13    k-color-level()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 617:13    k-color-tint()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 662:13    k-try-tint()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19664:80  kendo-chip--theme-base()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19778:5   kendo-chip--theme()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19795:9   @content[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 5109:9    module-render()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19793:5   kendo-chip--styles()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19800:5   @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9             root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation Passing percentage units to the global abs() function is deprecated.[39m[22m
+<w> [1m[33mIn the future, this will emit a CSS abs() function to be resolved by the browser.[39m[22m
+<w> [1m[33mTo preserve current behavior: math.abs(-25%)[39m[22m
+<w> [1m[33mTo emit a CSS abs() now: abs(#{-25%})[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/abs-percent[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 993:13    k-math-abs()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 597:13    k-color-level()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 617:13    k-color-tint()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 662:13    k-try-tint()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19665:82  kendo-chip--theme-base()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19778:5   kendo-chip--theme()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19795:9   @content[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 5109:9    module-render()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19793:5   kendo-chip--styles()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19800:5   @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9             root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation Passing percentage units to the global abs() function is deprecated.[39m[22m
+<w> [1m[33mIn the future, this will emit a CSS abs() function to be resolved by the browser.[39m[22m
+<w> [1m[33mTo preserve current behavior: math.abs(-65%)[39m[22m
+<w> [1m[33mTo emit a CSS abs() now: abs(#{-65%})[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/abs-percent[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 993:13     k-math-abs()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 597:13     k-color-level()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 617:13     k-color-tint()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 662:13     k-try-tint()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19676:106  kendo-chip--theme-base()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19778:5    kendo-chip--theme()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19795:9    @content[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 5109:9     module-render()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19793:5    kendo-chip--styles()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19800:5    @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9              root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation Passing percentage units to the global abs() function is deprecated.[39m[22m
+<w> [1m[33mIn the future, this will emit a CSS abs() function to be resolved by the browser.[39m[22m
+<w> [1m[33mTo preserve current behavior: math.abs(-50%)[39m[22m
+<w> [1m[33mTo emit a CSS abs() now: abs(#{-50%})[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/abs-percent[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 993:13     k-math-abs()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 597:13     k-color-level()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 617:13     k-color-tint()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 662:13     k-try-tint()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19680:107  kendo-chip--theme-base()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19778:5    kendo-chip--theme()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19795:9    @content[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 5109:9     module-render()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19793:5    kendo-chip--styles()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19800:5    @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9              root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation darken() is deprecated. Suggestions:[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mcolor.scale($color, $lightness: -8%)[39m[22m
+<w> [1m[33mcolor.adjust($color, $lightness: -8%)[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/color-functions[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 104:13    k-color-darken()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 44198:84  @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9             root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33m35 repetitive deprecation warnings omitted.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnull[39m[22m
+
+webpack compiled [1m[32msuccessfully[39m[22m (ac2fd76357f23ae2)
+[36mType-checking in progress...[39m
+[32mNo errors found.[39m
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.8 MiB (29.2 MiB) = 7 assets 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 485 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mruntime.ac2fd76357f23ae2.hot-update.js[39m[22m 343 bytes [1m[32mstyles.css[39m[22m 32.9 KiB [1m[32mstyles.js[39m[22m 401 KiB 41 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32mmain.ac2fd76357f23ae2.hot-update.js[39m[22m (main) 3.01 MiB (javascript) 947 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.ac2fd76357f23ae2.hot-update.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.8 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13.1 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (11789a14b8322959)
+[36mType-checking in progress...[39m
+[32mNo errors found.[39m
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.8 MiB (29.2 MiB) = 7 assets 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 485 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mruntime.11789a14b8322959.hot-update.js[39m[22m 343 bytes [1m[32mstyles.css[39m[22m 32.9 KiB [1m[32mstyles.js[39m[22m 401 KiB 41 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32mmain.11789a14b8322959.hot-update.js[39m[22m (main) 3.01 MiB (javascript) 947 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.11789a14b8322959.hot-update.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.8 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13.1 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (1b35ae7a14138295)
+[32mNo errors found.[39m
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.8 MiB (29.2 MiB) = 7 assets 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 485 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mruntime.1b35ae7a14138295.hot-update.js[39m[22m 343 bytes [1m[32mstyles.css[39m[22m 32.9 KiB [1m[32mstyles.js[39m[22m 401 KiB 41 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32mmain.1b35ae7a14138295.hot-update.js[39m[22m (main) 3.01 MiB (javascript) 947 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.1b35ae7a14138295.hot-update.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.8 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13.1 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (f3e4a6706a9593b3)
+[32mNo errors found.[39m
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.8 MiB (29.2 MiB) = 7 assets 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 485 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mruntime.f3e4a6706a9593b3.hot-update.js[39m[22m 343 bytes [1m[32mstyles.css[39m[22m 32.9 KiB [1m[32mstyles.js[39m[22m 401 KiB 41 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32mmain.f3e4a6706a9593b3.hot-update.js[39m[22m (main) 3.01 MiB (javascript) 947 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.f3e4a6706a9593b3.hot-update.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.8 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13.1 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (cd7c75d785915c52)
+[32mNo errors found.[39m
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.8 MiB (29.2 MiB) = 7 assets 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 485 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mruntime.cd7c75d785915c52.hot-update.js[39m[22m 343 bytes [1m[32mstyles.css[39m[22m 32.9 KiB [1m[32mstyles.js[39m[22m 401 KiB 41 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32mmain.cd7c75d785915c52.hot-update.js[39m[22m (main) 3.01 MiB (javascript) 947 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.cd7c75d785915c52.hot-update.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.8 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13.1 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (f48fcb64061da2a1)
+[32mNo errors found.[39m
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.8 MiB (29.2 MiB) = 7 assets 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 485 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mruntime.f48fcb64061da2a1.hot-update.js[39m[22m 343 bytes [1m[32mstyles.css[39m[22m 32.9 KiB [1m[32mstyles.js[39m[22m 401 KiB 41 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32mmain.f48fcb64061da2a1.hot-update.js[39m[22m (main) 3.01 MiB (javascript) 947 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.f48fcb64061da2a1.hot-update.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.8 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13.1 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (48315b6f416329f6)
+[32mNo errors found.[39m
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.8 MiB (29.2 MiB) = 7 assets 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 485 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mruntime.48315b6f416329f6.hot-update.js[39m[22m 343 bytes [1m[32mstyles.css[39m[22m 32.9 KiB [1m[32mstyles.js[39m[22m 401 KiB 41 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32mmain.48315b6f416329f6.hot-update.js[39m[22m (main) 3.01 MiB (javascript) 947 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.48315b6f416329f6.hot-update.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.8 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13.1 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (b17cd7e2d4342bc4)
+[32mNo errors found.[39m
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.8 MiB (29.2 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mvendor.css[39m[22m 1.54 MiB [1m[32mvendor.js[39m[22m 13.9 MiB [1m[32mmain.css[39m[22m 947 KiB [1m[32mmain.js[39m[22m 4.34 MiB 12 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 484 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mstyles.css[39m[22m 32.9 KiB [1m[32mstyles.js[39m[22m 401 KiB 40 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m (main) 3.01 MiB (javascript) 947 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.8 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13.1 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (b17cd7e2d4342bc4)
+[32mNo errors found.[39m
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.8 MiB (29.2 MiB) = 7 assets 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 485 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mruntime.b17cd7e2d4342bc4.hot-update.js[39m[22m 343 bytes [1m[32mstyles.css[39m[22m 32.9 KiB [1m[32mstyles.js[39m[22m 401 KiB 41 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32mmain.b17cd7e2d4342bc4.hot-update.js[39m[22m (main) 3.01 MiB (javascript) 947 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.b17cd7e2d4342bc4.hot-update.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.8 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13.1 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (ec9a86c7b40e1bfd)
+[31m[1mERROR[22m[39m in [1m./libs/controls/src/date-picker-leaves/date-picker-leaves.tsx[22m:[32m[1m151:69[22m[39m
+[90mTS2304: [39mCannot find name 'props'.
+  [0m [90m 149 |[39m         [90m//     ref={datepickerRef}[39m
+   [90m 150 |[39m         [90m// />[39m
+  [31m[1m>[22m[39m[90m 151 |[39m         [33m<[39m[33mCalendar[39m className[33m=[39m[32m'disabled-kendo-date-picker-header'[39m {[33m...[39mprops} ref[33m=[39m{ref} cell[33m=[39m{[33mLeaveCell[39m} [33m/[39m[33m>[39m
+   [90m     |[39m                                                                     [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 152 |[39m     )[33m;[39m
+   [90m 153 |[39m }[33m;[39m
+   [90m 154 |[39m[0m
+
+[31m[1mERROR[22m[39m in [1m./libs/controls/src/date-picker-leaves/date-picker-leaves.tsx[22m:[32m[1m151:81[22m[39m
+[90mTS2304: [39mCannot find name 'ref'.
+  [0m [90m 149 |[39m         [90m//     ref={datepickerRef}[39m
+   [90m 150 |[39m         [90m// />[39m
+  [31m[1m>[22m[39m[90m 151 |[39m         [33m<[39m[33mCalendar[39m className[33m=[39m[32m'disabled-kendo-date-picker-header'[39m {[33m...[39mprops} ref[33m=[39m{ref} cell[33m=[39m{[33mLeaveCell[39m} [33m/[39m[33m>[39m
+   [90m     |[39m                                                                                 [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 152 |[39m     )[33m;[39m
+   [90m 153 |[39m }[33m;[39m
+   [90m 154 |[39m[0m
+
+Found [31m[1m2 errors[22m[39m in 922 ms.
+<i> [1m[32m[webpack-dev-middleware] wait until bundle finished: /favicon.ico[39m[22m
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.8 MiB (29.2 MiB) = 7 assets 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 485 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mruntime.ec9a86c7b40e1bfd.hot-update.js[39m[22m 343 bytes [1m[32mstyles.css[39m[22m 32.9 KiB [1m[32mstyles.js[39m[22m 401 KiB 41 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32mmain.ec9a86c7b40e1bfd.hot-update.js[39m[22m (main) 3.01 MiB (javascript) 947 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.ec9a86c7b40e1bfd.hot-update.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.8 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13.1 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (ac6be3cc2a8e1fe6)
+[32mNo errors found.[39m
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.8 MiB (29.2 MiB) = 7 assets 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 485 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mruntime.ac6be3cc2a8e1fe6.hot-update.js[39m[22m 343 bytes [1m[32mstyles.css[39m[22m 32.9 KiB [1m[32mstyles.js[39m[22m 401 KiB 41 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32mmain.ac6be3cc2a8e1fe6.hot-update.js[39m[22m (main) 3.01 MiB (javascript) 947 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.ac6be3cc2a8e1fe6.hot-update.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.8 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13.1 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (074de50cda6f9e25)
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/leave-feature/components/leave-feature-component/leave-list/leavelist-filters.tsx[22m:[32m[1m169:33[22m[39m
+[90mTS2322: [39mType '{ id: string; className: string; setValue: (e: any) => void; value: string; type: string; maxLength: number; min: number; max: number; }' is not assignable to type 'IntrinsicAttributes & InputWidgetProps'.
+  Property 'min' does not exist on type 'IntrinsicAttributes & InputWidgetProps'.
+  [0m [90m 167 |[39m                                 type[33m=[39m[32m'number'[39m
+   [90m 168 |[39m                                 maxLength[33m=[39m{[35m4[39m}
+  [31m[1m>[22m[39m[90m 169 |[39m                                 min[33m=[39m{[35m2000[39m}
+   [90m     |[39m                                 [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 170 |[39m                                 max[33m=[39m{[36mnew[39m [33mDate[39m()[33m.[39mgetFullYear()}
+   [90m 171 |[39m                             [33m/[39m[33m>[39m
+   [90m 172 |[39m                         [33m<[39m[33m/[39m[33mFilterFormGroup[39m[33m>[39m[0m
+
+Found [31m[1m1 error[22m[39m in 1635 ms.
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.8 MiB (29.2 MiB) = 7 assets 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 485 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mruntime.074de50cda6f9e25.hot-update.js[39m[22m 343 bytes [1m[32mstyles.css[39m[22m 32.9 KiB [1m[32mstyles.js[39m[22m 401 KiB 41 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32mmain.074de50cda6f9e25.hot-update.js[39m[22m (main) 3.01 MiB (javascript) 947 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.074de50cda6f9e25.hot-update.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.8 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13.1 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (182189a584ffd6d4)
+[32mNo errors found.[39m
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.8 MiB (29.2 MiB) = 7 assets 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 485 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mruntime.182189a584ffd6d4.hot-update.js[39m[22m 343 bytes [1m[32mstyles.css[39m[22m 32.9 KiB [1m[32mstyles.js[39m[22m 401 KiB 41 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32mmain.182189a584ffd6d4.hot-update.js[39m[22m (main) 3.01 MiB (javascript) 947 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.182189a584ffd6d4.hot-update.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.8 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13.1 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (e5ab97732fc0ec9a)
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/leave-feature/components/leave-feature-component/leave-list/leavelist-filters.tsx[22m:[32m[1m158:33[22m[39m
+[90mTS2322: [39mType '{ id: string; className: string; setValue: (e: any) => { payload: any; type: "leave-entry-slice/setLeavetypeMainDrop"; }; defaultValue: string; value: DropDownData; datalist: { ...; }[]; ... 6 more ...; required: boolean; }' is not assignable to type 'IntrinsicAttributes & DropDownProps'.
+  Property 'required' does not exist on type 'IntrinsicAttributes & DropDownProps'.
+  [0m [90m 156 |[39m                                 popupSettings[33m=[39m{popUpSettings}
+   [90m 157 |[39m                                 isFilterable[33m=[39m{[36mtrue[39m}
+  [31m[1m>[22m[39m[90m 158 |[39m                                 required[33m=[39m{[36mtrue[39m}
+   [90m     |[39m                                 [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 159 |[39m
+   [90m 160 |[39m                             [33m/[39m[33m>[39m
+   [90m 161 |[39m                         [33m<[39m[33m/[39m[33mFilterFormGroup[39m[33m>[39m[0m
+
+Found [31m[1m1 error[22m[39m in 966 ms.
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.8 MiB (29.2 MiB) = 7 assets 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 485 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mruntime.e5ab97732fc0ec9a.hot-update.js[39m[22m 343 bytes [1m[32mstyles.css[39m[22m 32.9 KiB [1m[32mstyles.js[39m[22m 401 KiB 41 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32mmain.e5ab97732fc0ec9a.hot-update.js[39m[22m (main) 3.01 MiB (javascript) 947 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.e5ab97732fc0ec9a.hot-update.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.8 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13.1 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (ad4cc00e199cf225)
+[32mNo errors found.[39m
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.8 MiB (29.2 MiB) = 7 assets 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 485 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mruntime.ad4cc00e199cf225.hot-update.js[39m[22m 343 bytes [1m[32mstyles.css[39m[22m 32.9 KiB [1m[32mstyles.js[39m[22m 401 KiB 41 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32mmain.ad4cc00e199cf225.hot-update.js[39m[22m (main) 3.01 MiB (javascript) 947 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.ad4cc00e199cf225.hot-update.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.8 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13.1 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (f4308bc9d78da0d0)
+[32mNo errors found.[39m
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.8 MiB (29.2 MiB) = 7 assets 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 485 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mruntime.f4308bc9d78da0d0.hot-update.js[39m[22m 343 bytes [1m[32mstyles.css[39m[22m 32.9 KiB [1m[32mstyles.js[39m[22m 401 KiB 41 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32mmain.f4308bc9d78da0d0.hot-update.js[39m[22m (main) 3.01 MiB (javascript) 947 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.f4308bc9d78da0d0.hot-update.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.8 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13.1 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (4c6836bf9492bf20)
+[32mNo errors found.[39m
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.8 MiB (29.2 MiB) = 7 assets 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 485 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mruntime.4c6836bf9492bf20.hot-update.js[39m[22m 343 bytes [1m[32mstyles.css[39m[22m 32.9 KiB [1m[32mstyles.js[39m[22m 401 KiB 41 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32mmain.4c6836bf9492bf20.hot-update.js[39m[22m (main) 3.01 MiB (javascript) 947 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.4c6836bf9492bf20.hot-update.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.8 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13.1 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (9af172f4a04164dc)
+[32mNo errors found.[39m
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.8 MiB (29.2 MiB) = 7 assets 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 485 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mruntime.9af172f4a04164dc.hot-update.js[39m[22m 343 bytes [1m[32mstyles.css[39m[22m 32.9 KiB [1m[32mstyles.js[39m[22m 401 KiB 41 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32mmain.9af172f4a04164dc.hot-update.js[39m[22m (main) 3.01 MiB (javascript) 947 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.9af172f4a04164dc.hot-update.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.8 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13.1 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (bc944e1ea623945a)
+[32mNo errors found.[39m
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.8 MiB (29.2 MiB) = 7 assets 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 485 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mruntime.bc944e1ea623945a.hot-update.js[39m[22m 343 bytes [1m[32mstyles.css[39m[22m 32.9 KiB [1m[32mstyles.js[39m[22m 401 KiB 41 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32mmain.bc944e1ea623945a.hot-update.js[39m[22m (main) 3.01 MiB (javascript) 947 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.bc944e1ea623945a.hot-update.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.8 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13.1 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (cc020961f5bd3715)
+[36mType-checking in progress...[39m
+[32mNo errors found.[39m
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.8 MiB (29.2 MiB) = 7 assets 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 485 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mruntime.cc020961f5bd3715.hot-update.js[39m[22m 343 bytes [1m[32mstyles.css[39m[22m 32.9 KiB [1m[32mstyles.js[39m[22m 401 KiB 41 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32mmain.cc020961f5bd3715.hot-update.js[39m[22m (main) 3.01 MiB (javascript) 947 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.cc020961f5bd3715.hot-update.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.8 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13.1 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (2ee0f6691680c874)
+[36mType-checking in progress...[39m
+[32mNo errors found.[39m
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.8 MiB (29.2 MiB) = 7 assets 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 485 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mruntime.2ee0f6691680c874.hot-update.js[39m[22m 343 bytes [1m[32mstyles.css[39m[22m 32.9 KiB [1m[32mstyles.js[39m[22m 401 KiB 41 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32mmain.2ee0f6691680c874.hot-update.js[39m[22m (main) 3.01 MiB (javascript) 947 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.2ee0f6691680c874.hot-update.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.8 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13.1 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (6776c46331f8e56c)
+[32mNo errors found.[39m
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.8 MiB (29.2 MiB) = 7 assets 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 485 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mruntime.6776c46331f8e56c.hot-update.js[39m[22m 343 bytes [1m[32mstyles.css[39m[22m 32.9 KiB [1m[32mstyles.js[39m[22m 401 KiB 41 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32mmain.6776c46331f8e56c.hot-update.js[39m[22m (main) 3.01 MiB (javascript) 947 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.6776c46331f8e56c.hot-update.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.8 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13.1 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (19b0bc3adab062b6)
+[32mNo errors found.[39m
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.8 MiB (29.2 MiB) = 7 assets 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 485 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mruntime.19b0bc3adab062b6.hot-update.js[39m[22m 343 bytes [1m[32mstyles.css[39m[22m 32.9 KiB [1m[32mstyles.js[39m[22m 401 KiB 41 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32mmain.19b0bc3adab062b6.hot-update.js[39m[22m (main) 3.01 MiB (javascript) 947 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.19b0bc3adab062b6.hot-update.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.8 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13.1 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (fe49d45e243cc0bf)
+[32mNo errors found.[39m
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.8 MiB (29.2 MiB) = 7 assets 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 485 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mruntime.fe49d45e243cc0bf.hot-update.js[39m[22m 343 bytes [1m[32mstyles.css[39m[22m 32.9 KiB [1m[32mstyles.js[39m[22m 401 KiB 41 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32mmain.fe49d45e243cc0bf.hot-update.js[39m[22m (main) 3.01 MiB (javascript) 947 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.fe49d45e243cc0bf.hot-update.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.8 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13.1 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (3a965fb37d449f85)
+[32mNo errors found.[39m
+Entrypoint [1mmain[39m[22m = 7 assets 13 auxiliary assets
+Entrypoint [1mstyles[39m[22m = [1m[32mruntime.js[39m[22m [1m[32mruntime.3a965fb37d449f85.hot-update.js[39m[22m [1m[32mstyles.css[39m[22m [1m[32mstyles.js[39m[22m 41 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32mmain.3a965fb37d449f85.hot-update.js[39m[22m (main) 2.99 MiB (javascript) 947 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.3a965fb37d449f85.hot-update.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.8 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13.1 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./src/app/features/src/leave-feature/components/leave-feature-component/leave-list/leavelist-filters.tsx[39m[22m
+Module build failed (from ../../node_modules/@nx/webpack/src/utils/web-babel-loader.js):
+SyntaxError: C:\Peerless\Peerless-CRM-Frontend\apps\peerless-cms\src\app\features\src\leave-feature\components\leave-feature-component\leave-list\leavelist-filters.tsx: Unexpected token, expected ")" (105:31)
+
+[0m [90m 103 |[39m
+ [90m 104 |[39m     useEffect(() [33m=>[39m {
+[31m[1m>[22m[39m[90m 105 |[39m         [36mif[39m ([33mYeartype[39m [33m===[39m string{
+ [90m     |[39m                                [31m[1m^[22m[39m
+ [90m 106 |[39m             setYeartype(getYear[33m.[39mtoString())[33m;[39m
+ [90m 107 |[39m         })
+ [90m 108 |[39m[0m
+    at constructor (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:360:19)
+    at TypeScriptParserMixin.raise (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:6613:19)
+    at TypeScriptParserMixin.unexpected (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:6633:16)
+    at TypeScriptParserMixin.expect (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:6914:12)
+    at TypeScriptParserMixin.parseHeaderExpression (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:12909:10)
+    at TypeScriptParserMixin.parseIfStatement (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:13005:22)
+    at TypeScriptParserMixin.parseStatementContent (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:12673:21)
+    at TypeScriptParserMixin.parseStatementContent (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:9454:18)
+    at TypeScriptParserMixin.parseStatementLike (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:12644:17)
+    at TypeScriptParserMixin.parseStatementListItem (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:12624:17)
+    at TypeScriptParserMixin.parseBlockOrModuleBlockBody (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:13192:61)
+    at TypeScriptParserMixin.parseBlockBody (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:13185:10)
+    at TypeScriptParserMixin.parseBlock (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:13173:10)
+    at TypeScriptParserMixin.parseFunctionBody (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:12018:24)
+    at TypeScriptParserMixin.parseArrowExpression (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:11993:10)
+    at TypeScriptParserMixin.parseParenAndDistinguishExpression (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:11603:12)
+    at TypeScriptParserMixin.parseExprAtom (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:11242:23)
+    at TypeScriptParserMixin.parseExprAtom (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:4770:20)
+    at TypeScriptParserMixin.parseExprSubscripts (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:10992:23)
+    at TypeScriptParserMixin.parseUpdate (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:10977:21)
+    at TypeScriptParserMixin.parseMaybeUnary (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:10957:23)
+    at TypeScriptParserMixin.parseMaybeUnary (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:9779:18)
+    at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:10810:61)
+    at TypeScriptParserMixin.parseExprOps (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:10815:23)
+    at TypeScriptParserMixin.parseMaybeConditional (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:10792:23)
+    at TypeScriptParserMixin.parseMaybeAssign (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:10745:21)
+    at TypeScriptParserMixin.parseMaybeAssign (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:9728:20)
+    at C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:10714:39
+    at TypeScriptParserMixin.allowInAnd (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:12334:12)
+    at TypeScriptParserMixin.parseMaybeAssignAllowIn (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:10714:17)
+    at TypeScriptParserMixin.parseExprListItem (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:12093:18)
+    at TypeScriptParserMixin.parseCallExpressionArguments (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:11163:22)
+    at TypeScriptParserMixin.parseCoverCallAndAsyncArrowHead (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:11097:29)
+    at TypeScriptParserMixin.parseSubscript (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:11031:19)
+    at TypeScriptParserMixin.parseSubscript (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:9284:18)
+    at TypeScriptParserMixin.parseSubscripts (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:11005:19)
+    at TypeScriptParserMixin.parseExprSubscripts (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:10996:17)
+    at TypeScriptParserMixin.parseUpdate (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:10977:21)
+    at TypeScriptParserMixin.parseMaybeUnary (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:10957:23)
+    at TypeScriptParserMixin.parseMaybeUnary (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:9779:18)
+    at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:10810:61)
+    at TypeScriptParserMixin.parseExprOps (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:10815:23)
+    at TypeScriptParserMixin.parseMaybeConditional (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:10792:23)
+    at TypeScriptParserMixin.parseMaybeAssign (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:10745:21)
+    at TypeScriptParserMixin.parseMaybeAssign (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:9728:20)
+    at TypeScriptParserMixin.parseExpressionBase (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:10698:23)
+    at C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:10694:39
+    at TypeScriptParserMixin.allowInAnd (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:12329:16)
+    at TypeScriptParserMixin.parseExpression (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:10694:17)
+    at TypeScriptParserMixin.parseStatementContent (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:12771:23)
+
+webpack compiled with [1m[31m1 error[39m[22m (73d43192be9aa05e)
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/leave-feature/components/leave-feature-component/leave-list/leavelist-filters.tsx[22m:[32m[1m105:13[22m[39m
+[90mTS2367: [39mThis comparison appears to be unintentional because the types 'string' and '(params?: ({ errorMap?: ZodErrorMap | undefined; invalid_type_error?: string | undefined; required_error?: string | undefined; message?: string | undefined; description?: string | undefined; } & { ...; }) | undefined) => ZodString' have no overlap.
+  [0m [90m 103 |[39m
+   [90m 104 |[39m     useEffect(() [33m=>[39m {
+  [31m[1m>[22m[39m[90m 105 |[39m         [36mif[39m ([33mYeartype[39m [33m===[39m string{
+   [90m     |[39m             [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 106 |[39m             setYeartype(getYear[33m.[39mtoString())[33m;[39m
+   [90m 107 |[39m         })
+   [90m 108 |[39m[0m
+
+Found [31m[1m1 error[22m[39m in 1268 ms.
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.8 MiB (29.2 MiB) = 7 assets 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 485 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mruntime.3a965fb37d449f85.hot-update.js[39m[22m 343 bytes [1m[32mstyles.css[39m[22m 32.9 KiB [1m[32mstyles.js[39m[22m 401 KiB 41 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32mmain.3a965fb37d449f85.hot-update.js[39m[22m (main) 3.01 MiB (javascript) 947 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.3a965fb37d449f85.hot-update.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.8 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13.1 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (ed07a59c7b412bb3)
+[32mNo errors found.[39m
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.8 MiB (29.2 MiB) = 7 assets 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 485 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mruntime.ed07a59c7b412bb3.hot-update.js[39m[22m 343 bytes [1m[32mstyles.css[39m[22m 32.9 KiB [1m[32mstyles.js[39m[22m 401 KiB 41 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32mmain.ed07a59c7b412bb3.hot-update.js[39m[22m (main) 3.01 MiB (javascript) 947 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.ed07a59c7b412bb3.hot-update.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.8 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13.1 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (0093616c5c93282b)
+[32mNo errors found.[39m
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.8 MiB (29.2 MiB) = 7 assets 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 485 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mruntime.0093616c5c93282b.hot-update.js[39m[22m 343 bytes [1m[32mstyles.css[39m[22m 32.9 KiB [1m[32mstyles.js[39m[22m 401 KiB 41 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32mmain.0093616c5c93282b.hot-update.js[39m[22m (main) 3.01 MiB (javascript) 947 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.0093616c5c93282b.hot-update.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.8 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13.1 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (fe3551bb260ffb99)
+[32mNo errors found.[39m
+<i> [1m[32m[webpack-dev-server] Gracefully shutting down. To force exit, press ^C again. Please wait...[39m[22m

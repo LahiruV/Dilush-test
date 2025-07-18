@@ -1,0 +1,1089 @@
+{
+  "nodes": {
+    "features-common-components": {
+      "name": "features-common-components",
+      "type": "lib",
+      "data": {
+        "root": "apps/peerless-cms/src/app/features-common-components",
+        "name": "features-common-components",
+        "$schema": "../../../../../node_modules/nx/schemas/project-schema.json",
+        "sourceRoot": "apps/peerless-cms/src/app/features-common-components/src",
+        "projectType": "library",
+        "tags": [],
+        "targets": {
+          "lint": {
+            "cache": true,
+            "inputs": [
+              "default",
+              "{workspaceRoot}/.eslintrc.json",
+              "{workspaceRoot}/.eslintignore",
+              "{workspaceRoot}/eslint.config.js"
+            ],
+            "executor": "@nx/eslint:lint",
+            "outputs": [
+              "{options.outputFile}"
+            ],
+            "options": {
+              "lintFilePatterns": [
+                "apps/peerless-cms/src/app/features-common-components/**/*.{ts,tsx,js,jsx}"
+              ]
+            },
+            "configurations": {}
+          }
+        },
+        "implicitDependencies": []
+      }
+    },
+    "peerless-cms-components": {
+      "name": "peerless-cms-components",
+      "type": "lib",
+      "data": {
+        "root": "apps/peerless-cms/src/app/components",
+        "name": "peerless-cms-components",
+        "$schema": "../../../../../node_modules/nx/schemas/project-schema.json",
+        "sourceRoot": "apps/peerless-cms/src/app/components/src",
+        "projectType": "library",
+        "tags": [
+          "scope:peerless-cms"
+        ],
+        "targets": {
+          "lint": {
+            "cache": true,
+            "inputs": [
+              "default",
+              "{workspaceRoot}/.eslintrc.json",
+              "{workspaceRoot}/.eslintignore",
+              "{workspaceRoot}/eslint.config.js"
+            ],
+            "executor": "@nx/eslint:lint",
+            "outputs": [
+              "{options.outputFile}"
+            ],
+            "options": {
+              "lintFilePatterns": [
+                "apps/peerless-cms/src/app/components/**/*.{ts,tsx,js,jsx}"
+              ]
+            },
+            "configurations": {}
+          }
+        },
+        "implicitDependencies": []
+      }
+    },
+    "peerless-cms-providers": {
+      "name": "peerless-cms-providers",
+      "type": "lib",
+      "data": {
+        "root": "apps/peerless-cms/src/app/providers",
+        "name": "peerless-cms-providers",
+        "$schema": "../../../../../node_modules/nx/schemas/project-schema.json",
+        "sourceRoot": "apps/peerless-cms/src/app/providers/src",
+        "projectType": "library",
+        "tags": [
+          "scope:peerless-cms"
+        ],
+        "targets": {
+          "lint": {
+            "cache": true,
+            "inputs": [
+              "default",
+              "{workspaceRoot}/.eslintrc.json",
+              "{workspaceRoot}/.eslintignore",
+              "{workspaceRoot}/eslint.config.js"
+            ],
+            "executor": "@nx/eslint:lint",
+            "outputs": [
+              "{options.outputFile}"
+            ],
+            "options": {
+              "lintFilePatterns": [
+                "apps/peerless-cms/src/app/providers//**/*.{ts,tsx,js,jsx}"
+              ]
+            },
+            "configurations": {}
+          }
+        },
+        "implicitDependencies": []
+      }
+    },
+    "features": {
+      "name": "features",
+      "type": "lib",
+      "data": {
+        "root": "apps/peerless-cms/src/app/features",
+        "name": "features",
+        "$schema": "../../../../../node_modules/nx/schemas/project-schema.json",
+        "sourceRoot": "apps/peerless-cms/src/app/features/src",
+        "projectType": "library",
+        "tags": [],
+        "targets": {
+          "lint": {
+            "cache": true,
+            "inputs": [
+              "default",
+              "{workspaceRoot}/.eslintrc.json",
+              "{workspaceRoot}/.eslintignore",
+              "{workspaceRoot}/eslint.config.js"
+            ],
+            "executor": "@nx/eslint:lint",
+            "outputs": [
+              "{options.outputFile}"
+            ],
+            "options": {
+              "lintFilePatterns": [
+                "apps/peerless-cms/src/app/features/**/*.{ts,tsx,js,jsx}"
+              ]
+            },
+            "configurations": {}
+          }
+        },
+        "implicitDependencies": []
+      }
+    },
+    "peerless-cms-layout": {
+      "name": "peerless-cms-layout",
+      "type": "lib",
+      "data": {
+        "root": "apps/peerless-cms/src/app/layout",
+        "name": "peerless-cms-layout",
+        "$schema": "../../../../../node_modules/nx/schemas/project-schema.json",
+        "sourceRoot": "apps/peerless-cms/src/app/layout/src",
+        "projectType": "library",
+        "tags": [
+          "scope:peerless-cms"
+        ],
+        "targets": {
+          "lint": {
+            "cache": true,
+            "inputs": [
+              "default",
+              "{workspaceRoot}/.eslintrc.json",
+              "{workspaceRoot}/.eslintignore",
+              "{workspaceRoot}/eslint.config.js"
+            ],
+            "executor": "@nx/eslint:lint",
+            "outputs": [
+              "{options.outputFile}"
+            ],
+            "options": {
+              "lintFilePatterns": [
+                "apps/peerless-cms/src/app/layout/**/*.{ts,tsx,js,jsx}"
+              ]
+            },
+            "configurations": {}
+          }
+        },
+        "implicitDependencies": []
+      }
+    },
+    "peerless-cms-pages": {
+      "name": "peerless-cms-pages",
+      "type": "lib",
+      "data": {
+        "root": "apps/peerless-cms/src/app/pages",
+        "name": "peerless-cms-pages",
+        "$schema": "../../../../../node_modules/nx/schemas/project-schema.json",
+        "sourceRoot": "apps/peerless-cms/src/app/pages/src",
+        "projectType": "library",
+        "tags": [
+          "scope:peerless-cms"
+        ],
+        "targets": {
+          "lint": {
+            "cache": true,
+            "inputs": [
+              "default",
+              "{workspaceRoot}/.eslintrc.json",
+              "{workspaceRoot}/.eslintignore",
+              "{workspaceRoot}/eslint.config.js"
+            ],
+            "executor": "@nx/eslint:lint",
+            "outputs": [
+              "{options.outputFile}"
+            ],
+            "options": {
+              "lintFilePatterns": [
+                "apps/peerless-cms/src/app/pages/**/*.{ts,tsx,js,jsx}"
+              ]
+            },
+            "configurations": {}
+          }
+        },
+        "implicitDependencies": []
+      }
+    },
+    "peerless-cms-shell": {
+      "name": "peerless-cms-shell",
+      "type": "lib",
+      "data": {
+        "root": "apps/peerless-cms/src/app/shell",
+        "name": "peerless-cms-shell",
+        "$schema": "../../../../../node_modules/nx/schemas/project-schema.json",
+        "sourceRoot": "apps/peerless-cms/src/app/shell/src",
+        "projectType": "library",
+        "tags": [
+          "scope:peerless-cms"
+        ],
+        "targets": {
+          "lint": {
+            "cache": true,
+            "inputs": [
+              "default",
+              "{workspaceRoot}/.eslintrc.json",
+              "{workspaceRoot}/.eslintignore",
+              "{workspaceRoot}/eslint.config.js"
+            ],
+            "executor": "@nx/eslint:lint",
+            "outputs": [
+              "{options.outputFile}"
+            ],
+            "options": {
+              "lintFilePatterns": [
+                "apps/peerless-cms/src/app/shell/**/*.{ts,tsx,js,jsx}"
+              ]
+            },
+            "configurations": {}
+          }
+        },
+        "implicitDependencies": []
+      }
+    },
+    "store": {
+      "name": "store",
+      "type": "lib",
+      "data": {
+        "root": "apps/peerless-cms/src/app/store",
+        "name": "store",
+        "$schema": "../../../../../node_modules/nx/schemas/project-schema.json",
+        "sourceRoot": "apps/peerless-cms/src/app/store/src",
+        "projectType": "library",
+        "tags": [],
+        "targets": {
+          "lint": {
+            "cache": true,
+            "inputs": [
+              "default",
+              "{workspaceRoot}/.eslintrc.json",
+              "{workspaceRoot}/.eslintignore",
+              "{workspaceRoot}/eslint.config.js"
+            ],
+            "executor": "@nx/eslint:lint",
+            "outputs": [
+              "{options.outputFile}"
+            ],
+            "options": {
+              "lintFilePatterns": [
+                "apps/peerless-cms/src/app/store/**/*.{ts,tsx,js,jsx}"
+              ]
+            },
+            "configurations": {}
+          }
+        },
+        "implicitDependencies": []
+      }
+    },
+    "peerless-cms-e2e": {
+      "name": "peerless-cms-e2e",
+      "type": "e2e",
+      "data": {
+        "root": "apps/peerless-cms-e2e",
+        "name": "peerless-cms-e2e",
+        "$schema": "../../node_modules/nx/schemas/project-schema.json",
+        "projectType": "application",
+        "sourceRoot": "apps/peerless-cms-e2e/src",
+        "targets": {
+          "e2e": {
+            "cache": true,
+            "inputs": [
+              "default",
+              "^production"
+            ],
+            "executor": "@nx/cypress:cypress",
+            "options": {
+              "cypressConfig": "apps/peerless-cms-e2e/cypress.config.ts",
+              "testingType": "e2e",
+              "devServerTarget": "peerless-cms:serve"
+            },
+            "configurations": {
+              "production": {
+                "devServerTarget": "peerless-cms:serve:production"
+              },
+              "ci": {
+                "devServerTarget": "peerless-cms:serve-static"
+              }
+            }
+          },
+          "lint": {
+            "cache": true,
+            "inputs": [
+              "default",
+              "{workspaceRoot}/.eslintrc.json",
+              "{workspaceRoot}/.eslintignore",
+              "{workspaceRoot}/eslint.config.js"
+            ],
+            "executor": "@nx/eslint:lint",
+            "outputs": [
+              "{options.outputFile}"
+            ],
+            "options": {
+              "lintFilePatterns": [
+                "apps/peerless-cms-e2e/**/*.{js,ts}"
+              ]
+            },
+            "configurations": {}
+          }
+        },
+        "implicitDependencies": [
+          "peerless-cms"
+        ],
+        "tags": []
+      }
+    },
+    "peerless-cms": {
+      "name": "peerless-cms",
+      "type": "app",
+      "data": {
+        "root": "apps/peerless-cms",
+        "name": "peerless-cms",
+        "$schema": "../../node_modules/nx/schemas/project-schema.json",
+        "sourceRoot": "apps/peerless-cms/src",
+        "projectType": "application",
+        "targets": {
+          "build": {
+            "cache": true,
+            "dependsOn": [
+              "^build"
+            ],
+            "inputs": [
+              "production",
+              "^production"
+            ],
+            "executor": "@nx/webpack:webpack",
+            "outputs": [
+              "{options.outputPath}"
+            ],
+            "defaultConfiguration": "production",
+            "options": {
+              "compiler": "babel",
+              "outputPath": "dist/apps/peerless-cms",
+              "index": "apps/peerless-cms/src/index.html",
+              "baseHref": "/",
+              "main": "apps/peerless-cms/src/main.tsx",
+              "tsConfig": "apps/peerless-cms/tsconfig.app.json",
+              "assets": [
+                "apps/peerless-cms/src/favicon.ico",
+                "apps/peerless-cms/src/assets"
+              ],
+              "styles": [
+                "apps/peerless-cms/src/styles.css",
+                "apps/peerless-cms/src/styles/styles.css"
+              ],
+              "scripts": [],
+              "isolatedConfig": true,
+              "webpackConfig": "apps/peerless-cms/webpack.config.js"
+            },
+            "configurations": {
+              "development": {
+                "extractLicenses": false,
+                "optimization": false,
+                "sourceMap": true,
+                "vendorChunk": true
+              },
+              "production": {
+                "fileReplacements": [
+                  {
+                    "replace": "apps/peerless-cms/src/environments/environment.ts",
+                    "with": "apps/peerless-cms/src/environments/environment.prod.ts"
+                  }
+                ],
+                "optimization": true,
+                "outputHashing": "all",
+                "sourceMap": false,
+                "namedChunks": false,
+                "extractLicenses": true,
+                "vendorChunk": false
+              }
+            }
+          },
+          "serve": {
+            "executor": "@nx/webpack:dev-server",
+            "defaultConfiguration": "development",
+            "options": {
+              "buildTarget": "peerless-cms:build",
+              "hmr": true
+            },
+            "configurations": {
+              "development": {
+                "buildTarget": "peerless-cms:build:development"
+              },
+              "production": {
+                "buildTarget": "peerless-cms:build:production",
+                "hmr": false
+              }
+            }
+          },
+          "lint": {
+            "cache": true,
+            "inputs": [
+              "default",
+              "{workspaceRoot}/.eslintrc.json",
+              "{workspaceRoot}/.eslintignore",
+              "{workspaceRoot}/eslint.config.js"
+            ],
+            "executor": "@nx/eslint:lint",
+            "outputs": [
+              "{options.outputFile}"
+            ],
+            "options": {
+              "lintFilePatterns": [
+                "apps/peerless-cms/**/*.{ts,tsx,js,jsx}"
+              ]
+            },
+            "configurations": {}
+          },
+          "serve-static": {
+            "executor": "@nx/web:file-server",
+            "options": {
+              "buildTarget": "peerless-cms:build"
+            },
+            "configurations": {}
+          },
+          "test": {
+            "cache": true,
+            "inputs": [
+              "default",
+              "^production",
+              "{workspaceRoot}/jest.preset.js"
+            ],
+            "executor": "@nx/jest:jest",
+            "outputs": [
+              "{workspaceRoot}/coverage/{projectRoot}"
+            ],
+            "options": {
+              "passWithNoTests": true,
+              "jestConfig": "apps/peerless-cms/jest.config.ts"
+            },
+            "configurations": {
+              "ci": {
+                "ci": true,
+                "codeCoverage": true
+              }
+            }
+          }
+        },
+        "tags": [],
+        "implicitDependencies": []
+      }
+    },
+    "providers": {
+      "name": "providers",
+      "type": "lib",
+      "data": {
+        "root": "libs/providers",
+        "name": "providers",
+        "$schema": "../../node_modules/nx/schemas/project-schema.json",
+        "sourceRoot": "libs/providers/src",
+        "projectType": "library",
+        "tags": [],
+        "targets": {
+          "lint": {
+            "cache": true,
+            "inputs": [
+              "default",
+              "{workspaceRoot}/.eslintrc.json",
+              "{workspaceRoot}/.eslintignore",
+              "{workspaceRoot}/eslint.config.js"
+            ],
+            "executor": "@nx/eslint:lint",
+            "outputs": [
+              "{options.outputFile}"
+            ],
+            "options": {
+              "lintFilePatterns": [
+                "libs/providers/**/*.{ts,tsx,js,jsx}"
+              ]
+            },
+            "configurations": {}
+          }
+        },
+        "implicitDependencies": []
+      }
+    },
+    "controls": {
+      "name": "controls",
+      "type": "lib",
+      "data": {
+        "root": "libs/controls",
+        "name": "controls",
+        "$schema": "../../node_modules/nx/schemas/project-schema.json",
+        "sourceRoot": "libs/controls/src",
+        "projectType": "library",
+        "tags": [],
+        "targets": {
+          "lint": {
+            "cache": true,
+            "inputs": [
+              "default",
+              "{workspaceRoot}/.eslintrc.json",
+              "{workspaceRoot}/.eslintignore",
+              "{workspaceRoot}/eslint.config.js"
+            ],
+            "executor": "@nx/eslint:lint",
+            "outputs": [
+              "{options.outputFile}"
+            ],
+            "options": {
+              "lintFilePatterns": [
+                "libs/controls/**/*.{ts,tsx,js,jsx}"
+              ]
+            },
+            "configurations": {}
+          }
+        },
+        "implicitDependencies": []
+      }
+    },
+    "services": {
+      "name": "services",
+      "type": "lib",
+      "data": {
+        "root": "libs/services",
+        "name": "services",
+        "$schema": "../../node_modules/nx/schemas/project-schema.json",
+        "sourceRoot": "libs/services/src",
+        "projectType": "library",
+        "tags": [],
+        "targets": {
+          "lint": {
+            "cache": true,
+            "inputs": [
+              "default",
+              "{workspaceRoot}/.eslintrc.json",
+              "{workspaceRoot}/.eslintignore",
+              "{workspaceRoot}/eslint.config.js"
+            ],
+            "executor": "@nx/eslint:lint",
+            "outputs": [
+              "{options.outputFile}"
+            ],
+            "options": {
+              "lintFilePatterns": [
+                "libs/services/**/*.{ts,tsx,js,jsx}"
+              ]
+            },
+            "configurations": {}
+          }
+        },
+        "implicitDependencies": []
+      }
+    },
+    "configs": {
+      "name": "configs",
+      "type": "lib",
+      "data": {
+        "root": "libs/configs",
+        "name": "configs",
+        "$schema": "../../node_modules/nx/schemas/project-schema.json",
+        "sourceRoot": "libs/configs/src",
+        "projectType": "library",
+        "tags": [],
+        "targets": {
+          "lint": {
+            "cache": true,
+            "inputs": [
+              "default",
+              "{workspaceRoot}/.eslintrc.json",
+              "{workspaceRoot}/.eslintignore",
+              "{workspaceRoot}/eslint.config.js"
+            ],
+            "executor": "@nx/eslint:lint",
+            "outputs": [
+              "{options.outputFile}"
+            ],
+            "options": {
+              "lintFilePatterns": [
+                "libs/configs/**/*.{ts,tsx,js,jsx}"
+              ]
+            },
+            "configurations": {}
+          }
+        },
+        "implicitDependencies": []
+      }
+    },
+    "queries": {
+      "name": "queries",
+      "type": "lib",
+      "data": {
+        "root": "libs/queries",
+        "name": "queries",
+        "$schema": "../../node_modules/nx/schemas/project-schema.json",
+        "sourceRoot": "libs/queries/src",
+        "projectType": "library",
+        "tags": [],
+        "targets": {
+          "lint": {
+            "cache": true,
+            "inputs": [
+              "default",
+              "{workspaceRoot}/.eslintrc.json",
+              "{workspaceRoot}/.eslintignore",
+              "{workspaceRoot}/eslint.config.js"
+            ],
+            "executor": "@nx/eslint:lint",
+            "outputs": [
+              "{options.outputFile}"
+            ],
+            "options": {
+              "lintFilePatterns": [
+                "libs/queries/**/*.{ts,tsx,js,jsx}"
+              ]
+            },
+            "configurations": {}
+          }
+        },
+        "implicitDependencies": []
+      }
+    },
+    "common": {
+      "name": "common",
+      "type": "lib",
+      "data": {
+        "root": "libs/common",
+        "name": "common",
+        "$schema": "../../node_modules/nx/schemas/project-schema.json",
+        "sourceRoot": "libs/common/src",
+        "projectType": "library",
+        "tags": [],
+        "targets": {
+          "lint": {
+            "cache": true,
+            "inputs": [
+              "default",
+              "{workspaceRoot}/.eslintrc.json",
+              "{workspaceRoot}/.eslintignore",
+              "{workspaceRoot}/eslint.config.js"
+            ],
+            "executor": "@nx/eslint:lint",
+            "outputs": [
+              "{options.outputFile}"
+            ],
+            "options": {
+              "lintFilePatterns": [
+                "libs/common/**/*.{ts,tsx,js,jsx}"
+              ]
+            },
+            "configurations": {}
+          }
+        },
+        "implicitDependencies": []
+      }
+    },
+    "models": {
+      "name": "models",
+      "type": "lib",
+      "data": {
+        "root": "libs/models",
+        "name": "models",
+        "$schema": "../../node_modules/nx/schemas/project-schema.json",
+        "sourceRoot": "libs/models/src",
+        "projectType": "library",
+        "tags": [],
+        "targets": {
+          "lint": {
+            "cache": true,
+            "inputs": [
+              "default",
+              "{workspaceRoot}/.eslintrc.json",
+              "{workspaceRoot}/.eslintignore",
+              "{workspaceRoot}/eslint.config.js"
+            ],
+            "executor": "@nx/eslint:lint",
+            "outputs": [
+              "{options.outputFile}"
+            ],
+            "options": {
+              "lintFilePatterns": [
+                "libs/models/**/*.{ts,tsx,js,jsx}"
+              ]
+            },
+            "configurations": {}
+          }
+        },
+        "implicitDependencies": []
+      }
+    },
+    "utils": {
+      "name": "utils",
+      "type": "lib",
+      "data": {
+        "root": "libs/utils",
+        "name": "utils",
+        "$schema": "../../node_modules/nx/schemas/project-schema.json",
+        "sourceRoot": "libs/utils/src",
+        "projectType": "library",
+        "tags": [],
+        "targets": {
+          "lint": {
+            "cache": true,
+            "inputs": [
+              "default",
+              "{workspaceRoot}/.eslintrc.json",
+              "{workspaceRoot}/.eslintignore",
+              "{workspaceRoot}/eslint.config.js"
+            ],
+            "executor": "@nx/eslint:lint",
+            "outputs": [
+              "{options.outputFile}"
+            ],
+            "options": {
+              "lintFilePatterns": [
+                "libs/utils/**/*.{ts,tsx,js,jsx}"
+              ]
+            },
+            "configurations": {}
+          }
+        },
+        "implicitDependencies": []
+      }
+    }
+  },
+  "externalNodes": {},
+  "dependencies": {
+    "features-common-components": [
+      {
+        "source": "features-common-components",
+        "target": "common",
+        "type": "static"
+      },
+      {
+        "source": "features-common-components",
+        "target": "models",
+        "type": "static"
+      },
+      {
+        "source": "features-common-components",
+        "target": "controls",
+        "type": "static"
+      },
+      {
+        "source": "features-common-components",
+        "target": "store",
+        "type": "static"
+      },
+      {
+        "source": "features-common-components",
+        "target": "providers",
+        "type": "static"
+      }
+    ],
+    "peerless-cms-components": [
+      {
+        "source": "peerless-cms-components",
+        "target": "providers",
+        "type": "static"
+      },
+      {
+        "source": "peerless-cms-components",
+        "target": "store",
+        "type": "static"
+      },
+      {
+        "source": "peerless-cms-components",
+        "target": "features-common-components",
+        "type": "static"
+      },
+      {
+        "source": "peerless-cms-components",
+        "target": "queries",
+        "type": "static"
+      },
+      {
+        "source": "peerless-cms-components",
+        "target": "models",
+        "type": "static"
+      },
+      {
+        "source": "peerless-cms-components",
+        "target": "controls",
+        "type": "static"
+      },
+      {
+        "source": "peerless-cms-components",
+        "target": "services",
+        "type": "static"
+      }
+    ],
+    "peerless-cms-providers": [],
+    "features": [
+      {
+        "source": "features",
+        "target": "store",
+        "type": "static"
+      },
+      {
+        "source": "features",
+        "target": "models",
+        "type": "static"
+      },
+      {
+        "source": "features",
+        "target": "controls",
+        "type": "static"
+      },
+      {
+        "source": "features",
+        "target": "features-common-components",
+        "type": "static"
+      },
+      {
+        "source": "features",
+        "target": "queries",
+        "type": "static"
+      },
+      {
+        "source": "features",
+        "target": "peerless-cms",
+        "type": "static"
+      },
+      {
+        "source": "features",
+        "target": "common",
+        "type": "static"
+      },
+      {
+        "source": "features",
+        "target": "providers",
+        "type": "static"
+      },
+      {
+        "source": "features",
+        "target": "services",
+        "type": "static"
+      },
+      {
+        "source": "features",
+        "target": "utils",
+        "type": "static"
+      }
+    ],
+    "peerless-cms-layout": [
+      {
+        "source": "peerless-cms-layout",
+        "target": "peerless-cms-pages",
+        "type": "static"
+      },
+      {
+        "source": "peerless-cms-layout",
+        "target": "models",
+        "type": "static"
+      },
+      {
+        "source": "peerless-cms-layout",
+        "target": "common",
+        "type": "static"
+      },
+      {
+        "source": "peerless-cms-layout",
+        "target": "providers",
+        "type": "static"
+      },
+      {
+        "source": "peerless-cms-layout",
+        "target": "features",
+        "type": "static"
+      },
+      {
+        "source": "peerless-cms-layout",
+        "target": "peerless-cms-components",
+        "type": "static"
+      }
+    ],
+    "peerless-cms-pages": [
+      {
+        "source": "peerless-cms-pages",
+        "target": "models",
+        "type": "static"
+      },
+      {
+        "source": "peerless-cms-pages",
+        "target": "providers",
+        "type": "static"
+      },
+      {
+        "source": "peerless-cms-pages",
+        "target": "queries",
+        "type": "static"
+      },
+      {
+        "source": "peerless-cms-pages",
+        "target": "services",
+        "type": "static"
+      },
+      {
+        "source": "peerless-cms-pages",
+        "target": "peerless-cms-components",
+        "type": "static"
+      },
+      {
+        "source": "peerless-cms-pages",
+        "target": "features",
+        "type": "static"
+      }
+    ],
+    "peerless-cms-shell": [
+      {
+        "source": "peerless-cms-shell",
+        "target": "peerless-cms-layout",
+        "type": "static"
+      },
+      {
+        "source": "peerless-cms-shell",
+        "target": "providers",
+        "type": "static"
+      },
+      {
+        "source": "peerless-cms-shell",
+        "target": "store",
+        "type": "static"
+      },
+      {
+        "source": "peerless-cms-shell",
+        "target": "services",
+        "type": "static"
+      }
+    ],
+    "store": [
+      {
+        "source": "store",
+        "target": "models",
+        "type": "static"
+      }
+    ],
+    "peerless-cms-e2e": [
+      {
+        "source": "peerless-cms-e2e",
+        "target": "peerless-cms",
+        "type": "implicit"
+      }
+    ],
+    "peerless-cms": [
+      {
+        "source": "peerless-cms",
+        "target": "peerless-cms-shell",
+        "type": "static"
+      }
+    ],
+    "providers": [
+      {
+        "source": "providers",
+        "target": "models",
+        "type": "static"
+      }
+    ],
+    "controls": [
+      {
+        "source": "controls",
+        "target": "common",
+        "type": "static"
+      },
+      {
+        "source": "controls",
+        "target": "models",
+        "type": "static"
+      },
+      {
+        "source": "controls",
+        "target": "providers",
+        "type": "static"
+      },
+      {
+        "source": "controls",
+        "target": "store",
+        "type": "static"
+      }
+    ],
+    "services": [
+      {
+        "source": "services",
+        "target": "common",
+        "type": "static"
+      },
+      {
+        "source": "services",
+        "target": "providers",
+        "type": "static"
+      },
+      {
+        "source": "services",
+        "target": "store",
+        "type": "static"
+      }
+    ],
+    "configs": [
+      {
+        "source": "configs",
+        "target": "utils",
+        "type": "static"
+      }
+    ],
+    "queries": [
+      {
+        "source": "queries",
+        "target": "services",
+        "type": "static"
+      },
+      {
+        "source": "queries",
+        "target": "utils",
+        "type": "static"
+      },
+      {
+        "source": "queries",
+        "target": "models",
+        "type": "static"
+      },
+      {
+        "source": "queries",
+        "target": "store",
+        "type": "static"
+      }
+    ],
+    "common": [
+      {
+        "source": "common",
+        "target": "controls",
+        "type": "static"
+      },
+      {
+        "source": "common",
+        "target": "utils",
+        "type": "static"
+      },
+      {
+        "source": "common",
+        "target": "configs",
+        "type": "static"
+      },
+      {
+        "source": "common",
+        "target": "providers",
+        "type": "static"
+      }
+    ],
+    "models": [],
+    "utils": [
+      {
+        "source": "utils",
+        "target": "store",
+        "type": "static"
+      },
+      {
+        "source": "utils",
+        "target": "models",
+        "type": "static"
+      }
+    ]
+  },
+  "version": "6.0"
+}

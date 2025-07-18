@@ -1,0 +1,387 @@
+<i> [1m[32m[webpack-dev-server] Project is running at:[39m[22m
+<i> [1m[32m[webpack-dev-server] Loopback: [36mhttp://localhost:4200/[39m, [36mhttp://[::1]:4200/[39m[39m[22m
+<i> [1m[32m[webpack-dev-server] 404s will fallback to '[36m/index.html[39m'[39m[22m
+
+[36m>[39m [7m[1m[36m NX [39m[22m[27m [1mWeb Development Server is listening at http://localhost:4200/[22m
+
+Entrypoint [1mmain[39m[22m = [1m[32mruntime.js[39m[22m [1m[32mvendor.css[39m[22m [1m[32mvendor.js[39m[22m [1m[32mmain.css[39m[22m [1m[32mmain.js[39m[22m 12 auxiliary assets
+Entrypoint [1mstyles[39m[22m = [1m[32mruntime.js[39m[22m [1m[32mstyles.css[39m[22m [1m[32mstyles.js[39m[22m 40 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m (main) 2.92 MiB (javascript) 945 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.7 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+
+[1mLOG from ../../node_modules/sass-loader/dist/cjs.js sass-loader ../../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[5].use[1]!../../node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[5].use[2]!../../node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[5].use[3]!./src/styles/crm-custom-theme.scss[39m[22m
+<w> [1m[33mDeprecation The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/legacy-js-api[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnull[39m[22m
+<w> [1m[33mDeprecation Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info and automated migrator: https://sass-lang.com/d/import[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9  root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.[39m[22m
+<w> [1m[33mUse map.get instead.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info and automated migrator: https://sass-lang.com/d/import[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 1218:15  k-map-get()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 1835:22  @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9            root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation Using / for division outside of calc() is deprecated and will be removed in Dart Sass 2.0.0.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mRecommendation: math.div($a, $b) or calc($a / $b)[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info and automated migrator: https://sass-lang.com/d/slash-div[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 1051:15  k-math-div()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 1940:21  @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9            root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.[39m[22m
+<w> [1m[33mUse map.merge instead.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info and automated migrator: https://sass-lang.com/d/import[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 2280:22  @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9            root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.[39m[22m
+<w> [1m[33mUse map.merge instead.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info and automated migrator: https://sass-lang.com/d/import[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 2283:23  @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9            root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.[39m[22m
+<w> [1m[33mUse map.merge instead.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info and automated migrator: https://sass-lang.com/d/import[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 2286:26  @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9            root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.[39m[22m
+<w> [1m[33mUse map.merge instead.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info and automated migrator: https://sass-lang.com/d/import[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 2289:23  @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9            root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation red() is deprecated. Suggestion:[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mcolor.channel($color, "red", $space: rgb)[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/color-functions[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 31:13    k-color-red()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 482:48   k-color-luminance()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 572:12   k-contrast-legacy()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 2507:32  @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9            root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation green() is deprecated. Suggestion:[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mcolor.channel($color, "green", $space: rgb)[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/color-functions[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 41:13    k-color-green()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 483:50   k-color-luminance()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 572:12   k-contrast-legacy()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 2507:32  @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9            root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation blue() is deprecated. Suggestion:[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mcolor.channel($color, "blue", $space: rgb)[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/color-functions[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 51:13    k-color-blue()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 484:49   k-color-luminance()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 572:12   k-contrast-legacy()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 2507:32  @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9            root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation darken() is deprecated. Suggestions:[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mcolor.scale($color, $lightness: -7%)[39m[22m
+<w> [1m[33mcolor.adjust($color, $lightness: -7%)[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/color-functions[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 104:13     k-color-darken()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 17920:119  @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9              root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation Passing percentage units to the global abs() function is deprecated.[39m[22m
+<w> [1m[33mIn the future, this will emit a CSS abs() function to be resolved by the browser.[39m[22m
+<w> [1m[33mTo preserve current behavior: math.abs(65%)[39m[22m
+<w> [1m[33mTo emit a CSS abs() now: abs(#{65%})[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/abs-percent[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 993:13    k-math-abs()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 597:13    k-color-level()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 630:13    k-color-shade()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 646:13    k-try-shade()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19663:83  kendo-chip--theme-base()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19778:5   kendo-chip--theme()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19795:9   @content[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 5109:9    module-render()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19793:5   kendo-chip--styles()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19800:5   @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9             root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation Passing percentage units to the global abs() function is deprecated.[39m[22m
+<w> [1m[33mIn the future, this will emit a CSS abs() function to be resolved by the browser.[39m[22m
+<w> [1m[33mTo preserve current behavior: math.abs(-80%)[39m[22m
+<w> [1m[33mTo emit a CSS abs() now: abs(#{-80%})[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/abs-percent[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 993:13    k-math-abs()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 597:13    k-color-level()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 617:13    k-color-tint()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 662:13    k-try-tint()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19664:80  kendo-chip--theme-base()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19778:5   kendo-chip--theme()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19795:9   @content[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 5109:9    module-render()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19793:5   kendo-chip--styles()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19800:5   @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9             root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation Passing percentage units to the global abs() function is deprecated.[39m[22m
+<w> [1m[33mIn the future, this will emit a CSS abs() function to be resolved by the browser.[39m[22m
+<w> [1m[33mTo preserve current behavior: math.abs(-25%)[39m[22m
+<w> [1m[33mTo emit a CSS abs() now: abs(#{-25%})[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/abs-percent[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 993:13    k-math-abs()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 597:13    k-color-level()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 617:13    k-color-tint()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 662:13    k-try-tint()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19665:82  kendo-chip--theme-base()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19778:5   kendo-chip--theme()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19795:9   @content[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 5109:9    module-render()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19793:5   kendo-chip--styles()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19800:5   @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9             root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation Passing percentage units to the global abs() function is deprecated.[39m[22m
+<w> [1m[33mIn the future, this will emit a CSS abs() function to be resolved by the browser.[39m[22m
+<w> [1m[33mTo preserve current behavior: math.abs(-65%)[39m[22m
+<w> [1m[33mTo emit a CSS abs() now: abs(#{-65%})[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/abs-percent[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 993:13     k-math-abs()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 597:13     k-color-level()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 617:13     k-color-tint()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 662:13     k-try-tint()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19676:106  kendo-chip--theme-base()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19778:5    kendo-chip--theme()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19795:9    @content[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 5109:9     module-render()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19793:5    kendo-chip--styles()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19800:5    @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9              root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation Passing percentage units to the global abs() function is deprecated.[39m[22m
+<w> [1m[33mIn the future, this will emit a CSS abs() function to be resolved by the browser.[39m[22m
+<w> [1m[33mTo preserve current behavior: math.abs(-50%)[39m[22m
+<w> [1m[33mTo emit a CSS abs() now: abs(#{-50%})[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/abs-percent[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 993:13     k-math-abs()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 597:13     k-color-level()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 617:13     k-color-tint()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 662:13     k-try-tint()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19680:107  kendo-chip--theme-base()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19778:5    kendo-chip--theme()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19795:9    @content[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 5109:9     module-render()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19793:5    kendo-chip--styles()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19800:5    @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9              root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation darken() is deprecated. Suggestions:[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mcolor.scale($color, $lightness: -8%)[39m[22m
+<w> [1m[33mcolor.adjust($color, $lightness: -8%)[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/color-functions[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 104:13    k-color-darken()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 44198:84  @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9             root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33m35 repetitive deprecation warnings omitted.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnull[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./src/app/features/src/dashboard-feature/components/dashboard-business-sales-enquiry/dashboard-business-sales-enquiry-list/dashboard-business-sales-enquiry-table-col.tsx[39m[22m
+Module build failed (from ../../node_modules/@nx/webpack/src/utils/web-babel-loader.js):
+SyntaxError: C:\Peerless\Peerless-CRM-Frontend\apps\peerless-cms\src\app\features\src\dashboard-feature\components\dashboard-business-sales-enquiry\dashboard-business-sales-enquiry-list\dashboard-business-sales-enquiry-table-col.tsx: Unexpected token, expected "," (11:53)
+
+[0m [90m  9 |[39m [36mexport[39m [36mconst[39m dashBusinessDColumns [33m=[39m [
+ [90m 10 |[39m     {
+[31m[1m>[22m[39m[90m 11 |[39m         field[33m:[39m [32m'md'[39m[33m,[39m title[33m:[39m { businessSalesEnqGroupBy[33m.[39mtext }[33m,[39m width[33m:[39m [35m280[39m[33m,[39m filterable[33m:[39m [36mtrue[39m[33m,[39m
+ [90m    |[39m                                                      [31m[1m^[22m[39m
+ [90m 12 |[39m         cell[33m:[39m (props[33m:[39m [33mGridCellProps[39m) [33m=>[39m {
+ [90m 13 |[39m             [36mconst[39m isFirstColumn [33m=[39m props[33m.[39mfield [33m===[39m [32m'md'[39m[33m;[39m
+ [90m 14 |[39m             [36mreturn[39m ([0m
+    at constructor (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:360:19)
+    at TypeScriptParserMixin.raise (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:6613:19)
+    at TypeScriptParserMixin.unexpected (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:6633:16)
+    at TypeScriptParserMixin.expect (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:6914:12)
+    at TypeScriptParserMixin.parseObjectLike (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:11738:14)
+    at TypeScriptParserMixin.parseExprAtom (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:11250:23)
+    at TypeScriptParserMixin.parseExprAtom (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:4770:20)
+    at TypeScriptParserMixin.parseExprSubscripts (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:10992:23)
+    at TypeScriptParserMixin.parseUpdate (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:10977:21)
+    at TypeScriptParserMixin.parseMaybeUnary (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:10957:23)
+    at TypeScriptParserMixin.parseMaybeUnary (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:9779:18)
+    at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:10810:61)
+    at TypeScriptParserMixin.parseExprOps (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:10815:23)
+    at TypeScriptParserMixin.parseMaybeConditional (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:10792:23)
+    at TypeScriptParserMixin.parseMaybeAssign (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:10745:21)
+    at TypeScriptParserMixin.parseMaybeAssign (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:9728:20)
+    at C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:10714:39
+    at TypeScriptParserMixin.allowInAnd (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:12334:12)
+    at TypeScriptParserMixin.parseMaybeAssignAllowIn (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:10714:17)
+    at TypeScriptParserMixin.parseObjectProperty (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:11868:83)
+    at TypeScriptParserMixin.parseObjPropValue (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:11896:100)
+    at TypeScriptParserMixin.parseObjPropValue (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:9686:18)
+    at TypeScriptParserMixin.parsePropertyDefinition (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:11833:17)
+    at TypeScriptParserMixin.parseObjectLike (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:11748:21)
+    at TypeScriptParserMixin.parseExprAtom (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:11250:23)
+    at TypeScriptParserMixin.parseExprAtom (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:4770:20)
+    at TypeScriptParserMixin.parseExprSubscripts (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:10992:23)
+    at TypeScriptParserMixin.parseUpdate (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:10977:21)
+    at TypeScriptParserMixin.parseMaybeUnary (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:10957:23)
+    at TypeScriptParserMixin.parseMaybeUnary (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:9779:18)
+    at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:10810:61)
+    at TypeScriptParserMixin.parseExprOps (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:10815:23)
+    at TypeScriptParserMixin.parseMaybeConditional (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:10792:23)
+    at TypeScriptParserMixin.parseMaybeAssign (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:10745:21)
+    at TypeScriptParserMixin.parseMaybeAssign (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:9728:20)
+    at C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:10714:39
+    at TypeScriptParserMixin.allowInAnd (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:12334:12)
+    at TypeScriptParserMixin.parseMaybeAssignAllowIn (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:10714:17)
+    at TypeScriptParserMixin.parseExprListItem (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:12093:18)
+    at TypeScriptParserMixin.parseExprList (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:12068:22)
+    at TypeScriptParserMixin.parseArrayLike (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:11975:26)
+    at TypeScriptParserMixin.parseArrayLike (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:9200:24)
+    at TypeScriptParserMixin.parseExprAtom (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:11246:23)
+    at TypeScriptParserMixin.parseExprAtom (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:4770:20)
+    at TypeScriptParserMixin.parseExprSubscripts (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:10992:23)
+    at TypeScriptParserMixin.parseUpdate (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:10977:21)
+    at TypeScriptParserMixin.parseMaybeUnary (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:10957:23)
+    at TypeScriptParserMixin.parseMaybeUnary (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:9779:18)
+    at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:10810:61)
+    at TypeScriptParserMixin.parseExprOps (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:10815:23)
+
+webpack compiled with [1m[31m1 error[39m[22m (dc6a18e0c91f18a0)
+[36mType-checking in progress...[39m
+Entrypoint [1mmain[39m[22m = [1m[32mruntime.js[39m[22m [1m[32mvendor.css[39m[22m [1m[32mvendor.js[39m[22m [1m[32mmain.css[39m[22m [1m[32mmain.js[39m[22m 12 auxiliary assets
+Entrypoint [1mstyles[39m[22m = [1m[32mruntime.js[39m[22m [1m[32mstyles.css[39m[22m [1m[32mstyles.js[39m[22m 40 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m (main) 2.92 MiB (javascript) 945 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.7 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./src/app/features/src/dashboard-feature/components/dashboard-business-sales-enquiry/dashboard-business-sales-enquiry-list/dashboard-business-sales-enquiry-table-col.tsx[39m[22m
+Module build failed (from ../../node_modules/@nx/webpack/src/utils/web-babel-loader.js):
+SyntaxError: C:\Peerless\Peerless-CRM-Frontend\apps\peerless-cms\src\app\features\src\dashboard-feature\components\dashboard-business-sales-enquiry\dashboard-business-sales-enquiry-list\dashboard-business-sales-enquiry-table-col.tsx: Unexpected token, expected "," (322:53)
+
+[0m [90m 320 |[39m [36mexport[39m [36mconst[39m dashBusinessTColumns [33m=[39m [
+ [90m 321 |[39m     {
+[31m[1m>[22m[39m[90m 322 |[39m         field[33m:[39m [32m'md'[39m[33m,[39m title[33m:[39m { businessSalesEnqGroupBy[33m.[39mtext }[33m,[39m width[33m:[39m [35m280[39m[33m,[39m filterable[33m:[39m [36mtrue[39m[33m,[39m
+ [90m     |[39m                                                      [31m[1m^[22m[39m
+ [90m 323 |[39m         cell[33m:[39m (props[33m:[39m [33mGridCellProps[39m) [33m=>[39m {
+ [90m 324 |[39m             [36mconst[39m isFirstColumn [33m=[39m props[33m.[39mfield [33m===[39m [32m'md'[39m[33m;[39m
+ [90m 325 |[39m             [36mreturn[39m ([0m
+    at constructor (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:360:19)
+    at TypeScriptParserMixin.raise (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:6613:19)
+    at TypeScriptParserMixin.unexpected (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:6633:16)
+    at TypeScriptParserMixin.expect (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:6914:12)
+    at TypeScriptParserMixin.parseObjectLike (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:11738:14)
+    at TypeScriptParserMixin.parseExprAtom (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:11250:23)
+    at TypeScriptParserMixin.parseExprAtom (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:4770:20)
+    at TypeScriptParserMixin.parseExprSubscripts (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:10992:23)
+    at TypeScriptParserMixin.parseUpdate (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:10977:21)
+    at TypeScriptParserMixin.parseMaybeUnary (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:10957:23)
+    at TypeScriptParserMixin.parseMaybeUnary (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:9779:18)
+    at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:10810:61)
+    at TypeScriptParserMixin.parseExprOps (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:10815:23)
+    at TypeScriptParserMixin.parseMaybeConditional (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:10792:23)
+    at TypeScriptParserMixin.parseMaybeAssign (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:10745:21)
+    at TypeScriptParserMixin.parseMaybeAssign (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:9728:20)
+    at C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:10714:39
+    at TypeScriptParserMixin.allowInAnd (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:12334:12)
+    at TypeScriptParserMixin.parseMaybeAssignAllowIn (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:10714:17)
+    at TypeScriptParserMixin.parseObjectProperty (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:11868:83)
+    at TypeScriptParserMixin.parseObjPropValue (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:11896:100)
+    at TypeScriptParserMixin.parseObjPropValue (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:9686:18)
+    at TypeScriptParserMixin.parsePropertyDefinition (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:11833:17)
+    at TypeScriptParserMixin.parseObjectLike (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:11748:21)
+    at TypeScriptParserMixin.parseExprAtom (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:11250:23)
+    at TypeScriptParserMixin.parseExprAtom (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:4770:20)
+    at TypeScriptParserMixin.parseExprSubscripts (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:10992:23)
+    at TypeScriptParserMixin.parseUpdate (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:10977:21)
+    at TypeScriptParserMixin.parseMaybeUnary (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:10957:23)
+    at TypeScriptParserMixin.parseMaybeUnary (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:9779:18)
+    at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:10810:61)
+    at TypeScriptParserMixin.parseExprOps (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:10815:23)
+    at TypeScriptParserMixin.parseMaybeConditional (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:10792:23)
+    at TypeScriptParserMixin.parseMaybeAssign (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:10745:21)
+    at TypeScriptParserMixin.parseMaybeAssign (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:9728:20)
+    at C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:10714:39
+    at TypeScriptParserMixin.allowInAnd (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:12334:12)
+    at TypeScriptParserMixin.parseMaybeAssignAllowIn (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:10714:17)
+    at TypeScriptParserMixin.parseExprListItem (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:12093:18)
+    at TypeScriptParserMixin.parseExprList (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:12068:22)
+    at TypeScriptParserMixin.parseArrayLike (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:11975:26)
+    at TypeScriptParserMixin.parseArrayLike (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:9200:24)
+    at TypeScriptParserMixin.parseExprAtom (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:11246:23)
+    at TypeScriptParserMixin.parseExprAtom (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:4770:20)
+    at TypeScriptParserMixin.parseExprSubscripts (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:10992:23)
+    at TypeScriptParserMixin.parseUpdate (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:10977:21)
+    at TypeScriptParserMixin.parseMaybeUnary (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:10957:23)
+    at TypeScriptParserMixin.parseMaybeUnary (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:9779:18)
+    at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:10810:61)
+    at TypeScriptParserMixin.parseExprOps (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:10815:23)
+
+webpack compiled with [1m[31m1 error[39m[22m (c09a3c26b59e315e)
+[36mType-checking in progress...[39m
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/dashboard-feature/components/dashboard-business-sales-enquiry/dashboard-business-sales-enquiry-list/dashboard-business-sales-enquiry-table.tsx[22m:[32m[1m73:17[22m[39m
+[90mTS2322: [39mType '({ field: string; title: { businessSalesEnqGroupBy: DropDownData; "": any; }; width: number; filterable: boolean; cell: (props: GridCellProps) => Element; footer: (data: any[]) => Element; } | { ...; })[]' is not assignable to type 'ColumnDefinition[]'.
+  Type '{ field: string; title: { businessSalesEnqGroupBy: DropDownData; "": any; }; width: number; filterable: boolean; cell: (props: GridCellProps) => Element; footer: (data: any[]) => Element; } | { ...; }' is not assignable to type 'ColumnDefinition'.
+    Type '{ field: string; title: { businessSalesEnqGroupBy: DropDownData; "": any; }; width: number; filterable: boolean; cell: (props: GridCellProps) => JSX.Element; footer: (data: any[]) => JSX.Element; }' is not assignable to type 'ColumnDefinition'.
+      Types of property 'title' are incompatible.
+        Type '{ businessSalesEnqGroupBy: DropDownData; "": any; }' is not assignable to type 'string'.
+  [0m [90m 71 |[39m                 className[33m=[39m[32m"kendo-header-green"[39m
+   [90m 72 |[39m                 data[33m=[39m{businessSalesEnqSalesData [33m&&[39m businessSalesEnqSalesData[33m.[39mlength [33m>[39m [35m0[39m [33m?[39m businessSalesEnqSalesData[[35m0[39m][33m.[39mlstCustomizedTableGrid [33m||[39m [] [33m:[39m []}
+  [31m[1m>[22m[39m[90m 73 |[39m                 columns[33m=[39m{
+   [90m    |[39m                 [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 74 |[39m                     (businessSalesEnqSales[33m.[39mvalue [33m===[39m [32m'D'[39m) [33m?[39m
+   [90m 75 |[39m                         dashBusinessDColumns [33m:[39m
+   [90m 76 |[39m                         (businessSalesEnqSales[33m.[39mvalue [33m===[39m [32m'T'[39m) [33m?[39m[0m
+
+Found [31m[1m1 error[22m[39m in 5313 ms.
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.7 MiB (29.1 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mvendor.css[39m[22m 1.54 MiB [1m[32mvendor.js[39m[22m 13.9 MiB [1m[32mmain.css[39m[22m 946 KiB [1m[32mmain.js[39m[22m 4.29 MiB 12 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 484 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mstyles.css[39m[22m 32.8 KiB [1m[32mstyles.js[39m[22m 401 KiB 40 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m (main) 2.97 MiB (javascript) 945 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.7 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (52ffcc747b71ad92)
+[32mNo errors found.[39m
+<i> [1m[32m[webpack-dev-server] Gracefully shutting down. To force exit, press ^C again. Please wait...[39m[22m

@@ -1,0 +1,14 @@
+.administrator-filter-header {
+    align-items: center;
+    text-decoration: none;
+    color: #6c757d;
+    font-size: 12px;
+    transition: color 0.2s ease-in-out;
+}
+
+.administrator-filter {
+    width: 150px !important;
+    margin-left: 15px !important;
+    margin-top: 5.5px !important;
+    font-size: 12px !important;
+}

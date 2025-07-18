@@ -1,0 +1,21 @@
+{
+  "run": {
+    "command": "nx serve peerless-cms --verbose",
+    "startTime": "2025-07-16T07:50:21.321Z",
+    "endTime": "2025-07-16T07:50:26.209Z",
+    "inner": false
+  },
+  "tasks": [
+    {
+      "taskId": "peerless-cms:serve:development",
+      "target": "serve",
+      "projectName": "peerless-cms",
+      "hash": "143193338156986827",
+      "startTime": "2025-07-16T07:50:21.328Z",
+      "endTime": "2025-07-16T07:50:26.209Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 1
+    }
+  ]
+}

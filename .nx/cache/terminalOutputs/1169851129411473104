@@ -1,0 +1,1117 @@
+<i> [1m[32m[webpack-dev-server] Project is running at:[39m[22m
+<i> [1m[32m[webpack-dev-server] Loopback: [36mhttp://localhost:4200/[39m, [36mhttp://[::1]:4200/[39m[39m[22m
+<i> [1m[32m[webpack-dev-server] 404s will fallback to '[36m/index.html[39m'[39m[22m
+
+[36m>[39m [7m[1m[36m NX [39m[22m[27m [1mWeb Development Server is listening at http://localhost:4200/[22m
+
+<i> [1m[32m[webpack-dev-middleware] wait until bundle finished: /[39m[22m
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.8 MiB (29.1 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mvendor.css[39m[22m 1.54 MiB [1m[32mvendor.js[39m[22m 13.9 MiB [1m[32mmain.css[39m[22m 946 KiB [1m[32mmain.js[39m[22m 4.33 MiB 12 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 484 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mstyles.css[39m[22m 32.9 KiB [1m[32mstyles.js[39m[22m 401 KiB 40 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m (main) 3 MiB (javascript) 946 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.8 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13.1 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+
+[1mLOG from ../../node_modules/sass-loader/dist/cjs.js sass-loader ../../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[5].use[1]!../../node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[5].use[2]!../../node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[5].use[3]!./src/styles/crm-custom-theme.scss[39m[22m
+<w> [1m[33mDeprecation The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/legacy-js-api[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnull[39m[22m
+<w> [1m[33mDeprecation Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info and automated migrator: https://sass-lang.com/d/import[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9  root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.[39m[22m
+<w> [1m[33mUse map.get instead.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info and automated migrator: https://sass-lang.com/d/import[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 1218:15  k-map-get()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 1835:22  @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9            root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation Using / for division outside of calc() is deprecated and will be removed in Dart Sass 2.0.0.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mRecommendation: math.div($a, $b) or calc($a / $b)[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info and automated migrator: https://sass-lang.com/d/slash-div[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 1051:15  k-math-div()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 1940:21  @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9            root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.[39m[22m
+<w> [1m[33mUse map.merge instead.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info and automated migrator: https://sass-lang.com/d/import[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 2280:22  @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9            root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.[39m[22m
+<w> [1m[33mUse map.merge instead.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info and automated migrator: https://sass-lang.com/d/import[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 2283:23  @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9            root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.[39m[22m
+<w> [1m[33mUse map.merge instead.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info and automated migrator: https://sass-lang.com/d/import[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 2286:26  @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9            root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.[39m[22m
+<w> [1m[33mUse map.merge instead.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info and automated migrator: https://sass-lang.com/d/import[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 2289:23  @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9            root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation red() is deprecated. Suggestion:[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mcolor.channel($color, "red", $space: rgb)[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/color-functions[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 31:13    k-color-red()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 482:48   k-color-luminance()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 572:12   k-contrast-legacy()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 2507:32  @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9            root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation green() is deprecated. Suggestion:[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mcolor.channel($color, "green", $space: rgb)[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/color-functions[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 41:13    k-color-green()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 483:50   k-color-luminance()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 572:12   k-contrast-legacy()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 2507:32  @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9            root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation blue() is deprecated. Suggestion:[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mcolor.channel($color, "blue", $space: rgb)[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/color-functions[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 51:13    k-color-blue()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 484:49   k-color-luminance()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 572:12   k-contrast-legacy()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 2507:32  @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9            root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation darken() is deprecated. Suggestions:[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mcolor.scale($color, $lightness: -7%)[39m[22m
+<w> [1m[33mcolor.adjust($color, $lightness: -7%)[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/color-functions[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 104:13     k-color-darken()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 17920:119  @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9              root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation Passing percentage units to the global abs() function is deprecated.[39m[22m
+<w> [1m[33mIn the future, this will emit a CSS abs() function to be resolved by the browser.[39m[22m
+<w> [1m[33mTo preserve current behavior: math.abs(65%)[39m[22m
+<w> [1m[33mTo emit a CSS abs() now: abs(#{65%})[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/abs-percent[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 993:13    k-math-abs()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 597:13    k-color-level()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 630:13    k-color-shade()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 646:13    k-try-shade()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19663:83  kendo-chip--theme-base()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19778:5   kendo-chip--theme()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19795:9   @content[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 5109:9    module-render()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19793:5   kendo-chip--styles()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19800:5   @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9             root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation Passing percentage units to the global abs() function is deprecated.[39m[22m
+<w> [1m[33mIn the future, this will emit a CSS abs() function to be resolved by the browser.[39m[22m
+<w> [1m[33mTo preserve current behavior: math.abs(-80%)[39m[22m
+<w> [1m[33mTo emit a CSS abs() now: abs(#{-80%})[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/abs-percent[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 993:13    k-math-abs()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 597:13    k-color-level()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 617:13    k-color-tint()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 662:13    k-try-tint()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19664:80  kendo-chip--theme-base()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19778:5   kendo-chip--theme()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19795:9   @content[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 5109:9    module-render()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19793:5   kendo-chip--styles()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19800:5   @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9             root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation Passing percentage units to the global abs() function is deprecated.[39m[22m
+<w> [1m[33mIn the future, this will emit a CSS abs() function to be resolved by the browser.[39m[22m
+<w> [1m[33mTo preserve current behavior: math.abs(-25%)[39m[22m
+<w> [1m[33mTo emit a CSS abs() now: abs(#{-25%})[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/abs-percent[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 993:13    k-math-abs()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 597:13    k-color-level()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 617:13    k-color-tint()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 662:13    k-try-tint()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19665:82  kendo-chip--theme-base()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19778:5   kendo-chip--theme()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19795:9   @content[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 5109:9    module-render()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19793:5   kendo-chip--styles()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19800:5   @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9             root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation Passing percentage units to the global abs() function is deprecated.[39m[22m
+<w> [1m[33mIn the future, this will emit a CSS abs() function to be resolved by the browser.[39m[22m
+<w> [1m[33mTo preserve current behavior: math.abs(-65%)[39m[22m
+<w> [1m[33mTo emit a CSS abs() now: abs(#{-65%})[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/abs-percent[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 993:13     k-math-abs()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 597:13     k-color-level()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 617:13     k-color-tint()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 662:13     k-try-tint()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19676:106  kendo-chip--theme-base()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19778:5    kendo-chip--theme()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19795:9    @content[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 5109:9     module-render()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19793:5    kendo-chip--styles()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19800:5    @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9              root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation Passing percentage units to the global abs() function is deprecated.[39m[22m
+<w> [1m[33mIn the future, this will emit a CSS abs() function to be resolved by the browser.[39m[22m
+<w> [1m[33mTo preserve current behavior: math.abs(-50%)[39m[22m
+<w> [1m[33mTo emit a CSS abs() now: abs(#{-50%})[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/abs-percent[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 993:13     k-math-abs()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 597:13     k-color-level()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 617:13     k-color-tint()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 662:13     k-try-tint()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19680:107  kendo-chip--theme-base()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19778:5    kendo-chip--theme()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19795:9    @content[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 5109:9     module-render()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19793:5    kendo-chip--styles()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19800:5    @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9              root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation darken() is deprecated. Suggestions:[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mcolor.scale($color, $lightness: -8%)[39m[22m
+<w> [1m[33mcolor.adjust($color, $lightness: -8%)[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/color-functions[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 104:13    k-color-darken()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 44198:84  @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9             root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33m35 repetitive deprecation warnings omitted.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnull[39m[22m
+
+webpack compiled [1m[32msuccessfully[39m[22m (e0202226e78169be)
+[36mType-checking in progress...[39m
+<i> [1m[32m[webpack-dev-middleware] wait until bundle finished: /assets/images/user.png[39m[22m
+<i> [1m[32m[webpack-dev-middleware] wait until bundle finished: /Raleway-Medium.woff2[39m[22m
+<i> [1m[32m[webpack-dev-middleware] wait until bundle finished: /PTSans-Regular.ttf[39m[22m
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.8 MiB (29.1 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mvendor.css[39m[22m 1.54 MiB [1m[32mvendor.js[39m[22m 13.9 MiB [1m[32mmain.css[39m[22m 946 KiB [1m[32mmain.js[39m[22m 4.33 MiB 12 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 484 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mstyles.css[39m[22m 32.9 KiB [1m[32mstyles.js[39m[22m 401 KiB 40 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m (main) 3 MiB (javascript) 946 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.8 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13.1 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (e0202226e78169be)
+[36mType-checking in progress...[39m
+[32mNo errors found.[39m
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.8 MiB (29.1 MiB) = 7 assets 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 485 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mruntime.e0202226e78169be.hot-update.js[39m[22m 343 bytes [1m[32mstyles.css[39m[22m 32.9 KiB [1m[32mstyles.js[39m[22m 401 KiB 41 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32mmain.e0202226e78169be.hot-update.js[39m[22m (main) 3 MiB (javascript) 946 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.e0202226e78169be.hot-update.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.8 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13.1 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (c203af8ca2964828)
+[32mNo errors found.[39m
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.8 MiB (29.1 MiB) = 7 assets 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 485 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mruntime.c203af8ca2964828.hot-update.js[39m[22m 343 bytes [1m[32mstyles.css[39m[22m 32.9 KiB [1m[32mstyles.js[39m[22m 401 KiB 41 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32mmain.c203af8ca2964828.hot-update.js[39m[22m (main) 3 MiB (javascript) 946 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.c203af8ca2964828.hot-update.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.8 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13.1 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (d1dcc00e73fe7f61)
+[32mNo errors found.[39m
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.8 MiB (29.1 MiB) = 7 assets 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 485 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mruntime.d1dcc00e73fe7f61.hot-update.js[39m[22m 343 bytes [1m[32mstyles.css[39m[22m 32.9 KiB [1m[32mstyles.js[39m[22m 401 KiB 41 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32mmain.d1dcc00e73fe7f61.hot-update.js[39m[22m (main) 3 MiB (javascript) 946 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.d1dcc00e73fe7f61.hot-update.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.8 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13.1 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (c5368e49dd45b49c)
+[32mNo errors found.[39m
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.8 MiB (29.1 MiB) = 7 assets 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 485 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mruntime.c5368e49dd45b49c.hot-update.js[39m[22m 343 bytes [1m[32mstyles.css[39m[22m 32.9 KiB [1m[32mstyles.js[39m[22m 401 KiB 41 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32mmain.c5368e49dd45b49c.hot-update.js[39m[22m (main) 3 MiB (javascript) 946 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.c5368e49dd45b49c.hot-update.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.8 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13.1 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (ad05857c4db42dba)
+[32mNo errors found.[39m
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.8 MiB (29.1 MiB) = 7 assets 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 485 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mruntime.ad05857c4db42dba.hot-update.js[39m[22m 343 bytes [1m[32mstyles.css[39m[22m 32.9 KiB [1m[32mstyles.js[39m[22m 401 KiB 41 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32mmain.ad05857c4db42dba.hot-update.js[39m[22m (main) 3 MiB (javascript) 946 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.ad05857c4db42dba.hot-update.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.8 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13.1 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (74bf067a5c61b370)
+[32mNo errors found.[39m
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.8 MiB (29.2 MiB) = 7 assets 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 485 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mruntime.74bf067a5c61b370.hot-update.js[39m[22m 343 bytes [1m[32mstyles.css[39m[22m 32.9 KiB [1m[32mstyles.js[39m[22m 401 KiB 41 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32mmain.74bf067a5c61b370.hot-update.js[39m[22m (main) 3 MiB (javascript) 946 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.74bf067a5c61b370.hot-update.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.8 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13.1 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (b303afa3daf35dfc)
+[32mNo errors found.[39m
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.8 MiB (29.2 MiB) = 7 assets 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 485 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mruntime.b303afa3daf35dfc.hot-update.js[39m[22m 343 bytes [1m[32mstyles.css[39m[22m 32.9 KiB [1m[32mstyles.js[39m[22m 401 KiB 41 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32mmain.b303afa3daf35dfc.hot-update.js[39m[22m (main) 3 MiB (javascript) 946 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.b303afa3daf35dfc.hot-update.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.8 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13.1 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (33b2bb51dd08d1ca)
+[36mType-checking in progress...[39m
+[32mNo errors found.[39m
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.8 MiB (29.2 MiB) = 7 assets 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 485 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mruntime.33b2bb51dd08d1ca.hot-update.js[39m[22m 343 bytes [1m[32mstyles.css[39m[22m 32.9 KiB [1m[32mstyles.js[39m[22m 401 KiB 41 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32mmain.33b2bb51dd08d1ca.hot-update.js[39m[22m (main) 3 MiB (javascript) 946 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.33b2bb51dd08d1ca.hot-update.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.8 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13.1 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (094a85e30995255c)
+[36mType-checking in progress...[39m
+[32mNo errors found.[39m
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.8 MiB (29.2 MiB) = 7 assets 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 485 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mruntime.094a85e30995255c.hot-update.js[39m[22m 343 bytes [1m[32mstyles.css[39m[22m 32.9 KiB [1m[32mstyles.js[39m[22m 401 KiB 41 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32mmain.094a85e30995255c.hot-update.js[39m[22m (main) 3 MiB (javascript) 946 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.094a85e30995255c.hot-update.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.8 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13.1 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (13d1e626e191bef8)
+[36mType-checking in progress...[39m
+[32mNo errors found.[39m
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.8 MiB (29.2 MiB) = 7 assets 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 485 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mruntime.13d1e626e191bef8.hot-update.js[39m[22m 343 bytes [1m[32mstyles.css[39m[22m 32.9 KiB [1m[32mstyles.js[39m[22m 401 KiB 41 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32mmain.13d1e626e191bef8.hot-update.js[39m[22m (main) 3 MiB (javascript) 946 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.13d1e626e191bef8.hot-update.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.8 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13.1 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (913e1902b2561be9)
+[32mNo errors found.[39m
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.8 MiB (29.2 MiB) = 7 assets 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 485 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mruntime.913e1902b2561be9.hot-update.js[39m[22m 343 bytes [1m[32mstyles.css[39m[22m 32.9 KiB [1m[32mstyles.js[39m[22m 401 KiB 41 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32mmain.913e1902b2561be9.hot-update.js[39m[22m (main) 3 MiB (javascript) 946 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.913e1902b2561be9.hot-update.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.8 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13.1 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (0769e0c28494a0e7)
+[36mType-checking in progress...[39m
+[32mNo errors found.[39m
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.8 MiB (29.2 MiB) = 7 assets 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 485 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mruntime.0769e0c28494a0e7.hot-update.js[39m[22m 343 bytes [1m[32mstyles.css[39m[22m 32.9 KiB [1m[32mstyles.js[39m[22m 401 KiB 41 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32mmain.0769e0c28494a0e7.hot-update.js[39m[22m (main) 3 MiB (javascript) 946 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.0769e0c28494a0e7.hot-update.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.8 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13.1 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (17254a7b22393f60)
+[32mNo errors found.[39m
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.8 MiB (29.1 MiB) = 7 assets 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 485 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mruntime.17254a7b22393f60.hot-update.js[39m[22m 343 bytes [1m[32mstyles.css[39m[22m 32.9 KiB [1m[32mstyles.js[39m[22m 401 KiB 41 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32mmain.17254a7b22393f60.hot-update.js[39m[22m (main) 3 MiB (javascript) 946 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.17254a7b22393f60.hot-update.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.8 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13.1 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (5ac9b2703be6ce54)
+[36mType-checking in progress...[39m
+[32mNo errors found.[39m
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.8 MiB (29.1 MiB) = 7 assets 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 485 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mruntime.5ac9b2703be6ce54.hot-update.js[39m[22m 343 bytes [1m[32mstyles.css[39m[22m 32.9 KiB [1m[32mstyles.js[39m[22m 401 KiB 41 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32mmain.5ac9b2703be6ce54.hot-update.js[39m[22m (main) 3 MiB (javascript) 946 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.5ac9b2703be6ce54.hot-update.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.8 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13.1 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (b1eae811f00aa26a)
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/leave-feature/section/leave-feature.tsx[22m:[32m[1m56:22[22m[39m
+[90mTS2322: [39mType '{ children: string; id: string; className: string; onClick: () => void; }' is not assignable to type 'IntrinsicAttributes & ButtonWidgetProps'.
+  Property 'children' does not exist on type 'IntrinsicAttributes & ButtonWidgetProps'.
+  [0m [90m 54 |[39m                 [33m<[39m[33m>[39m
+   [90m 55 |[39m                     [33m<[39m[33mButtonWidget[39m id[33m=[39m[32m'activity-excel-button'[39m classNames[33m=[39m[32m'excel-export-button'[39m [33mFunction[39m[33m=[39m{handleExportClick} isDisabled[33m=[39m{isExporting} isExporting[33m=[39m{[36mtrue[39m} [33m/[39m[33m>[39m
+  [31m[1m>[22m[39m[90m 56 |[39m                     [33m<[39m[33mButtonWidget[39m id[33m=[39m[32m'add-new-leave'[39m className[33m=[39m[32m"header-btn-add filter-area margin-left-auto margin-right-none"[39m onClick[33m=[39m{handleAddLeave}[33m>[39m[33mAdd[39m [33mLeave[39m[33m<[39m[33m/[39m[33mButtonWidget[39m[33m>[39m
+   [90m    |[39m                      [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 57 |[39m                 [33m<[39m[33m/[39m[33m>[39m
+   [90m 58 |[39m             }
+   [90m 59 |[39m             bottomBlockElements[33m=[39m{headerBottomElements}[0m
+
+Found [31m[1m1 error[22m[39m in 1232 ms.
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.8 MiB (29.1 MiB) = 7 assets 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 485 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mruntime.b1eae811f00aa26a.hot-update.js[39m[22m 343 bytes [1m[32mstyles.css[39m[22m 32.9 KiB [1m[32mstyles.js[39m[22m 401 KiB 41 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32mmain.b1eae811f00aa26a.hot-update.js[39m[22m (main) 3 MiB (javascript) 946 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.b1eae811f00aa26a.hot-update.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.8 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13.1 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (d62a5ae3b51a1952)
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/leave-feature/section/leave-feature.tsx[22m:[32m[1m56:22[22m[39m
+[90mTS2322: [39mType '{ children: string; id: string; className: string; Function: () => void; }' is not assignable to type 'IntrinsicAttributes & ButtonWidgetProps'.
+  Property 'children' does not exist on type 'IntrinsicAttributes & ButtonWidgetProps'.
+  [0m [90m 54 |[39m                 [33m<[39m[33m>[39m
+   [90m 55 |[39m                     [33m<[39m[33mButtonWidget[39m id[33m=[39m[32m'activity-excel-button'[39m classNames[33m=[39m[32m'excel-export-button'[39m [33mFunction[39m[33m=[39m{handleExportClick} isDisabled[33m=[39m{isExporting} isExporting[33m=[39m{[36mtrue[39m} [33m/[39m[33m>[39m
+  [31m[1m>[22m[39m[90m 56 |[39m                     [33m<[39m[33mButtonWidget[39m id[33m=[39m[32m'add-new-leave'[39m className[33m=[39m[32m"header-btn-add filter-area margin-left-auto margin-right-none"[39m [33mFunction[39m[33m=[39m{handleAddLeave}[33m>[39m[33mAdd[39m [33mLeave[39m[33m<[39m[33m/[39m[33mButtonWidget[39m[33m>[39m
+   [90m    |[39m                      [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 57 |[39m                 [33m<[39m[33m/[39m[33m>[39m
+   [90m 58 |[39m             }
+   [90m 59 |[39m             bottomBlockElements[33m=[39m{headerBottomElements}[0m
+
+Found [31m[1m1 error[22m[39m in 1132 ms.
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.8 MiB (29.1 MiB) = 7 assets 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 485 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mruntime.d62a5ae3b51a1952.hot-update.js[39m[22m 343 bytes [1m[32mstyles.css[39m[22m 32.9 KiB [1m[32mstyles.js[39m[22m 401 KiB 41 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32mmain.d62a5ae3b51a1952.hot-update.js[39m[22m (main) 3 MiB (javascript) 946 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.d62a5ae3b51a1952.hot-update.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.8 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13.1 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (27ecd9eac46f3724)
+[32mNo errors found.[39m
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.8 MiB (29.1 MiB) = 7 assets 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 485 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mruntime.27ecd9eac46f3724.hot-update.js[39m[22m 343 bytes [1m[32mstyles.css[39m[22m 32.9 KiB [1m[32mstyles.js[39m[22m 401 KiB 41 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32mmain.27ecd9eac46f3724.hot-update.js[39m[22m (main) 3 MiB (javascript) 946 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.27ecd9eac46f3724.hot-update.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.8 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13.1 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (7dd64eabaa9355c5)
+[32mNo errors found.[39m
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.8 MiB (29.2 MiB) = 7 assets 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 485 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mruntime.7dd64eabaa9355c5.hot-update.js[39m[22m 343 bytes [1m[32mstyles.css[39m[22m 32.9 KiB [1m[32mstyles.js[39m[22m 401 KiB 41 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32mmain.7dd64eabaa9355c5.hot-update.js[39m[22m (main) 3 MiB (javascript) 946 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.7dd64eabaa9355c5.hot-update.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.8 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13.1 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (a48aeccee3b7df11)
+[32mNo errors found.[39m
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.8 MiB (29.2 MiB) = 7 assets 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 485 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mruntime.a48aeccee3b7df11.hot-update.js[39m[22m 343 bytes [1m[32mstyles.css[39m[22m 32.9 KiB [1m[32mstyles.js[39m[22m 401 KiB 41 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32mmain.a48aeccee3b7df11.hot-update.js[39m[22m (main) 3 MiB (javascript) 946 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.a48aeccee3b7df11.hot-update.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.8 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13.1 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (1241ac0d71eea4b0)
+[32mNo errors found.[39m
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.8 MiB (29.2 MiB) = 7 assets 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 485 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mruntime.1241ac0d71eea4b0.hot-update.js[39m[22m 343 bytes [1m[32mstyles.css[39m[22m 32.9 KiB [1m[32mstyles.js[39m[22m 401 KiB 41 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32mmain.1241ac0d71eea4b0.hot-update.js[39m[22m (main) 3 MiB (javascript) 946 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.1241ac0d71eea4b0.hot-update.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.8 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13.1 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (b8a9f3aa34de5a1e)
+[32mNo errors found.[39m
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.8 MiB (29.1 MiB) = 7 assets 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 485 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mruntime.b8a9f3aa34de5a1e.hot-update.js[39m[22m 343 bytes [1m[32mstyles.css[39m[22m 32.9 KiB [1m[32mstyles.js[39m[22m 401 KiB 41 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32mmain.b8a9f3aa34de5a1e.hot-update.js[39m[22m (main) 3 MiB (javascript) 946 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.b8a9f3aa34de5a1e.hot-update.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.8 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13.1 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (a4200b594f9a5292)
+[36mType-checking in progress...[39m
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.8 MiB (29.1 MiB) = 7 assets 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 485 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mruntime.a4200b594f9a5292.hot-update.js[39m[22m 343 bytes [1m[32mstyles.css[39m[22m 32.9 KiB [1m[32mstyles.js[39m[22m 401 KiB 41 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32mmain.a4200b594f9a5292.hot-update.js[39m[22m (main) 3 MiB (javascript) 946 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.a4200b594f9a5292.hot-update.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.8 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13.1 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (25f35a6ea77ea099)
+[36mType-checking in progress...[39m
+[32mNo errors found.[39m
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.9 MiB (29.1 MiB) = 7 assets 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 485 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mruntime.25f35a6ea77ea099.hot-update.js[39m[22m 343 bytes [1m[32mstyles.css[39m[22m 32.9 KiB [1m[32mstyles.js[39m[22m 401 KiB 41 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32mmain.25f35a6ea77ea099.hot-update.js[39m[22m (main) 3 MiB (javascript) 946 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.25f35a6ea77ea099.hot-update.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.8 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13.1 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (e8a2e399d175eda8)
+[36mType-checking in progress...[39m
+[32mNo errors found.[39m
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.8 MiB (29.2 MiB) = 7 assets 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 485 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mruntime.e8a2e399d175eda8.hot-update.js[39m[22m 343 bytes [1m[32mstyles.css[39m[22m 32.9 KiB [1m[32mstyles.js[39m[22m 401 KiB 41 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32mmain.e8a2e399d175eda8.hot-update.js[39m[22m (main) 3 MiB (javascript) 946 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.e8a2e399d175eda8.hot-update.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.8 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13.1 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (d4d061c8bff14cd5)
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/components/src/main-navigation/main-navigation.tsx[22m:[32m[1m253:16[22m[39m
+[90mTS2304: [39mCannot find name 'setIsAddLeaveButton'.
+  [0m [90m 251 |[39m   useEffect(() [33m=>[39m {
+   [90m 252 |[39m     [36mif[39m (selectedArea [33m===[39m [32m'leave-application'[39m) {
+  [31m[1m>[22m[39m[90m 253 |[39m       dispatch(setIsAddLeaveButton([36mtrue[39m))[33m;[39m
+   [90m     |[39m                [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 254 |[39m     }
+   [90m 255 |[39m   }[33m,[39m [selectedArea])[33m;[39m
+   [90m 256 |[39m[0m
+
+Found [31m[1m1 error[22m[39m in 965 ms.
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.8 MiB (29.2 MiB) = 7 assets 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 485 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mruntime.d4d061c8bff14cd5.hot-update.js[39m[22m 343 bytes [1m[32mstyles.css[39m[22m 32.9 KiB [1m[32mstyles.js[39m[22m 401 KiB 41 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32mmain.d4d061c8bff14cd5.hot-update.js[39m[22m (main) 3 MiB (javascript) 946 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.d4d061c8bff14cd5.hot-update.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.8 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13.1 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (279f67ffd9c9feb2)
+[32mNo errors found.[39m
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.8 MiB (29.1 MiB) = 7 assets 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 485 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mruntime.279f67ffd9c9feb2.hot-update.js[39m[22m 343 bytes [1m[32mstyles.css[39m[22m 32.9 KiB [1m[32mstyles.js[39m[22m 401 KiB 41 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32mmain.279f67ffd9c9feb2.hot-update.js[39m[22m (main) 3 MiB (javascript) 946 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.279f67ffd9c9feb2.hot-update.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.8 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13.1 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (a69576e9a472971b)
+[36mType-checking in progress...[39m
+[32mNo errors found.[39m
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.8 MiB (29.1 MiB) = 7 assets 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 485 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mruntime.a69576e9a472971b.hot-update.js[39m[22m 343 bytes [1m[32mstyles.css[39m[22m 32.9 KiB [1m[32mstyles.js[39m[22m 401 KiB 41 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32mmain.a69576e9a472971b.hot-update.js[39m[22m (main) 3 MiB (javascript) 946 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.a69576e9a472971b.hot-update.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.8 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13.1 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (0269742b21242878)
+[32mNo errors found.[39m
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.8 MiB (29.2 MiB) = 7 assets 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 485 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mruntime.0269742b21242878.hot-update.js[39m[22m 343 bytes [1m[32mstyles.css[39m[22m 32.9 KiB [1m[32mstyles.js[39m[22m 401 KiB 41 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32mmain.0269742b21242878.hot-update.js[39m[22m (main) 3 MiB (javascript) 946 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.0269742b21242878.hot-update.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.8 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13.1 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (e3bb8f0587fa742c)
+[32mNo errors found.[39m
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.8 MiB (29.2 MiB) = 7 assets 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 485 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mruntime.e3bb8f0587fa742c.hot-update.js[39m[22m 343 bytes [1m[32mstyles.css[39m[22m 32.9 KiB [1m[32mstyles.js[39m[22m 401 KiB 41 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32mmain.e3bb8f0587fa742c.hot-update.js[39m[22m (main) 3 MiB (javascript) 946 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.e3bb8f0587fa742c.hot-update.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.8 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13.1 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (d777a2fa74b8174b)
+[32mNo errors found.[39m
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.8 MiB (29.2 MiB) = 7 assets 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 485 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mruntime.d777a2fa74b8174b.hot-update.js[39m[22m 343 bytes [1m[32mstyles.css[39m[22m 32.9 KiB [1m[32mstyles.js[39m[22m 401 KiB 41 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32mmain.d777a2fa74b8174b.hot-update.js[39m[22m (main) 3 MiB (javascript) 946 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.d777a2fa74b8174b.hot-update.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.8 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13.1 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (e5f126a7c5f2d4aa)
+[36mType-checking in progress...[39m
+[32mNo errors found.[39m
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.8 MiB (29.2 MiB) = 7 assets 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 485 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mruntime.e5f126a7c5f2d4aa.hot-update.js[39m[22m 343 bytes [1m[32mstyles.css[39m[22m 32.9 KiB [1m[32mstyles.js[39m[22m 401 KiB 41 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32mmain.e5f126a7c5f2d4aa.hot-update.js[39m[22m (main) 3 MiB (javascript) 946 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.e5f126a7c5f2d4aa.hot-update.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.8 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13.1 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (4b015c684d672cee)
+[36mType-checking in progress...[39m
+[32mNo errors found.[39m
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.8 MiB (29.2 MiB) = 7 assets 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 485 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mruntime.4b015c684d672cee.hot-update.js[39m[22m 343 bytes [1m[32mstyles.css[39m[22m 32.9 KiB [1m[32mstyles.js[39m[22m 401 KiB 41 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32mmain.4b015c684d672cee.hot-update.js[39m[22m (main) 3 MiB (javascript) 946 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.4b015c684d672cee.hot-update.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.8 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13.1 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (5099dd801c9f8d55)
+[36mType-checking in progress...[39m
+[32mNo errors found.[39m
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.8 MiB (29.2 MiB) = 7 assets 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 485 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mruntime.5099dd801c9f8d55.hot-update.js[39m[22m 343 bytes [1m[32mstyles.css[39m[22m 32.9 KiB [1m[32mstyles.js[39m[22m 401 KiB 41 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32mmain.5099dd801c9f8d55.hot-update.js[39m[22m (main) 3 MiB (javascript) 946 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.5099dd801c9f8d55.hot-update.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.8 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13.1 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (567f2a8bf8d490e1)
+[36mType-checking in progress...[39m
+[32mNo errors found.[39m
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.8 MiB (29.2 MiB) = 7 assets 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 485 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mruntime.567f2a8bf8d490e1.hot-update.js[39m[22m 343 bytes [1m[32mstyles.css[39m[22m 32.9 KiB [1m[32mstyles.js[39m[22m 401 KiB 41 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32mmain.567f2a8bf8d490e1.hot-update.js[39m[22m (main) 3 MiB (javascript) 946 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.567f2a8bf8d490e1.hot-update.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.8 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13.1 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (8c9d1ca707f49c0e)
+[36mType-checking in progress...[39m
+[32mNo errors found.[39m
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.8 MiB (29.2 MiB) = 7 assets 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 485 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mruntime.8c9d1ca707f49c0e.hot-update.js[39m[22m 343 bytes [1m[32mstyles.css[39m[22m 32.9 KiB [1m[32mstyles.js[39m[22m 401 KiB 41 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32mmain.8c9d1ca707f49c0e.hot-update.js[39m[22m (main) 3 MiB (javascript) 946 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.8c9d1ca707f49c0e.hot-update.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.8 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13.1 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (f7957fb75d21c6ce)
+[36mType-checking in progress...[39m
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/leave-feature/components/leave-feature-component/leave-enter-component/leave-enter-component.tsx[22m:[32m[1m935:18[22m[39m
+[90mTS2741: [39mProperty 'setState' is missing in type '{ title: string; message: string; onSubmit: () => Promise<void>; }' but required in type 'ValidationModalProps'.
+  [0m [90m 933 |[39m             )}
+   [90m 934 |[39m             {confirmPastDate [33m&&[39m (
+  [31m[1m>[22m[39m[90m 935 |[39m                 [33m<[39m[33mValidationModal[39m
+   [90m     |[39m                  [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 936 |[39m                     title[33m=[39m{[32m"Please Check"[39m}
+   [90m 937 |[39m                     message[33m=[39m{validationMessage}
+   [90m 938 |[39m                     [90m// setState={setConfirmPastDate}[39m[0m
+
+Found [31m[1m1 error[22m[39m in 1670 ms.
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.8 MiB (29.2 MiB) = 7 assets 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 485 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mruntime.f7957fb75d21c6ce.hot-update.js[39m[22m 343 bytes [1m[32mstyles.css[39m[22m 32.9 KiB [1m[32mstyles.js[39m[22m 401 KiB 41 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32mmain.f7957fb75d21c6ce.hot-update.js[39m[22m (main) 3 MiB (javascript) 946 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.f7957fb75d21c6ce.hot-update.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.8 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13.1 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (4cc8dc6ca20e728f)
+[36mType-checking in progress...[39m
+[32mNo errors found.[39m
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.8 MiB (29.2 MiB) = 7 assets 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 485 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mruntime.4cc8dc6ca20e728f.hot-update.js[39m[22m 343 bytes [1m[32mstyles.css[39m[22m 32.9 KiB [1m[32mstyles.js[39m[22m 401 KiB 41 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32mmain.4cc8dc6ca20e728f.hot-update.js[39m[22m (main) 3 MiB (javascript) 946 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.4cc8dc6ca20e728f.hot-update.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.8 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13.1 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (bbd545b3fdb75c8f)
+[36mType-checking in progress...[39m
+[32mNo errors found.[39m
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.8 MiB (29.2 MiB) = 7 assets 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 485 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mruntime.bbd545b3fdb75c8f.hot-update.js[39m[22m 343 bytes [1m[32mstyles.css[39m[22m 32.9 KiB [1m[32mstyles.js[39m[22m 401 KiB 41 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32mmain.bbd545b3fdb75c8f.hot-update.js[39m[22m (main) 3 MiB (javascript) 946 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.bbd545b3fdb75c8f.hot-update.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.8 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13.1 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (ef6f08364cb805c4)
+[36mType-checking in progress...[39m
+[32mNo errors found.[39m
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.8 MiB (29.2 MiB) = 7 assets 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 485 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mruntime.ef6f08364cb805c4.hot-update.js[39m[22m 343 bytes [1m[32mstyles.css[39m[22m 32.9 KiB [1m[32mstyles.js[39m[22m 401 KiB 41 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32mmain.ef6f08364cb805c4.hot-update.js[39m[22m (main) 3 MiB (javascript) 946 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.ef6f08364cb805c4.hot-update.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.8 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13.1 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (91ce88e3829c3f89)
+[36mType-checking in progress...[39m
+[32mNo errors found.[39m
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.8 MiB (29.2 MiB) = 7 assets 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 485 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mruntime.91ce88e3829c3f89.hot-update.js[39m[22m 343 bytes [1m[32mstyles.css[39m[22m 32.9 KiB [1m[32mstyles.js[39m[22m 401 KiB 41 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32mmain.91ce88e3829c3f89.hot-update.js[39m[22m (main) 3 MiB (javascript) 946 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.91ce88e3829c3f89.hot-update.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.8 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13.1 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (3486a6ad5a8f4232)
+[36mType-checking in progress...[39m
+[32mNo errors found.[39m
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.8 MiB (29.2 MiB) = 7 assets 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 485 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mruntime.3486a6ad5a8f4232.hot-update.js[39m[22m 343 bytes [1m[32mstyles.css[39m[22m 32.9 KiB [1m[32mstyles.js[39m[22m 401 KiB 41 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32mmain.3486a6ad5a8f4232.hot-update.js[39m[22m (main) 3 MiB (javascript) 946 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.3486a6ad5a8f4232.hot-update.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.8 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13.1 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (0719f27baaefc4e4)
+[36mType-checking in progress...[39m
+[32mNo errors found.[39m
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.8 MiB (29.2 MiB) = 7 assets 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 485 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mruntime.0719f27baaefc4e4.hot-update.js[39m[22m 343 bytes [1m[32mstyles.css[39m[22m 32.9 KiB [1m[32mstyles.js[39m[22m 401 KiB 41 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32mmain.0719f27baaefc4e4.hot-update.js[39m[22m (main) 3 MiB (javascript) 946 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.0719f27baaefc4e4.hot-update.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.8 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13.1 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (942bac08fe8ec561)
+[36mType-checking in progress...[39m
+[32mNo errors found.[39m
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.8 MiB (29.2 MiB) = 7 assets 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 485 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mruntime.942bac08fe8ec561.hot-update.js[39m[22m 343 bytes [1m[32mstyles.css[39m[22m 32.9 KiB [1m[32mstyles.js[39m[22m 401 KiB 41 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32mmain.942bac08fe8ec561.hot-update.js[39m[22m (main) 3 MiB (javascript) 946 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.942bac08fe8ec561.hot-update.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.8 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13.1 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (1f1209a84b057821)
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/leave-feature/components/leave-feature-component/leave-enter-component/leave-enter-component.tsx[22m:[32m[1m573:13[22m[39m
+[90mTS2304: [39mCannot find name 'e'.
+  [0m [90m 571 |[39m         [36mconst[39m dateObj [33m=[39m [36mnew[39m [33mDate[39m(data[33m.[39mannual_startDate)[33m;[39m
+   [90m 572 |[39m         [36mconst[39m { totalHours[33m,[39m error } [33m=[39m validateLeaveData(data[33m,[39m [33mLEAVE_TYPES[39m)[33m;[39m
+  [31m[1m>[22m[39m[90m 573 |[39m         [36mif[39m (e [33m<[39m s) {
+   [90m     |[39m             [31m[1m^[22m[39m
+   [90m 574 |[39m             setValidationMessage(
+   [90m 575 |[39m                 [32m"Date To Field Cannot Be Less Than Leave Starting Date"[39m
+   [90m 576 |[39m             )[33m;[39m[0m
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/leave-feature/components/leave-feature-component/leave-enter-component/leave-enter-component.tsx[22m:[32m[1m573:17[22m[39m
+[90mTS2304: [39mCannot find name 's'.
+  [0m [90m 571 |[39m         [36mconst[39m dateObj [33m=[39m [36mnew[39m [33mDate[39m(data[33m.[39mannual_startDate)[33m;[39m
+   [90m 572 |[39m         [36mconst[39m { totalHours[33m,[39m error } [33m=[39m validateLeaveData(data[33m,[39m [33mLEAVE_TYPES[39m)[33m;[39m
+  [31m[1m>[22m[39m[90m 573 |[39m         [36mif[39m (e [33m<[39m s) {
+   [90m     |[39m                 [31m[1m^[22m[39m
+   [90m 574 |[39m             setValidationMessage(
+   [90m 575 |[39m                 [32m"Date To Field Cannot Be Less Than Leave Starting Date"[39m
+   [90m 576 |[39m             )[33m;[39m[0m
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/leave-feature/components/leave-feature-component/leave-enter-component/leave-enter-component.tsx[22m:[32m[1m578:45[22m[39m
+[90mTS2552: [39mCannot find name 'leaveType'. Did you mean 'LEAVE_TYPES'?
+  [0m [90m 576 |[39m             )[33m;[39m
+   [90m 577 |[39m             setVisible([36mtrue[39m)[33m;[39m
+  [31m[1m>[22m[39m[90m 578 |[39m             setDates((prev) [33m=>[39m ({ [33m...[39mprev[33m,[39m [leaveType[33m.[39mend][33m:[39m [32m""[39m }))[33m;[39m
+   [90m     |[39m                                             [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 579 |[39m             setValue(leaveType[33m.[39mend [36mas[39m keyof [33mFormFields[39m[33m,[39m [32m""[39m)[33m;[39m
+   [90m 580 |[39m             [36mreturn[39m[33m;[39m
+   [90m 581 |[39m         }[0m
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/leave-feature/components/leave-feature-component/leave-enter-component/leave-enter-component.tsx[22m:[32m[1m579:22[22m[39m
+[90mTS2552: [39mCannot find name 'leaveType'. Did you mean 'LEAVE_TYPES'?
+  [0m [90m 577 |[39m             setVisible([36mtrue[39m)[33m;[39m
+   [90m 578 |[39m             setDates((prev) [33m=>[39m ({ [33m...[39mprev[33m,[39m [leaveType[33m.[39mend][33m:[39m [32m""[39m }))[33m;[39m
+  [31m[1m>[22m[39m[90m 579 |[39m             setValue(leaveType[33m.[39mend [36mas[39m keyof [33mFormFields[39m[33m,[39m [32m""[39m)[33m;[39m
+   [90m     |[39m                      [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 580 |[39m             [36mreturn[39m[33m;[39m
+   [90m 581 |[39m         }
+   [90m 582 |[39m         [36mif[39m (error) {[0m
+
+Found [31m[1m4 errors[22m[39m in 2981 ms.
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.8 MiB (29.2 MiB) = 7 assets 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 485 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mruntime.1f1209a84b057821.hot-update.js[39m[22m 343 bytes [1m[32mstyles.css[39m[22m 32.9 KiB [1m[32mstyles.js[39m[22m 401 KiB 41 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32mmain.1f1209a84b057821.hot-update.js[39m[22m (main) 3 MiB (javascript) 946 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.1f1209a84b057821.hot-update.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.8 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13.1 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (fcfcf1f7aa5ad458)
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/leave-feature/components/leave-feature-component/leave-enter-component/leave-enter-component.tsx[22m:[32m[1m578:45[22m[39m
+[90mTS2552: [39mCannot find name 'leaveType'. Did you mean 'LEAVE_TYPES'?
+  [0m [90m 576 |[39m             )[33m;[39m
+   [90m 577 |[39m             setVisible([36mtrue[39m)[33m;[39m
+  [31m[1m>[22m[39m[90m 578 |[39m             setDates((prev) [33m=>[39m ({ [33m...[39mprev[33m,[39m [leaveType[33m.[39mend][33m:[39m [32m""[39m }))[33m;[39m
+   [90m     |[39m                                             [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 579 |[39m             setValue(leaveType[33m.[39mend [36mas[39m keyof [33mFormFields[39m[33m,[39m [32m""[39m)[33m;[39m
+   [90m 580 |[39m             [36mreturn[39m[33m;[39m
+   [90m 581 |[39m         }[0m
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/leave-feature/components/leave-feature-component/leave-enter-component/leave-enter-component.tsx[22m:[32m[1m579:22[22m[39m
+[90mTS2552: [39mCannot find name 'leaveType'. Did you mean 'LEAVE_TYPES'?
+  [0m [90m 577 |[39m             setVisible([36mtrue[39m)[33m;[39m
+   [90m 578 |[39m             setDates((prev) [33m=>[39m ({ [33m...[39mprev[33m,[39m [leaveType[33m.[39mend][33m:[39m [32m""[39m }))[33m;[39m
+  [31m[1m>[22m[39m[90m 579 |[39m             setValue(leaveType[33m.[39mend [36mas[39m keyof [33mFormFields[39m[33m,[39m [32m""[39m)[33m;[39m
+   [90m     |[39m                      [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 580 |[39m             [36mreturn[39m[33m;[39m
+   [90m 581 |[39m         }
+   [90m 582 |[39m         [36mif[39m (error) {[0m
+
+Found [31m[1m2 errors[22m[39m in 1642 ms.
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.8 MiB (29.2 MiB) = 7 assets 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 485 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mruntime.fcfcf1f7aa5ad458.hot-update.js[39m[22m 343 bytes [1m[32mstyles.css[39m[22m 32.9 KiB [1m[32mstyles.js[39m[22m 401 KiB 41 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32mmain.fcfcf1f7aa5ad458.hot-update.js[39m[22m (main) 3 MiB (javascript) 946 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.fcfcf1f7aa5ad458.hot-update.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.8 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13.1 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (f4259f056bf59b65)
+[36mType-checking in progress...[39m
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/leave-feature/components/leave-feature-component/leave-enter-component/leave-enter-component.tsx[22m:[32m[1m578:45[22m[39m
+[90mTS2552: [39mCannot find name 'leaveType'. Did you mean 'LEAVE_TYPES'?
+  [0m [90m 576 |[39m             )[33m;[39m
+   [90m 577 |[39m             setVisible([36mtrue[39m)[33m;[39m
+  [31m[1m>[22m[39m[90m 578 |[39m             setDates((prev) [33m=>[39m ({ [33m...[39mprev[33m,[39m [leaveType[33m.[39mend][33m:[39m [32m""[39m }))[33m;[39m
+   [90m     |[39m                                             [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 579 |[39m             setValue(leaveType[33m.[39mend [36mas[39m keyof [33mFormFields[39m[33m,[39m [32m""[39m)[33m;[39m
+   [90m 580 |[39m             [36mreturn[39m[33m;[39m
+   [90m 581 |[39m         }[0m
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/leave-feature/components/leave-feature-component/leave-enter-component/leave-enter-component.tsx[22m:[32m[1m579:22[22m[39m
+[90mTS2552: [39mCannot find name 'leaveType'. Did you mean 'LEAVE_TYPES'?
+  [0m [90m 577 |[39m             setVisible([36mtrue[39m)[33m;[39m
+   [90m 578 |[39m             setDates((prev) [33m=>[39m ({ [33m...[39mprev[33m,[39m [leaveType[33m.[39mend][33m:[39m [32m""[39m }))[33m;[39m
+  [31m[1m>[22m[39m[90m 579 |[39m             setValue(leaveType[33m.[39mend [36mas[39m keyof [33mFormFields[39m[33m,[39m [32m""[39m)[33m;[39m
+   [90m     |[39m                      [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 580 |[39m             [36mreturn[39m[33m;[39m
+   [90m 581 |[39m         }
+   [90m 582 |[39m         [36mif[39m (error) {[0m
+
+Found [31m[1m2 errors[22m[39m in 1787 ms.
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.8 MiB (29.2 MiB) = 7 assets 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 485 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mruntime.f4259f056bf59b65.hot-update.js[39m[22m 343 bytes [1m[32mstyles.css[39m[22m 32.9 KiB [1m[32mstyles.js[39m[22m 401 KiB 41 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32mmain.f4259f056bf59b65.hot-update.js[39m[22m (main) 3 MiB (javascript) 946 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.f4259f056bf59b65.hot-update.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.8 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13.1 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (2c55bf05f6796b60)
+[36mType-checking in progress...[39m
+[32mNo errors found.[39m
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.8 MiB (29.2 MiB) = 7 assets 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 485 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mruntime.2c55bf05f6796b60.hot-update.js[39m[22m 343 bytes [1m[32mstyles.css[39m[22m 32.9 KiB [1m[32mstyles.js[39m[22m 401 KiB 41 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32mmain.2c55bf05f6796b60.hot-update.js[39m[22m (main) 3 MiB (javascript) 946 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.2c55bf05f6796b60.hot-update.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.8 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13.1 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (24d399b82a847742)
+[32mNo errors found.[39m
+Entrypoint [1mmain[39m[22m = 7 assets 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m = [1m[32mruntime.js[39m[22m [1m[32mruntime.24d399b82a847742.hot-update.js[39m[22m [1m[32mstyles.css[39m[22m [1m[32mstyles.js[39m[22m 41 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32mmain.24d399b82a847742.hot-update.js[39m[22m (main) 2.96 MiB (javascript) 946 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.24d399b82a847742.hot-update.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.8 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./src/app/features/src/leave-feature/components/leave-feature-component/leave-enter-component/leave-enter-component.tsx[39m[22m
+Module build failed (from ../../node_modules/@nx/webpack/src/utils/web-babel-loader.js):
+SyntaxError: C:\Peerless\Peerless-CRM-Frontend\apps\peerless-cms\src\app\features\src\leave-feature\components\leave-feature-component\leave-enter-component\leave-enter-component.tsx: 'import' and 'export' may only appear at the top level. (965:4)
+
+[0m [90m 963 |[39m     }
+ [90m 964 |[39m
+[31m[1m>[22m[39m[90m 965 |[39m     [36mexport[39m [36mdefault[39m [33mLeaveEnter[39m[33m;[39m
+ [90m     |[39m     [31m[1m^[22m[39m
+ [90m 966 |[39m[0m
+    at constructor (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:360:19)
+    at TypeScriptParserMixin.raise (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:6613:19)
+    at TypeScriptParserMixin.parseStatementContent (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:12747:18)
+    at TypeScriptParserMixin.parseStatementContent (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:9454:18)
+    at TypeScriptParserMixin.parseStatementLike (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:12644:17)
+    at TypeScriptParserMixin.parseStatementListItem (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:12624:17)
+    at TypeScriptParserMixin.parseBlockOrModuleBlockBody (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:13192:61)
+    at TypeScriptParserMixin.parseBlockBody (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:13185:10)
+    at TypeScriptParserMixin.parseBlock (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:13173:10)
+    at TypeScriptParserMixin.parseFunctionBody (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:12018:24)
+    at TypeScriptParserMixin.parseFunctionBodyAndFinish (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:12004:10)
+    at TypeScriptParserMixin.parseFunctionBodyAndFinish (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:9179:18)
+    at C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:13317:12
+    at TypeScriptParserMixin.withSmartMixTopicForbiddingContext (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:12311:14)
+    at TypeScriptParserMixin.parseFunction (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:13316:10)
+    at TypeScriptParserMixin.parseFunctionStatement (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:13001:17)
+    at TypeScriptParserMixin.parseStatementContent (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:12668:21)
+    at TypeScriptParserMixin.parseStatementContent (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:9454:18)
+    at TypeScriptParserMixin.parseStatementLike (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:12644:17)
+    at TypeScriptParserMixin.parseStatementListItem (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:12624:17)
+    at TypeScriptParserMixin.parseExportDeclaration (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:13805:17)
+    at TypeScriptParserMixin.parseExportDeclaration (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:9579:85)
+    at TypeScriptParserMixin.maybeParseExportDeclaration (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:13764:31)
+    at TypeScriptParserMixin.parseExport (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:13683:29)
+    at TypeScriptParserMixin.parseExport (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:9401:20)
+    at TypeScriptParserMixin.parseStatementContent (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:12754:27)
+    at TypeScriptParserMixin.parseStatementContent (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:9454:18)
+    at TypeScriptParserMixin.parseStatementLike (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:12644:17)
+    at TypeScriptParserMixin.parseModuleItem (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:12621:17)
+    at TypeScriptParserMixin.parseBlockOrModuleBlockBody (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:13192:36)
+    at TypeScriptParserMixin.parseBlockBody (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:13185:10)
+    at TypeScriptParserMixin.parseProgram (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:12514:10)
+    at TypeScriptParserMixin.parseTopLevel (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:12504:25)
+    at TypeScriptParserMixin.parse (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:14364:10)
+    at TypeScriptParserMixin.parse (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:10071:18)
+    at parse (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\parser\lib\index.js:14398:38)
+    at parser (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\core\lib\parser\index.js:41:34)
+    at parser.next (<anonymous>)
+    at normalizeFile (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\core\lib\transformation\normalize-file.js:64:37)
+    at normalizeFile.next (<anonymous>)
+    at run (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\core\lib\transformation\index.js:22:50)
+    at run.next (<anonymous>)
+    at transform (C:\Peerless\Peerless-CRM-Frontend\node_modules\@babel\core\lib\transform.js:22:33)
+    at transform.next (<anonymous>)
+    at step (C:\Peerless\Peerless-CRM-Frontend\node_modules\gensync\index.js:261:32)
+    at C:\Peerless\Peerless-CRM-Frontend\node_modules\gensync\index.js:273:13
+    at async.call.result.err.err (C:\Peerless\Peerless-CRM-Frontend\node_modules\gensync\index.js:223:11)
+
+webpack compiled with [1m[31m1 error[39m[22m (64ddf9d1f322a2fb)
+[36mType-checking in progress...[39m
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/leave-feature/components/leave-feature-component/leave-enter-component/leave-enter-component.tsx[22m:[32m[1m573:33[22m[39m
+[90mTS2552: [39mCannot find name 'leaveType'. Did you mean 'LEAVE_TYPES'?
+  [0m [90m 571 |[39m         [36mconst[39m dateObj [33m=[39m [36mnew[39m [33mDate[39m(data[33m.[39mannual_startDate)[33m;[39m
+   [90m 572 |[39m         [36mconst[39m { totalHours[33m,[39m error } [33m=[39m validateLeaveData(data[33m,[39m [33mLEAVE_TYPES[39m)[33m;[39m
+  [31m[1m>[22m[39m[90m 573 |[39m         [36mconst[39m start [33m=[39m getValues(leaveType[33m.[39mstart)[33m;[39m
+   [90m     |[39m                                 [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 574 |[39m         [36mconst[39m end [33m=[39m getValues(leaveType[33m.[39mend)[33m;[39m
+   [90m 575 |[39m
+   [90m 576 |[39m         [36mif[39m (start [33m&&[39m end) {[0m
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/leave-feature/components/leave-feature-component/leave-enter-component/leave-enter-component.tsx[22m:[32m[1m574:31[22m[39m
+[90mTS2552: [39mCannot find name 'leaveType'. Did you mean 'LEAVE_TYPES'?
+  [0m [90m 572 |[39m         [36mconst[39m { totalHours[33m,[39m error } [33m=[39m validateLeaveData(data[33m,[39m [33mLEAVE_TYPES[39m)[33m;[39m
+   [90m 573 |[39m         [36mconst[39m start [33m=[39m getValues(leaveType[33m.[39mstart)[33m;[39m
+  [31m[1m>[22m[39m[90m 574 |[39m         [36mconst[39m end [33m=[39m getValues(leaveType[33m.[39mend)[33m;[39m
+   [90m     |[39m                               [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 575 |[39m
+   [90m 576 |[39m         [36mif[39m (start [33m&&[39m end) {
+   [90m 577 |[39m             [36mconst[39m s [33m=[39m [36mnew[39m [33mDate[39m(start)[33m;[39m[0m
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/leave-feature/components/leave-feature-component/leave-list/leavelist-table/leavelist-table.tsx[22m:[32m[1m9:8[22m[39m
+[90mTS2613: [39mModule '"C:/Peerless/Peerless-CRM-Frontend/apps/peerless-cms/src/app/features/src/leave-feature/components/leave-feature-component/leave-enter-component/leave-enter-component"' has no default export. Did you mean to use 'import { LeaveEnter } from "C:/Peerless/Peerless-CRM-Frontend/apps/peerless-cms/src/app/features/src/leave-feature/components/leave-feature-component/leave-enter-component/leave-enter-component"' instead?
+  [0m [90m  7 |[39m [36mimport[39m { [33mDialog[39m } [36mfrom[39m [32m"primereact/dialog"[39m[33m;[39m
+   [90m  8 |[39m [36mimport[39m { useDispatch[33m,[39m useSelector } [36mfrom[39m [32m"react-redux"[39m[33m;[39m
+  [31m[1m>[22m[39m[90m  9 |[39m [36mimport[39m [33mLeaveEnter[39m [36mfrom[39m [32m"../../leave-enter-component/leave-enter-component"[39m[33m;[39m
+   [90m    |[39m        [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 10 |[39m [36mimport[39m { useEffect[33m,[39m useState } [36mfrom[39m [32m"react"[39m[33m;[39m
+   [90m 11 |[39m
+   [90m 12 |[39m [36minterface[39m [33mLeaveListTableProps[39m {[0m
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/leave-feature/components/leave-feature-component/leave-list/leavelist-table/leavelist-table.tsx[22m:[32m[1m99:132[22m[39m
+[90mTS7006: [39mParameter 'status' implicitly has an 'any' type.
+  [0m [90m  97 |[39m                 {(
+   [90m  98 |[39m                     [33m<[39m[33mdiv[39m[33m>[39m
+  [31m[1m>[22m[39m[90m  99 |[39m                         [33m<[39m [33mLeaveEnter[39m closeAddLeaveModal[33m=[39m{closeAddLeaveModal} leaveListViewData[33m=[39m{publicleaveListViewData} onClose[33m=[39m{(status[33m,[39m labelText[33m,[39m triggerKey) [33m=>[39m {
+   [90m     |[39m                                                                                                                                    [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 100 |[39m                             setOpen([36mtrue[39m)[33m;[39m
+   [90m 101 |[39m                             setNewStatus(status)[33m;[39m
+   [90m 102 |[39m                             setLabelText(labelText)[33m;[39m[0m
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/leave-feature/components/leave-feature-component/leave-list/leavelist-table/leavelist-table.tsx[22m:[32m[1m99:140[22m[39m
+[90mTS7006: [39mParameter 'labelText' implicitly has an 'any' type.
+  [0m [90m  97 |[39m                 {(
+   [90m  98 |[39m                     [33m<[39m[33mdiv[39m[33m>[39m
+  [31m[1m>[22m[39m[90m  99 |[39m                         [33m<[39m [33mLeaveEnter[39m closeAddLeaveModal[33m=[39m{closeAddLeaveModal} leaveListViewData[33m=[39m{publicleaveListViewData} onClose[33m=[39m{(status[33m,[39m labelText[33m,[39m triggerKey) [33m=>[39m {
+   [90m     |[39m                                                                                                                                            [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 100 |[39m                             setOpen([36mtrue[39m)[33m;[39m
+   [90m 101 |[39m                             setNewStatus(status)[33m;[39m
+   [90m 102 |[39m                             setLabelText(labelText)[33m;[39m[0m
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/leave-feature/components/leave-feature-component/leave-list/leavelist-table/leavelist-table.tsx[22m:[32m[1m99:151[22m[39m
+[90mTS7006: [39mParameter 'triggerKey' implicitly has an 'any' type.
+  [0m [90m  97 |[39m                 {(
+   [90m  98 |[39m                     [33m<[39m[33mdiv[39m[33m>[39m
+  [31m[1m>[22m[39m[90m  99 |[39m                         [33m<[39m [33mLeaveEnter[39m closeAddLeaveModal[33m=[39m{closeAddLeaveModal} leaveListViewData[33m=[39m{publicleaveListViewData} onClose[33m=[39m{(status[33m,[39m labelText[33m,[39m triggerKey) [33m=>[39m {
+   [90m     |[39m                                                                                                                                                       [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 100 |[39m                             setOpen([36mtrue[39m)[33m;[39m
+   [90m 101 |[39m                             setNewStatus(status)[33m;[39m
+   [90m 102 |[39m                             setLabelText(labelText)[33m;[39m[0m
+
+Found [31m[1m6 errors[22m[39m in 3744 ms.
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.8 MiB (29.2 MiB) = 7 assets 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 485 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mruntime.24d399b82a847742.hot-update.js[39m[22m 343 bytes [1m[32mstyles.css[39m[22m 32.9 KiB [1m[32mstyles.js[39m[22m 401 KiB 41 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32mmain.24d399b82a847742.hot-update.js[39m[22m (main) 3 MiB (javascript) 946 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.24d399b82a847742.hot-update.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.8 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13.1 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (d101056048743e59)
+[36mType-checking in progress...[39m
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/leave-feature/components/leave-feature-component/leave-enter-component/leave-enter-component.tsx[22m:[32m[1m573:33[22m[39m
+[90mTS2552: [39mCannot find name 'leaveType'. Did you mean 'LEAVE_TYPES'?
+  [0m [90m 571 |[39m         [36mconst[39m dateObj [33m=[39m [36mnew[39m [33mDate[39m(data[33m.[39mannual_startDate)[33m;[39m
+   [90m 572 |[39m         [36mconst[39m { totalHours[33m,[39m error } [33m=[39m validateLeaveData(data[33m,[39m [33mLEAVE_TYPES[39m)[33m;[39m
+  [31m[1m>[22m[39m[90m 573 |[39m         [36mconst[39m start [33m=[39m getValues(leaveType[33m.[39mstart)[33m;[39m
+   [90m     |[39m                                 [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 574 |[39m         [36mconst[39m end [33m=[39m getValues(leaveType[33m.[39mend)[33m;[39m
+   [90m 575 |[39m
+   [90m 576 |[39m         [36mif[39m (start [33m&&[39m end) {[0m
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/leave-feature/components/leave-feature-component/leave-enter-component/leave-enter-component.tsx[22m:[32m[1m574:31[22m[39m
+[90mTS2552: [39mCannot find name 'leaveType'. Did you mean 'LEAVE_TYPES'?
+  [0m [90m 572 |[39m         [36mconst[39m { totalHours[33m,[39m error } [33m=[39m validateLeaveData(data[33m,[39m [33mLEAVE_TYPES[39m)[33m;[39m
+   [90m 573 |[39m         [36mconst[39m start [33m=[39m getValues(leaveType[33m.[39mstart)[33m;[39m
+  [31m[1m>[22m[39m[90m 574 |[39m         [36mconst[39m end [33m=[39m getValues(leaveType[33m.[39mend)[33m;[39m
+   [90m     |[39m                               [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 575 |[39m
+   [90m 576 |[39m         [36mif[39m (start [33m&&[39m end) {
+   [90m 577 |[39m             [36mconst[39m s [33m=[39m [36mnew[39m [33mDate[39m(start)[33m;[39m[0m
+
+Found [31m[1m2 errors[22m[39m in 3270 ms.
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.8 MiB (29.2 MiB) = 7 assets 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 485 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mruntime.d101056048743e59.hot-update.js[39m[22m 343 bytes [1m[32mstyles.css[39m[22m 32.9 KiB [1m[32mstyles.js[39m[22m 401 KiB 41 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32mmain.d101056048743e59.hot-update.js[39m[22m (main) 3 MiB (javascript) 946 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.d101056048743e59.hot-update.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.8 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13.1 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (2c37bde8743128e4)
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/leave-feature/components/leave-feature-component/leave-enter-component/leave-enter-component.tsx[22m:[32m[1m573:33[22m[39m
+[90mTS2552: [39mCannot find name 'leaveType'. Did you mean 'LEAVE_TYPES'?
+  [0m [90m 571 |[39m         [36mconst[39m dateObj [33m=[39m [36mnew[39m [33mDate[39m(data[33m.[39mannual_startDate)[33m;[39m
+   [90m 572 |[39m         [36mconst[39m { totalHours[33m,[39m error } [33m=[39m validateLeaveData(data[33m,[39m [33mLEAVE_TYPES[39m)[33m;[39m
+  [31m[1m>[22m[39m[90m 573 |[39m         [36mconst[39m start [33m=[39m getValues(leaveType[33m.[39mstart)[33m;[39m
+   [90m     |[39m                                 [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 574 |[39m         [36mconst[39m end [33m=[39m getValues(leaveType[33m.[39mend)[33m;[39m
+   [90m 575 |[39m
+   [90m 576 |[39m         [36mif[39m (start [33m&&[39m end) {[0m
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/leave-feature/components/leave-feature-component/leave-enter-component/leave-enter-component.tsx[22m:[32m[1m574:31[22m[39m
+[90mTS2552: [39mCannot find name 'leaveType'. Did you mean 'LEAVE_TYPES'?
+  [0m [90m 572 |[39m         [36mconst[39m { totalHours[33m,[39m error } [33m=[39m validateLeaveData(data[33m,[39m [33mLEAVE_TYPES[39m)[33m;[39m
+   [90m 573 |[39m         [36mconst[39m start [33m=[39m getValues(leaveType[33m.[39mstart)[33m;[39m
+  [31m[1m>[22m[39m[90m 574 |[39m         [36mconst[39m end [33m=[39m getValues(leaveType[33m.[39mend)[33m;[39m
+   [90m     |[39m                               [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 575 |[39m
+   [90m 576 |[39m         [36mif[39m (start [33m&&[39m end) {
+   [90m 577 |[39m             [36mconst[39m s [33m=[39m [36mnew[39m [33mDate[39m(start)[33m;[39m[0m
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/leave-feature/components/leave-feature-component/leave-enter-component/leave-enter-component.tsx[22m:[32m[1m584:49[22m[39m
+[90mTS2552: [39mCannot find name 'leaveType'. Did you mean 'LEAVE_TYPES'?
+  [0m [90m 582 |[39m                 )[33m;[39m
+   [90m 583 |[39m                 setVisible([36mtrue[39m)[33m;[39m
+  [31m[1m>[22m[39m[90m 584 |[39m                 setDates((prev) [33m=>[39m ({ [33m...[39mprev[33m,[39m [leaveType[33m.[39mend][33m:[39m [32m""[39m }))[33m;[39m
+   [90m     |[39m                                                 [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 585 |[39m                 setValue(leaveType[33m.[39mend [36mas[39m keyof [33mFormFields[39m[33m,[39m [32m""[39m)[33m;[39m
+   [90m 586 |[39m                 [36mreturn[39m[33m;[39m
+   [90m 587 |[39m             }[0m
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/leave-feature/components/leave-feature-component/leave-enter-component/leave-enter-component.tsx[22m:[32m[1m585:26[22m[39m
+[90mTS2552: [39mCannot find name 'leaveType'. Did you mean 'LEAVE_TYPES'?
+  [0m [90m 583 |[39m                 setVisible([36mtrue[39m)[33m;[39m
+   [90m 584 |[39m                 setDates((prev) [33m=>[39m ({ [33m...[39mprev[33m,[39m [leaveType[33m.[39mend][33m:[39m [32m""[39m }))[33m;[39m
+  [31m[1m>[22m[39m[90m 585 |[39m                 setValue(leaveType[33m.[39mend [36mas[39m keyof [33mFormFields[39m[33m,[39m [32m""[39m)[33m;[39m
+   [90m     |[39m                          [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 586 |[39m                 [36mreturn[39m[33m;[39m
+   [90m 587 |[39m             }
+   [90m 588 |[39m         }[0m
+
+Found [31m[1m4 errors[22m[39m in 1372 ms.
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.8 MiB (29.2 MiB) = 7 assets 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 485 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mruntime.2c37bde8743128e4.hot-update.js[39m[22m 343 bytes [1m[32mstyles.css[39m[22m 32.9 KiB [1m[32mstyles.js[39m[22m 401 KiB 41 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32mmain.2c37bde8743128e4.hot-update.js[39m[22m (main) 3 MiB (javascript) 946 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.2c37bde8743128e4.hot-update.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.8 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13.1 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (3f0f96bcefcf910a)
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/leave-feature/components/leave-feature-component/leave-enter-component/leave-enter-component.tsx[22m:[32m[1m573:51[22m[39m
+[90mTS2367: [39mThis comparison appears to be unintentional because the types 'string' and 'void' have no overlap.
+  [0m [90m 571 |[39m         [36mconst[39m dateObj [33m=[39m [36mnew[39m [33mDate[39m(data[33m.[39mannual_startDate)[33m;[39m
+   [90m 572 |[39m         [36mconst[39m { totalHours[33m,[39m error } [33m=[39m validateLeaveData(data[33m,[39m [33mLEAVE_TYPES[39m)[33m;[39m
+  [31m[1m>[22m[39m[90m 573 |[39m         [36mconst[39m leaveType [33m=[39m [33mLEAVE_TYPES[39m[33m.[39mfind((t) [33m=>[39m t[33m.[39mstart [33m===[39m name [33m||[39m t[33m.[39mend [33m===[39m name)[33m;[39m
+   [90m     |[39m                                                   [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 574 |[39m
+   [90m 575 |[39m         [36mconst[39m start [33m=[39m getValues(leaveType[33m.[39mstart)[33m;[39m
+   [90m 576 |[39m         [36mconst[39m end [33m=[39m getValues(leaveType[33m.[39mend)[33m;[39m[0m
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/leave-feature/components/leave-feature-component/leave-enter-component/leave-enter-component.tsx[22m:[32m[1m573:71[22m[39m
+[90mTS2367: [39mThis comparison appears to be unintentional because the types 'string' and 'void' have no overlap.
+  [0m [90m 571 |[39m         [36mconst[39m dateObj [33m=[39m [36mnew[39m [33mDate[39m(data[33m.[39mannual_startDate)[33m;[39m
+   [90m 572 |[39m         [36mconst[39m { totalHours[33m,[39m error } [33m=[39m validateLeaveData(data[33m,[39m [33mLEAVE_TYPES[39m)[33m;[39m
+  [31m[1m>[22m[39m[90m 573 |[39m         [36mconst[39m leaveType [33m=[39m [33mLEAVE_TYPES[39m[33m.[39mfind((t) [33m=>[39m t[33m.[39mstart [33m===[39m name [33m||[39m t[33m.[39mend [33m===[39m name)[33m;[39m
+   [90m     |[39m                                                                       [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 574 |[39m
+   [90m 575 |[39m         [36mconst[39m start [33m=[39m getValues(leaveType[33m.[39mstart)[33m;[39m
+   [90m 576 |[39m         [36mconst[39m end [33m=[39m getValues(leaveType[33m.[39mend)[33m;[39m[0m
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/leave-feature/components/leave-feature-component/leave-enter-component/leave-enter-component.tsx[22m:[32m[1m575:33[22m[39m
+[90mTS18048: [39m'leaveType' is possibly 'undefined'.
+  [0m [90m 573 |[39m         [36mconst[39m leaveType [33m=[39m [33mLEAVE_TYPES[39m[33m.[39mfind((t) [33m=>[39m t[33m.[39mstart [33m===[39m name [33m||[39m t[33m.[39mend [33m===[39m name)[33m;[39m
+   [90m 574 |[39m
+  [31m[1m>[22m[39m[90m 575 |[39m         [36mconst[39m start [33m=[39m getValues(leaveType[33m.[39mstart)[33m;[39m
+   [90m     |[39m                                 [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 576 |[39m         [36mconst[39m end [33m=[39m getValues(leaveType[33m.[39mend)[33m;[39m
+   [90m 577 |[39m
+   [90m 578 |[39m         [36mif[39m (start [33m&&[39m end) {[0m
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/leave-feature/components/leave-feature-component/leave-enter-component/leave-enter-component.tsx[22m:[32m[1m576:31[22m[39m
+[90mTS18048: [39m'leaveType' is possibly 'undefined'.
+  [0m [90m 574 |[39m
+   [90m 575 |[39m         [36mconst[39m start [33m=[39m getValues(leaveType[33m.[39mstart)[33m;[39m
+  [31m[1m>[22m[39m[90m 576 |[39m         [36mconst[39m end [33m=[39m getValues(leaveType[33m.[39mend)[33m;[39m
+   [90m     |[39m                               [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 577 |[39m
+   [90m 578 |[39m         [36mif[39m (start [33m&&[39m end) {
+   [90m 579 |[39m             [36mconst[39m s [33m=[39m [36mnew[39m [33mDate[39m(start)[33m;[39m[0m
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/leave-feature/components/leave-feature-component/leave-enter-component/leave-enter-component.tsx[22m:[32m[1m586:49[22m[39m
+[90mTS18048: [39m'leaveType' is possibly 'undefined'.
+  [0m [90m 584 |[39m                 )[33m;[39m
+   [90m 585 |[39m                 setVisible([36mtrue[39m)[33m;[39m
+  [31m[1m>[22m[39m[90m 586 |[39m                 setDates((prev) [33m=>[39m ({ [33m...[39mprev[33m,[39m [leaveType[33m.[39mend][33m:[39m [32m""[39m }))[33m;[39m
+   [90m     |[39m                                                 [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 587 |[39m                 setValue(leaveType[33m.[39mend [36mas[39m keyof [33mFormFields[39m[33m,[39m [32m""[39m)[33m;[39m
+   [90m 588 |[39m                 [36mreturn[39m[33m;[39m
+   [90m 589 |[39m             }[0m
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/leave-feature/components/leave-feature-component/leave-enter-component/leave-enter-component.tsx[22m:[32m[1m587:26[22m[39m
+[90mTS18048: [39m'leaveType' is possibly 'undefined'.
+  [0m [90m 585 |[39m                 setVisible([36mtrue[39m)[33m;[39m
+   [90m 586 |[39m                 setDates((prev) [33m=>[39m ({ [33m...[39mprev[33m,[39m [leaveType[33m.[39mend][33m:[39m [32m""[39m }))[33m;[39m
+  [31m[1m>[22m[39m[90m 587 |[39m                 setValue(leaveType[33m.[39mend [36mas[39m keyof [33mFormFields[39m[33m,[39m [32m""[39m)[33m;[39m
+   [90m     |[39m                          [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 588 |[39m                 [36mreturn[39m[33m;[39m
+   [90m 589 |[39m             }
+   [90m 590 |[39m         }[0m
+
+Found [31m[1m6 errors[22m[39m in 1240 ms.
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.8 MiB (29.2 MiB) = 7 assets 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 485 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mruntime.3f0f96bcefcf910a.hot-update.js[39m[22m 343 bytes [1m[32mstyles.css[39m[22m 32.9 KiB [1m[32mstyles.js[39m[22m 401 KiB 41 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32mmain.3f0f96bcefcf910a.hot-update.js[39m[22m (main) 3 MiB (javascript) 946 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.3f0f96bcefcf910a.hot-update.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.8 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13.1 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (c89eabc495fb0f60)
+[36mType-checking in progress...[39m
+[32mNo errors found.[39m
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.8 MiB (29.2 MiB) = 7 assets 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 485 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mruntime.c89eabc495fb0f60.hot-update.js[39m[22m 343 bytes [1m[32mstyles.css[39m[22m 32.9 KiB [1m[32mstyles.js[39m[22m 401 KiB 41 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32mmain.c89eabc495fb0f60.hot-update.js[39m[22m (main) 3 MiB (javascript) 946 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.c89eabc495fb0f60.hot-update.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.8 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13.1 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (39fa022e4366cb9e)
+[36mType-checking in progress...[39m
+[32mNo errors found.[39m
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.8 MiB (29.2 MiB) = 7 assets 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 485 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mruntime.39fa022e4366cb9e.hot-update.js[39m[22m 343 bytes [1m[32mstyles.css[39m[22m 32.9 KiB [1m[32mstyles.js[39m[22m 401 KiB 41 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32mmain.39fa022e4366cb9e.hot-update.js[39m[22m (main) 3 MiB (javascript) 946 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.39fa022e4366cb9e.hot-update.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.8 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13.1 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (e2163296e57f543a)
+[32mNo errors found.[39m
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.8 MiB (29.1 MiB) = 7 assets 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 485 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mruntime.e2163296e57f543a.hot-update.js[39m[22m 343 bytes [1m[32mstyles.css[39m[22m 32.9 KiB [1m[32mstyles.js[39m[22m 401 KiB 41 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32mmain.e2163296e57f543a.hot-update.js[39m[22m (main) 3 MiB (javascript) 946 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.e2163296e57f543a.hot-update.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.8 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13.1 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (75688e23e7403172)
+[32mNo errors found.[39m
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.8 MiB (29.2 MiB) = 7 assets 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 485 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mruntime.75688e23e7403172.hot-update.js[39m[22m 343 bytes [1m[32mstyles.css[39m[22m 32.9 KiB [1m[32mstyles.js[39m[22m 401 KiB 41 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32mmain.75688e23e7403172.hot-update.js[39m[22m (main) 3 MiB (javascript) 946 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.75688e23e7403172.hot-update.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.8 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13.1 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (3c063c45ecc3f50b)
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/leave-feature/components/leave-feature-component/leave-enter-component/leave-enter-component.tsx[22m:[32m[1m367:36[22m[39m
+[90mTS2304: [39mCannot find name 's'.
+  [0m [90m 365 |[39m                 )
+   [90m 366 |[39m             )[33m;[39m
+  [31m[1m>[22m[39m[90m 367 |[39m             [36mlet[39m current [33m=[39m [36mnew[39m [33mDate[39m(s)[33m;[39m
+   [90m     |[39m                                    [31m[1m^[22m[39m
+   [90m 368 |[39m             [36mlet[39m validDays [33m=[39m [35m0[39m[33m;[39m
+   [90m 369 |[39m             [36mwhile[39m (current [33m<=[39m e) {
+   [90m 370 |[39m                 [36mconst[39m dayOfWeek [33m=[39m current[33m.[39mgetDay()[33m;[39m[0m
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/leave-feature/components/leave-feature-component/leave-enter-component/leave-enter-component.tsx[22m:[32m[1m369:31[22m[39m
+[90mTS2304: [39mCannot find name 'e'.
+  [0m [90m 367 |[39m             [36mlet[39m current [33m=[39m [36mnew[39m [33mDate[39m(s)[33m;[39m
+   [90m 368 |[39m             [36mlet[39m validDays [33m=[39m [35m0[39m[33m;[39m
+  [31m[1m>[22m[39m[90m 369 |[39m             [36mwhile[39m (current [33m<=[39m e) {
+   [90m     |[39m                               [31m[1m^[22m[39m
+   [90m 370 |[39m                 [36mconst[39m dayOfWeek [33m=[39m current[33m.[39mgetDay()[33m;[39m
+   [90m 371 |[39m                 [36mconst[39m isoDate [33m=[39m current[33m.[39mtoISOString()[33m.[39mslice([35m0[39m[33m,[39m [35m10[39m)[33m;[39m
+   [90m 372 |[39m                 [36mif[39m (dayOfWeek [33m!==[39m [35m0[39m [33m&&[39m dayOfWeek [33m!==[39m [35m6[39m [33m&&[39m [33m![39mholidaySet[33m.[39mhas(isoDate)) {[0m
+
+Found [31m[1m2 errors[22m[39m in 1385 ms.
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.8 MiB (29.2 MiB) = 7 assets 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 485 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mruntime.3c063c45ecc3f50b.hot-update.js[39m[22m 343 bytes [1m[32mstyles.css[39m[22m 32.9 KiB [1m[32mstyles.js[39m[22m 401 KiB 41 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32mmain.3c063c45ecc3f50b.hot-update.js[39m[22m (main) 3 MiB (javascript) 946 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.3c063c45ecc3f50b.hot-update.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.8 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13.1 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (4c3cfaa62c6ce2d6)
+[36mType-checking in progress...[39m
+[32mNo errors found.[39m
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.8 MiB (29.2 MiB) = 7 assets 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 485 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mruntime.4c3cfaa62c6ce2d6.hot-update.js[39m[22m 343 bytes [1m[32mstyles.css[39m[22m 32.9 KiB [1m[32mstyles.js[39m[22m 401 KiB 41 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32mmain.4c3cfaa62c6ce2d6.hot-update.js[39m[22m (main) 3 MiB (javascript) 946 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.4c3cfaa62c6ce2d6.hot-update.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.8 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13.1 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (307888e38e306223)
+[36mType-checking in progress...[39m
+[32mNo errors found.[39m
+<i> [1m[32m[webpack-dev-server] Gracefully shutting down. To force exit, press ^C again. Please wait...[39m[22m

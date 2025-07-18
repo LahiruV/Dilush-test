@@ -1,0 +1,917 @@
+<i> [1m[32m[webpack-dev-server] Project is running at:[39m[22m
+<i> [1m[32m[webpack-dev-server] Loopback: [36mhttp://localhost:4200/[39m, [36mhttp://[::1]:4200/[39m[39m[22m
+<i> [1m[32m[webpack-dev-server] 404s will fallback to '[36m/index.html[39m'[39m[22m
+
+[36m>[39m [7m[1m[36m NX [39m[22m[27m [1mWeb Development Server is listening at http://localhost:4200/[22m
+
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.7 MiB (29 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mvendor.css[39m[22m 1.54 MiB [1m[32mvendor.js[39m[22m 13.9 MiB [1m[32mmain.css[39m[22m 946 KiB [1m[32mmain.js[39m[22m 4.25 MiB 12 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 484 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mstyles.css[39m[22m 32.8 KiB [1m[32mstyles.js[39m[22m 401 KiB 40 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m (main) 2.95 MiB (javascript) 945 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.7 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+
+[1mLOG from ../../node_modules/sass-loader/dist/cjs.js sass-loader ../../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[5].use[1]!../../node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[5].use[2]!../../node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[5].use[3]!./src/styles/crm-custom-theme.scss[39m[22m
+<w> [1m[33mDeprecation The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/legacy-js-api[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnull[39m[22m
+<w> [1m[33mDeprecation Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info and automated migrator: https://sass-lang.com/d/import[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9  root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.[39m[22m
+<w> [1m[33mUse map.get instead.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info and automated migrator: https://sass-lang.com/d/import[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 1218:15  k-map-get()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 1835:22  @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9            root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation Using / for division outside of calc() is deprecated and will be removed in Dart Sass 2.0.0.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mRecommendation: math.div($a, $b) or calc($a / $b)[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info and automated migrator: https://sass-lang.com/d/slash-div[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 1051:15  k-math-div()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 1940:21  @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9            root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.[39m[22m
+<w> [1m[33mUse map.merge instead.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info and automated migrator: https://sass-lang.com/d/import[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 2280:22  @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9            root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.[39m[22m
+<w> [1m[33mUse map.merge instead.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info and automated migrator: https://sass-lang.com/d/import[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 2283:23  @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9            root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.[39m[22m
+<w> [1m[33mUse map.merge instead.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info and automated migrator: https://sass-lang.com/d/import[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 2286:26  @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9            root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.[39m[22m
+<w> [1m[33mUse map.merge instead.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info and automated migrator: https://sass-lang.com/d/import[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 2289:23  @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9            root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation red() is deprecated. Suggestion:[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mcolor.channel($color, "red", $space: rgb)[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/color-functions[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 31:13    k-color-red()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 482:48   k-color-luminance()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 572:12   k-contrast-legacy()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 2507:32  @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9            root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation green() is deprecated. Suggestion:[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mcolor.channel($color, "green", $space: rgb)[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/color-functions[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 41:13    k-color-green()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 483:50   k-color-luminance()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 572:12   k-contrast-legacy()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 2507:32  @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9            root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation blue() is deprecated. Suggestion:[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mcolor.channel($color, "blue", $space: rgb)[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/color-functions[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 51:13    k-color-blue()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 484:49   k-color-luminance()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 572:12   k-contrast-legacy()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 2507:32  @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9            root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation darken() is deprecated. Suggestions:[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mcolor.scale($color, $lightness: -7%)[39m[22m
+<w> [1m[33mcolor.adjust($color, $lightness: -7%)[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/color-functions[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 104:13     k-color-darken()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 17920:119  @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9              root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation Passing percentage units to the global abs() function is deprecated.[39m[22m
+<w> [1m[33mIn the future, this will emit a CSS abs() function to be resolved by the browser.[39m[22m
+<w> [1m[33mTo preserve current behavior: math.abs(65%)[39m[22m
+<w> [1m[33mTo emit a CSS abs() now: abs(#{65%})[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/abs-percent[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 993:13    k-math-abs()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 597:13    k-color-level()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 630:13    k-color-shade()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 646:13    k-try-shade()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19663:83  kendo-chip--theme-base()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19778:5   kendo-chip--theme()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19795:9   @content[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 5109:9    module-render()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19793:5   kendo-chip--styles()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19800:5   @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9             root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation Passing percentage units to the global abs() function is deprecated.[39m[22m
+<w> [1m[33mIn the future, this will emit a CSS abs() function to be resolved by the browser.[39m[22m
+<w> [1m[33mTo preserve current behavior: math.abs(-80%)[39m[22m
+<w> [1m[33mTo emit a CSS abs() now: abs(#{-80%})[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/abs-percent[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 993:13    k-math-abs()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 597:13    k-color-level()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 617:13    k-color-tint()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 662:13    k-try-tint()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19664:80  kendo-chip--theme-base()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19778:5   kendo-chip--theme()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19795:9   @content[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 5109:9    module-render()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19793:5   kendo-chip--styles()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19800:5   @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9             root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation Passing percentage units to the global abs() function is deprecated.[39m[22m
+<w> [1m[33mIn the future, this will emit a CSS abs() function to be resolved by the browser.[39m[22m
+<w> [1m[33mTo preserve current behavior: math.abs(-25%)[39m[22m
+<w> [1m[33mTo emit a CSS abs() now: abs(#{-25%})[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/abs-percent[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 993:13    k-math-abs()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 597:13    k-color-level()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 617:13    k-color-tint()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 662:13    k-try-tint()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19665:82  kendo-chip--theme-base()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19778:5   kendo-chip--theme()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19795:9   @content[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 5109:9    module-render()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19793:5   kendo-chip--styles()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19800:5   @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9             root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation Passing percentage units to the global abs() function is deprecated.[39m[22m
+<w> [1m[33mIn the future, this will emit a CSS abs() function to be resolved by the browser.[39m[22m
+<w> [1m[33mTo preserve current behavior: math.abs(-65%)[39m[22m
+<w> [1m[33mTo emit a CSS abs() now: abs(#{-65%})[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/abs-percent[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 993:13     k-math-abs()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 597:13     k-color-level()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 617:13     k-color-tint()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 662:13     k-try-tint()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19676:106  kendo-chip--theme-base()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19778:5    kendo-chip--theme()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19795:9    @content[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 5109:9     module-render()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19793:5    kendo-chip--styles()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19800:5    @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9              root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation Passing percentage units to the global abs() function is deprecated.[39m[22m
+<w> [1m[33mIn the future, this will emit a CSS abs() function to be resolved by the browser.[39m[22m
+<w> [1m[33mTo preserve current behavior: math.abs(-50%)[39m[22m
+<w> [1m[33mTo emit a CSS abs() now: abs(#{-50%})[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/abs-percent[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 993:13     k-math-abs()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 597:13     k-color-level()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 617:13     k-color-tint()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 662:13     k-try-tint()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19680:107  kendo-chip--theme-base()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19778:5    kendo-chip--theme()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19795:9    @content[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 5109:9     module-render()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19793:5    kendo-chip--styles()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 19800:5    @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9              root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mDeprecation darken() is deprecated. Suggestions:[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mcolor.scale($color, $lightness: -8%)[39m[22m
+<w> [1m[33mcolor.adjust($color, $lightness: -8%)[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/color-functions[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 104:13    k-color-darken()[39m[22m
+<w> [1m[33mnode_modules\@progress\kendo-theme-default\dist\all.scss 44198:84  @import[39m[22m
+<w> [1m[33mapps\peerless-cms\src\styles\crm-custom-theme.scss 7:9             root stylesheet[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33m35 repetitive deprecation warnings omitted.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnull[39m[22m
+
+webpack compiled [1m[32msuccessfully[39m[22m (826302212b109b99)
+[36mType-checking in progress...[39m
+[32mNo errors found.[39m
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.7 MiB (29.1 MiB) = 7 assets 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 484 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mruntime.826302212b109b99.hot-update.js[39m[22m 343 bytes [1m[32mstyles.css[39m[22m 32.8 KiB [1m[32mstyles.js[39m[22m 401 KiB 41 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32mmain.826302212b109b99.hot-update.js[39m[22m (main) 2.95 MiB (javascript) 945 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.826302212b109b99.hot-update.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.7 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (54200c4847749f7f)
+[36mType-checking in progress...[39m
+[32mNo errors found.[39m
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.7 MiB (29.1 MiB) = 7 assets 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 484 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mruntime.54200c4847749f7f.hot-update.js[39m[22m 343 bytes [1m[32mstyles.css[39m[22m 32.8 KiB [1m[32mstyles.js[39m[22m 401 KiB 41 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32mmain.54200c4847749f7f.hot-update.js[39m[22m (main) 2.95 MiB (javascript) 945 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.54200c4847749f7f.hot-update.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.7 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (def4c780310cdbc9)
+[32mNo errors found.[39m
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.7 MiB (29.1 MiB) = 7 assets 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 484 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mruntime.def4c780310cdbc9.hot-update.js[39m[22m 343 bytes [1m[32mstyles.css[39m[22m 32.8 KiB [1m[32mstyles.js[39m[22m 401 KiB 41 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32mmain.def4c780310cdbc9.hot-update.js[39m[22m (main) 2.95 MiB (javascript) 945 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.def4c780310cdbc9.hot-update.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.7 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (83e94846a4379917)
+[32mNo errors found.[39m
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.7 MiB (29 MiB) = 7 assets 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 484 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mruntime.83e94846a4379917.hot-update.js[39m[22m 343 bytes [1m[32mstyles.css[39m[22m 32.8 KiB [1m[32mstyles.js[39m[22m 401 KiB 41 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32mmain.83e94846a4379917.hot-update.js[39m[22m (main) 2.95 MiB (javascript) 945 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.83e94846a4379917.hot-update.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.7 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (468e4b228dc8a56f)
+[36mType-checking in progress...[39m
+[32mNo errors found.[39m
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.7 MiB (29 MiB) = 7 assets 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 484 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mruntime.468e4b228dc8a56f.hot-update.js[39m[22m 343 bytes [1m[32mstyles.css[39m[22m 32.8 KiB [1m[32mstyles.js[39m[22m 401 KiB 41 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32mmain.468e4b228dc8a56f.hot-update.js[39m[22m (main) 2.95 MiB (javascript) 945 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.468e4b228dc8a56f.hot-update.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.7 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (3774e517aa5d714f)
+[32mNo errors found.[39m
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.7 MiB (29 MiB) = 7 assets 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 484 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mruntime.3774e517aa5d714f.hot-update.js[39m[22m 343 bytes [1m[32mstyles.css[39m[22m 32.8 KiB [1m[32mstyles.js[39m[22m 401 KiB 41 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32mmain.3774e517aa5d714f.hot-update.js[39m[22m (main) 2.95 MiB (javascript) 945 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.3774e517aa5d714f.hot-update.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.7 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (a24f781ab908604a)
+[32mNo errors found.[39m
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.7 MiB (29 MiB) = 7 assets 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 484 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mruntime.a24f781ab908604a.hot-update.js[39m[22m 343 bytes [1m[32mstyles.css[39m[22m 32.8 KiB [1m[32mstyles.js[39m[22m 401 KiB 41 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32mmain.a24f781ab908604a.hot-update.js[39m[22m (main) 2.95 MiB (javascript) 945 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.a24f781ab908604a.hot-update.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.7 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (ece0dd118b8ea069)
+[32mNo errors found.[39m
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.7 MiB (29.1 MiB) = 7 assets 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 484 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mruntime.ece0dd118b8ea069.hot-update.js[39m[22m 343 bytes [1m[32mstyles.css[39m[22m 32.8 KiB [1m[32mstyles.js[39m[22m 401 KiB 41 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32mmain.ece0dd118b8ea069.hot-update.js[39m[22m (main) 2.95 MiB (javascript) 945 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.ece0dd118b8ea069.hot-update.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.7 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (7c3cbcc054e6b0c2)
+[32mNo errors found.[39m
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.7 MiB (29 MiB) = 7 assets 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 484 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mruntime.7c3cbcc054e6b0c2.hot-update.js[39m[22m 343 bytes [1m[32mstyles.css[39m[22m 32.8 KiB [1m[32mstyles.js[39m[22m 401 KiB 41 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32mmain.7c3cbcc054e6b0c2.hot-update.js[39m[22m (main) 2.95 MiB (javascript) 945 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.7c3cbcc054e6b0c2.hot-update.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.7 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (960a398d73ee4d1c)
+[32mNo errors found.[39m
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.7 MiB (29 MiB) = 7 assets 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 484 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mruntime.960a398d73ee4d1c.hot-update.js[39m[22m 343 bytes [1m[32mstyles.css[39m[22m 32.8 KiB [1m[32mstyles.js[39m[22m 401 KiB 41 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32mmain.960a398d73ee4d1c.hot-update.js[39m[22m (main) 2.95 MiB (javascript) 945 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.960a398d73ee4d1c.hot-update.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.7 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (139778c74d8ea006)
+[32mNo errors found.[39m
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.7 MiB (29 MiB) = 7 assets 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 484 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mruntime.139778c74d8ea006.hot-update.js[39m[22m 343 bytes [1m[32mstyles.css[39m[22m 32.8 KiB [1m[32mstyles.js[39m[22m 401 KiB 41 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32mmain.139778c74d8ea006.hot-update.js[39m[22m (main) 2.95 MiB (javascript) 945 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.139778c74d8ea006.hot-update.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.7 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (405ba41fc07eb044)
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/dashboard-feature/components/dashboard-business-sales-enquiry/dashboard-business-sales-enquiry-filter.tsx[22m:[32m[1m107:30[22m[39m
+[90mTS2304: [39mCannot find name 'MultiColumnComboBoxWidget'.
+  [0m [90m 105 |[39m                         [33m<[39m[33m/[39m[33mdiv[39m[33m>[39m
+   [90m 106 |[39m                         [33m<[39m[33mFilterFormGroup[39m label[33m=[39m[32m'Market'[39m[33m>[39m
+  [31m[1m>[22m[39m[90m 107 |[39m                             [33m<[39m[33mMultiColumnComboBoxWidget[39m id[33m=[39m{[32m"sales-enquiry-deal-price-group-drop"[39m} className[33m=[39m{[32m"administrator-filter filter-form-filter"[39m} setValue[33m=[39m{(e) [33m=>[39m setMarketDrop(e)} value[33m=[39m{marketDrop} datalist[33m=[39m{allMarketForLookupData} isFilterable[33m=[39m{[36mtrue[39m} textField[33m=[39m{[32m"value"[39m} valueField[33m=[39m{[32m"text"[39m} columns[33m=[39m{[{ field[33m:[39m [32m'value'[39m[33m,[39m header[33m:[39m [32m'Code'[39m[33m,[39m width[33m:[39m [32m'150px'[39m }[33m,[39m { field[33m:[39m [32m'text'[39m[33m,[39m header[33m:[39m [32m'Description'[39m[33m,[39m width[33m:[39m [32m'300px'[39m }]} [33m/[39m[33m>[39m
+   [90m     |[39m                              [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 108 |[39m                         [33m<[39m[33m/[39m[33mFilterFormGroup[39m[33m>[39m
+   [90m 109 |[39m                         {[90m/* <ButtonWidget id='business-sales-enquiry-filter-button' classNames=' k-button-md k-rounded-md k-button-solid k-button-solid-primary dash-filter-button dash-filter-btn' type='submit' isDisabled={isBusinessSalesEnqListFetch} isFetching={true} /> */[39m}
+   [90m 110 |[39m                         [33m<[39m[33mFilterNonButton[39m type[33m=[39m[32m'submit'[39m [33m/[39m[33m>[39m[0m
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/dashboard-feature/components/dashboard-business-sales-enquiry/dashboard-business-sales-enquiry-filter.tsx[22m:[32m[1m107:164[22m[39m
+[90mTS7006: [39mParameter 'e' implicitly has an 'any' type.
+  [0m [90m 105 |[39m                         [33m<[39m[33m/[39m[33mdiv[39m[33m>[39m
+   [90m 106 |[39m                         [33m<[39m[33mFilterFormGroup[39m label[33m=[39m[32m'Market'[39m[33m>[39m
+  [31m[1m>[22m[39m[90m 107 |[39m                             [33m<[39m[33mMultiColumnComboBoxWidget[39m id[33m=[39m{[32m"sales-enquiry-deal-price-group-drop"[39m} className[33m=[39m{[32m"administrator-filter filter-form-filter"[39m} setValue[33m=[39m{(e) [33m=>[39m setMarketDrop(e)} value[33m=[39m{marketDrop} datalist[33m=[39m{allMarketForLookupData} isFilterable[33m=[39m{[36mtrue[39m} textField[33m=[39m{[32m"value"[39m} valueField[33m=[39m{[32m"text"[39m} columns[33m=[39m{[{ field[33m:[39m [32m'value'[39m[33m,[39m header[33m:[39m [32m'Code'[39m[33m,[39m width[33m:[39m [32m'150px'[39m }[33m,[39m { field[33m:[39m [32m'text'[39m[33m,[39m header[33m:[39m [32m'Description'[39m[33m,[39m width[33m:[39m [32m'300px'[39m }]} [33m/[39m[33m>[39m
+   [90m     |[39m                                                                                                                                                                    [31m[1m^[22m[39m
+   [90m 108 |[39m                         [33m<[39m[33m/[39m[33mFilterFormGroup[39m[33m>[39m
+   [90m 109 |[39m                         {[90m/* <ButtonWidget id='business-sales-enquiry-filter-button' classNames=' k-button-md k-rounded-md k-button-solid k-button-solid-primary dash-filter-button dash-filter-btn' type='submit' isDisabled={isBusinessSalesEnqListFetch} isFetching={true} /> */[39m}
+   [90m 110 |[39m                         [33m<[39m[33mFilterNonButton[39m type[33m=[39m[32m'submit'[39m [33m/[39m[33m>[39m[0m
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/dashboard-feature/components/dashboard-business-sales-enquiry/dashboard-business-sales-enquiry-filter.tsx[22m:[32m[1m107:170[22m[39m
+[90mTS2304: [39mCannot find name 'setMarketDrop'.
+  [0m [90m 105 |[39m                         [33m<[39m[33m/[39m[33mdiv[39m[33m>[39m
+   [90m 106 |[39m                         [33m<[39m[33mFilterFormGroup[39m label[33m=[39m[32m'Market'[39m[33m>[39m
+  [31m[1m>[22m[39m[90m 107 |[39m                             [33m<[39m[33mMultiColumnComboBoxWidget[39m id[33m=[39m{[32m"sales-enquiry-deal-price-group-drop"[39m} className[33m=[39m{[32m"administrator-filter filter-form-filter"[39m} setValue[33m=[39m{(e) [33m=>[39m setMarketDrop(e)} value[33m=[39m{marketDrop} datalist[33m=[39m{allMarketForLookupData} isFilterable[33m=[39m{[36mtrue[39m} textField[33m=[39m{[32m"value"[39m} valueField[33m=[39m{[32m"text"[39m} columns[33m=[39m{[{ field[33m:[39m [32m'value'[39m[33m,[39m header[33m:[39m [32m'Code'[39m[33m,[39m width[33m:[39m [32m'150px'[39m }[33m,[39m { field[33m:[39m [32m'text'[39m[33m,[39m header[33m:[39m [32m'Description'[39m[33m,[39m width[33m:[39m [32m'300px'[39m }]} [33m/[39m[33m>[39m
+   [90m     |[39m                                                                                                                                                                          [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 108 |[39m                         [33m<[39m[33m/[39m[33mFilterFormGroup[39m[33m>[39m
+   [90m 109 |[39m                         {[90m/* <ButtonWidget id='business-sales-enquiry-filter-button' classNames=' k-button-md k-rounded-md k-button-solid k-button-solid-primary dash-filter-button dash-filter-btn' type='submit' isDisabled={isBusinessSalesEnqListFetch} isFetching={true} /> */[39m}
+   [90m 110 |[39m                         [33m<[39m[33mFilterNonButton[39m type[33m=[39m[32m'submit'[39m [33m/[39m[33m>[39m[0m
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/dashboard-feature/components/dashboard-business-sales-enquiry/dashboard-business-sales-enquiry-filter.tsx[22m:[32m[1m107:195[22m[39m
+[90mTS2304: [39mCannot find name 'marketDrop'.
+  [0m [90m 105 |[39m                         [33m<[39m[33m/[39m[33mdiv[39m[33m>[39m
+   [90m 106 |[39m                         [33m<[39m[33mFilterFormGroup[39m label[33m=[39m[32m'Market'[39m[33m>[39m
+  [31m[1m>[22m[39m[90m 107 |[39m                             [33m<[39m[33mMultiColumnComboBoxWidget[39m id[33m=[39m{[32m"sales-enquiry-deal-price-group-drop"[39m} className[33m=[39m{[32m"administrator-filter filter-form-filter"[39m} setValue[33m=[39m{(e) [33m=>[39m setMarketDrop(e)} value[33m=[39m{marketDrop} datalist[33m=[39m{allMarketForLookupData} isFilterable[33m=[39m{[36mtrue[39m} textField[33m=[39m{[32m"value"[39m} valueField[33m=[39m{[32m"text"[39m} columns[33m=[39m{[{ field[33m:[39m [32m'value'[39m[33m,[39m header[33m:[39m [32m'Code'[39m[33m,[39m width[33m:[39m [32m'150px'[39m }[33m,[39m { field[33m:[39m [32m'text'[39m[33m,[39m header[33m:[39m [32m'Description'[39m[33m,[39m width[33m:[39m [32m'300px'[39m }]} [33m/[39m[33m>[39m
+   [90m     |[39m                                                                                                                                                                                                   [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 108 |[39m                         [33m<[39m[33m/[39m[33mFilterFormGroup[39m[33m>[39m
+   [90m 109 |[39m                         {[90m/* <ButtonWidget id='business-sales-enquiry-filter-button' classNames=' k-button-md k-rounded-md k-button-solid k-button-solid-primary dash-filter-button dash-filter-btn' type='submit' isDisabled={isBusinessSalesEnqListFetch} isFetching={true} /> */[39m}
+   [90m 110 |[39m                         [33m<[39m[33mFilterNonButton[39m type[33m=[39m[32m'submit'[39m [33m/[39m[33m>[39m[0m
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/dashboard-feature/components/dashboard-business-sales-enquiry/dashboard-business-sales-enquiry-filter.tsx[22m:[32m[1m107:217[22m[39m
+[90mTS2304: [39mCannot find name 'allMarketForLookupData'.
+  [0m [90m 105 |[39m                         [33m<[39m[33m/[39m[33mdiv[39m[33m>[39m
+   [90m 106 |[39m                         [33m<[39m[33mFilterFormGroup[39m label[33m=[39m[32m'Market'[39m[33m>[39m
+  [31m[1m>[22m[39m[90m 107 |[39m                             [33m<[39m[33mMultiColumnComboBoxWidget[39m id[33m=[39m{[32m"sales-enquiry-deal-price-group-drop"[39m} className[33m=[39m{[32m"administrator-filter filter-form-filter"[39m} setValue[33m=[39m{(e) [33m=>[39m setMarketDrop(e)} value[33m=[39m{marketDrop} datalist[33m=[39m{allMarketForLookupData} isFilterable[33m=[39m{[36mtrue[39m} textField[33m=[39m{[32m"value"[39m} valueField[33m=[39m{[32m"text"[39m} columns[33m=[39m{[{ field[33m:[39m [32m'value'[39m[33m,[39m header[33m:[39m [32m'Code'[39m[33m,[39m width[33m:[39m [32m'150px'[39m }[33m,[39m { field[33m:[39m [32m'text'[39m[33m,[39m header[33m:[39m [32m'Description'[39m[33m,[39m width[33m:[39m [32m'300px'[39m }]} [33m/[39m[33m>[39m
+   [90m     |[39m                                                                                                                                                                                                                         [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 108 |[39m                         [33m<[39m[33m/[39m[33mFilterFormGroup[39m[33m>[39m
+   [90m 109 |[39m                         {[90m/* <ButtonWidget id='business-sales-enquiry-filter-button' classNames=' k-button-md k-rounded-md k-button-solid k-button-solid-primary dash-filter-button dash-filter-btn' type='submit' isDisabled={isBusinessSalesEnqListFetch} isFetching={true} /> */[39m}
+   [90m 110 |[39m                         [33m<[39m[33mFilterNonButton[39m type[33m=[39m[32m'submit'[39m [33m/[39m[33m>[39m[0m
+
+Found [31m[1m5 errors[22m[39m in 5427 ms.
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.7 MiB (29 MiB) = 7 assets 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 484 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mruntime.405ba41fc07eb044.hot-update.js[39m[22m 343 bytes [1m[32mstyles.css[39m[22m 32.8 KiB [1m[32mstyles.js[39m[22m 401 KiB 41 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32mmain.405ba41fc07eb044.hot-update.js[39m[22m (main) 2.95 MiB (javascript) 945 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.405ba41fc07eb044.hot-update.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.7 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (2cf660e3423cd515)
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/dashboard-feature/components/dashboard-business-sales-enquiry/dashboard-business-sales-enquiry-filter.tsx[22m:[32m[1m107:30[22m[39m
+[90mTS2304: [39mCannot find name 'MultiColumnComboBoxWidget'.
+  [0m [90m 105 |[39m                         [33m<[39m[33m/[39m[33mdiv[39m[33m>[39m
+   [90m 106 |[39m                         [33m<[39m[33mFilterFormGroup[39m label[33m=[39m[32m'Market'[39m[33m>[39m
+  [31m[1m>[22m[39m[90m 107 |[39m                             [33m<[39m[33mMultiColumnComboBoxWidget[39m id[33m=[39m{[32m"business-sales-enquiry-market"[39m} className[33m=[39m{[32m"administrator-filter filter-form-filter"[39m} setValue[33m=[39m{(e) [33m=>[39m setMarketDrop(e)} value[33m=[39m{marketDrop} datalist[33m=[39m{allMarketForLookupData} isFilterable[33m=[39m{[36mtrue[39m} textField[33m=[39m{[32m"value"[39m} valueField[33m=[39m{[32m"text"[39m} columns[33m=[39m{[{ field[33m:[39m [32m'value'[39m[33m,[39m header[33m:[39m [32m'Code'[39m[33m,[39m width[33m:[39m [32m'150px'[39m }[33m,[39m { field[33m:[39m [32m'text'[39m[33m,[39m header[33m:[39m [32m'Description'[39m[33m,[39m width[33m:[39m [32m'300px'[39m }]} [33m/[39m[33m>[39m
+   [90m     |[39m                              [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 108 |[39m                         [33m<[39m[33m/[39m[33mFilterFormGroup[39m[33m>[39m
+   [90m 109 |[39m                         {[90m/* <ButtonWidget id='business-sales-enquiry-filter-button' classNames=' k-button-md k-rounded-md k-button-solid k-button-solid-primary dash-filter-button dash-filter-btn' type='submit' isDisabled={isBusinessSalesEnqListFetch} isFetching={true} /> */[39m}
+   [90m 110 |[39m                         [33m<[39m[33mFilterNonButton[39m type[33m=[39m[32m'submit'[39m [33m/[39m[33m>[39m[0m
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/dashboard-feature/components/dashboard-business-sales-enquiry/dashboard-business-sales-enquiry-filter.tsx[22m:[32m[1m107:158[22m[39m
+[90mTS7006: [39mParameter 'e' implicitly has an 'any' type.
+  [0m [90m 105 |[39m                         [33m<[39m[33m/[39m[33mdiv[39m[33m>[39m
+   [90m 106 |[39m                         [33m<[39m[33mFilterFormGroup[39m label[33m=[39m[32m'Market'[39m[33m>[39m
+  [31m[1m>[22m[39m[90m 107 |[39m                             [33m<[39m[33mMultiColumnComboBoxWidget[39m id[33m=[39m{[32m"business-sales-enquiry-market"[39m} className[33m=[39m{[32m"administrator-filter filter-form-filter"[39m} setValue[33m=[39m{(e) [33m=>[39m setMarketDrop(e)} value[33m=[39m{marketDrop} datalist[33m=[39m{allMarketForLookupData} isFilterable[33m=[39m{[36mtrue[39m} textField[33m=[39m{[32m"value"[39m} valueField[33m=[39m{[32m"text"[39m} columns[33m=[39m{[{ field[33m:[39m [32m'value'[39m[33m,[39m header[33m:[39m [32m'Code'[39m[33m,[39m width[33m:[39m [32m'150px'[39m }[33m,[39m { field[33m:[39m [32m'text'[39m[33m,[39m header[33m:[39m [32m'Description'[39m[33m,[39m width[33m:[39m [32m'300px'[39m }]} [33m/[39m[33m>[39m
+   [90m     |[39m                                                                                                                                                              [31m[1m^[22m[39m
+   [90m 108 |[39m                         [33m<[39m[33m/[39m[33mFilterFormGroup[39m[33m>[39m
+   [90m 109 |[39m                         {[90m/* <ButtonWidget id='business-sales-enquiry-filter-button' classNames=' k-button-md k-rounded-md k-button-solid k-button-solid-primary dash-filter-button dash-filter-btn' type='submit' isDisabled={isBusinessSalesEnqListFetch} isFetching={true} /> */[39m}
+   [90m 110 |[39m                         [33m<[39m[33mFilterNonButton[39m type[33m=[39m[32m'submit'[39m [33m/[39m[33m>[39m[0m
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/dashboard-feature/components/dashboard-business-sales-enquiry/dashboard-business-sales-enquiry-filter.tsx[22m:[32m[1m107:164[22m[39m
+[90mTS2304: [39mCannot find name 'setMarketDrop'.
+  [0m [90m 105 |[39m                         [33m<[39m[33m/[39m[33mdiv[39m[33m>[39m
+   [90m 106 |[39m                         [33m<[39m[33mFilterFormGroup[39m label[33m=[39m[32m'Market'[39m[33m>[39m
+  [31m[1m>[22m[39m[90m 107 |[39m                             [33m<[39m[33mMultiColumnComboBoxWidget[39m id[33m=[39m{[32m"business-sales-enquiry-market"[39m} className[33m=[39m{[32m"administrator-filter filter-form-filter"[39m} setValue[33m=[39m{(e) [33m=>[39m setMarketDrop(e)} value[33m=[39m{marketDrop} datalist[33m=[39m{allMarketForLookupData} isFilterable[33m=[39m{[36mtrue[39m} textField[33m=[39m{[32m"value"[39m} valueField[33m=[39m{[32m"text"[39m} columns[33m=[39m{[{ field[33m:[39m [32m'value'[39m[33m,[39m header[33m:[39m [32m'Code'[39m[33m,[39m width[33m:[39m [32m'150px'[39m }[33m,[39m { field[33m:[39m [32m'text'[39m[33m,[39m header[33m:[39m [32m'Description'[39m[33m,[39m width[33m:[39m [32m'300px'[39m }]} [33m/[39m[33m>[39m
+   [90m     |[39m                                                                                                                                                                    [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 108 |[39m                         [33m<[39m[33m/[39m[33mFilterFormGroup[39m[33m>[39m
+   [90m 109 |[39m                         {[90m/* <ButtonWidget id='business-sales-enquiry-filter-button' classNames=' k-button-md k-rounded-md k-button-solid k-button-solid-primary dash-filter-button dash-filter-btn' type='submit' isDisabled={isBusinessSalesEnqListFetch} isFetching={true} /> */[39m}
+   [90m 110 |[39m                         [33m<[39m[33mFilterNonButton[39m type[33m=[39m[32m'submit'[39m [33m/[39m[33m>[39m[0m
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/dashboard-feature/components/dashboard-business-sales-enquiry/dashboard-business-sales-enquiry-filter.tsx[22m:[32m[1m107:189[22m[39m
+[90mTS2304: [39mCannot find name 'marketDrop'.
+  [0m [90m 105 |[39m                         [33m<[39m[33m/[39m[33mdiv[39m[33m>[39m
+   [90m 106 |[39m                         [33m<[39m[33mFilterFormGroup[39m label[33m=[39m[32m'Market'[39m[33m>[39m
+  [31m[1m>[22m[39m[90m 107 |[39m                             [33m<[39m[33mMultiColumnComboBoxWidget[39m id[33m=[39m{[32m"business-sales-enquiry-market"[39m} className[33m=[39m{[32m"administrator-filter filter-form-filter"[39m} setValue[33m=[39m{(e) [33m=>[39m setMarketDrop(e)} value[33m=[39m{marketDrop} datalist[33m=[39m{allMarketForLookupData} isFilterable[33m=[39m{[36mtrue[39m} textField[33m=[39m{[32m"value"[39m} valueField[33m=[39m{[32m"text"[39m} columns[33m=[39m{[{ field[33m:[39m [32m'value'[39m[33m,[39m header[33m:[39m [32m'Code'[39m[33m,[39m width[33m:[39m [32m'150px'[39m }[33m,[39m { field[33m:[39m [32m'text'[39m[33m,[39m header[33m:[39m [32m'Description'[39m[33m,[39m width[33m:[39m [32m'300px'[39m }]} [33m/[39m[33m>[39m
+   [90m     |[39m                                                                                                                                                                                             [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 108 |[39m                         [33m<[39m[33m/[39m[33mFilterFormGroup[39m[33m>[39m
+   [90m 109 |[39m                         {[90m/* <ButtonWidget id='business-sales-enquiry-filter-button' classNames=' k-button-md k-rounded-md k-button-solid k-button-solid-primary dash-filter-button dash-filter-btn' type='submit' isDisabled={isBusinessSalesEnqListFetch} isFetching={true} /> */[39m}
+   [90m 110 |[39m                         [33m<[39m[33mFilterNonButton[39m type[33m=[39m[32m'submit'[39m [33m/[39m[33m>[39m[0m
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/dashboard-feature/components/dashboard-business-sales-enquiry/dashboard-business-sales-enquiry-filter.tsx[22m:[32m[1m107:211[22m[39m
+[90mTS2304: [39mCannot find name 'allMarketForLookupData'.
+  [0m [90m 105 |[39m                         [33m<[39m[33m/[39m[33mdiv[39m[33m>[39m
+   [90m 106 |[39m                         [33m<[39m[33mFilterFormGroup[39m label[33m=[39m[32m'Market'[39m[33m>[39m
+  [31m[1m>[22m[39m[90m 107 |[39m                             [33m<[39m[33mMultiColumnComboBoxWidget[39m id[33m=[39m{[32m"business-sales-enquiry-market"[39m} className[33m=[39m{[32m"administrator-filter filter-form-filter"[39m} setValue[33m=[39m{(e) [33m=>[39m setMarketDrop(e)} value[33m=[39m{marketDrop} datalist[33m=[39m{allMarketForLookupData} isFilterable[33m=[39m{[36mtrue[39m} textField[33m=[39m{[32m"value"[39m} valueField[33m=[39m{[32m"text"[39m} columns[33m=[39m{[{ field[33m:[39m [32m'value'[39m[33m,[39m header[33m:[39m [32m'Code'[39m[33m,[39m width[33m:[39m [32m'150px'[39m }[33m,[39m { field[33m:[39m [32m'text'[39m[33m,[39m header[33m:[39m [32m'Description'[39m[33m,[39m width[33m:[39m [32m'300px'[39m }]} [33m/[39m[33m>[39m
+   [90m     |[39m                                                                                                                                                                                                                   [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 108 |[39m                         [33m<[39m[33m/[39m[33mFilterFormGroup[39m[33m>[39m
+   [90m 109 |[39m                         {[90m/* <ButtonWidget id='business-sales-enquiry-filter-button' classNames=' k-button-md k-rounded-md k-button-solid k-button-solid-primary dash-filter-button dash-filter-btn' type='submit' isDisabled={isBusinessSalesEnqListFetch} isFetching={true} /> */[39m}
+   [90m 110 |[39m                         [33m<[39m[33mFilterNonButton[39m type[33m=[39m[32m'submit'[39m [33m/[39m[33m>[39m[0m
+
+Found [31m[1m5 errors[22m[39m in 866 ms.
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.7 MiB (29 MiB) = 7 assets 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 484 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mruntime.2cf660e3423cd515.hot-update.js[39m[22m 343 bytes [1m[32mstyles.css[39m[22m 32.8 KiB [1m[32mstyles.js[39m[22m 401 KiB 41 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32mmain.2cf660e3423cd515.hot-update.js[39m[22m (main) 2.95 MiB (javascript) 945 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.2cf660e3423cd515.hot-update.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.7 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (519955970ec511fe)
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/dashboard-feature/components/dashboard-business-sales-enquiry/dashboard-business-sales-enquiry-filter.tsx[22m:[32m[1m107:164[22m[39m
+[90mTS2304: [39mCannot find name 'setMarketDrop'.
+  [0m [90m 105 |[39m                         [33m<[39m[33m/[39m[33mdiv[39m[33m>[39m
+   [90m 106 |[39m                         [33m<[39m[33mFilterFormGroup[39m label[33m=[39m[32m'Market'[39m[33m>[39m
+  [31m[1m>[22m[39m[90m 107 |[39m                             [33m<[39m[33mMultiColumnComboBoxWidget[39m id[33m=[39m{[32m"business-sales-enquiry-market"[39m} className[33m=[39m{[32m"administrator-filter filter-form-filter"[39m} setValue[33m=[39m{(e) [33m=>[39m setMarketDrop(e)} value[33m=[39m{marketDrop} datalist[33m=[39m{allMarketForLookupData} isFilterable[33m=[39m{[36mtrue[39m} textField[33m=[39m{[32m"value"[39m} valueField[33m=[39m{[32m"text"[39m} columns[33m=[39m{[{ field[33m:[39m [32m'value'[39m[33m,[39m header[33m:[39m [32m'Code'[39m[33m,[39m width[33m:[39m [32m'150px'[39m }[33m,[39m { field[33m:[39m [32m'text'[39m[33m,[39m header[33m:[39m [32m'Description'[39m[33m,[39m width[33m:[39m [32m'300px'[39m }]} [33m/[39m[33m>[39m
+   [90m     |[39m                                                                                                                                                                    [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 108 |[39m                         [33m<[39m[33m/[39m[33mFilterFormGroup[39m[33m>[39m
+   [90m 109 |[39m                         {[90m/* <ButtonWidget id='business-sales-enquiry-filter-button' classNames=' k-button-md k-rounded-md k-button-solid k-button-solid-primary dash-filter-button dash-filter-btn' type='submit' isDisabled={isBusinessSalesEnqListFetch} isFetching={true} /> */[39m}
+   [90m 110 |[39m                         [33m<[39m[33mFilterNonButton[39m type[33m=[39m[32m'submit'[39m [33m/[39m[33m>[39m[0m
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/dashboard-feature/components/dashboard-business-sales-enquiry/dashboard-business-sales-enquiry-filter.tsx[22m:[32m[1m107:189[22m[39m
+[90mTS2304: [39mCannot find name 'marketDrop'.
+  [0m [90m 105 |[39m                         [33m<[39m[33m/[39m[33mdiv[39m[33m>[39m
+   [90m 106 |[39m                         [33m<[39m[33mFilterFormGroup[39m label[33m=[39m[32m'Market'[39m[33m>[39m
+  [31m[1m>[22m[39m[90m 107 |[39m                             [33m<[39m[33mMultiColumnComboBoxWidget[39m id[33m=[39m{[32m"business-sales-enquiry-market"[39m} className[33m=[39m{[32m"administrator-filter filter-form-filter"[39m} setValue[33m=[39m{(e) [33m=>[39m setMarketDrop(e)} value[33m=[39m{marketDrop} datalist[33m=[39m{allMarketForLookupData} isFilterable[33m=[39m{[36mtrue[39m} textField[33m=[39m{[32m"value"[39m} valueField[33m=[39m{[32m"text"[39m} columns[33m=[39m{[{ field[33m:[39m [32m'value'[39m[33m,[39m header[33m:[39m [32m'Code'[39m[33m,[39m width[33m:[39m [32m'150px'[39m }[33m,[39m { field[33m:[39m [32m'text'[39m[33m,[39m header[33m:[39m [32m'Description'[39m[33m,[39m width[33m:[39m [32m'300px'[39m }]} [33m/[39m[33m>[39m
+   [90m     |[39m                                                                                                                                                                                             [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 108 |[39m                         [33m<[39m[33m/[39m[33mFilterFormGroup[39m[33m>[39m
+   [90m 109 |[39m                         {[90m/* <ButtonWidget id='business-sales-enquiry-filter-button' classNames=' k-button-md k-rounded-md k-button-solid k-button-solid-primary dash-filter-button dash-filter-btn' type='submit' isDisabled={isBusinessSalesEnqListFetch} isFetching={true} /> */[39m}
+   [90m 110 |[39m                         [33m<[39m[33mFilterNonButton[39m type[33m=[39m[32m'submit'[39m [33m/[39m[33m>[39m[0m
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/dashboard-feature/components/dashboard-business-sales-enquiry/dashboard-business-sales-enquiry-filter.tsx[22m:[32m[1m107:211[22m[39m
+[90mTS2304: [39mCannot find name 'allMarketForLookupData'.
+  [0m [90m 105 |[39m                         [33m<[39m[33m/[39m[33mdiv[39m[33m>[39m
+   [90m 106 |[39m                         [33m<[39m[33mFilterFormGroup[39m label[33m=[39m[32m'Market'[39m[33m>[39m
+  [31m[1m>[22m[39m[90m 107 |[39m                             [33m<[39m[33mMultiColumnComboBoxWidget[39m id[33m=[39m{[32m"business-sales-enquiry-market"[39m} className[33m=[39m{[32m"administrator-filter filter-form-filter"[39m} setValue[33m=[39m{(e) [33m=>[39m setMarketDrop(e)} value[33m=[39m{marketDrop} datalist[33m=[39m{allMarketForLookupData} isFilterable[33m=[39m{[36mtrue[39m} textField[33m=[39m{[32m"value"[39m} valueField[33m=[39m{[32m"text"[39m} columns[33m=[39m{[{ field[33m:[39m [32m'value'[39m[33m,[39m header[33m:[39m [32m'Code'[39m[33m,[39m width[33m:[39m [32m'150px'[39m }[33m,[39m { field[33m:[39m [32m'text'[39m[33m,[39m header[33m:[39m [32m'Description'[39m[33m,[39m width[33m:[39m [32m'300px'[39m }]} [33m/[39m[33m>[39m
+   [90m     |[39m                                                                                                                                                                                                                   [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 108 |[39m                         [33m<[39m[33m/[39m[33mFilterFormGroup[39m[33m>[39m
+   [90m 109 |[39m                         {[90m/* <ButtonWidget id='business-sales-enquiry-filter-button' classNames=' k-button-md k-rounded-md k-button-solid k-button-solid-primary dash-filter-button dash-filter-btn' type='submit' isDisabled={isBusinessSalesEnqListFetch} isFetching={true} /> */[39m}
+   [90m 110 |[39m                         [33m<[39m[33mFilterNonButton[39m type[33m=[39m[32m'submit'[39m [33m/[39m[33m>[39m[0m
+
+Found [31m[1m3 errors[22m[39m in 780 ms.
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.7 MiB (29 MiB) = 7 assets 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 484 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mruntime.519955970ec511fe.hot-update.js[39m[22m 343 bytes [1m[32mstyles.css[39m[22m 32.8 KiB [1m[32mstyles.js[39m[22m 401 KiB 41 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32mmain.519955970ec511fe.hot-update.js[39m[22m (main) 2.95 MiB (javascript) 945 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.519955970ec511fe.hot-update.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.7 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (7f3aa4932bbedd23)
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/dashboard-feature/components/dashboard-business-sales-enquiry/dashboard-business-sales-enquiry-filter.tsx[22m:[32m[1m109:211[22m[39m
+[90mTS2304: [39mCannot find name 'allMarketForLookupData'.
+  [0m [90m 107 |[39m                         [33m<[39m[33m/[39m[33mdiv[39m[33m>[39m
+   [90m 108 |[39m                         [33m<[39m[33mFilterFormGroup[39m label[33m=[39m[32m'Market'[39m[33m>[39m
+  [31m[1m>[22m[39m[90m 109 |[39m                             [33m<[39m[33mMultiColumnComboBoxWidget[39m id[33m=[39m{[32m"business-sales-enquiry-market"[39m} className[33m=[39m{[32m"administrator-filter filter-form-filter"[39m} setValue[33m=[39m{(e) [33m=>[39m setMarketDrop(e)} value[33m=[39m{marketDrop} datalist[33m=[39m{allMarketForLookupData} isFilterable[33m=[39m{[36mtrue[39m} textField[33m=[39m{[32m"value"[39m} valueField[33m=[39m{[32m"text"[39m} columns[33m=[39m{[{ field[33m:[39m [32m'value'[39m[33m,[39m header[33m:[39m [32m'Code'[39m[33m,[39m width[33m:[39m [32m'150px'[39m }[33m,[39m { field[33m:[39m [32m'text'[39m[33m,[39m header[33m:[39m [32m'Description'[39m[33m,[39m width[33m:[39m [32m'300px'[39m }]} [33m/[39m[33m>[39m
+   [90m     |[39m                                                                                                                                                                                                                   [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 110 |[39m                         [33m<[39m[33m/[39m[33mFilterFormGroup[39m[33m>[39m
+   [90m 111 |[39m                         {[90m/* <ButtonWidget id='business-sales-enquiry-filter-button' classNames=' k-button-md k-rounded-md k-button-solid k-button-solid-primary dash-filter-button dash-filter-btn' type='submit' isDisabled={isBusinessSalesEnqListFetch} isFetching={true} /> */[39m}
+   [90m 112 |[39m                         [33m<[39m[33mFilterNonButton[39m type[33m=[39m[32m'submit'[39m [33m/[39m[33m>[39m[0m
+
+Found [31m[1m1 error[22m[39m in 753 ms.
+<i> [1m[32m[webpack-dev-middleware] wait until bundle finished: /main.519955970ec511fe.hot-update.js[39m[22m
+<i> [1m[32m[webpack-dev-middleware] wait until bundle finished: /runtime.519955970ec511fe.hot-update.js[39m[22m
+<i> [1m[32m[webpack-dev-middleware] wait until bundle finished: /main.519955970ec511fe.hot-update.js.map[39m[22m
+<i> [1m[32m[webpack-dev-middleware] wait until bundle finished: /runtime.519955970ec511fe.hot-update.js.map[39m[22m
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.7 MiB (29 MiB) = 7 assets 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 484 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mruntime.7f3aa4932bbedd23.hot-update.js[39m[22m 343 bytes [1m[32mstyles.css[39m[22m 32.8 KiB [1m[32mstyles.js[39m[22m 401 KiB 41 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32mmain.7f3aa4932bbedd23.hot-update.js[39m[22m (main) 2.95 MiB (javascript) 945 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.7f3aa4932bbedd23.hot-update.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.7 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (c87123d2427a6625)
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/dashboard-feature/components/dashboard-business-sales-enquiry/dashboard-business-sales-enquiry-filter.tsx[22m:[32m[1m108:211[22m[39m
+[90mTS2304: [39mCannot find name 'allMarketForLookupData'.
+  [0m [90m 106 |[39m                         [33m<[39m[33m/[39m[33mdiv[39m[33m>[39m
+   [90m 107 |[39m                         [33m<[39m[33mFilterFormGroup[39m label[33m=[39m[32m'Market'[39m[33m>[39m
+  [31m[1m>[22m[39m[90m 108 |[39m                             [33m<[39m[33mMultiColumnComboBoxWidget[39m id[33m=[39m{[32m"business-sales-enquiry-market"[39m} className[33m=[39m{[32m"administrator-filter filter-form-filter"[39m} setValue[33m=[39m{(e) [33m=>[39m setMarketDrop(e)} value[33m=[39m{marketDrop} datalist[33m=[39m{allMarketForLookupData} isFilterable[33m=[39m{[36mtrue[39m} textField[33m=[39m{[32m"value"[39m} valueField[33m=[39m{[32m"text"[39m} columns[33m=[39m{[{ field[33m:[39m [32m'value'[39m[33m,[39m header[33m:[39m [32m'Code'[39m[33m,[39m width[33m:[39m [32m'150px'[39m }[33m,[39m { field[33m:[39m [32m'text'[39m[33m,[39m header[33m:[39m [32m'Description'[39m[33m,[39m width[33m:[39m [32m'300px'[39m }]} [33m/[39m[33m>[39m
+   [90m     |[39m                                                                                                                                                                                                                   [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 109 |[39m                         [33m<[39m[33m/[39m[33mFilterFormGroup[39m[33m>[39m
+   [90m 110 |[39m                         {[90m/* <ButtonWidget id='business-sales-enquiry-filter-button' classNames=' k-button-md k-rounded-md k-button-solid k-button-solid-primary dash-filter-button dash-filter-btn' type='submit' isDisabled={isBusinessSalesEnqListFetch} isFetching={true} /> */[39m}
+   [90m 111 |[39m                         [33m<[39m[33mFilterNonButton[39m type[33m=[39m[32m'submit'[39m [33m/[39m[33m>[39m[0m
+
+Found [31m[1m1 error[22m[39m in 930 ms.
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.7 MiB (29 MiB) = 7 assets 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 484 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mruntime.c87123d2427a6625.hot-update.js[39m[22m 343 bytes [1m[32mstyles.css[39m[22m 32.8 KiB [1m[32mstyles.js[39m[22m 401 KiB 41 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32mmain.c87123d2427a6625.hot-update.js[39m[22m (main) 2.95 MiB (javascript) 945 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.c87123d2427a6625.hot-update.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.7 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (896136032a0a5625)
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/dashboard-feature/components/dashboard-business-sales-enquiry/dashboard-business-sales-enquiry-filter.tsx[22m:[32m[1m54:36[22m[39m
+[90mTS2304: [39mCannot find name 'dropDownDataConverter'.
+  [0m [90m 52 |[39m     [36mconst[39m { isBusinessSalesEnqListFetch[33m,[39m isFormSubmit } [33m=[39m useSelector((state[33m:[39m [33mRootState[39m) [33m=>[39m state[33m.[39mdashBoardBusinessSalesEnquiry)[33m;[39m
+   [90m 53 |[39m     [36mconst[39m { selectedOriginator } [33m=[39m useSelector((state[33m:[39m [33mRootState[39m) [33m=>[39m state[33m.[39mheader)[33m;[39m
+  [31m[1m>[22m[39m[90m 54 |[39m     [36mconst[39m allMarketForLookupData [33m=[39m dropDownDataConverter[33m.[39mdropDownDataConverter(allMarketForLookup [33m||[39m [][33m,[39m [32m'tableDescription'[39m[33m,[39m [32m'tableCode'[39m)[33m;[39m
+   [90m    |[39m                                    [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 55 |[39m
+   [90m 56 |[39m     [36mconst[39m [salesEnqSales[33m,[39m setSalesEnqSales] [33m=[39m useState[33m<[39m[33mDropDownData[39m[33m>[39m(dropDownDataSales[[35m0[39m])[33m;[39m
+   [90m 57 |[39m     [36mconst[39m [salesEnqSortBy[33m,[39m setSalesEnqSortBy] [33m=[39m useState[33m<[39m[33mDropDownData[39m[33m>[39m(dropDownDataSortBy[[35m3[39m])[33m;[39m[0m
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/dashboard-feature/components/dashboard-business-sales-enquiry/dashboard-business-sales-enquiry-filter.tsx[22m:[32m[1m54:80[22m[39m
+[90mTS2552: [39mCannot find name 'allMarketForLookup'. Did you mean 'allMarketForLookupData'?
+  [0m [90m 52 |[39m     [36mconst[39m { isBusinessSalesEnqListFetch[33m,[39m isFormSubmit } [33m=[39m useSelector((state[33m:[39m [33mRootState[39m) [33m=>[39m state[33m.[39mdashBoardBusinessSalesEnquiry)[33m;[39m
+   [90m 53 |[39m     [36mconst[39m { selectedOriginator } [33m=[39m useSelector((state[33m:[39m [33mRootState[39m) [33m=>[39m state[33m.[39mheader)[33m;[39m
+  [31m[1m>[22m[39m[90m 54 |[39m     [36mconst[39m allMarketForLookupData [33m=[39m dropDownDataConverter[33m.[39mdropDownDataConverter(allMarketForLookup [33m||[39m [][33m,[39m [32m'tableDescription'[39m[33m,[39m [32m'tableCode'[39m)[33m;[39m
+   [90m    |[39m                                                                                [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 55 |[39m
+   [90m 56 |[39m     [36mconst[39m [salesEnqSales[33m,[39m setSalesEnqSales] [33m=[39m useState[33m<[39m[33mDropDownData[39m[33m>[39m(dropDownDataSales[[35m0[39m])[33m;[39m
+   [90m 57 |[39m     [36mconst[39m [salesEnqSortBy[33m,[39m setSalesEnqSortBy] [33m=[39m useState[33m<[39m[33mDropDownData[39m[33m>[39m(dropDownDataSortBy[[35m3[39m])[33m;[39m[0m
+
+Found [31m[1m2 errors[22m[39m in 1065 ms.
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.7 MiB (29 MiB) = 7 assets 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 484 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mruntime.896136032a0a5625.hot-update.js[39m[22m 343 bytes [1m[32mstyles.css[39m[22m 32.8 KiB [1m[32mstyles.js[39m[22m 401 KiB 41 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32mmain.896136032a0a5625.hot-update.js[39m[22m (main) 2.95 MiB (javascript) 945 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.896136032a0a5625.hot-update.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.7 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (4db5fc875da70306)
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/dashboard-feature/components/dashboard-business-sales-enquiry/dashboard-business-sales-enquiry-filter.tsx[22m:[32m[1m55:42[22m[39m
+[90mTS2552: [39mCannot find name 'GetAllMarketForLookup'. Did you mean 'allMarketForLookup'?
+  [0m [90m 53 |[39m     [36mconst[39m { isBusinessSalesEnqListFetch[33m,[39m isFormSubmit } [33m=[39m useSelector((state[33m:[39m [33mRootState[39m) [33m=>[39m state[33m.[39mdashBoardBusinessSalesEnquiry)[33m;[39m
+   [90m 54 |[39m     [36mconst[39m { selectedOriginator } [33m=[39m useSelector((state[33m:[39m [33mRootState[39m) [33m=>[39m state[33m.[39mheader)[33m;[39m
+  [31m[1m>[22m[39m[90m 55 |[39m     [36mconst[39m { data[33m:[39m allMarketForLookup } [33m=[39m [33mGetAllMarketForLookup[39m(payloadAllMarketForLookup[33m,[39m [36mtrue[39m)[33m;[39m
+   [90m    |[39m                                          [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 56 |[39m
+   [90m 57 |[39m     [36mconst[39m allMarketForLookupData [33m=[39m dropDownDataConverter[33m.[39mdropDownDataConverter(allMarketForLookup [33m||[39m [][33m,[39m [32m'tableDescription'[39m[33m,[39m [32m'tableCode'[39m)[33m;[39m
+   [90m 58 |[39m[0m
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/dashboard-feature/components/dashboard-business-sales-enquiry/dashboard-business-sales-enquiry-filter.tsx[22m:[32m[1m55:64[22m[39m
+[90mTS2552: [39mCannot find name 'payloadAllMarketForLookup'. Did you mean 'allMarketForLookup'?
+  [0m [90m 53 |[39m     [36mconst[39m { isBusinessSalesEnqListFetch[33m,[39m isFormSubmit } [33m=[39m useSelector((state[33m:[39m [33mRootState[39m) [33m=>[39m state[33m.[39mdashBoardBusinessSalesEnquiry)[33m;[39m
+   [90m 54 |[39m     [36mconst[39m { selectedOriginator } [33m=[39m useSelector((state[33m:[39m [33mRootState[39m) [33m=>[39m state[33m.[39mheader)[33m;[39m
+  [31m[1m>[22m[39m[90m 55 |[39m     [36mconst[39m { data[33m:[39m allMarketForLookup } [33m=[39m [33mGetAllMarketForLookup[39m(payloadAllMarketForLookup[33m,[39m [36mtrue[39m)[33m;[39m
+   [90m    |[39m                                                                [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 56 |[39m
+   [90m 57 |[39m     [36mconst[39m allMarketForLookupData [33m=[39m dropDownDataConverter[33m.[39mdropDownDataConverter(allMarketForLookup [33m||[39m [][33m,[39m [32m'tableDescription'[39m[33m,[39m [32m'tableCode'[39m)[33m;[39m
+   [90m 58 |[39m[0m
+
+Found [31m[1m2 errors[22m[39m in 878 ms.
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.7 MiB (29 MiB) = 7 assets 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 484 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mruntime.4db5fc875da70306.hot-update.js[39m[22m 343 bytes [1m[32mstyles.css[39m[22m 32.8 KiB [1m[32mstyles.js[39m[22m 401 KiB 41 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32mmain.4db5fc875da70306.hot-update.js[39m[22m (main) 2.95 MiB (javascript) 945 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.4db5fc875da70306.hot-update.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.7 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (12ac2b7ba7fff3de)
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/dashboard-feature/components/dashboard-business-sales-enquiry/dashboard-business-sales-enquiry-filter.tsx[22m:[32m[1m57:64[22m[39m
+[90mTS2552: [39mCannot find name 'payloadAllMarketForLookup'. Did you mean 'allMarketForLookup'?
+  [0m [90m 55 |[39m     [36mconst[39m { selectedOriginator } [33m=[39m useSelector((state[33m:[39m [33mRootState[39m) [33m=>[39m state[33m.[39mheader)[33m;[39m
+   [90m 56 |[39m
+  [31m[1m>[22m[39m[90m 57 |[39m     [36mconst[39m { data[33m:[39m allMarketForLookup } [33m=[39m [33mGetAllMarketForLookup[39m(payloadAllMarketForLookup[33m,[39m [36mtrue[39m)[33m;[39m
+   [90m    |[39m                                                                [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 58 |[39m     [36mconst[39m allMarketForLookupData [33m=[39m dropDownDataConverter[33m.[39mdropDownDataConverter(allMarketForLookup [33m||[39m [][33m,[39m [32m'tableDescription'[39m[33m,[39m [32m'tableCode'[39m)[33m;[39m
+   [90m 59 |[39m
+   [90m 60 |[39m     [36mconst[39m [salesEnqSales[33m,[39m setSalesEnqSales] [33m=[39m useState[33m<[39m[33mDropDownData[39m[33m>[39m(dropDownDataSales[[35m0[39m])[33m;[39m[0m
+
+Found [31m[1m1 error[22m[39m in 945 ms.
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.7 MiB (29 MiB) = 7 assets 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 484 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mruntime.12ac2b7ba7fff3de.hot-update.js[39m[22m 343 bytes [1m[32mstyles.css[39m[22m 32.8 KiB [1m[32mstyles.js[39m[22m 401 KiB 41 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32mmain.12ac2b7ba7fff3de.hot-update.js[39m[22m (main) 2.95 MiB (javascript) 945 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.12ac2b7ba7fff3de.hot-update.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.7 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (3f8505940f3bb328)
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/dashboard-feature/components/dashboard-business-sales-enquiry/dashboard-business-sales-enquiry-filter.tsx[22m:[32m[1m57:38[22m[39m
+[90mTS2304: [39mCannot find name 'GetAllMarketForLookupParameters'.
+  [0m [90m 55 |[39m     [36mconst[39m { selectedOriginator } [33m=[39m useSelector((state[33m:[39m [33mRootState[39m) [33m=>[39m state[33m.[39mheader)[33m;[39m
+   [90m 56 |[39m
+  [31m[1m>[22m[39m[90m 57 |[39m     [36mconst[39m payloadAllMarketForLookup[33m:[39m [33mGetAllMarketForLookupParameters[39m [33m=[39m {
+   [90m    |[39m                                      [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 58 |[39m         originator[33m:[39m loggedUser[33m.[39muserName[33m,[39m
+   [90m 59 |[39m         childOriginators[33m:[39m childOriginators[33m,[39m
+   [90m 60 |[39m         defaultDepartmentId[33m:[39m loggedUser[33m.[39mdefaultDepartmentId[33m,[39m[0m
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/dashboard-feature/components/dashboard-business-sales-enquiry/dashboard-business-sales-enquiry-filter.tsx[22m:[32m[1m58:21[22m[39m
+[90mTS2304: [39mCannot find name 'loggedUser'.
+  [0m [90m 56 |[39m
+   [90m 57 |[39m     [36mconst[39m payloadAllMarketForLookup[33m:[39m [33mGetAllMarketForLookupParameters[39m [33m=[39m {
+  [31m[1m>[22m[39m[90m 58 |[39m         originator[33m:[39m loggedUser[33m.[39muserName[33m,[39m
+   [90m    |[39m                     [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 59 |[39m         childOriginators[33m:[39m childOriginators[33m,[39m
+   [90m 60 |[39m         defaultDepartmentId[33m:[39m loggedUser[33m.[39mdefaultDepartmentId[33m,[39m
+   [90m 61 |[39m         additionalParams[33m:[39m [32m"group_type = 'MA'"[39m[33m,[39m[0m
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/dashboard-feature/components/dashboard-business-sales-enquiry/dashboard-business-sales-enquiry-filter.tsx[22m:[32m[1m59:27[22m[39m
+[90mTS2304: [39mCannot find name 'childOriginators'.
+  [0m [90m 57 |[39m     [36mconst[39m payloadAllMarketForLookup[33m:[39m [33mGetAllMarketForLookupParameters[39m [33m=[39m {
+   [90m 58 |[39m         originator[33m:[39m loggedUser[33m.[39muserName[33m,[39m
+  [31m[1m>[22m[39m[90m 59 |[39m         childOriginators[33m:[39m childOriginators[33m,[39m
+   [90m    |[39m                           [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 60 |[39m         defaultDepartmentId[33m:[39m loggedUser[33m.[39mdefaultDepartmentId[33m,[39m
+   [90m 61 |[39m         additionalParams[33m:[39m [32m"group_type = 'MA'"[39m[33m,[39m
+   [90m 62 |[39m         orderBy[33m:[39m [32m'cat_grouping ASC'[39m[33m,[39m[0m
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/dashboard-feature/components/dashboard-business-sales-enquiry/dashboard-business-sales-enquiry-filter.tsx[22m:[32m[1m60:30[22m[39m
+[90mTS2304: [39mCannot find name 'loggedUser'.
+  [0m [90m 58 |[39m         originator[33m:[39m loggedUser[33m.[39muserName[33m,[39m
+   [90m 59 |[39m         childOriginators[33m:[39m childOriginators[33m,[39m
+  [31m[1m>[22m[39m[90m 60 |[39m         defaultDepartmentId[33m:[39m loggedUser[33m.[39mdefaultDepartmentId[33m,[39m
+   [90m    |[39m                              [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 61 |[39m         additionalParams[33m:[39m [32m"group_type = 'MA'"[39m[33m,[39m
+   [90m 62 |[39m         orderBy[33m:[39m [32m'cat_grouping ASC'[39m[33m,[39m
+   [90m 63 |[39m         startIndex[33m:[39m [35m1[39m[33m,[39m[0m
+
+Found [31m[1m4 errors[22m[39m in 781 ms.
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.7 MiB (29 MiB) = 7 assets 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 484 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mruntime.3f8505940f3bb328.hot-update.js[39m[22m 343 bytes [1m[32mstyles.css[39m[22m 32.8 KiB [1m[32mstyles.js[39m[22m 401 KiB 41 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32mmain.3f8505940f3bb328.hot-update.js[39m[22m (main) 2.95 MiB (javascript) 945 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.3f8505940f3bb328.hot-update.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.7 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (a0342d88d12b6a89)
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/dashboard-feature/components/dashboard-business-sales-enquiry/dashboard-business-sales-enquiry-filter.tsx[22m:[32m[1m58:21[22m[39m
+[90mTS2304: [39mCannot find name 'loggedUser'.
+  [0m [90m 56 |[39m
+   [90m 57 |[39m     [36mconst[39m payloadAllMarketForLookup[33m:[39m [33mGetAllMarketForLookupParameters[39m [33m=[39m {
+  [31m[1m>[22m[39m[90m 58 |[39m         originator[33m:[39m loggedUser[33m.[39muserName[33m,[39m
+   [90m    |[39m                     [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 59 |[39m         childOriginators[33m:[39m childOriginators[33m,[39m
+   [90m 60 |[39m         defaultDepartmentId[33m:[39m loggedUser[33m.[39mdefaultDepartmentId[33m,[39m
+   [90m 61 |[39m         additionalParams[33m:[39m [32m"group_type = 'MA'"[39m[33m,[39m[0m
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/dashboard-feature/components/dashboard-business-sales-enquiry/dashboard-business-sales-enquiry-filter.tsx[22m:[32m[1m59:27[22m[39m
+[90mTS2304: [39mCannot find name 'childOriginators'.
+  [0m [90m 57 |[39m     [36mconst[39m payloadAllMarketForLookup[33m:[39m [33mGetAllMarketForLookupParameters[39m [33m=[39m {
+   [90m 58 |[39m         originator[33m:[39m loggedUser[33m.[39muserName[33m,[39m
+  [31m[1m>[22m[39m[90m 59 |[39m         childOriginators[33m:[39m childOriginators[33m,[39m
+   [90m    |[39m                           [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 60 |[39m         defaultDepartmentId[33m:[39m loggedUser[33m.[39mdefaultDepartmentId[33m,[39m
+   [90m 61 |[39m         additionalParams[33m:[39m [32m"group_type = 'MA'"[39m[33m,[39m
+   [90m 62 |[39m         orderBy[33m:[39m [32m'cat_grouping ASC'[39m[33m,[39m[0m
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/dashboard-feature/components/dashboard-business-sales-enquiry/dashboard-business-sales-enquiry-filter.tsx[22m:[32m[1m60:30[22m[39m
+[90mTS2304: [39mCannot find name 'loggedUser'.
+  [0m [90m 58 |[39m         originator[33m:[39m loggedUser[33m.[39muserName[33m,[39m
+   [90m 59 |[39m         childOriginators[33m:[39m childOriginators[33m,[39m
+  [31m[1m>[22m[39m[90m 60 |[39m         defaultDepartmentId[33m:[39m loggedUser[33m.[39mdefaultDepartmentId[33m,[39m
+   [90m    |[39m                              [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 61 |[39m         additionalParams[33m:[39m [32m"group_type = 'MA'"[39m[33m,[39m
+   [90m 62 |[39m         orderBy[33m:[39m [32m'cat_grouping ASC'[39m[33m,[39m
+   [90m 63 |[39m         startIndex[33m:[39m [35m1[39m[33m,[39m[0m
+
+Found [31m[1m3 errors[22m[39m in 1083 ms.
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.7 MiB (29 MiB) = 7 assets 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 484 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mruntime.a0342d88d12b6a89.hot-update.js[39m[22m 343 bytes [1m[32mstyles.css[39m[22m 32.8 KiB [1m[32mstyles.js[39m[22m 401 KiB 41 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32mmain.a0342d88d12b6a89.hot-update.js[39m[22m (main) 2.95 MiB (javascript) 945 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.a0342d88d12b6a89.hot-update.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.7 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (59a004b7064fde0a)
+[32mNo errors found.[39m
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.7 MiB (29 MiB) = 7 assets 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 484 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mruntime.59a004b7064fde0a.hot-update.js[39m[22m 343 bytes [1m[32mstyles.css[39m[22m 32.8 KiB [1m[32mstyles.js[39m[22m 401 KiB 41 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32mmain.59a004b7064fde0a.hot-update.js[39m[22m (main) 2.95 MiB (javascript) 945 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.59a004b7064fde0a.hot-update.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.7 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (4d990f53d2a8082b)
+[36mType-checking in progress...[39m
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.7 MiB (29 MiB) = 7 assets 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 484 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mruntime.4d990f53d2a8082b.hot-update.js[39m[22m 343 bytes [1m[32mstyles.css[39m[22m 32.8 KiB [1m[32mstyles.js[39m[22m 401 KiB 41 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32mmain.4d990f53d2a8082b.hot-update.js[39m[22m (main) 2.95 MiB (javascript) 945 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.4d990f53d2a8082b.hot-update.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.7 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (ad06bae7516c3296)
+[36mType-checking in progress...[39m
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.8 MiB (29 MiB) = 7 assets 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 484 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mruntime.ad06bae7516c3296.hot-update.js[39m[22m 343 bytes [1m[32mstyles.css[39m[22m 32.8 KiB [1m[32mstyles.js[39m[22m 401 KiB 41 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32mmain.ad06bae7516c3296.hot-update.js[39m[22m (main) 2.95 MiB (javascript) 945 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.ad06bae7516c3296.hot-update.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.7 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (a767d7f8ed1f2f26)
+[36mType-checking in progress...[39m
+[32mNo errors found.[39m
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.7 MiB (29 MiB) = 7 assets 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 484 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mruntime.a767d7f8ed1f2f26.hot-update.js[39m[22m 343 bytes [1m[32mstyles.css[39m[22m 32.8 KiB [1m[32mstyles.js[39m[22m 401 KiB 41 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32mmain.a767d7f8ed1f2f26.hot-update.js[39m[22m (main) 2.95 MiB (javascript) 945 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.a767d7f8ed1f2f26.hot-update.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.7 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (22e94f918c2dc72d)
+[36mType-checking in progress...[39m
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/dashboard-feature/components/dashboard-business-sales-enquiry/dashboard-business-sales-enquiry-filter.tsx[22m:[32m[1m80:18[22m[39m
+[90mTS2304: [39mCannot find name 'setBusinessSalesmarket'.
+  [0m [90m 78 |[39m         dispatch(setBusinessSalesEnqSortBy(salesEnqSortBy))
+   [90m 79 |[39m         dispatch(setBusinessSalesEnqGroupBy(salesEnqGroupBy))
+  [31m[1m>[22m[39m[90m 80 |[39m         dispatch(setBusinessSalesmarket(marketDrop))[33m;[39m
+   [90m    |[39m                  [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 81 |[39m         dispatch(setIsBusinessSalesEnqListFetch([36mtrue[39m))[33m;[39m
+   [90m 82 |[39m     }[33m;[39m
+   [90m 83 |[39m[0m
+
+Found [31m[1m1 error[22m[39m in 2297 ms.
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.7 MiB (29 MiB) = 7 assets 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 484 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mruntime.22e94f918c2dc72d.hot-update.js[39m[22m 343 bytes [1m[32mstyles.css[39m[22m 32.8 KiB [1m[32mstyles.js[39m[22m 401 KiB 41 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32mmain.22e94f918c2dc72d.hot-update.js[39m[22m (main) 2.95 MiB (javascript) 945 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.22e94f918c2dc72d.hot-update.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.7 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (7295924ebdef5bb9)
+[32mNo errors found.[39m
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.7 MiB (29 MiB) = 7 assets 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 484 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mruntime.7295924ebdef5bb9.hot-update.js[39m[22m 343 bytes [1m[32mstyles.css[39m[22m 32.8 KiB [1m[32mstyles.js[39m[22m 401 KiB 41 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32mmain.7295924ebdef5bb9.hot-update.js[39m[22m (main) 2.95 MiB (javascript) 945 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.7295924ebdef5bb9.hot-update.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.7 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (2637ed637175558d)
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/dashboard-feature/components/dashboard-business-sales-enquiry/dashboard-business-sales-enquiry-list/dashboard-business-sales-enquiry-table.tsx[22m:[32m[1m16:21[22m[39m
+[90mTS2352: [39mConversion of type '{ args: { rowCount: number; startIndex: number; orderBy: string; additionalParams: string; repCode: string; }; busSalesEnqSrc: { cDisplayOption: any; sLastFlag: string; detailType: any; catalogType: string; ... 4 more ...; market: any; }; }' to type 'SalesInfoDetailParameters' may be a mistake because neither type sufficiently overlaps with the other. If this was intentional, convert the expression to 'unknown' first.
+  Type '{ args: { rowCount: number; startIndex: number; orderBy: string; additionalParams: string; repCode: string; }; busSalesEnqSrc: { cDisplayOption: any; sLastFlag: string; detailType: any; catalogType: string; ... 4 more ...; market: any; }; }' is missing the following properties from type 'SalesInfoDetailParameters': startIndex, rowCount
+  [0m [90m 14 |[39m [36mconst[39m [33mDashBoardBusinessSalesEnquiryTable[39m[33m:[39m [33mReact[39m[33m.[39m[33mFC[39m[33m<[39m[33mDashBoardBusinessSalesEnquiryTableProps[39m[33m>[39m [33m=[39m ({ heightOffset }) [33m=>[39m {
+   [90m 15 |[39m     [36mconst[39m { businessSalesEnqSales[33m,[39m businessSalesEnqSortBy[33m,[39m businessSalesEnqGroupBy[33m,[39m isBusinessSalesEnqListFetch[33m,[39m selectedOriginatorBusinessSalesEnquiry } [33m=[39m useSelector((state[33m:[39m [33mRootState[39m) [33m=>[39m state[33m.[39mdashBoardBusinessSalesEnquiry)[33m;[39m
+  [31m[1m>[22m[39m[90m 16 |[39m     [36mconst[39m payload [33m=[39m {
+   [90m    |[39m                     [31m[1m^[22m[39m
+  [31m[1m>[22m[39m[90m 17 |[39m         args[33m:[39m {
+   [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+  [31m[1m>[22m[39m[90m 18 |[39m             rowCount[33m:[39m [35m200000[39m[33m,[39m
+   [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+  [31m[1m>[22m[39m[90m 19 |[39m             startIndex[33m:[39m [35m1[39m[33m,[39m
+   [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+  [31m[1m>[22m[39m[90m 20 |[39m             orderBy[33m:[39m [32m""[39m[33m,[39m
+   [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+  [31m[1m>[22m[39m[90m 21 |[39m             additionalParams[33m:[39m [32m""[39m[33m,[39m
+   [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+  [31m[1m>[22m[39m[90m 22 |[39m             repCode[33m:[39m selectedOriginatorBusinessSalesEnquiry[33m.[39muserName
+   [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+  [31m[1m>[22m[39m[90m 23 |[39m         }[33m,[39m
+   [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+  [31m[1m>[22m[39m[90m 24 |[39m         busSalesEnqSrc[33m:[39m {
+   [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+  [31m[1m>[22m[39m[90m 25 |[39m             cDisplayOption[33m:[39m businessSalesEnqSales[33m.[39mvalue[33m,[39m
+   [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+  [31m[1m>[22m[39m[90m 26 |[39m             sLastFlag[33m:[39m [32m"n"[39m[33m,[39m
+   [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+  [31m[1m>[22m[39m[90m 27 |[39m             detailType[33m:[39m businessSalesEnqGroupBy[33m.[39mvalue[33m,[39m
+   [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+  [31m[1m>[22m[39m[90m 28 |[39m             catalogType[33m:[39m [32m"F"[39m[33m,[39m
+   [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+  [31m[1m>[22m[39m[90m 29 |[39m             repType[33m:[39m [32m"F"[39m[33m,[39m
+   [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+  [31m[1m>[22m[39m[90m 30 |[39m             backeryOption[33m:[39m [35m0[39m[33m,[39m
+   [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+  [31m[1m>[22m[39m[90m 31 |[39m             iCostPeriod[33m:[39m [35m11[39m[33m,[39m
+   [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+  [31m[1m>[22m[39m[90m 32 |[39m             sortField[33m:[39m businessSalesEnqSortBy[33m.[39mvalue[33m,[39m
+   [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+  [31m[1m>[22m[39m[90m 33 |[39m             market[33m:[39m businessSalesmarket[33m.[39mvalue
+   [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+  [31m[1m>[22m[39m[90m 34 |[39m         }
+   [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+  [31m[1m>[22m[39m[90m 35 |[39m     } [36mas[39m [33mSalesInfoDetailParameters[39m
+   [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 36 |[39m
+   [90m 37 |[39m     [36mconst[39m { businessSalesEnqSalesData[33m,[39m error[33m,[39m status } [33m=[39m [33mGetSalesInfoDetailViewState[39m(payload[33m,[39m [35m999999[39m[33m,[39m isBusinessSalesEnqListFetch)[33m;[39m
+   [90m 38 |[39m[0m
+
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/dashboard-feature/components/dashboard-business-sales-enquiry/dashboard-business-sales-enquiry-list/dashboard-business-sales-enquiry-table.tsx[22m:[32m[1m33:21[22m[39m
+[90mTS2304: [39mCannot find name 'businessSalesmarket'.
+  [0m [90m 31 |[39m             iCostPeriod[33m:[39m [35m11[39m[33m,[39m
+   [90m 32 |[39m             sortField[33m:[39m businessSalesEnqSortBy[33m.[39mvalue[33m,[39m
+  [31m[1m>[22m[39m[90m 33 |[39m             market[33m:[39m businessSalesmarket[33m.[39mvalue
+   [90m    |[39m                     [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 34 |[39m         }
+   [90m 35 |[39m     } [36mas[39m [33mSalesInfoDetailParameters[39m
+   [90m 36 |[39m[0m
+
+Found [31m[1m2 errors[22m[39m in 1196 ms.
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.7 MiB (29 MiB) = 7 assets 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 484 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mruntime.2637ed637175558d.hot-update.js[39m[22m 343 bytes [1m[32mstyles.css[39m[22m 32.8 KiB [1m[32mstyles.js[39m[22m 401 KiB 41 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32mmain.2637ed637175558d.hot-update.js[39m[22m (main) 2.95 MiB (javascript) 945 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.2637ed637175558d.hot-update.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.7 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (b967eabd8622909f)
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/dashboard-feature/components/dashboard-business-sales-enquiry/dashboard-business-sales-enquiry-list/dashboard-business-sales-enquiry-table.tsx[22m:[32m[1m16:21[22m[39m
+[90mTS2352: [39mConversion of type '{ args: { rowCount: number; startIndex: number; orderBy: string; additionalParams: string; repCode: string; }; busSalesEnqSrc: { cDisplayOption: any; sLastFlag: string; detailType: any; catalogType: string; ... 4 more ...; market: any; }; }' to type 'SalesInfoDetailParameters' may be a mistake because neither type sufficiently overlaps with the other. If this was intentional, convert the expression to 'unknown' first.
+  Type '{ args: { rowCount: number; startIndex: number; orderBy: string; additionalParams: string; repCode: string; }; busSalesEnqSrc: { cDisplayOption: any; sLastFlag: string; detailType: any; catalogType: string; ... 4 more ...; market: any; }; }' is missing the following properties from type 'SalesInfoDetailParameters': startIndex, rowCount
+  [0m [90m 14 |[39m [36mconst[39m [33mDashBoardBusinessSalesEnquiryTable[39m[33m:[39m [33mReact[39m[33m.[39m[33mFC[39m[33m<[39m[33mDashBoardBusinessSalesEnquiryTableProps[39m[33m>[39m [33m=[39m ({ heightOffset }) [33m=>[39m {
+   [90m 15 |[39m     [36mconst[39m { businessSalesEnqSales[33m,[39m businessSalesEnqSortBy[33m,[39m businessSalesEnqGroupBy[33m,[39m isBusinessSalesEnqListFetch[33m,[39m selectedOriginatorBusinessSalesEnquiry[33m,[39m businessSalesmarket } [33m=[39m useSelector((state[33m:[39m [33mRootState[39m) [33m=>[39m state[33m.[39mdashBoardBusinessSalesEnquiry)[33m;[39m
+  [31m[1m>[22m[39m[90m 16 |[39m     [36mconst[39m payload [33m=[39m {
+   [90m    |[39m                     [31m[1m^[22m[39m
+  [31m[1m>[22m[39m[90m 17 |[39m         args[33m:[39m {
+   [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+  [31m[1m>[22m[39m[90m 18 |[39m             rowCount[33m:[39m [35m200000[39m[33m,[39m
+   [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+  [31m[1m>[22m[39m[90m 19 |[39m             startIndex[33m:[39m [35m1[39m[33m,[39m
+   [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+  [31m[1m>[22m[39m[90m 20 |[39m             orderBy[33m:[39m [32m""[39m[33m,[39m
+   [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+  [31m[1m>[22m[39m[90m 21 |[39m             additionalParams[33m:[39m [32m""[39m[33m,[39m
+   [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+  [31m[1m>[22m[39m[90m 22 |[39m             repCode[33m:[39m selectedOriginatorBusinessSalesEnquiry[33m.[39muserName
+   [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+  [31m[1m>[22m[39m[90m 23 |[39m         }[33m,[39m
+   [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+  [31m[1m>[22m[39m[90m 24 |[39m         busSalesEnqSrc[33m:[39m {
+   [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+  [31m[1m>[22m[39m[90m 25 |[39m             cDisplayOption[33m:[39m businessSalesEnqSales[33m.[39mvalue[33m,[39m
+   [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+  [31m[1m>[22m[39m[90m 26 |[39m             sLastFlag[33m:[39m [32m"n"[39m[33m,[39m
+   [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+  [31m[1m>[22m[39m[90m 27 |[39m             detailType[33m:[39m businessSalesEnqGroupBy[33m.[39mvalue[33m,[39m
+   [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+  [31m[1m>[22m[39m[90m 28 |[39m             catalogType[33m:[39m [32m"F"[39m[33m,[39m
+   [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+  [31m[1m>[22m[39m[90m 29 |[39m             repType[33m:[39m [32m"F"[39m[33m,[39m
+   [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+  [31m[1m>[22m[39m[90m 30 |[39m             backeryOption[33m:[39m [35m0[39m[33m,[39m
+   [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+  [31m[1m>[22m[39m[90m 31 |[39m             iCostPeriod[33m:[39m [35m11[39m[33m,[39m
+   [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+  [31m[1m>[22m[39m[90m 32 |[39m             sortField[33m:[39m businessSalesEnqSortBy[33m.[39mvalue[33m,[39m
+   [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+  [31m[1m>[22m[39m[90m 33 |[39m             market[33m:[39m businessSalesmarket[33m.[39mvalue
+   [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+  [31m[1m>[22m[39m[90m 34 |[39m         }
+   [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+  [31m[1m>[22m[39m[90m 35 |[39m     } [36mas[39m [33mSalesInfoDetailParameters[39m
+   [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 36 |[39m
+   [90m 37 |[39m     [36mconst[39m { businessSalesEnqSalesData[33m,[39m error[33m,[39m status } [33m=[39m [33mGetSalesInfoDetailViewState[39m(payload[33m,[39m [35m999999[39m[33m,[39m isBusinessSalesEnqListFetch)[33m;[39m
+   [90m 38 |[39m[0m
+
+Found [31m[1m1 error[22m[39m in 889 ms.
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.7 MiB (29 MiB) = 7 assets 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 484 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mruntime.b967eabd8622909f.hot-update.js[39m[22m 343 bytes [1m[32mstyles.css[39m[22m 32.8 KiB [1m[32mstyles.js[39m[22m 401 KiB 41 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32mmain.b967eabd8622909f.hot-update.js[39m[22m (main) 2.95 MiB (javascript) 945 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.b967eabd8622909f.hot-update.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.7 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (4fd5abcb73f504f2)
+[32mNo errors found.[39m
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 20.7 MiB (29 MiB) = 7 assets 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 484 KiB (3.4 MiB) = [1m[32mruntime.js[39m[22m 50.8 KiB [1m[32mruntime.4fd5abcb73f504f2.hot-update.js[39m[22m 343 bytes [1m[32mstyles.css[39m[22m 32.8 KiB [1m[32mstyles.js[39m[22m 401 KiB 41 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32mmain.4fd5abcb73f504f2.hot-update.js[39m[22m (main) 2.95 MiB (javascript) 945 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.4fd5abcb73f504f2.hot-update.js[39m[22m (runtime) 34.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 384 KiB (javascript) 32.7 KiB (css/mini-extract) [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.css[39m[22m, [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 13 MiB (javascript) 1.54 MiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (5f05f6734410997b)
+[31m[1mERROR[22m[39m in [1m./apps/peerless-cms/src/app/features/src/dashboard-feature/components/dashboard-business-sales-enquiry/dashboard-business-sales-enquiry-list/dashboard-business-sales-enquiry-table.tsx[22m:[32m[1m16:21[22m[39m
+[90mTS2352: [39mConversion of type '{ args: { rowCount: number; startIndex: number; orderBy: string; additionalParams: string; repCode: string; }; busSalesEnqSrc: { cDisplayOption: any; sLastFlag: string; detailType: any; catalogType: string; ... 4 more ...; market: any; }; }' to type 'SalesInfoDetailParameters' may be a mistake because neither type sufficiently overlaps with the other. If this was intentional, convert the expression to 'unknown' first.
+  Type '{ args: { rowCount: number; startIndex: number; orderBy: string; additionalParams: string; repCode: string; }; busSalesEnqSrc: { cDisplayOption: any; sLastFlag: string; detailType: any; catalogType: string; ... 4 more ...; market: any; }; }' is missing the following properties from type 'SalesInfoDetailParameters': startIndex, rowCount
+  [0m [90m 14 |[39m [36mconst[39m [33mDashBoardBusinessSalesEnquiryTable[39m[33m:[39m [33mReact[39m[33m.[39m[33mFC[39m[33m<[39m[33mDashBoardBusinessSalesEnquiryTableProps[39m[33m>[39m [33m=[39m ({ heightOffset }) [33m=>[39m {
+   [90m 15 |[39m     [36mconst[39m { businessSalesEnqSales[33m,[39m businessSalesEnqSortBy[33m,[39m businessSalesEnqGroupBy[33m,[39m isBusinessSalesEnqListFetch[33m,[39m selectedOriginatorBusinessSalesEnquiry[33m,[39m businessSalesmarket } [33m=[39m useSelector((state[33m:[39m [33mRootState[39m) [33m=>[39m state[33m.[39mdashBoardBusinessSalesEnquiry)[33m;[39m
+  [31m[1m>[22m[39m[90m 16 |[39m     [36mconst[39m payload [33m=[39m {
+   [90m    |[39m                     [31m[1m^[22m[39m
+  [31m[1m>[22m[39m[90m 17 |[39m         args[33m:[39m {
+   [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+  [31m[1m>[22m[39m[90m 18 |[39m             rowCount[33m:[39m [35m200000[39m[33m,[39m
+   [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+  [31m[1m>[22m[39m[90m 19 |[39m             startIndex[33m:[39m [35m1[39m[33m,[39m
+   [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+  [31m[1m>[22m[39m[90m 20 |[39m             orderBy[33m:[39m [32m""[39m[33m,[39m
+   [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+  [31m[1m>[22m[39m[90m 21 |[39m             additionalParams[33m:[39m [32m""[39m[33m,[39m
+   [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+  [31m[1m>[22m[39m[90m 22 |[39m             repCode[33m:[39m selectedOriginatorBusinessSalesEnquiry[33m.[39muserName
+   [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+  [31m[1m>[22m[39m[90m 23 |[39m         }[33m,[39m
+   [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+  [31m[1m>[22m[39m[90m 24 |[39m         busSalesEnqSrc[33m:[39m {
+   [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+  [31m[1m>[22m[39m[90m 25 |[39m             cDisplayOption[33m:[39m businessSalesEnqSales[33m.[39mvalue[33m,[39m
+   [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+  [31m[1m>[22m[39m[90m 26 |[39m             sLastFlag[33m:[39m [32m"n"[39m[33m,[39m
+   [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+  [31m[1m>[22m[39m[90m 27 |[39m             detailType[33m:[39m businessSalesEnqGroupBy[33m.[39mvalue[33m,[39m
+   [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+  [31m[1m>[22m[39m[90m 28 |[39m             catalogType[33m:[39m [32m"F"[39m[33m,[39m
+   [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+  [31m[1m>[22m[39m[90m 29 |[39m             repType[33m:[39m [32m"F"[39m[33m,[39m
+   [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+  [31m[1m>[22m[39m[90m 30 |[39m             backeryOption[33m:[39m [35m0[39m[33m,[39m
+   [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+  [31m[1m>[22m[39m[90m 31 |[39m             iCostPeriod[33m:[39m [35m11[39m[33m,[39m
+   [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+  [31m[1m>[22m[39m[90m 32 |[39m             sortField[33m:[39m businessSalesEnqSortBy[33m.[39mvalue[33m,[39m
+   [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+  [31m[1m>[22m[39m[90m 33 |[39m             market[33m:[39m businessSalesmarket[33m.[39mvalue[33m,[39m
+   [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+  [31m[1m>[22m[39m[90m 34 |[39m         }
+   [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+  [31m[1m>[22m[39m[90m 35 |[39m     } [36mas[39m [33mSalesInfoDetailParameters[39m
+   [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 36 |[39m
+   [90m 37 |[39m     [36mconst[39m { businessSalesEnqSalesData[33m,[39m error[33m,[39m status } [33m=[39m [33mGetSalesInfoDetailViewState[39m(payload[33m,[39m [35m999999[39m[33m,[39m isBusinessSalesEnqListFetch)[33m;[39m
+   [90m 38 |[39m[0m
+
+Found [31m[1m1 error[22m[39m in 1490 ms.
+<i> [1m[32m[webpack-dev-server] Gracefully shutting down. To force exit, press ^C again. Please wait...[39m[22m
