@@ -4,7 +4,7 @@ import SectionMainBase from "../../../lib/section-main-base";
 import { useDispatch, useSelector } from "react-redux";
 import { pageModeEnum, RootState, setEnduserDetailPageMode, setIsAddEnduserModalOpen, setSelectedEnduser, setSelectedLeedOrCustomer, updateDetails } from "@peerless-cms/store";
 import { Button } from "react-bootstrap";
-import { z } from "zod";
+import { boolean, z } from "zod";
 import { FormProvider, useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { ReadOnlyProvider } from "@peerless/providers";
@@ -41,6 +41,13 @@ export function EnduserDetails(props: EnduserDetailProps) {
   const messagesRef = useRef<any>(null);
   const navigate = useNavigate();
   const messageMgr = new ToastManager(messagesRef);
+  const [status, setStatus] = useState<string>('');
+  const [labelText, setLabelText] = useState<string>('');
+  const [triggerKey, setTriggerKey] = useState(0);
+  const [open, setOpen] = useState(false);
+  const [isShow, setIsShow] = useState(false);
+  const [isShowData, setIsShowData] = useState<string>('');
+
 
   const { selectedLeedOrCustomer, readonly, originator, loggedUser, childOriginators, selectedEnduser,
     enduserDetailPageMode, contactType, selectedCustomerEnduser, selectedOrganisationEnduser, selectedOrganisation } = useSelector((state: RootState) => ({
@@ -317,12 +324,16 @@ export function EnduserDetails(props: EnduserDetailProps) {
     }
   }
 
+
   const [isSaving, setIsSaving] = useState(false);
   const onSubmit = (data: FormFields) => {
     if (selectedRow == null) {
-      messageMgr.showMessage('error', 'Error: ', (euCustomersLocalList == null || euCustomersLocalList.length == 0 ? 'Please add a primary distributor' : 'Please select a primary distributor'));
+      setIsShow(true);
+
+      // messageMgr.showMessage('error', 'Error: ', (euCustomersLocalList == null || euCustomersLocalList.length == 0 ? 'Please add a primary distributor' : 'Please select a primary distributor'));
       return;
     }
+    setIsShow(false);
 
     setIsSaving(true);
 
@@ -366,11 +377,18 @@ export function EnduserDetails(props: EnduserDetailProps) {
     mutation.mutate(payload, {
       onSuccess: (response: any) => {
         if (response.status) {
-          messageMgr.showMessage('success', 'Success: ', 'Successfully saved');
+          setStatus('success-notification-color');
+          setLabelText(
+            (enduserDetailPageMode == pageModeEnum.New ? 'End User Person Saved Successfully' : 'Contact Person Updated Successfully')
+          );
+          setTriggerKey((prevKey) => prevKey + 1);
+          // messageMgr.showMessage('success', 'Success: ', 'Successfully saved');
           //update the state with modified details
 
           if (props.returnOnSuccess != null && props.returnOnSuccess == true) {
-            navigate(`${sectionPathMap[contactType]}${props.isOrganisationEnduser ? selectedOrganisation?.[contactId[contactType]] : selectedLeedOrCustomer?.[contactId[contactType]]}/endusers`);
+            setTimeout(() => {
+              navigate(`${sectionPathMap[contactType]}${props.isOrganisationEnduser ? selectedOrganisation?.[contactId[contactType]] : selectedLeedOrCustomer?.[contactId[contactType]]}/endusers`);
+            }, 800);
           }
           else {
             if (enduserDetailPageMode == pageModeEnum.Edit) {
@@ -396,11 +414,21 @@ export function EnduserDetails(props: EnduserDetailProps) {
               dispatch(setSelectedLeedOrCustomer(updatedLead));
               if (enduserDetailPageMode == pageModeEnum.Edit) {
                 dispatch(updateDetails(true));
+                setStatus('success-notification-color');
+                setLabelText(
+                  (enduserDetailPageMode === pageModeEnum.Edit ? 'End User Updated Successfully' : 'Failed To Update End User')
+                );
+                setTriggerKey((prevKey) => prevKey + 1);
               }
             }
             else {
               dispatch(setIsAddEnduserModalOpen(false));
-              props.messageMgr.showMessage('success', 'Success: ', 'Enduser Saved');
+              setStatus('success-notification-color');
+              setLabelText(
+                (enduserDetailPageMode == pageModeEnum.New ? 'End User Person Saved Successfully' : 'Contact Person Updated Successfully')
+              );
+              setTriggerKey((prevKey) => prevKey + 1);
+              // props.messageMgr.showMessage('success', 'Success: ', 'Enduser Saved');
               props.refetchList();
             }
           }
@@ -409,8 +437,13 @@ export function EnduserDetails(props: EnduserDetailProps) {
       },
       onError: (error: any) => {
         setIsSaving(false);
-        console.error('Failed to update:', error);
-        messageMgr.showMessage('error', 'Error: ', 'Error occured');
+        setStatus('error-notification-color');
+        setLabelText(
+          (enduserDetailPageMode === pageModeEnum.New ? 'Error occured while saving' : 'Error occured while updating')
+        );
+        setTriggerKey((prevKey) => prevKey + 1);
+        // console.error('Failed to update:', error);
+        // messageMgr.showMessage('error', 'Error: ', 'Error occured');
       }
     });
 
@@ -582,8 +615,8 @@ export function EnduserDetails(props: EnduserDetailProps) {
             isClearFilter={selectedEUCustomer == null}
             columns={[{ field: 'value', header: 'Code', width: '122px' }, { field: 'label', header: 'Name', width: '300px' }]} />
           <button className="btn-default" onClick={onClickAddEUCustomer} disabled={readonly}>Add</button>
-          {formErrorMessage && (
-            <span className="error-message-no-margin-top margin-left-10">{formErrorMessage}</span>
+          {isShow && (
+            <span className="error-message-no-margin-top margin-left-10">{(euCustomersLocalList == null || euCustomersLocalList.length == 0 ? 'Please add a primary distributor' : 'Please select a primary distributor')}</span>
           )}
         </div>
         <DataGrid dataTable={endUserDistributor} data={euCustomersLocalList} selectionMode={'single'} selectedRow={selectedRow} setSelectedRow={handleSelectionChange} />
@@ -605,12 +638,20 @@ export function EnduserDetails(props: EnduserDetailProps) {
     !readonly && (
       <div className='form-button-container footer-content'>
         <span className='footer-span-content'>Make sure you have verified all your changes before update</span>
-        <ButtonWidget
-          id='customer-end-user-save-button'
-          classNames='k-button-md k-rounded-md k-button-solid k-button-solid-primary footer-save-button'
-          Function={() => handleExternalSubmit()}
-          name={isSaving ? 'Saving...' : 'Save Details'}
-        />
+        {enduserDetailPageMode === pageModeEnum.New ? (
+          <ButtonWidget
+            id='customer-end-user-save-button'
+            classNames='k-button-md k-rounded-md k-button-solid k-button-solid-primary footer-save-button'
+            Function={() => handleExternalSubmit()}
+            name={isSaving ? 'Saving...' : 'Save Details'}
+          />
+        ) :
+          (<ButtonWidget
+            id='customer-end-user-update-button'
+            classNames='k-button-md k-rounded-md k-button-solid k-button-solid-primary footer-save-button'
+            Function={() => handleExternalSubmit()}
+            name={isSaving ? 'Updating...' : 'Update Details'}
+          />)}
       </div>
     )
   );
