@@ -1,6 +1,6 @@
 import { zodResolver } from "@hookform/resolvers/zod";
 import { pageModeEnum, RootState, setcustomerEUPriceList, setIsCustomerEUPriceListTblPopupOpen, setIsEnduserPriceListHistoryOpen, setSelectedCustomerEUPrice } from "@peerless-cms/store";
-import { FormInput, MultiColumnComboBoxWidget, ToastManager } from "@peerless/controls";
+import { ButtonWidget, FormInput, MultiColumnComboBoxWidget, ToastManager } from "@peerless/controls";
 import { ReadOnlyProvider } from "@peerless/providers";
 import MessageBox from "apps/peerless-cms/src/app/features-common-components/src/message-box/message-box";
 import { useEffect, useRef, useState } from "react";
@@ -380,17 +380,30 @@ export function CustomerEUPriceListForm(props: CustomerEUPriceListFormProps) {
         isEditable={true} rowPopupClickCallback={handleDeleteSelected} />
 
       <footer>
-        <div className='form-button-container'>
-          <span>Make sure you have verified all your changes before update</span>
-          {customerEUListPricePageMode === pageModeEnum.New ? (<Button disabled={isSaving} type='button' variant='outline-dark' className='btn-submit' onClick={handleExternalSubmit}>
-            {isSaving ? 'Saving...' : 'Save Details'}
-          </Button>) :
-            (<Button disabled={isSaving} type='button' variant='outline-dark' className='btn-submit' onClick={handleExternalSubmit}>
-              {isSaving ? 'Updating...' : 'Update Details'}
-            </Button>)}
-          {contactType == contactTypeEnum.enduser ? (<Button disabled={isSaving} type='button' variant='outline-dark' className='btn-submit' onClick={handleViewPriceListHistory}>
-            Price List History
-          </Button>) : <></>}
+        <div className='form-button-container footer-content'>
+          <span className='footer-span-content'>Make sure you have verified all your changes before update</span>
+          {customerEUListPricePageMode === pageModeEnum.New ? (
+            <ButtonWidget
+              id='customer-end-user-list-price-save-button'
+              classNames='k-button-md k-rounded-md k-button-solid k-button-solid-primary footer-save-button'
+              Function={() => handleExternalSubmit()}
+              name={isSaving ? 'Saving...' : 'Save Details'}
+            />
+          ) :
+            (<ButtonWidget
+              id='customer-end-user-list-price-update-button'
+              classNames='k-button-md k-rounded-md k-button-solid k-button-solid-primary footer-save-button'
+              Function={() => handleExternalSubmit()}
+              name={isSaving ? 'Saving...' : 'Save Details'}
+            />)}
+          {contactType == contactTypeEnum.enduser ? (
+            <ButtonWidget
+              id='customer-end-user-list-price-list-history-button'
+              classNames='k-button-md k-rounded-md k-button-solid k-button-solid-primary footer-save-button-extended'
+              Function={() => handleViewPriceListHistory()}
+              name={isSaving ? 'Price List History' : 'Price List History'}
+            />
+          ) : <></>}
         </div>
       </footer>
       <MessageBox />

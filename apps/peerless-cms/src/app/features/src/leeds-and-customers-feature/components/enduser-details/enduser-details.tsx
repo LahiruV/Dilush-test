@@ -8,7 +8,7 @@ import { z } from "zod";
 import { FormProvider, useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { ReadOnlyProvider } from "@peerless/providers";
-import { DataGrid, FormInput, MultiColumnComboBoxWidget, ToastManager } from "@peerless/controls";
+import { ButtonWidget, DataGrid, FormInput, MultiColumnComboBoxWidget, ToastManager } from "@peerless/controls";
 import MessageBox from "apps/peerless-cms/src/app/features-common-components/src/message-box/message-box";
 import { useEffect, useRef, useState } from "react";
 import { getCustomerLookupData, getEnduserCustomerData, getIsEndUserCodeExist, saveEnduser, useCountryData, useLookupData } from "@peerless/queries";
@@ -603,11 +603,14 @@ export function EnduserDetails(props: EnduserDetailProps) {
 
   const footer = (
     !readonly && (
-      <div className='form-button-container'>
-        <span>Make sure you have verified all your changes before update</span>
-        <Button disabled={isSaving || isEnduserCodeExist} type='button' variant='outline-dark' className='btn-submit' onClick={handleExternalSubmit}>
-          {isSaving ? 'Updating...' : (enduserDetailPageMode == pageModeEnum.New ? 'Save Details' : 'Update Details')}
-        </Button>
+      <div className='form-button-container footer-content'>
+        <span className='footer-span-content'>Make sure you have verified all your changes before update</span>
+        <ButtonWidget
+          id='customer-end-user-save-button'
+          classNames='k-button-md k-rounded-md k-button-solid k-button-solid-primary footer-save-button'
+          Function={() => handleExternalSubmit()}
+          name={isSaving ? 'Saving...' : 'Save Details'}
+        />
       </div>
     )
   );

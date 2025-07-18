@@ -10,6 +10,12 @@
     font-size: 13px !important;
 }
 
+.footer-save-button-extended {
+    margin-left: 10px !important;
+    width: 120px !important;
+    font-size: 13px !important;
+}
+
 .footer-span-content {
     color: #838C96;
     font-size: 13px;

@@ -5,7 +5,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { ReadOnlyProvider } from "@peerless/providers";
-import { FormInput, ToastManager } from "@peerless/controls";
+import { ButtonWidget, FormInput, ToastManager } from "@peerless/controls";
 import { Button } from "react-bootstrap";
 import { getEnduserCustomerData, InsertAppointment, saveLeadActivity, useLookupData } from "@peerless/queries";
 import { useMutation } from "@tanstack/react-query";
@@ -443,7 +443,7 @@ export function LeedCustomerActivityForm(props: LeedCustomerActivityFormProps) {
     navigate(`${sectionPathMap[contactType]}${contactType == contactTypeEnum.organisation ? selectedOrganisation?.[contactId[contactType]] : selectedLeedOrCustomer?.[contactId[contactType]]}/activity`);
   }
 
-  const handleExternalSubmit = (e: any) => {
+  const handleExternalSubmit = () => {
     if (formRef.current) {
       formRef.current?.dispatchEvent(new Event('submit', { cancelable: true, bubbles: true }));
     }
@@ -550,14 +550,22 @@ export function LeedCustomerActivityForm(props: LeedCustomerActivityFormProps) {
       </ReadOnlyProvider>
 
       <footer>
-        <div className='form-button-container'>
-          <span>Make sure you have verified all your changes before update</span>
-          {activityMode === pageModeEnum.New ? (<Button disabled={isSave} type='button' variant='outline-dark' className='btn-submit' onClick={handleExternalSubmit}>
-            {isSave ? 'Saving...' : 'Save Details'}
-          </Button>) :
-            (<Button disabled={isSave} type='button' variant='outline-dark' className='btn-submit' onClick={handleExternalSubmit}>
-              {isSave ? 'Updating...' : 'Update Details'}
-            </Button>)}
+        <div className='form-button-container footer-content'>
+          <span className='footer-span-content'>Make sure you have verified all your changes before update</span>
+          {activityMode === pageModeEnum.New ? (
+            <ButtonWidget
+              id='customer-activity-save-button'
+              classNames='k-button-md k-rounded-md k-button-solid k-button-solid-primary footer-save-button'
+              Function={() => handleExternalSubmit()}
+              name={isSave ? 'Saving...' : 'Save Details'}
+            />
+          ) :
+            (<ButtonWidget
+              id='customer-activity-update-button'
+              classNames='k-button-md k-rounded-md k-button-solid k-button-solid-primary footer-save-button'
+              Function={() => handleExternalSubmit()}
+              name={isSave ? 'Updating...' : 'Update Details'}
+            />)}
         </div>
       </footer>
 
