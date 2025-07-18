@@ -1,0 +1,18 @@
+.section-title {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.header-btn-cancel {
+    width: 66px !important;
+    height: 29px !important;
+    font-size: 12px !important;
+}
+
+.margin-bottom-20 {
+    margin-bottom: 20px;
+}
+
+.margin-top-20 {
+    margin-top: 20px;
+}

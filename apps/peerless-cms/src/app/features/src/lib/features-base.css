@@ -1,0 +1,138 @@
+.features-base {
+  height: 100%;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  position: relative;
+}
+
+.features-base > aside {
+  max-width: 200px;
+  min-width: 200px;
+  overflow-y: auto;
+  border-right: 1px solid #edeff9;
+  grid-column: 1;
+  padding: 5px 0; /*16px*/
+}
+
+.features-base > main {
+  overflow-y: auto;
+  grid-column: 2;
+  display: grid;
+}
+
+.features-base > article {
+  overflow-y: auto;
+  grid-column: 3;
+  border-left: 1px solid #edeff9;
+  background-color: #fafdfe;
+  min-width: 260px;
+  max-width: 260px;
+  /* min-width: 400px;
+  max-width: 400px; */
+}
+
+.remove-margin-top-article {
+  margin-top: -22px;
+}
+
+.description-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.description-container .label {
+  flex: 0 0 72px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.description-container .value {
+  flex: 1;
+  text-align: left;
+  padding-left: 10px;
+  padding-right: 5px;
+}
+
+/*------ collapsible article --------*/
+
+/* Filters Overlay */
+.filters-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: auto; /* Full width */
+  background: rgba(255, 255, 255, 0.95); /* Slightly transparent background */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transform: translateY(-100%);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  z-index: 1000;
+  height: 100%;
+}
+
+.filters-overlay:not(.collapsed) {
+  transform: translateY(0);
+}
+
+.filters-content {
+  padding: 5px;
+  padding-right: 20px;
+}
+
+/* Toggle Filters Button */
+.toggle-filters-btn {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  background: #f8f9fa;
+  color: #249460;
+  border-radius: 50%;
+  border: 1px solid #249460;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.toggle-filters-btn:hover {
+  background: #249460;
+  color: white;
+}
+
+/* Smooth transition for collapsed state */
+.filters-overlay.collapsed {
+  transform: translateY(-100%);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.close-filters-btn {  
+  top: 10px;
+  left: 10px;
+  border: none;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background: #f5f4f4;
+  transition: background 0.3s ease;
+}
+
+.close-filters-btn:hover {
+  background: #e4e3e3; /* Darker red */
+}
+
+.article-shrinked{
+  min-width: 250px !important;
+  max-width: 250px !important;
+}
+
+.component-no-scroll-x{
+  overflow-x: hidden !important;
+}

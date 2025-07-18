@@ -1,0 +1,81 @@
+.claims-filter-align {
+  display: flex !important;
+  justify-content: space-around !important;
+}
+
+.claims-enquiry-checkbox {
+  margin-left: 15px;
+}
+
+.claims-tbl-min-height .p-datatable-wrapper {
+  min-height: 370px !important;
+}
+
+.claims-table-container {
+  display: grid;
+  /* height: 60%; */
+  grid-template-rows: 40px 1fr;
+}
+
+.claims-product-table-container {
+  display: grid;
+  /* height: 40%; */
+  grid-template-rows: 35px 1fr;
+}
+
+.claims-table-container .datatable-2 {
+  border-bottom: 1px solid #dfdfdf;
+}
+
+.tables-container {
+  height: 92vh;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+.total-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 5px;
+}
+
+.total-spn {
+  font-size: 11px;
+  padding: 0px 10px;
+  color: rgb(121, 121, 121);
+}
+
+.table-title {
+  display: flex;
+  padding: 0px 5px;
+  align-items: center;
+}
+
+.title-text {
+  font-size: 12px;
+  color: rgb(121, 121, 121);
+  font-weight: 700;
+}
+/* 
+.datepicker-custom {
+  width: 100px !important;
+} */
+
+/* .datepicker-custom.datepicker-custom-nsp {
+  margin-left: 8px !important;
+} */
+
+/* .administrator-filter {
+  width: 208px !important;
+} */
+.k-input-button {
+  width: calc(1.4285714286em + 0px) !important;
+  padding: 0 !important;
+}
+/* .p-selection-column{
+  display: none;
+} */
+.p-column-title {
+  text-wrap: nowrap;
+}

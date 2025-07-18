@@ -1,0 +1,142 @@
+export interface CallCyclesAnalysisParameters {
+    originator: string;
+    childOriginators: string;
+    sStartDate: string;
+    sEndDate: string;
+    repType: string;
+    orderBy: string;
+    isIncludeContact: boolean;
+    additionalParams: string;
+    leadId: number;
+    ignorePagination?: boolean;
+    startIndex?: number;
+    rowCount?: number;
+    callCyclesAnalysisFilterFilterPara?: any;
+};
+
+export interface CallCycle {
+    createdBy: string | null;
+    createdDate: Date;
+    delFlag: string | null;
+    ccType: string | null;
+    prefixCode: string | null;
+    callCycleID: number;
+    description: string;
+    dueOn: Date;
+    comments: string;
+    noOfLeadCustomers: number;
+    isDirty: boolean;
+    isNew: boolean;
+    totalCount: number;
+    lastModifiedBy: string | null;
+    lastModifiedDate: Date;
+    primaryDist: string | null;
+    rowCount: number;
+}
+
+export interface Contact {
+    sourceId: number;
+    name: string;
+    leadCustomerType: number;
+    company: string | null;
+    business: string | null;
+    industry: string | null;
+    industryDescription: string | null;
+    leadStatus: string | null;
+    state: string;
+    city: string;
+    address: string;
+    address1: string | null;
+    address2: string | null;
+    postalCode: string;
+    telephone: string | null;
+    mobile: string | null;
+    email: string | null;
+    customerCode: string;
+    endUserCode: string;
+    leadStage: string;
+    fax: string | null;
+    leadSource: string | null;
+    originator: string | null;
+    annualRevenue: number | null;
+    noOfEmployees: number | null;
+    rating: string | null;
+    webiste: string | null;
+    description: string | null;
+    businessPotential: string | null;
+    referredBy: string | null;
+    country: string | null;
+    preferredContact: string | null;
+    preferredContactDescription: string | null;
+    channelDescription: string | null;
+    noOfLeadCustomers: number;
+    isDeleted: boolean | null;
+    secondaryRepCode: string | null;
+    rowCount: number;
+    customerName: string | null;
+    tonnes: number | null;
+    dollar: number | null;
+    enrolDate: Date;
+    salesValue: number | null;
+    salesDate: Date;
+    displayInCrm: boolean;
+    lastActiveDate: Date;
+    grade: string | null;
+    orgId: number;
+    orgName: string | null;
+    isDirty: boolean;
+    isNew: boolean;
+    totalCount: number;
+    createdBy: string | null;
+    createdDate: Date;
+    lastModifiedBy: string | null;
+    lastModifiedDate: Date;
+    primaryDist: string | null;
+}
+
+export interface LeadStage {
+    stageId: number;
+    stageName: string;
+    stageOrder: number;
+    opportunityAllowed: boolean;
+    maxOpportunities: number;
+    emailAddress: string | null;
+    leadType: string | null;
+    isNew: boolean;
+    isSelected: boolean;
+    leadStageId: number;
+    leadStage: string | null;
+    leadsCount: number;
+    isDirty: boolean;
+    totalCount: number;
+    createdBy: string | null;
+    createdDate: Date;
+    lastModifiedBy: string | null;
+    lastModifiedDate: Date;
+    primaryDist: string | null;
+    rowCount: number;
+}
+
+export interface CallCyclesAnalysis {
+    itemIndex: number;
+    callCycle: CallCycle;
+    contact: Contact;
+    originator: string;
+    leadStage: LeadStage;
+    weekDayId: number;
+    dueOn: Date;
+    startTime: string;
+    createActivity: boolean;
+    prefixCode: string | null;
+    dayOrder: number;
+    isDirty: boolean;
+    isNew: boolean;
+    totalCount: number;
+    createdBy: string | null;
+    createdDate: Date;
+    lastModifiedBy: string | null;
+    lastModifiedDate: Date;
+    primaryDist: string | null;
+    rowCount: number;
+    colourCode: string;
+}

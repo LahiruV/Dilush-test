@@ -1,0 +1,4 @@
+.disabled-kendo-date-picker-header .k-calendar-header {
+    user-select: none !important;
+    pointer-events: none !important;
+}

@@ -1,0 +1,89 @@
+.filter-button,
+.filter-clear-button,
+.excel-export-button,
+.pdf-button,
+.send-button,
+.add-new-btn {
+  min-width: 100px;
+  padding: 4px 8px;
+  border: none;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+.filter-button {
+  background-color: #1976D2 !important;
+  border: 1px solid #b4b2b2;
+  color: white !important;
+}
+
+.filter-button:hover {
+  background-color: #1565C0 !important;
+}
+
+.filter-clear-button {
+  background: #26A69A !important;
+  color: #fff !important;
+  border: 1px solid #b4b2b2;
+}
+
+.filter-clear-button:hover {
+  background: #00796B !important;
+  color: #fff !important;
+}
+
+.dash-filter-btn-disabled {
+  padding: 5px 15px;
+  background-color: #8fa096;
+  border: 1px solid #b4b2b2;
+  border-radius: 4px;
+  color: white;
+  font-size: 12px;
+}
+
+.excel-export-button {
+  background: #107C41 !important;
+  color: #fff !important;
+}
+
+.excel-export-button:hover {
+  background: #0e6a39 !important;
+  /* Slightly darker green */
+  color: #fff !important;
+  cursor: pointer;
+}
+
+.add-new-btn {
+  background-color: #008C51 !important;
+  color: white !important;
+  border: 1px solid #797a7a !important;
+}
+
+.add-new-btn:hover {
+  background-color: #0b6e45 !important;
+}
+
+.pdf-button {
+  background: #bd4646 !important;
+  color: #fff !important;
+}
+
+.pdf-button:hover {
+  background: #a93636 !important;
+  /* Darker red for hover */
+  color: #fff !important;
+  cursor: pointer;
+}
+
+.send-button {
+  background: #a9a9a9 !important;
+  color: #f6f6f6 !important;
+  border: 1px solid #bababa;
+}
+
+.send-button:hover {
+  background: #8e8e8e !important;
+  color: #fff !important;
+  border-color: #9e9e9e;
+  cursor: pointer;
+}

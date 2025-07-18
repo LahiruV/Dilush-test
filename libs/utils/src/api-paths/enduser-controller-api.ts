@@ -1,0 +1,17 @@
+export const Get_All_Endusers = 'enduser/GetAllEndusers';
+export const Get_Enduser_Contact_Persons = 'enduser/GetEndUserContactPersons';
+export const Get_Customer_EndUsers = 'enduser/GetEndUsers';
+export const Save_EndUser_Transfer = 'enduser/Transfer';
+export const Get_Customer_EndUser_Pricing = 'enduser/GetCustomerEndUserPricing';
+export const Save_Customer_Price_List = 'enduser/SaveCustomerPriceList';
+export const Get_EndUser_Customers = 'enduser/GetEndUserCustomers';
+export const Save_Enduser = 'enduser/SaveEnduser';
+export const Is_EndUser_Code_Exist = 'enduser/IsEndUserCodeExist';
+export const Save_EndUser_Contact = 'enduser/SaveEndUserContact';
+export const Get_Enduser_Sales_With_All_Products = 'enduser/GetEnduserSalesWithAllProducts';
+export const Get_EndUser_Pricing = 'enduser/GetEndUserPricing';
+export const Get_EndUser_Pricing_History = 'enduser/GetEndUserPricingHistory';
+export const Save_Price_List = 'enduser/SavePriceList';
+export const Get_Enduser_Produt_Price = 'enduser/GetEnduserProdutPrice';
+export const Set_Active_Status = 'enduser/SetActiveStatus'
+export const Get_EndUsers_By_Org = 'enduser/GetEndUsersByOrg';

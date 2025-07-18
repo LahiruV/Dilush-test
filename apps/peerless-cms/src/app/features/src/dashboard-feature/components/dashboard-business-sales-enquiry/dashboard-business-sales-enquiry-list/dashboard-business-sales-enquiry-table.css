@@ -1,0 +1,15 @@
+.kendo-header-green .k-grid-header {
+    background-color: #055534 !important;
+    color: white !important;
+}
+
+.kendo-header-green .k-header .k-link {
+    background-color: #006d3f !important;
+    color: white !important;
+}
+
+.kendo-header-green .k-grid-header th {
+    padding-left: 44px !important;
+    background-color: #006d3f !important;
+    color: white !important;
+}

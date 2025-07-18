@@ -1,0 +1,10 @@
+
+
+.center-content{
+    display: flex;
+    justify-content: center;
+}
+
+.contact-person-img-uploader .uploader__container{
+    width: 100%;
+}

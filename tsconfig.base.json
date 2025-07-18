@@ -1,0 +1,78 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": [
+      "es2020",
+      "dom"
+    ],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@peerless-cms/components": [
+        "apps/peerless-cms/src/app/components/src/index.ts"
+      ],
+      "@peerless-cms/features": [
+        "apps/peerless-cms/src/app/features/src/index.ts"
+      ],
+      "@peerless-cms/features-common-components": [
+        "apps/peerless-cms/src/app/features-common-components/src/index.ts"
+      ],
+      "@peerless-cms/layout": [
+        "apps/peerless-cms/src/app/layout/src/index.ts"
+      ],
+      "@peerless-cms/pages": [
+        "apps/peerless-cms/src/app/pages/src/index.ts"
+      ],
+      "@peerless-cms/providers": [
+        "apps/peerless-cms/src/app/providers/src/index.ts"
+      ],
+      "@peerless-cms/shell": [
+        "apps/peerless-cms/src/app/shell/src/index.ts"
+      ],
+      "@peerless-cms/store": [
+        "apps/peerless-cms/src/app/store/src/index.ts"
+      ],
+      "@peerless-cms/theme": [
+        "apps/peerless-cms/src/styles/index.ts"
+      ],
+      "@peerless/common": [
+        "libs/common/src/index.ts"
+      ],
+      "@peerless/configs": [
+        "libs/configs/src/index.ts"
+      ],
+      "@peerless/controls": [
+        "libs/controls/src/index.ts"
+      ],
+      "@peerless/models": [
+        "libs/models/src/index.ts"
+      ],
+      "@peerless/providers": [
+        "libs/providers/src/index.ts"
+      ],
+      "@peerless/queries": [
+        "libs/queries/src/index.ts"
+      ],
+      "@peerless/services": [
+        "libs/services/src/index.ts"
+      ],
+      "@peerless/utils": [
+        "libs/utils/src/index.ts"
+      ]
+    }
+  },
+  "exclude": [
+    "node_modules",
+    "tmp"
+  ]
+}

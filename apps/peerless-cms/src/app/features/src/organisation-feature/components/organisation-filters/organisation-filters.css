@@ -1,0 +1,27 @@
+.org-types-container{
+    margin-left: 10px;
+    margin-top: 10px;
+    font-size: 11px;
+}
+
+.org-types-container .checkbox-field{
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.width-shirnked{
+    width: 150px !important;
+}
+
+.clear-icon {
+    color: gray;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+  
+.txt-iconed{
+    padding-left: 20px !important;
+    font-size: 12px !important;
+}
+
