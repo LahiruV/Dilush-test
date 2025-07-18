@@ -25,7 +25,7 @@ export const AppShell: FC = () => {
           </BrowserRouter>
         </AppStateProvider>
       </AuthProvider>
-      <Toaster richColors />
+      <Toaster richColors closeButton />
     </ReactQueryProvider>
   );
 };
