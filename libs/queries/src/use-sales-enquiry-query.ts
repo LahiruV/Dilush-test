@@ -36,7 +36,7 @@ export const GetCustomerPricelistType = (payload: string, isExecute?: boolean) =
     });
 };
 
-export const GetCustomerPricelistCustomers = (payload: {type: string, code: string}, isExecute?: boolean) => {
+export const GetCustomerPricelistCustomers = (payload: { type: string, code: string }, isExecute?: boolean) => {
     const fetchFunction = async (payload: any) => {
         const response = await getAxiosInstance().post<any>(
             CustomerAPI.Get_Customer_Price_list_Customers_Lookup,
@@ -186,6 +186,9 @@ export const GetDealEnquiry = (payload: any, isExecute: boolean) => {
 
 export const GetInvoiceEnquiry = (payload: GetInvoiceEnquiryParameters, isExecute: boolean) => {
     const fetchFunction = async (payload: any) => {
+        if (payload.nextRecord === 1) {
+            payload.nextRecord = 0;
+        }
         const response = await getAxiosInstance().post<any>(
             SalesAPI.Get_Invoice_Enquiry,
             payload
@@ -260,6 +263,9 @@ export const GetInvoiceEnquiry = (payload: GetInvoiceEnquiryParameters, isExecut
 
 export const GetOutstandingOrders = (payload: any, isExecute: boolean) => {
     const fetchFunction = async (payload: any) => {
+        if (payload.nextRecord === 1) {
+            payload.nextRecord = 0;
+        }
         const response = await getAxiosInstance().post<any>(
             SalesAPI.Get_Outstanding_Orders,
             payload

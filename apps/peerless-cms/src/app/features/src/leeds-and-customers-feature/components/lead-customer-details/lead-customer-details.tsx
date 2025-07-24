@@ -8,7 +8,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import * as fa from '@fortawesome/free-solid-svg-icons';
 import { Alert, Button } from 'react-bootstrap';
 import { ReadOnlyProvider } from '@peerless/providers';
-import { FormInput, ToastManager } from '@peerless/controls';
+import { ButtonWidget, FormInput, ToastManager } from '@peerless/controls';
 import { useEffect, useRef, useState } from 'react';
 import { Args, LeadEntryParameters } from '@peerless/models';
 import { saveLead, useContactsByOrigin, useLookupData } from '@peerless/queries';
@@ -18,6 +18,7 @@ import './lead-customer-details.css';
 import ToastMessages from 'libs/controls/src/toasts-message/messages';
 import { contactTypeEnum, contactTypeName } from '@peerless/utils';
 import { format } from 'date-fns';
+import { toast } from 'sonner';
 
 
 export interface LeedsCustomersDetailProps {
@@ -260,7 +261,7 @@ export function LeedsCustomersDetails(props: LeedsCustomersDetailProps) {
           if (isNewLead) {
             dispatch(setIsAddLeadModalOpen(false));
             props.refetchList();
-            props.messageMgr.showMessage('success', 'Success: ', 'Successfully saved');
+            toast.success('Details Saved Successfully');
           }
           else {
             dispatch(updateDetails(true));
@@ -285,22 +286,23 @@ export function LeedsCustomersDetails(props: LeedsCustomersDetailProps) {
               description: data.description
             }
             dispatch(setSelectedLeedOrCustomer(updatedLead));
-            messageMgr.showMessage('success', 'Success: ', 'Successfully saved');
+            toast.success('Details Successfully Updated');
           }
 
         }
         else {
           if (isNewLead) {
-            props.messageMgr.showMessage('error', 'Error: ', response.message);
+            toast.error('Error Occurred While Updating Lead');
           }
           else {
-            messageMgr.showMessage('error', 'Error: ', response.message);
+            toast.error('Error Occurred While Updating Lead');
           }
         }
       },
       onError: (error) => {
         setIsSaving(false);
-        console.error('Failed to update lead');
+        console.error(error.message);
+        toast.error('Failed to update lead');
       }
     });
   };
@@ -377,11 +379,14 @@ export function LeedsCustomersDetails(props: LeedsCustomersDetailProps) {
 
   const footer = (
     !readonly && (
-      <div className='form-button-container'>
-        <span>Make sure you have verified all your changes before update</span>
-        <Button disabled={isSaving} type='button' variant='outline-dark' className='btn-submit' onClick={handleExternalSubmit}>
-          {isNewLead ? (isSaving ? 'Saving...' : 'Save Details') : (isSaving ? 'Updating...' : 'Update Details')}
-        </Button>
+      <div className='form-button-container footer-content'>
+        <span className='footer-span-content'>Make sure you have verified all your changes before update</span>
+        <ButtonWidget
+          id='lead-details-update-button'
+          classNames='k-button-md k-rounded-md k-button-solid k-button-solid-primary footer-save-button'
+          Function={() => handleExternalSubmit()}
+          name={isNewLead ? (isSaving ? 'Saving...' : 'Save Details') : (isSaving ? 'Updating...' : 'Update Details')}
+        />
       </div>
     )
   );

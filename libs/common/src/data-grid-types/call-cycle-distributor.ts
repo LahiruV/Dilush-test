@@ -24,7 +24,7 @@ export class CallCycleDistributor extends BaseGrid {
         return {
             idColumn: this.MAIN_GRID_ID,
             columns: [
-                { field: 'name', header: 'Distributor', style: { width: '200px' } },
+                { field: 'name', header: 'Distributor', style: { width: '400px' } },
                 { field: 'code', header: 'Code', style: { width: '60px' } },
                 { field: 'stage', header: 'Stage', style: { width: '60px' } },
                 { field: '', header: '', body: (rowData: any) => (rowOptions(columnDropdownOptions, rowData, 'pi pi-trash')), hidden: (this.isOptionsEnabled) },

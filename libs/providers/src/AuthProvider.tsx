@@ -1,6 +1,7 @@
 import { User } from '@peerless/models';
 import { createContext, PropsWithChildren, useCallback, useContext, useMemo, useState } from 'react';
 import { useQueryClient } from '@tanstack/react-query';
+import { useNavigate } from 'react-router-dom';
 
 interface AuthContextType {
   user: User | null;
@@ -15,6 +16,7 @@ export const AuthProvider = ({ children }: PropsWithChildren) => {
   const [user, setUser] = useState<User | null>(null);
   const [isAuthenticated, setIsAuthenticated] = useState<boolean>(localStorage.getItem('isAuthenticated') === 'true');
 
+  const navigate = useNavigate();
   const queryClient = useQueryClient(); // Initialize query client
 
   const handleLogin = useCallback(() => {
@@ -37,7 +39,8 @@ export const AuthProvider = ({ children }: PropsWithChildren) => {
 
     // Clear TanStack Query cache
     queryClient.clear();
-    window.location.href = '/login';
+    // window.location.href = '/login';
+    navigate('/login', { replace: true });
   }, [queryClient]);
 
   return (

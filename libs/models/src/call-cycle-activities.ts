@@ -67,7 +67,7 @@ export interface CreateCallCycleActivitiesFromTemplateParameters {
     callCycleContact: {
         day: number;
         startTime: string;
-        dueOn: string;
+        dueOn: any;
         originator: string;
         repeatTime: number;
         repeatWeek: number;

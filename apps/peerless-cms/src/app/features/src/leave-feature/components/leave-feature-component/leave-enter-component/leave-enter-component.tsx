@@ -19,6 +19,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { documentService } from "@peerless/services";
 import "./leave-enter-component.css";
 import { InputText } from "primereact/inputtext";
+import { toast } from "sonner";
 
 type LeaveStateKeys = "annual" | "personal" | "long" | "leaveWithout" | "other";
 
@@ -154,7 +155,7 @@ export function LeaveEnter({
 }: {
     leaveListViewData: any;
     closeAddLeaveModal: () => void;
-    onClose: (status: string, labelText: string, triggerKey: number) => void;
+    onClose: () => void;
 }) {
     const dispatch = useDispatch();
     const { loggedUser } = useSelector((state: RootState) => state.header);
@@ -645,20 +646,17 @@ export function LeaveEnter({
         setIsSave(true);
         saveLeaveMutate(payload, {
             onSuccess: () => {
-                setStatus("success-notification-color");
-                setLabelText("Leave Request Has Been Forwarded To Parent For Approval");
-                setTriggerKey((prevKey) => prevKey + 1);
                 setIsSave(false);
                 handleReset(true);
                 closeAddLeaveModal();
-                onClose?.("success-notification-color", `Leave Request Has Been Forwarded To ${loggedUser.parentOriginator.toLocaleUpperCase()} For Approval`, triggerKey + 1);
+                toast.success(`Leave Request Has Been Forwarded To ${loggedUser.parentOriginator.toLocaleUpperCase()} For Approval`)
+                // onClose?.();
                 dispatch(setIsFetchingLeaveEntryList(true));
                 dispatch(setIsFetchingShowLeaveList(true));
             },
-            onError: () => {
-                setStatus("error-notification-color");
-                setLabelText("Leave Request Failed");
-                setTriggerKey((prevKey) => prevKey + 1);
+            onError: (error) => {
+                console.error(error.message);
+                toast.error("Leave Request Failed");
                 setIsSave(false);
             },
         });
@@ -702,24 +700,17 @@ export function LeaveEnter({
         setIsSave(true);
         saveLeaveMutate(payload, {
             onSuccess: () => {
-                setStatus("success-notification-color");
-                setLabelText("Leave Request Has Been Forwarded To Parent For Approval");
-                setTriggerKey((prevKey) => prevKey + 1);
                 setIsSave(false);
                 handleReset(true);
                 closeAddLeaveModal();
-                onClose?.(
-                    "success-notification-color",
-                    `Leave Request Has Been Forwarded To ${loggedUser.parentOriginator.toLocaleUpperCase()} For Approval`,
-                    triggerKey + 1
-                );
+                toast.success(`Leave Request Has Been Forwarded To ${loggedUser.parentOriginator.toLocaleUpperCase()} For Approval`);
+                // onClose?.();
                 dispatch(setIsFetchingLeaveEntryList(true));
                 dispatch(setIsFetchingShowLeaveList(true));
             },
-            onError: () => {
-                setStatus("error-notification-color");
-                setLabelText("Leave Request Failed");
-                setTriggerKey((prevKey) => prevKey + 1);
+            onError: (error) => {
+                console.error(error.message);
+                toast.error("Leave Request Failed");
                 setIsSave(false);
             },
         });
@@ -978,14 +969,6 @@ export function LeaveEnter({
                     setState={setHourValidate}
                 />
             )}
-            <CustomToastMessage
-                status={status || ""}
-                labelText={labelText}
-                state={open}
-                setState={setOpen}
-                triggerKey={triggerKey}
-                timeToWait={2500}
-            />
         </div>
     );
 }

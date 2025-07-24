@@ -72,7 +72,14 @@ export function DashAchievementByRegionFilter(props: DashAchievementByRegionFilt
         width: '208px'
     }
 
-    const { formComponentRef } = useFilterForm({ isFormSubmit, setTriggerSubmit: (value) => dispatch(setTriggerAcByRegFormSubmit(value)), isClearFilters: props.isClearFilters, clearFilters });
+    const { formComponentRef } = useFilterForm({
+        isFormSubmit,
+        setTriggerSubmit: (value) => dispatch(setTriggerAcByRegFormSubmit(value)),
+        isClearFilters: props.isClearFilters,
+        clearFilters,
+        setIsActiveFilters: props.setIsActiveFilters,
+        filters: [acByRegSalesDropdown, acByRegMonthDropdown, acByRegYearDropdown, acByRegAchievementRadio]
+    });
 
     return (
         <>

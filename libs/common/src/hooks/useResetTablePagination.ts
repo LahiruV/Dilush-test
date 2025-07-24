@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 
-export const useResetTablePagination = (rows: number, setState: Function, dependencies: any[]) => {
+export const useResetTablePagination = (rows: number, setState: Function, dependencies: any[], first?: number) => {
     useEffect(() => {
-        setState({ first: 1, rows: rows });
+        setState({ first: first ?? 1, rows: rows });
     }, [...dependencies]);
 };

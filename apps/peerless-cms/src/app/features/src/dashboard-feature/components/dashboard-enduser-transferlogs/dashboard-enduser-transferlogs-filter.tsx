@@ -59,7 +59,14 @@ export function DashBoardEndUserTransferLogsFilter(props: DashBoardEndUserTransf
         dispatch(setEndUserLogEndDate(endDates.toISOString()));
     }
 
-    const { formComponentRef } = useFilterForm({ isFormSubmit, setTriggerSubmit: (value) => dispatch(setTriggerEndUserTransferLogsFormSubmit(value)), isClearFilters: props.isClearFilters, clearFilters });
+    const { formComponentRef } = useFilterForm({
+        isFormSubmit,
+        setTriggerSubmit: (value) => dispatch(setTriggerEndUserTransferLogsFormSubmit(value)),
+        isClearFilters: props.isClearFilters,
+        clearFilters,
+        setIsActiveFilters: props.setIsActiveFilters,
+        filters: [endUserLogStartDate, endUserLogEndDate]
+    });
 
     useEffect(() => {
         if (props.isExporting) {

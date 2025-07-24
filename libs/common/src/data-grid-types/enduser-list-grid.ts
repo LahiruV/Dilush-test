@@ -22,16 +22,16 @@ export class EnduserListGrid extends BaseGrid {
         return {
             idColumn: 'endUserCode',
             columns: [
-                { field: 'endUserCode', header: 'Enduser Code', style: { width: '150px' }, sortable: false },
-                { field: 'name', header: 'Name', style: { width: '230px' }, sortable: false },
-                { field: 'contact', header: 'Contact', style: { width: '150px' }, sortable: false },
-                { field: 'address1', header: 'Address 1', sortable: false },
-                { field: 'address2', header: 'Address 2', sortable: false },
-                { field: 'city', header: 'City', style: { width: '120px' }, sortable: false },
-                { field: 'state', header: 'State', style: { width: '70px' }, sortable: false },
-                { field: 'postCode', header: 'Post Code', style: { width: '90px' }, sortable: false },
-                { field: 'grade', header: 'Grade', style: { width: '75px' }, sortable: false },
-                { field: 'customerRefference', header: 'Cust Ref Code', style: { width: '120px' }, sortable: false },
+                { field: 'endUserCode', header: 'Enduser Code', style: { width: '150px' }, sortable: true },
+                { field: 'name', header: 'Name', style: { width: '230px' }, sortable: true },
+                { field: 'contact', header: 'Contact', style: { width: '150px' }, sortable: true },
+                { field: 'address1', header: 'Address 1', sortable: true },
+                { field: 'address2', header: 'Address 2', sortable: true },
+                { field: 'city', header: 'City', style: { width: '120px' }, sortable: true },
+                { field: 'state', header: 'State', style: { width: '70px' }, sortable: true },
+                { field: 'postCode', header: 'Post Code', style: { width: '90px' }, sortable: true },
+                { field: 'grade', header: 'Grade', style: { width: '75px' }, sortable: true },
+                { field: 'customerRefference', header: 'Cust Ref Code', style: { width: '120px' }, sortable: true },
                 {
                     field: 'isActive', header: 'Status', style: { width: '120px' },
                     body: (rowData: any) => ChipWidget({
@@ -41,7 +41,7 @@ export class EnduserListGrid extends BaseGrid {
                         textAlign: 'center',
                         minWidth: '70px',
                     }),
-                    sortable: false
+                    sortable: true
                 },
                 { field: '', header: '', body: (rowData: any) => rowOptions(columnDropdownOptions, rowData), style: { width: '50px' }, }
             ]

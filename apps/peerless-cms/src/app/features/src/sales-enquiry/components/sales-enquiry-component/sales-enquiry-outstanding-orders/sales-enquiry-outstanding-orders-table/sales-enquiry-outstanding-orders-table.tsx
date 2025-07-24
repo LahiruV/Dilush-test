@@ -14,7 +14,7 @@ interface SalesEnquiryOutstandingOrdersListTableProps {
 const SalesEnquiryOutstandingOrdersListTable = ({ heightOffset }: SalesEnquiryOutstandingOrdersListTableProps) => {
     const { ref, inView } = useInView({ triggerOnce: false });
     const dispatch = useDispatch();
-    const [pageState, setPageState] = useState({ first: 1, rows: 18 });
+    const [pageState, setPageState] = useState({ first: 0, rows: 18 });
     const [pageSize, setPageSize] = useState(18);
     const {
         outstandingOrdersCustomer, outstandingOrdersCustomerGroup, outstandingOrdersSubGroup, outstandingOrdersPriceGroup, outstandingOrdersParent, outstandingOrdersMarket, outstandingOrdersRep, outstandingOrdersExDc,

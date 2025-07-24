@@ -17,7 +17,7 @@ const SalesEnquiryInvoiceEnquiryListTable = ({ heightOffset }: SalesEnquiryInvoi
     const dispatch = useDispatch();
     const [isCustomerRepType, setIsCustomerRepType] = useState(false);
     const [isInvoiceRepType, setIsInvoiceRepType] = useState(true);
-    const [pageState, setPageState] = useState({ first: 1, rows: 20 });
+    const [pageState, setPageState] = useState({ first: 0, rows: 20 });
     const [pageSize, setPageSize] = useState(20);
     const [tableFilters, setTableFilters] = useState<any>({
         enduserCode: { value: null, matchMode: 'contains' },
@@ -30,7 +30,7 @@ const SalesEnquiryInvoiceEnquiryListTable = ({ heightOffset }: SalesEnquiryInvoi
 
     const {
         invoiceCustomerGroup, invoiceSubGroup, invoicePriceGroup, invoiceProductGroup, invoiceParent, invoiceMarket, invoiceRep, invoiceCatalogueType,
-        invoiceState, invoiceBrand, invoiceCustomer, invoiceFromDate, invoiceToDate, invoiceInvoiceNumber, invoiceRadio, isFetchingInvoiceEnquiryList, invoiceRadio2, selectedInvoiceEnquiry
+        invoiceState, invoiceBrand, invoiceCustomer, invoiceFromDate, invoiceToDate, invoiceBatchNumber, invoiceInvoiceNumber, invoiceRadio, isFetchingInvoiceEnquiryList, invoiceRadio2, selectedInvoiceEnquiry
     } = useSelector((state: RootState) => state.salesEnquiryInvoiceEnquiry);
     const { loggedUser, selectedOriginator } = useSelector((state: RootState) => state.header);
 
@@ -45,6 +45,7 @@ const SalesEnquiryInvoiceEnquiryListTable = ({ heightOffset }: SalesEnquiryInvoi
         // productGroup: "",
         warehouse: invoiceProductGroup?.value,
         invoiceNo: parseInt(invoiceInvoiceNumber),
+        batchNo: parseInt(invoiceBatchNumber),
         invoiceCreditNotesStatus: invoiceRadio,
         parent: invoiceParent?.value,
         // custGroup: invoiceCustomerGroup?.value,
@@ -125,7 +126,7 @@ const SalesEnquiryInvoiceEnquiryListTable = ({ heightOffset }: SalesEnquiryInvoi
         invoiceState?.value,
         invoiceFromDate,
         invoiceToDate,
-        invoiceInvoiceNumber,
+        invoiceBatchNumber,
         invoiceRadio,
         invoiceParent?.value,
         invoiceCustomerGroup?.value,

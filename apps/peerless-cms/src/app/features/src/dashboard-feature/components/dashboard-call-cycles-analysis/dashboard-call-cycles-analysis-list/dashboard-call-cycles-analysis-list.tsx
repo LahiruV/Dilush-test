@@ -6,16 +6,16 @@ import { useInView } from 'react-intersection-observer';
 import './dashboard-call-cycles-analysis-list.css';
 import { ListTable } from '@peerless-cms/features-common-components';
 import { CallCyclesAnalysisParameters, RenderStatusContentTable } from '@peerless/models';
-import { CallCycleAnalysisListDistributer, getDate, useResetTablePagination } from '@peerless/common';
+import { CallCycleAnalysisListDistributer, getDate, useResetTablePagination, useResetTableSorting } from '@peerless/common';
 import { DataGrid } from '@peerless/controls';
 
 const CallCyclesAnalysisList: React.FC = () => {
   const { ref, inView } = useInView({ triggerOnce: false });
   const dispatch = useDispatch();
-  const { callCyclesStartDate, callCyclesEndDate, isCallCyclesAnalysisListFetch, selectedOriginatorCallCyclesAnalysis, childOriginatorsCallCyclesAnalysis } = useSelector((state: RootState) => state.dashboardCallCyclesAnalysis);
+  const { callCyclesStartDate, callCyclesEndDate, isCallCyclesAnalysisListFetch, selectedOriginatorCallCyclesAnalysis, childOriginatorsCallCyclesAnalysis, isFormSubmit } = useSelector((state: RootState) => state.dashboardCallCyclesAnalysis);
   const [pageState, setPageState] = useState({ first: 1, rows: 9 });
   const [pageSize, setPageSize] = useState(9);
-  const [multiSortMeta, setMultiSortMeta] = useState([]);
+  const [multiSortMeta, setMultiSortMeta] = useState<any[]>([]);
   const [orderBy, setOrderBy] = useState("leadStage ASC");
   const [tableFilters, setTableFilters] = useState<any>();
 
@@ -38,7 +38,7 @@ const CallCyclesAnalysisList: React.FC = () => {
 
   useResetTablePagination(9, setPageState, [selectedOriginatorCallCyclesAnalysis, callCyclesStartDate, callCyclesEndDate, childOriginatorsCallCyclesAnalysis]);
 
-  const { data: callCyclesAnalysisData, error, status } = GetAllCallCycles(payload, isCallCyclesAnalysisListFetch);
+  const { data: callCyclesAnalysisData, error, status, refetch } = GetAllCallCycles(payload, isCallCyclesAnalysisListFetch);
 
   const renderStatusContent = {
     isRenderStatusContentTable: true,
@@ -102,6 +102,16 @@ const CallCyclesAnalysisList: React.FC = () => {
       dispatch(setIsCallCyclesAnalysisListFetch(true));
     }
   }, [tableFilters]);
+
+  useResetTableSorting({
+    isFormSubmit,
+    multiSortMeta,
+    setMultiSortMeta,
+    orderBy,
+    setOrderBy: () => setOrderBy("leadStage ASC"),
+    dispatcher: () => dispatch(setIsCallCyclesAnalysisListFetch(false)),
+    refetch,
+  });
 
   return (
     <div className='call-cycles-analysis-list-content'>

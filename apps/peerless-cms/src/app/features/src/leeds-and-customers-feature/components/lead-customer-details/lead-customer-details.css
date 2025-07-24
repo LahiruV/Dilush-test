@@ -4,9 +4,20 @@
 }
 
 .header-btn-cancel {
-    width: 66px !important;
-    height: 29px !important;
-    font-size: 12px !important;
+    color: #fff;
+    border: 1px solid #e74c3c;
+    font-size: 12px;
+    padding: 5px 10px;
+    border-radius: 4px;
+    width: 90px;
+    height: 29px;
+    background-color: #e74c3c;
+}
+
+.header-btn-cancel:hover {
+    color: #fff;
+    background-color: #c0392b;
+    border-color: #c0392b;
 }
 
 .margin-bottom-20 {

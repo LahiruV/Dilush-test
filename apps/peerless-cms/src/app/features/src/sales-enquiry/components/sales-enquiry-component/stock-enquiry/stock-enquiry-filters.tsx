@@ -146,7 +146,14 @@ export function StockEnquiryFilters(props: StockEnquiryFilterProps) {
         onFilterClick();
     }
 
-    const { formComponentRef } = useFilterForm({ isFormSubmit, setTriggerSubmit: (value) => dispatch(setTriggerStockEnquiryFiltersFormSubmit(value)), isClearFilters: props.isClearFilters, clearFilters });
+    const { formComponentRef } = useFilterForm({
+        isFormSubmit,
+        setTriggerSubmit: (value) => dispatch(setTriggerStockEnquiryFiltersFormSubmit(value)),
+        isClearFilters: props.isClearFilters,
+        clearFilters,
+        setIsActiveFilters: props.setIsActiveFilters,
+        filters: [productCode, productType, targetMarket, productOwner, market, exdc, view, dateType, showWip, showPromoForecast, showPromoSales, critical, short, exportedProductsOnly]
+    });
 
     return (
         <>

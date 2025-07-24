@@ -8,14 +8,15 @@ interface FilterFormGroupProps {
   isBlockColumns?: boolean;
   columnWrapperStyle?: CSSProperties;
   isRequired?: boolean;
-  noLabelGap?: boolean;
+  extraGap?: boolean;
+  isShortLabel?: boolean;
 }
 
 export const FilterFormGroup = (props: FilterFormGroupProps) => {
   return (
-    <div className={`filter-form-group ${props.noLabelGap ? 'no-gap' : ''}`}>
+    <div className={`filter-form-group ${props.extraGap ? 'extra-gap' : ''}`}>
       {props.label && (
-        <div className="filter-header">
+        <div className={`filter-header ${props.isShortLabel ? 'short-label' : ''}`}>
           {props.label}{props.isRequired && <span className="filter-required-indicator">*</span>}
         </div>
       )}

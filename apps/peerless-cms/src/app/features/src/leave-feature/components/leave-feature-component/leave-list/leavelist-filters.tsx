@@ -96,7 +96,14 @@ export function LeaveListFilters(props: LeaveListFiltersProps) {
         width: '208px'
     }
 
-    const { formComponentRef } = useFilterForm({ isFormSubmit, setTriggerSubmit: (value) => dispatch(setTriggerLeaveListFormSubmit(value)), isClearFilters: props.isClearFilters, clearFilters });
+    const { formComponentRef } = useFilterForm({
+        isFormSubmit,
+        setTriggerSubmit: (value) => dispatch(setTriggerLeaveListFormSubmit(value)),
+        isClearFilters: props.isClearFilters,
+        clearFilters,
+        setIsActiveFilters: props.setIsActiveFilters,
+        filters: [DepartmentsMainDrop, OriginatorMainDrop, LeavetypeMainDrop, Yeartype]
+    });
 
     return (
         <Collapse in={props.isFiltersOpen}>
@@ -117,7 +124,7 @@ export function LeaveListFilters(props: LeaveListFiltersProps) {
                                 dataItemKey={"value"}
                                 fillMode={"outline"}
                                 size={"small"}
-                                isDisabled={loggedUser.leaveDept === "EXEC"}
+                                isDisabled={loggedUser.leaveDept !== "EXEC"}
                                 isFilterable={true}
                                 popupSettings={popUpSettings} />
                         </FilterFormGroup>
@@ -133,7 +140,7 @@ export function LeaveListFilters(props: LeaveListFiltersProps) {
                                 dataItemKey={"value"}
                                 fillMode={"outline"}
                                 size={"small"}
-                                isDisabled={loggedUser.leaveDept === "EXEC"}
+                                isDisabled={loggedUser.leaveDept !== "EXEC"}
                                 isFilterable={true}
                                 popupSettings={popUpSettings}
                             />

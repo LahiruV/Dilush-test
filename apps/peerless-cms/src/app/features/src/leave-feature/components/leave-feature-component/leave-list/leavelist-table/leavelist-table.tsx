@@ -8,6 +8,7 @@ import { Dialog } from "primereact/dialog";
 import { useDispatch, useSelector } from "react-redux";
 import LeaveEnter from "../../leave-enter-component/leave-enter-component";
 import { useEffect, useState } from "react";
+import { toast } from "sonner";
 
 interface LeaveListTableProps {
     heightOffset?: number;
@@ -96,11 +97,8 @@ const LeaveListTable: React.FC<LeaveListTableProps> = ({ heightOffset }) => {
             <Dialog visible={isAddLeaveModalOpen} onHide={() => setVisible(true)} header='Leave Application Form'>
                 {(
                     <div>
-                        < LeaveEnter closeAddLeaveModal={closeAddLeaveModal} leaveListViewData={publicleaveListViewData} onClose={(status, labelText, triggerKey) => {
-                            setOpen(true);
-                            setNewStatus(status);
-                            setLabelText(labelText);
-                            setTriggerKey(triggerKey);
+                        < LeaveEnter closeAddLeaveModal={closeAddLeaveModal} leaveListViewData={publicleaveListViewData} onClose={() => {
+                            toast.success(`Leave Request Has Been Forwarded To ${loggedUser.parentOriginator.toLocaleUpperCase()} For Approval`);
                         }} />
                     </div>
                 )}

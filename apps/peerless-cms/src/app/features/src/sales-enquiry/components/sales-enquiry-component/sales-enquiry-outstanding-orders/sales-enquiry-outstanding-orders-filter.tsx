@@ -199,7 +199,14 @@ export function SalesEnquiryOutstandingOrdersFilter(props: SalesEnquiryOutstandi
         width: '208px'
     }
 
-    const { formComponentRef } = useFilterForm({ isFormSubmit, setTriggerSubmit: (value) => dispatch(setTriggerOutstandingOrdersFiltersFormSubmit(value)), isClearFilters: props.isClearFilters, clearFilters });
+    const { formComponentRef } = useFilterForm({
+        isFormSubmit,
+        setTriggerSubmit: (value) => dispatch(setTriggerOutstandingOrdersFiltersFormSubmit(value)),
+        isClearFilters: props.isClearFilters,
+        clearFilters,
+        setIsActiveFilters: props.setIsActiveFilters,
+        filters: [outstandingOrdersFromDate, outstandingOrdersToDate, outstandingOrdersCatalogueType, outstandingOrdersCurrentOrCompleted, outstandingOrdersCustomer, outstandingOrdersPriceGroup, outstandingOrdersParent, outstandingOrdersSubGroup, outstandingOrdersSubParent, outstandingOrdersMarket, outstandingOrdersOrderType, outstandingOrdersExDc, outstandingOrdersRadio]
+    });
 
     return (
         <>

@@ -24,7 +24,7 @@ export class DocumentGrid extends BaseGrid {
             columns: [
                 { field: '', header: 'Document Name', sortable: false, body: (rowData: any) => link('', rowData, rowData.documentName, 'pi pi-download', this.linkCallBack) },
                 { field: 'attachedBy', header: 'Attached By', sortable: false },
-                { field: 'attachedDate', header: 'Attached Date', sortable: false, body: (rowData: any) => format(new Date(rowData.attachedDate), 'MMMM dd, yyyy') },                
+                { field: 'attachedDate', header: 'Attached Date', sortable: false, body: (rowData: any) => format(new Date(rowData.attachedDate), 'dd/MM/yyyy') },                
                 { field: '', header: '', body: (rowData: any) => rowOptions(columnDropdownOptions, rowData, 'pi pi-trash') }
             ]
         }

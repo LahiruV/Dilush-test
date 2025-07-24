@@ -27,11 +27,11 @@ export class ContactPersonGrid extends BaseGrid {
         return {
             idColumn: 'contactPersonID',
             columns: [
-                { field: '', header: 'Name', body: (rowData: any) => (`${rowData.title || ''} ${rowData.firstName || ''} ${rowData.lastName || ''}`.trim()), style: { width: '130px' }, sortable: false },
-                { field: 'position', header: 'Position', style: { width: '100px' }, sortable: false },
-                { field: 'telephone', header: 'Telephone', style: { width: '100px' }, sortable: false },
-                { field: 'mobile', header: 'Mobile', style: { width: '100px' }, sortable: false },
-                { field: 'emailAddress', header: 'Email', style: { width: '120px' }, sortable: false },
+                { field: '', header: 'Name', body: (rowData: any) => (`${rowData.title || ''} ${rowData.firstName || ''} ${rowData.lastName || ''}`.trim()), style: { width: '200px' }, sortable: false },
+                { field: 'position', header: 'Position', style: { width: '200px' }, sortable: false },
+                { field: 'telephone', header: 'Telephone', style: { width: '200px' }, sortable: false },
+                { field: 'mobile', header: 'Mobile', style: { width: '200px' }, sortable: false },
+                { field: 'emailAddress', header: 'Email', style: { width: '200px' }, sortable: false },
                 { field: '', header: '', body: (rowData: any) => rowOptions(columnDropdownOptions, rowData) }
             ]
         }

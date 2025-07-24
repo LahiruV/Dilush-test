@@ -3,7 +3,7 @@ import { useSelector } from 'react-redux';
 import * as fa2 from '@fortawesome/free-solid-svg-icons';
 import SectionMainBase from '../../../../lib/section-main-base';
 import FeaturesBase from '../../../../lib/features-base';
-import { ButtonWidget, CustomToastMessage } from '@peerless/controls';
+import { ButtonWidget } from '@peerless/controls';
 import { InsertRepProxy } from '@peerless/queries';
 import { RootState } from '@peerless-cms/store';
 import AdministratorRepProxyCheckList from './administrator-rep-proxy-check-list/administrator-rep-proxy-check-list';
@@ -31,9 +31,10 @@ export function AdministratorRepProxy() {
         toast.success('Save Successfully');
         setIsLoading(false);
       },
-      onError: () => {
+      onError: (error) => {
         toast.error('Save Not Successfully');
         setIsLoading(false);
+        console.error(error.message);
       }
     }
     )

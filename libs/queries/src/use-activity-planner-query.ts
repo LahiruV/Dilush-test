@@ -9,6 +9,9 @@ import {
 export const GetAllActivities = (payload: any, isFetch: boolean) => {
     const fetchAllActivities = async (payload: any) => {
         await new Promise(resolve => setTimeout(resolve, 300));
+        if (payload.ChildOriginators === undefined) {
+            return [];
+        }
         const data = await getAxiosInstance().post<any[]>(
             ActivityAPI.Get_All_Activities + '?repTerritory=' + payload.repTerritory,
             payload

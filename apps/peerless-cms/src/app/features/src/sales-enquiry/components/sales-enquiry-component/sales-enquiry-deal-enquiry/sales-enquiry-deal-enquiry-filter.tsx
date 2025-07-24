@@ -27,7 +27,7 @@ export interface SalesEnquiryDealEnquiryFilterProps {
 // ];
 
 const catalogueTypeOptions = [
-    { id: 0, text: 'All', value: '' },
+    { id: 0, text: 'A - All Products', value: '' },
     { id: 1, text: 'F - Refinery Products', value: 'F' },
     { id: 2, text: 'P - Purchase Contract Product', value: 'P' },
     { id: 3, text: 'R - Rendering Product', value: 'R' },
@@ -103,7 +103,14 @@ export function SalesEnquiryDealEnquiryFilter(props: SalesEnquiryDealEnquiryFilt
         dispatch(setDealEnquiryAsAtDate(new Date().toISOString()));
     }, [dispatch])
 
-    const { formComponentRef } = useFilterForm({ isFormSubmit, setTriggerSubmit: (value) => dispatch(setTriggerDealEnquiryFiltersFormSubmit(value)), isClearFilters: props.isClearFilters, clearFilters });
+    const { formComponentRef } = useFilterForm({
+        isFormSubmit,
+        setTriggerSubmit: (value) => dispatch(setTriggerDealEnquiryFiltersFormSubmit(value)),
+        isClearFilters: props.isClearFilters,
+        clearFilters,
+        setIsActiveFilters: props.setIsActiveFilters,
+        filters: [dealEnquiryParentDrop, dealEnquirySubParentDrop, dealEnquirySubGroupDrop, dealEnquiryPriceGroupDrop, dealEnquiryMarketDrop, dealEnquiryRepDrop, dealCatalogueType, showForwardDeals]
+    });
 
     return (
         <>

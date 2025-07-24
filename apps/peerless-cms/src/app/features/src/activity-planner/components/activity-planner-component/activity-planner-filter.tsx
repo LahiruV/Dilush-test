@@ -56,7 +56,14 @@ export function ActivityPlannerFilter(props: ActivityPlannerFilterProps) {
         width: '208px'
     }
 
-    const { formComponentRef } = useFilterForm({ isFormSubmit, setTriggerSubmit: (value) => dispatch(setTriggerActivityPlannerFormSubmit(value)), isClearFilters: props.isClearFilters, clearFilters });
+    const { formComponentRef } = useFilterForm({
+        isFormSubmit,
+        setTriggerSubmit: (value) => dispatch(setTriggerActivityPlannerFormSubmit(value)),
+        isClearFilters: props.isClearFilters,
+        clearFilters,
+        setIsActiveFilters: props.setIsActiveFilters,
+        filters: [activityPlannerStatus, activityPlannerTerritory, activityPlannerType]
+    });
 
     return (
         <>

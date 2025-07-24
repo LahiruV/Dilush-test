@@ -3,7 +3,7 @@ import './leeds-and-customers-contact-detail.css';
 import { FormProvider, useForm } from 'react-hook-form';
 import { z } from 'zod';
 import { Alert, Button } from 'react-bootstrap';
-import { FormInput, ToastManager } from '@peerless/controls';
+import { ButtonWidget, FormInput, ToastManager } from '@peerless/controls';
 import { RootState, messageTypeEnum, setSelectedLeedOrCustomer, showMessage, updateDetails } from '@peerless-cms/store';
 import { useDispatch, useSelector } from 'react-redux';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -12,11 +12,12 @@ import SectionMainBase from '../../../lib/section-main-base';
 import { useMutation } from '@tanstack/react-query';
 import { saveLead, useLookupData } from '@peerless/queries';
 import { Args, LeadEntryParameters } from '@peerless/models';
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { zodResolver } from '@hookform/resolvers/zod';
 import MessageBox from 'apps/peerless-cms/src/app/features-common-components/src/message-box/message-box';
 import { contactTypeName } from '@peerless/utils';
 import ToastMessages from 'libs/controls/src/toasts-message/messages';
+import { toast } from 'sonner';
 
 export interface LeedsAndCustomersContactDetailProps { }
 
@@ -36,6 +37,7 @@ const contactDetailSchema = z.object({
 
 export function LeedsAndCustomersContactDetail(props: LeedsAndCustomersContactDetailProps) {
   const messagesRef = useRef<any>(null);
+  const [isSaving, setIsSaving] = useState(false);
   const messageMgr = new ToastManager(messagesRef);
   const formRef = useRef<HTMLFormElement | null>(null);
   const mutation = useMutation<any, Error, LeadEntryParameters>({
@@ -171,11 +173,12 @@ export function LeedsAndCustomersContactDetail(props: LeedsAndCustomersContactDe
       RepGroupName: selectedLeedOrCustomer.repGroupName ?? '',
       Args: argObj,
     };
+    setIsSaving(true);
     mutation.mutate(payload, {
       onSuccess: (response) => {
         if (response.isSuccess) {
           dispatch(updateDetails(true));
-
+          setIsSaving(false);
           let updatedLead = {
             ...selectedLeedOrCustomer,
             address: data.address,
@@ -189,16 +192,18 @@ export function LeedsAndCustomersContactDetail(props: LeedsAndCustomersContactDe
             email: data.email,
             preferredContactDescription: data.prefferedMethod,
           }
-
           dispatch(setSelectedLeedOrCustomer(updatedLead));
-          messageMgr.showMessage("success", 'Success: ', 'Successfully saved');
+          toast.success('Successfully saved');
         }
         else {
-          messageMgr.showMessage("error", 'Error: ', response.message);
+          setIsSaving(false);
+          toast.error('Error Occurred While Updating');
         }
       },
       onError: (error) => {
-        console.error('Failed to update lead');
+        setIsSaving(false);
+        console.error(error.message);
+        toast.error('Failed to update Lead');
       }
     });
   };
@@ -246,11 +251,14 @@ export function LeedsAndCustomersContactDetail(props: LeedsAndCustomersContactDe
 
   const footer = (
     !readonly && (
-      <div className='form-button-container'>
-        <span>Make sure you have verified all your changes before update</span>
-        <Button type='button' variant='outline-dark' className='btn-submit' onClick={handleExternalSubmit}>
-          Update Details
-        </Button>
+      <div className='form-button-container footer-content'>
+        <span className='footer-span-content'>Make sure you have verified all your changes before update</span>
+        <ButtonWidget
+          id='lead-details-update-button'
+          classNames='k-button-md k-rounded-md k-button-solid k-button-solid-primary footer-save-button'
+          Function={() => handleExternalSubmit()}
+          name={isSaving ? 'Updating...' : 'Update Details'}
+        />
       </div>
     )
   );

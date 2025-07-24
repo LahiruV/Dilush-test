@@ -1,7 +1,7 @@
 import { useDispatch, useSelector } from 'react-redux';
 import { useEffect, useState } from 'react';
 import { Collapse } from 'react-bootstrap';
-import { RootState, setInvoiceBrand, setInvoiceCatalogueType, setInvoiceCustomer, setInvoiceCustomerGroup, setInvoiceFromDate, setInvoiceInvoiceNumber, setInvoiceMarket, setInvoiceParent, setInvoicePriceGroup, setInvoiceProductGroup, setInvoiceRadio, setInvoiceRadio2, setInvoiceRep, setInvoiceState, setInvoiceSubGroup, setInvoiceToDate, setIsFetchingInvoiceEnquiryList, setSelectedInvoiceEnquiry, setTriggerInvoiceEnquiryFiltersFormSubmit } from '@peerless-cms/store';
+import { RootState, setInvoiceBrand, setInvoiceCatalogueType, setInvoiceCustomer, setInvoiceCustomerGroup, setInvoiceFromDate, setInvoiceBatchNumber, setInvoiceInvoiceNumber, setInvoiceMarket, setInvoiceParent, setInvoicePriceGroup, setInvoiceProductGroup, setInvoiceRadio, setInvoiceRadio2, setInvoiceRep, setInvoiceState, setInvoiceSubGroup, setInvoiceToDate, setIsFetchingInvoiceEnquiryList, setSelectedInvoiceEnquiry, setTriggerInvoiceEnquiryFiltersFormSubmit } from '@peerless-cms/store';
 import { ButtonWidget, DatePickerWidget, DropDown, FilterNonButton, InputWidget, MultiColumnComboBoxWidget, RadioButtonWidget } from '@peerless/controls';
 import { GetAllMarketForLookup, GetAllParentCustomersLookup, GetAllRepsForLookup, GetCustomerLookup, GetGeneralLookupEntries, GetLookup, GetProductGroupLookup } from '@peerless/queries';
 import { dropDownDataConverter } from '@peerless/common';
@@ -28,7 +28,7 @@ const stateOptions = [
 ];
 
 const productTypeOptions = [
-    { id: 0, text: 'All', value: '' },
+    { id: 0, text: 'A - All Products', value: '' },
     { id: 1, text: 'F - Refinery Products', value: 'F' },
     { id: 2, text: 'P - Purchase Contract Product', value: 'P' },
     { id: 3, text: 'R - Rendering Product', value: 'R' },
@@ -38,7 +38,7 @@ const productTypeOptions = [
 export function SalesEnquiryInvoiceEnquiryFilter(props: SalesEnquiryInvoiceEnquiryFilterProps) {
     const dispatch = useDispatch();
     const { loggedUser, childOriginators, originatorInList, selectedOriginator } = useSelector((state: RootState) => state.header);
-    const { isFormSubmit, invoiceSubGroup, invoicePriceGroup, invoiceProductGroup, invoiceParent, invoiceMarket, invoiceRep, invoiceCatalogueType, invoiceState, invoiceBrand, invoiceCustomer, invoiceFromDate, invoiceToDate, invoiceInvoiceNumber, invoiceRadio, invoiceRadio2 } = useSelector((state: RootState) => state.salesEnquiryInvoiceEnquiry);
+    const { isFormSubmit, invoiceSubGroup, invoicePriceGroup, invoiceProductGroup, invoiceParent, invoiceMarket, invoiceRep, invoiceCatalogueType, invoiceState, invoiceBrand, invoiceCustomer, invoiceFromDate, invoiceToDate, invoiceBatchNumber, invoiceInvoiceNumber, invoiceRadio, invoiceRadio2 } = useSelector((state: RootState) => state.salesEnquiryInvoiceEnquiry);
 
     const payloadParentCustomer: GetAllParentCustomersLookupParameters = {
         originator: loggedUser.userName,
@@ -178,6 +178,7 @@ export function SalesEnquiryInvoiceEnquiryFilter(props: SalesEnquiryInvoiceEnqui
         dispatch(setInvoiceFromDate(new Date().toISOString()));
         dispatch(setInvoiceToDate(new Date().toISOString()));
         dispatch(setInvoiceInvoiceNumber('0'));
+        dispatch(setInvoiceBatchNumber('0'));
         dispatch(setInvoiceRadio("2"));
         dispatch(setInvoiceRadio2("1"));
     }
@@ -210,6 +211,7 @@ export function SalesEnquiryInvoiceEnquiryFilter(props: SalesEnquiryInvoiceEnqui
         dispatch(setInvoiceCatalogueType(catalogueTypeDefault));
         dispatch(setInvoiceFromDate(new Date().toISOString()));
         dispatch(setInvoiceToDate(new Date().toISOString()));
+        dispatch(setInvoiceBatchNumber('0'));
         dispatch(setInvoiceInvoiceNumber('0'));
         dispatch(setInvoiceRadio("2"));
         dispatch(setInvoiceRadio2("1"));
@@ -223,7 +225,14 @@ export function SalesEnquiryInvoiceEnquiryFilter(props: SalesEnquiryInvoiceEnqui
         onFilterClick();
     }
 
-    const { formComponentRef } = useFilterForm({ isFormSubmit, setTriggerSubmit: (value) => dispatch(setTriggerInvoiceEnquiryFiltersFormSubmit(value)), isClearFilters: props.isClearFilters, clearFilters });
+    const { formComponentRef } = useFilterForm({
+        isFormSubmit,
+        setTriggerSubmit: (value) => dispatch(setTriggerInvoiceEnquiryFiltersFormSubmit(value)),
+        isClearFilters: props.isClearFilters,
+        clearFilters,
+        setIsActiveFilters: props.setIsActiveFilters,
+        filters: [invoiceParent, invoiceSubGroup, invoiceProductGroup, invoicePriceGroup, invoiceMarket, invoiceRep, invoiceCatalogueType, invoiceState, invoiceCustomer, invoiceFromDate, invoiceToDate, invoiceBatchNumber, invoiceRadio, invoiceRadio2]
+    });
 
     return (
         <>
@@ -251,6 +260,9 @@ export function SalesEnquiryInvoiceEnquiryFilter(props: SalesEnquiryInvoiceEnqui
                             </FilterFormGroup>
                             <FilterFormGroup label='Invoice Number'>
                                 <InputWidget id={"sales-enquiry-invoice-enquiry-invoice-number"} className={"administrator-filter filter-form-filter"} setValue={(e) => { dispatch(setInvoiceInvoiceNumber(e)) }} value={invoiceInvoiceNumber} type='string' required />
+                            </FilterFormGroup>
+                            <FilterFormGroup label='Batch Number'>
+                                <InputWidget id={"sales-enquiry-invoice-enquiry-batch-number"} className={"administrator-filter filter-form-filter"} setValue={(e) => { dispatch(setInvoiceBatchNumber(e)) }} value={invoiceBatchNumber} type='string' required />
                             </FilterFormGroup>
                         </div>
 

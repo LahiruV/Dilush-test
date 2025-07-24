@@ -89,7 +89,14 @@ export function DashBoardEndUserPriceFilter(props: DashBoardEndUserPriceFilterPr
     // }
     // }, [allReps, allLookups]);
 
-    const { formComponentRef } = useFilterForm({ isFormSubmit, setTriggerSubmit: (value) => dispatch(setTriggerEndUserPriceFormSubmit(value)), isClearFilters: props.isClearFilters, clearFilters });
+    const { formComponentRef } = useFilterForm({
+        isFormSubmit,
+        setTriggerSubmit: (value) => dispatch(setTriggerEndUserPriceFormSubmit(value)),
+        isClearFilters: props.isClearFilters,
+        clearFilters,
+        setIsActiveFilters: props.setIsActiveFilters,
+        filters: [repCode, baseCode, asAtDate]
+    });
 
     useEffect(() => {
         if (props.isHandlePDF) {

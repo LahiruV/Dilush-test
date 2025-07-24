@@ -24,6 +24,7 @@ export interface PieChartProps {
     height?: number;
     displayLegend?: boolean;
     renderStatusContent?: any
+    customTooltipCallback?: (context: any) => string | string[];
 }
 
 /**
@@ -38,13 +39,14 @@ export interface PieChartProps {
  * @param {number} [props.height=400] - The height of the chart.
  * @param {boolean} props.displayLegend - Flag to display the legend.
  * @param {Object} props.renderStatusContent - The status content rendering configuration.
+ * @param {boolean} props.customTooltipCallback - Optional custom tooltip callback function to format tooltip content.
  * 
  * @returns {JSX.Element} The rendered PieChart component.
  * 
  * @author @LahiruV 🐺
  * @date 2024-10-05
  */
-export function PieChart({ categories, series, legendPosition, legendAlign, width, height, displayLegend, renderStatusContent }: PieChartProps) {
+export function PieChart({ categories, series, legendPosition, legendAlign, width, height, displayLegend, renderStatusContent, customTooltipCallback }: PieChartProps) {
     const chartData = {
         labels: categories,
         datasets: series.map((series) => ({
@@ -72,6 +74,17 @@ export function PieChart({ categories, series, legendPosition, legendAlign, widt
             },
             tooltip: {
                 enabled: true,
+                callbacks: {
+                    label: customTooltipCallback
+                        ? customTooltipCallback
+                        : function (context) {
+                            const value = context.raw as number;
+                            const total = (context.dataset.data as number[]).reduce((a, b) => a + b, 0);
+                            const percent = ((value / total) * 100).toFixed(1);
+                            const label = context.label || '';
+                            return `${label}: ${value} (${percent}%)`;
+                        },
+                },
             },
         },
     };

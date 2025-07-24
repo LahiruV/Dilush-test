@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { GetEndUserTransferLog } from '@peerless/queries';
 import { useEffect, useState } from 'react';
 import { useInView } from 'react-intersection-observer';
-import { EndUserTransferLogListDistributer, useResetTablePagination } from '@peerless/common';
+import { EndUserTransferLogListDistributer, useResetTablePagination, useResetTableSorting } from '@peerless/common';
 import { DataGrid } from '@peerless/controls';
 import { RenderStatusContentTable } from '@peerless/models';
 
@@ -14,11 +14,11 @@ interface EndUserTransferLogListProps {
 const DashboardEndUserTransferLogList: React.FC<EndUserTransferLogListProps> = ({ heightOffset }) => {
   const dispatch = useDispatch();
   const { ref, inView } = useInView({ triggerOnce: false });
-  const { endUserLogStartDate, endUserLogEndDate, searchByDashEndUserLogs, isDashEndUserTransferLogsListFetch, childOriginatorsDashEndUserTransferLogs } = useSelector((state: RootState) => state.dashboardEndUserTransferLogs);
+  const { endUserLogStartDate, endUserLogEndDate, searchByDashEndUserLogs, isDashEndUserTransferLogsListFetch, childOriginatorsDashEndUserTransferLogs, isFormSubmit } = useSelector((state: RootState) => state.dashboardEndUserTransferLogs);
   const { loggedUser } = useSelector((state: RootState) => state.header);
   const [pageState, setPageState] = useState({ first: 1, rows: 20 });
   const [pageSize, setPageSize] = useState(20);
-  const [multiSortMeta, setMultiSortMeta] = useState([]);
+  const [multiSortMeta, setMultiSortMeta] = useState<any[]>([]);
   const [orderBy, setOrderBy] = useState("enduserCode ASC");
   const [tableFilters, setTableFilters] = useState<any>({
     enduserCode: { value: null, matchMode: 'contains' },
@@ -46,7 +46,7 @@ const DashboardEndUserTransferLogList: React.FC<EndUserTransferLogListProps> = (
 
   useResetTablePagination(20, setPageState, [endUserLogStartDate, endUserLogEndDate, childOriginatorsDashEndUserTransferLogs]);
 
-  const { data: endUserTransferLogsData, error, status } = GetEndUserTransferLog(payload, isDashEndUserTransferLogsListFetch);
+  const { data: endUserTransferLogsData, error, status, refetch } = GetEndUserTransferLog(payload, isDashEndUserTransferLogsListFetch);
 
   const renderStatusContent = {
     isRenderStatusContentTable: true,
@@ -101,6 +101,15 @@ const DashboardEndUserTransferLogList: React.FC<EndUserTransferLogListProps> = (
     }
   }, [tableFilters]);
 
+  useResetTableSorting({
+    isFormSubmit,
+    multiSortMeta,
+    setMultiSortMeta,
+    orderBy,
+    setOrderBy: () => setOrderBy("enduserCode ASC"),
+    dispatcher: () => dispatch(setIsDashEndUserTransferLogsListFetch(false)),
+    refetch,
+  });
 
   return (
     <div className='table-container'>

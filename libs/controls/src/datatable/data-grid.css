@@ -80,3 +80,10 @@
 .table-container{
     overflow: hidden;
 }
+
+.p-column-filter-menu-button-active {
+  background: none;
+}
+.p-column-filter-menu-button-active .p-icon {
+  color: #e1a875;
+}

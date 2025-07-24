@@ -12,7 +12,7 @@ export class SalesEnquiryDealEnquiryListDistributer extends BaseGrid {
         return {
             idColumn: this.MAIN_GRID_ID,
             columns: [
-                { field: 'customerCode', header: 'Customer Code', sortable: false, headerStyle: { color: '#495057' }, style: { width: '115px', color: '#008c51', fontWeight: 'bold', }, filter: false, filterPlaceholder: "Filter By Customer Code", filterMatchMode: 'contains' },
+                { field: 'customerCode', header: 'Customer Code', sortable: false, headerStyle: { color: '#495057' }, style: { width: '115px', }, filter: false, filterPlaceholder: "Filter By Customer Code", filterMatchMode: 'contains' },
                 { field: 'name', header: 'Name', sortable: false, filter: false, style: { width: '200px' }, filterPlaceholder: "Filter By Name", filterMatchMode: 'contains' },
                 { field: 'product', header: 'Product', sortable: false, style: { width: '120px' }, filter: false, filterPlaceholder: "Filter By Product", filterMatchMode: 'contains' },
                 { field: 'description', header: 'Description', sortable: false, filter: false, style: { width: '230px' }, filterPlaceholder: "Filter By Description", filterMatchMode: 'contains' },

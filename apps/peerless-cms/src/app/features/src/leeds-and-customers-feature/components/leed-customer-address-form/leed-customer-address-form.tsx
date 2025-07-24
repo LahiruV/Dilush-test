@@ -1,6 +1,6 @@
 import { zodResolver } from "@hookform/resolvers/zod";
 import { pageModeEnum, messageTypeEnum, RootState, setAddressPageMode, setSelectedAddress, showMessage } from "@peerless-cms/store";
-import { ButtonWidget, CustomToastMessage, FormInput, PageLoader, ToastManager } from "@peerless/controls";
+import { ButtonWidget, FormInput, PageLoader, ToastManager } from "@peerless/controls";
 import { ReadOnlyProvider } from "@peerless/providers";
 import { saveLeadCustomerAddress, useCountryData, useStatesData } from "@peerless/queries";
 import { contactId, contactTypeEnum, sectionPathMap } from "@peerless/utils";
@@ -12,6 +12,7 @@ import { Button } from "react-bootstrap";
 import { FormProvider, useForm } from "react-hook-form";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
+import { toast } from "sonner";
 import { z } from "zod";
 
 
@@ -27,10 +28,6 @@ export function LeedCustomerAddressForm(props: LeedCustomerAddressFormProps) {
   const messageMgr = new ToastManager(messagesRef);
   const [isProcessing, setIsProcessing] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
-  const [status, setStatus] = useState<string>('');
-  const [labelText, setLabelText] = useState<string>('');
-  const [triggerKey, setTriggerKey] = useState(0);
-  const [open, setOpen] = useState(false);
 
   const { selectedLeedOrCustomer, readonly, originator, loggedUser, addressMode, selectedAddress, contactType, selectedOrganisation } = useSelector((state: RootState) => ({
     selectedLeedOrCustomer: state.leedsAndCustomers.selectedLeedOrCustomer,
@@ -217,23 +214,14 @@ export function LeedCustomerAddressForm(props: LeedCustomerAddressFormProps) {
             dispatch(setSelectedAddress(updatedAddress));
           }
           dispatch(setAddressPageMode(pageModeEnum.List));
-          setStatus('success-notification-color');
-          setLabelText(
-            (addressMode === pageModeEnum.New ? 'Address Saved Successfully' : 'Address Updated Successfully')
-          );
-          setTriggerKey((prevKey) => prevKey + 1);
-          setTimeout(() => {
-            navigate(`${sectionPathMap[contactType]}${contactType == contactTypeEnum.organisation ? selectedOrganisation?.[contactId[contactType]] : selectedLeedOrCustomer?.[contactId[contactType]]}/addresses`);
-          }, 800);
+          toast.success(addressMode === pageModeEnum.New ? 'Address Saved Successfully' : 'Address Updated Successfully')
+          navigate(`${sectionPathMap[contactType]}${contactType == contactTypeEnum.organisation ? selectedOrganisation?.[contactId[contactType]] : selectedLeedOrCustomer?.[contactId[contactType]]}/addresses`);
         }
       },
       onError: (error) => {
         setIsProcessing(false);
-        setStatus('error-notification-color');
-        setLabelText(
-          (addressMode === pageModeEnum.New ? 'Address Save Failed' : 'Address Update Failed')
-        );
-        setTriggerKey((prevKey) => prevKey + 1);
+        console.error(error.message);
+        toast.error(addressMode === pageModeEnum.New ? 'Address Save Failed' : 'Address Update Failed')
       }
     });
   };
@@ -254,6 +242,7 @@ export function LeedCustomerAddressForm(props: LeedCustomerAddressFormProps) {
               <div className='form-group-container'>
                 <div className='form-group'>
                   <span>Address</span>
+                  <FormInput label='Name' name='name' />
                   <FormInput label='Address 1' name='address1' required={true} />
                   <FormInput label='Address 2' name='address2' />
                   {contactType == contactTypeEnum.organisation && <FormInput label='Address 3' name='address3' />}
@@ -264,7 +253,6 @@ export function LeedCustomerAddressForm(props: LeedCustomerAddressFormProps) {
                 </div>
                 <div className='form-group'>
                   <span>Personal</span>
-                  <FormInput label='Name' name='name' />
                   <FormInput label='Contact' name='contact' />
                   {contactType != contactTypeEnum.organisation && <FormInput label='Phone' name='phone' />}
                   {contactType != contactTypeEnum.organisation && <FormInput label='Mobile' name='mobile' />}
@@ -287,22 +275,13 @@ export function LeedCustomerAddressForm(props: LeedCustomerAddressFormProps) {
         <footer>
           <div className='form-button-container footer-content'>
             <span className='footer-span-content'>Make sure you have verified all your changes before update</span>
-            {addressMode === pageModeEnum.New ? (
-              <ButtonWidget
-                id='customer-address-save-button'
-                classNames='k-button-md k-rounded-md k-button-solid k-button-solid-primary footer-save-button'
-                Function={() => handleExternalSubmit()}
-                name={isProcessing ? 'Saving...' : 'Save Details'}
-              />
-            ) :
-              (<ButtonWidget
-                id='customer-address-update-button'
-                classNames='k-button-md k-rounded-md k-button-solid k-button-solid-primary footer-save-button'
-                Function={() => handleExternalSubmit()}
-                name={isProcessing ? 'Updating...' : 'Update Details'}
-              />)}
+            <ButtonWidget
+              id='customer-address-save-button'
+              classNames='k-button-md k-rounded-md k-button-solid k-button-solid-primary footer-save-button'
+              Function={() => handleExternalSubmit()}
+              name={addressMode === pageModeEnum.New ? (isProcessing ? 'Saving...' : 'Save Details') : (isProcessing ? 'Updating...' : 'Update Details')}
+            />
           </div>
-          <CustomToastMessage status={status || ''} labelText={labelText} state={open} setState={setOpen} triggerKey={triggerKey} />
         </footer>
 
       </div>

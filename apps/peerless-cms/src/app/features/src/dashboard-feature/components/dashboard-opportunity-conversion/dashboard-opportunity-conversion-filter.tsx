@@ -61,7 +61,14 @@ export function DashBoarOpportunityConversionFilter(props: DashBoarOpportunityCo
         dispatch(setOpportunityConversionMarket(modifiedMarketList[0]));
     }, [dispatch, statesData, saleMarketData]);
 
-    const { formComponentRef } = useFilterForm({ isFormSubmit, setTriggerSubmit: (value) => dispatch(setTriggerOpportunityConversionFormSubmit(value)), isClearFilters: props.isClearFilters, clearFilters });
+    const { formComponentRef } = useFilterForm({
+        isFormSubmit,
+        setTriggerSubmit: (value) => dispatch(setTriggerOpportunityConversionFormSubmit(value)),
+        isClearFilters: props.isClearFilters,
+        clearFilters,
+        setIsActiveFilters: props.setIsActiveFilters,
+        filters: [opportunityConversionState, opportunityConversionMarket, opportunityConversionStartDate, opportunityConversionEndDate]
+    });
 
     return (
         <>

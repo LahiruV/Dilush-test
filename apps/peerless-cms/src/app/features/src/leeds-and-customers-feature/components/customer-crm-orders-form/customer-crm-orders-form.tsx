@@ -18,6 +18,7 @@ import { useMutation } from "@tanstack/react-query";
 import EditableDropdown from "libs/controls/src/editable-dropdown/editable-dropdown";
 import ToastMessages from "libs/controls/src/toasts-message/messages";
 import { RenderStatusContentTable } from "@peerless/models";
+import { toast } from "sonner";
 
 export interface CustomerCRMOrdersFormProps { }
 
@@ -142,7 +143,7 @@ export function CustomerCRMOrdersForm(props: CustomerCRMOrdersFormProps) {
       else {
         //setIsEnableEnduserQuery(false);
         setIsButtonDisabled(true);
-        messageMgr.showMessage('error', 'Warning: ', 'Selected customer does not accept TIOs');
+        toast.error('Selected Customer Does Not Accept TIOs');
       }
     }
   }, [isTIOAcceptCustomerResult]);
@@ -353,11 +354,12 @@ export function CustomerCRMOrdersForm(props: CustomerCRMOrdersFormProps) {
       mutationReAssignOrder.mutate(reAssignPayload, {
         onSuccess: (response) => {
           if (response == true) {
-            messageMgr.showMessage('success', 'Success: ', 'Order Re-Assigned');
+            toast.success('Order Re-Assigned Successfully');
           }
         },
         onError: (error) => {
-          messageMgr.showMessage('error', 'Error: ', 'Error occured while updating the status');
+          toast.error('Error Occured While Updating the Status');
+          console.error(error.message);
         }
       });
     }
@@ -371,11 +373,11 @@ export function CustomerCRMOrdersForm(props: CustomerCRMOrdersFormProps) {
               navigate(`${sectionPathMap[contactType]}${selectedLeedOrCustomer?.[contactId[contactType]]}/${successSubUrl}`);
             }
             else {
-              messageMgr.showMessage("success", 'Success', 'Order saved');
+              toast.success('Order Saved Successfully');
             }
           }
           else {
-            messageMgr.showMessage("error", 'Error', 'Order did not save');
+            toast.error('Order Request Failed');
           }
         }
         else { //enduser
@@ -389,19 +391,19 @@ export function CustomerCRMOrdersForm(props: CustomerCRMOrdersFormProps) {
             if (crmOrdersPageMode == pageModeEnum.New) {
               dispatch(setCrmOrdersPageMode(pageModeEnum.Edit));
             }
-            messageMgr.showMessage("success", 'Success', 'Order saved');
+            toast.success('Order Saved Successfully');
             if (response.mailStatus == false) {
-              messageMgr.showMessage("error", 'Warning', 'Your TIO has not been emailed to the Distributor. Please try again using the Re-send button');
+              toast.error('Your TIO has not been emailed to the Distributor. Please try again using the Re-send Button');
             }
           }
           else {
-            messageMgr.showMessage("error", 'Error', 'Order did not save');
+            toast.error('Order Request Failed');
           }
         }
       },
       onError: (error) => {
         setIsSaving(false);
-        console.error('Failed to update');
+        console.error(error.message);
       }
     });
   }
@@ -440,16 +442,17 @@ export function CustomerCRMOrdersForm(props: CustomerCRMOrdersFormProps) {
             navigate(`${sectionPathMap[contactType]}${selectedLeedOrCustomer?.[contactId[contactType]]}/crm-orders`);
           }
           else {
-            messageMgr.showMessage("success", 'Success: ', 'Order completed');
+            toast.success('Order Completed');
           }
         }
         else {
-          messageMgr.showMessage("error", 'Error: ', 'Order did not save');
+          toast.error('Order Request Failed');
         }
       },
       onError: (error) => {
         setIsCompleting(false);
-        console.error('Failed to update');
+        toast.error('Error Occured While Completing the Order');
+        console.error(error.message);
       }
     });
   }
@@ -567,13 +570,14 @@ export function CustomerCRMOrdersForm(props: CustomerCRMOrdersFormProps) {
       onSuccess: (response) => {
         setIsSendingMail(false);
         if (response == true) {
-          messageMgr.showMessage('success', 'Success: ', 'Email sent');
+          toast.success('Email Sent Successfully');
         }
 
       },
       onError: (error) => {
         setIsSendingMail(false);
-        messageMgr.showMessage('error', 'Error: ', 'Email did not send. Please try again later');
+        toast.error('Email Sending Failed. Please Try Again Later');
+        console.error(error.message);
       }
     });
   }

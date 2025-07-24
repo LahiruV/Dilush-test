@@ -3,22 +3,18 @@
   display: flex;
   align-items: center;
 }
-.filter-form-group{
+.filter-form-group.extra-gap{
   gap: 10px;
-}
-.filter-form-group.no-gap{
-  gap: 0;
 }
 
 .filter-header{
-  /* width: 90px; */
+  width: 90px;
   color: #6c757d;
   font-size: 12px;
+}
+.filter-header.short-label {
   width: 20%;
 }
-/* .filter-header.no-label-width {
-  width: auto;
-} */
 
 .filter-form-group-inner .k-radio-label{
   font-size: 12px;

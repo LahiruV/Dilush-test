@@ -1,16 +1,15 @@
-import { DataGrid } from "@peerless/controls";
 import FeaturesBase from "../../../../lib/features-base";
-import { ClaimsEnquiryClaimsGrid, ClaimsEnquiryProductGrid, formatNumber } from "@peerless/common";
+import { formatNumber, useResetTablePagination } from "@peerless/common";
 import { HeaderFilterContainer, InfoBox } from "@peerless-cms/features-common-components";
 import { useDispatch, useSelector } from "react-redux";
 import { RootState, setClaimEnquiryTotalsData, setIsFetchingClaimsEnquiryList, setSalesEnquirySelectedArea, setSelectedClaim, setTriggerClaimsEnquiryFiltersFormSubmit } from "@peerless-cms/store";
 import { GetClaimDetail, getClaimsEnquiry } from "@peerless/queries";
-import { RenderStatusContentTable } from "@peerless/models";
 import { useEffect, useRef, useState } from "react";
 import SectionMainBase from "../../../../lib/section-main-base";
 import * as fa2 from '@fortawesome/free-solid-svg-icons';
 import { ClaimsEnquiryFilters } from "./claims-enquiry-filters";
 import '../../../../styles/header-top-filter.css'
+import ClaimsEnquiryMain from "./claims-enquiry-main";
 
 export function ClaimsEnquiry() {
   const parentRefClaims = useRef<HTMLDivElement | null>(null);
@@ -81,6 +80,12 @@ export function ClaimsEnquiry() {
     // ProcessStatus: '', //claimFilters?.processingStatus,
   }
   const { data: claimsEnquiryList, status, error, isLoading, refetch, isFetching, isFetched } = getClaimsEnquiry(payload, isFetchingClaimsEnquiryList);
+
+  useResetTablePagination(7, setPageState, [
+    fromDate, toDate, product?.value, customer?.value, reason?.value, parent?.value,
+    subParent?.value, subParentGroup?.value, rep?.value, promo, payMethod?.value,
+    claimType?.value, claimStatus?.value, tableFilters
+  ], 0);
 
   // useEffect(() => {
   //   setPageState({ first: 0, rows: 20 });
@@ -180,25 +185,6 @@ export function ClaimsEnquiry() {
     dispatch(setIsFetchingClaimsEnquiryList(true));
   };
 
-  const renderStatusContent = {
-    isRenderStatusContentTable: true,
-    status: status,
-    isFetch: isFetchingClaimsEnquiryList || isFetching,
-    error: error,
-    setStateFunction: setIsFetchingClaimsEnquiryList,
-    isStatusOutput: true,
-    isHideClickFilterMessage: true,
-  } as RenderStatusContentTable;
-
-  const renderStatusContentDetail = {
-    isRenderStatusContentTable: true,
-    status: detailStatus,
-    isFetch: isLoadingDetail,
-    error: detailError,
-    isStatusOutput: true,
-    isHideClickFilterMessage: true,
-  } as RenderStatusContentTable;
-
   useEffect(() => {
     if (Object.keys(claimsEnquiryList || {}).length > 0) {
       const data = Object.assign({}, claimsEnquiryList);
@@ -221,9 +207,6 @@ export function ClaimsEnquiry() {
     }
   }, [status, claimsEnquiryList]);
 
-  const claimsGrid = new ClaimsEnquiryClaimsGrid();
-  const productsGrid = new ClaimsEnquiryProductGrid();
-
   const header = (
     <>
       <HeaderFilterContainer title="Claims Enquiry" icon={fa2.faBriefcase} renderFilters={({ isFiltersOpen, isClearFilters, setIsActiveFilters }) => (
@@ -236,26 +219,28 @@ export function ClaimsEnquiry() {
   );
 
   const main = (
-    <div className="tables-container">
-      <div className="claims-table-container" ref={parentRefClaims}>
-        <div className="total-container border-bottom">
-          <span className="title-text">Claim Details</span>
-          <span className="total-spn"><b>Total of All Claims:</b> {totalOfClaims}</span>
-        </div>
-        <DataGrid uniqueId="claimUniqueId" dataTable={claimsGrid} data={claimsEnquiryList && claimsEnquiryList.claimResponses} isScrollable={true} scrollHeight={scrollHeightClaims} cssClasses={'claims-tbl-min-height sticky-header'}
-          renderStatusContent={renderStatusContent} emptyMessage={isDataFiltered ? 'No records available' : 'Please click on filter to view data'}
-          selectionMode={"single"} selectedRow={selectedClaim} setSelectedRow={handleSelectionChange} enablePagination={true}
-          pageSize={pageSize} onFilterCallback={onFilterClaims} isServerSidePaging={true} firstIndex={pageState.first} totalRecords={claimsEnquiryList && claimsEnquiryList.totalRecord} onPage={onPage}
-          isSelectionColumnShow={false} width="1350px" />
-      </div>
-      <div className="claims-product-table-container" ref={parentRefProducts}>
-        <div className="table-title">
-          <span className="title-text"><b>Product Details</b></span>
-        </div>
-        <DataGrid dataTable={productsGrid} data={claimsDetailsList} isScrollable={true} scrollHeight={scrollHeightProducts} cssClasses={"sticky-header"}
-          emptyMessage={(selectedClaim == null ? "Select a claim to view details" : "No records available")} onFilterCallback={onFilterProducts} renderStatusContent={renderStatusContentDetail} />
-      </div>
-    </ div>
+    <ClaimsEnquiryMain
+      parentRefClaims={parentRefClaims}
+      totalOfClaims={totalOfClaims}
+      claimsEnquiryList={claimsEnquiryList}
+      isFetchingClaimsEnquiryList={isFetchingClaimsEnquiryList}
+      isFetching={isFetching}
+      error={error}
+      status={status}
+      setIsFetchingClaimsEnquiryList={(value: boolean) => dispatch(setIsFetchingClaimsEnquiryList(value))}
+      isDataFiltered={isDataFiltered}
+      selectedClaim={selectedClaim}
+      handleSelectionChange={handleSelectionChange}
+      pageSize={pageSize}
+      onPage={onPage}
+      onFilterClaims={onFilterClaims}
+      pageState={pageState}
+      parentRefProducts={parentRefProducts}
+      claimsDetailsList={claimsDetailsList}
+      onFilterProducts={onFilterProducts}
+      detailStatus={detailStatus}
+      isLoadingDetail={isLoadingDetail}
+      detailError={detailError} />
   );
 
   const articleData = [
@@ -290,7 +275,7 @@ export function ClaimsEnquiry() {
   const article = (
     selectedClaim ? (
       <>
-        <InfoBox header={"Narratation on claim: "} headerClass="title-1" headerSpannedValue={selectedClaim.claimNo} cssClass="border-left-none border-top-none padding-top-10" contentText={selectedClaim.narration} />
+        <InfoBox header={"Narration  on claim: "} headerClass="title-1" headerSpannedValue={selectedClaim.claimNo} cssClass="border-left-none border-top-none padding-top-10" contentText={selectedClaim.narration} />
 
         <InfoBox contentList={articleData}
           cssClass='border-top-none border-bottom-none border-left-none border-right-none'
@@ -307,7 +292,7 @@ export function ClaimsEnquiry() {
     ) :
       articleDefault
   )
-  const mainContent = <SectionMainBase header={header} main={main}></SectionMainBase>;
+  const mainContent = <SectionMainBase header={header} main={main} ></SectionMainBase>;
 
   return <FeaturesBase main={mainContent} article={article} cssClass='remove-margin-top-article article-shrinked' isNoScrollX={true} />;
 }

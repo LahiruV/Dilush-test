@@ -48,10 +48,10 @@ const OpportunityConversionTopList: React.FC = () => {
 
   const lastRow = {
     amount: LeaderCustomerOpportunityCountData.length > 0 && LeaderCustomerOpportunityCountData[0]?.sumOfAmount !== undefined
-      ? '$' + LeaderCustomerOpportunityCountData[0].sumOfAmount.toFixed(2)
+      ? 'Total: $' + LeaderCustomerOpportunityCountData[0].sumOfAmount.toFixed(2)
       : 'N/A',
     tonnes: LeaderCustomerOpportunityCountData.length > 0 && LeaderCustomerOpportunityCountData[0]?.sumOfTonnes !== undefined
-      ? LeaderCustomerOpportunityCountData[0].sumOfTonnes.toFixed(2)
+      ? 'Total: ' + LeaderCustomerOpportunityCountData[0].sumOfTonnes.toFixed(2)
       : 'N/A',
   };
 

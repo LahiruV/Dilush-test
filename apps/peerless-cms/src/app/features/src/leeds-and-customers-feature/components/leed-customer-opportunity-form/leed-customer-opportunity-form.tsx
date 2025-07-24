@@ -17,6 +17,7 @@ import { useInView } from "react-intersection-observer";
 import { useMutation } from "@tanstack/react-query";
 import { contactId, contactTypeEnum, sectionPathMap } from "@peerless/utils";
 import ToastMessages from "libs/controls/src/toasts-message/messages";
+import { toast } from "sonner";
 
 export interface LeedCustomerOpportunityFormProps { }
 
@@ -229,16 +230,18 @@ export function LeedCustomerOpportunityForm(props: LeedCustomerOpportunityFormPr
               amount: data.amount
             }
             dispatch(setSelectedOpportunity(updatedOpportunity));
-            messageMgr.showMessage('success', 'Success: ', 'Opportunity updated')
+            toast.success('Opportunity Updated Successfully');
           }
           else {
+            toast.success('Opportunity Created Successfully');
             navigate(`${sectionPathMap[contactType]}${selectedLeedOrCustomer?.[contactId[contactType]]}/opportunity`);
           }
         }
       },
       onError: (error: any) => {
         setIsSaving(false);
-        console.error('Failed to update lead');
+        toast.error('Failed to update lead');
+        console.error(error.message);
       }
     });
   };
@@ -481,19 +484,12 @@ export function LeedCustomerOpportunityForm(props: LeedCustomerOpportunityFormPr
   const footer = (
     <div className='form-button-container footer-content'>
       <span className='footer-span-content'>Make sure you have verified all your changes before update</span>
-      {opportunityPageMode === pageModeEnum.New ? (
-        <ButtonWidget
-          id='customer-opportunities-save-button'
-          classNames='k-button-md k-rounded-md k-button-solid k-button-solid-primary footer-save-button'
-          Function={() => handleExternalSubmit()}
-          name={isSaving ? 'Saving...' : 'Save Details'}
-        />) :
-        (<ButtonWidget
-          id='customer-opportunities-update-button'
-          classNames='k-button-md k-rounded-md k-button-solid k-button-solid-primary footer-save-button'
-          Function={() => handleExternalSubmit()}
-          name={isSaving ? 'Updating...' : 'Update Details'}
-        />)}
+      <ButtonWidget
+        id='customer-opportunities-save-button'
+        classNames='k-button-md k-rounded-md k-button-solid k-button-solid-primary footer-save-button'
+        Function={() => handleExternalSubmit()}
+        name={opportunityPageMode === pageModeEnum.New ? (isSaving ? 'Saving...' : 'Save Details') : (isSaving ? 'Updating...' : 'Update Details')}
+      />
     </div>
   )
 

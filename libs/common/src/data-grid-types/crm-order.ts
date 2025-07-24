@@ -1,5 +1,5 @@
 import { rowOptions } from "@peerless/controls";
-import { getDate } from "../functions";
+import { getFormattedDateTime } from "../functions";
 import { BaseGrid, gridColumn, gridFilter, rowExpansion } from "./base-grid";
 import { contactTypeEnum } from "@peerless/utils";
 
@@ -42,7 +42,7 @@ export class CrmOrder extends BaseGrid{
             columns: [
                 { field: 'tiOrderNumber', header: 'TIO No', style:{ width: '120px' }, sortable: false, filter: true, filterPlaceholder:"Filter by order" , filterMatchMode:'contains', hidden: (this.contactType != contactTypeEnum.enduser) }, 
                 { field: 'webId', header: 'Order Number', style:{ width: '120px' }, sortable: false, filter: true, filterPlaceholder:"Filter by order" , filterMatchMode:'contains', hidden: (this.contactType != contactTypeEnum.customer) },
-                { field: 'orderDate', header: 'Order Date', style:{ width: '160px' }, body: (rowData: any) => (getDate(rowData?.orderDate)) },
+                { field: 'orderDate', header: 'Order Date', style:{ width: '160px' }, body: (rowData: any) => (getFormattedDateTime(rowData?.orderDate)) },
                 { field: 'custCode', header: 'Customer Code', style:{ width: '100px' } },
                 { field: 'endUserCode', header: 'Enduser Code', style:{ width: '120px' }, sortable: false, filter: true, filterPlaceholder:"Filter by enduser code" , filterMatchMode:'contains', hidden: (this.contactType != contactTypeEnum.enduser) },
                 { field: 'status', header: 'Status', style:{ width: '70px' }, hidden: (this.contactType != contactTypeEnum.customer) },

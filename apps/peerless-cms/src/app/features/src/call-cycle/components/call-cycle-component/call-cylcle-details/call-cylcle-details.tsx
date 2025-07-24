@@ -9,7 +9,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import * as fa from '@fortawesome/free-solid-svg-icons';
 import * as fa2 from '@fortawesome/free-solid-svg-icons';
 import Button from "react-bootstrap/esm/Button";
-// import ToastMessages from "libs/controls/src/toasts-message/messages";
 import { ReadOnlyProvider } from "@peerless/providers";
 import SectionMainBase from "../../../../lib/section-main-base";
 import { CallCycleDistributor, dropDownDataConverter } from "@peerless/common";
@@ -70,6 +69,7 @@ export const CallCycleDetails = ({ refetchList, setTriggerKey, isShow, setMessag
     const [localCallCycleDetailsEdit, setLocalCallCycleDetailsEdit] = useState<any>(null);
     const [selectedStage, setSelectedStage] = useState<{ id: number, text: string, value: string, stage: string, customerCode?: string } | null>(null);
     const [isConfirmBoxVisible, setIsConfirmBoxVisible] = useState(false);
+    const [isUpdateConfirmBoxVisible, setIsUpdateConfirmBoxVisible] = useState(false);
     const [deletingCust, setDeleteingCust] = useState<any | null>(null);
     const [selectedRow, setSelectedRow] = useState<any>(null);
 
@@ -340,6 +340,13 @@ export const CallCycleDetails = ({ refetchList, setTriggerKey, isShow, setMessag
     }, [callCycleData]);
 
 
+    useEffect(() => {
+        if (!readonly && selectedCallCycleActivity.delFlag === 'Y') {
+            setIsUpdateConfirmBoxVisible(true);
+        }
+    }, [readonly]);
+
+
 
 
     const header = (
@@ -369,7 +376,6 @@ export const CallCycleDetails = ({ refetchList, setTriggerKey, isShow, setMessag
     const main = (
         isUpdating ? <PageLoader /> :
             <div className='content'>
-                {/* <ToastMessages ref={messagesRef} /> */}
                 <ReadOnlyProvider readOnly={readonly && !isNew} section='contactDetailForm'>
                     <form className='lead-customer-contact-detail-form' onSubmit={methods.handleSubmit(onSubmit)} ref={formRef}>
                         <FormProvider {...methods}>
@@ -438,12 +444,32 @@ export const CallCycleDetails = ({ refetchList, setTriggerKey, isShow, setMessag
                     <DataGrid
                         dataTable={callCycleDistributor}
                         data={isCallCycleActivityDetail ? localCallCycleDetailsEdit : localCallCycle}
-                        selectionMode='single'
                         selectedRow={selectedRow}
                         setSelectedRow={handleSelectionChange}
+                        isSelectionColumnShow={false}
                     // selectionColHeader='Primary'
                     />
                 </div>
+
+                <ConfirmDialog
+                    visible={isUpdateConfirmBoxVisible}
+                    onHide={() => {
+                        setIsUpdateConfirmBoxVisible(false);
+                        dispatch(setIsCallCycleActivityReadOnly(true));
+                    }}
+                    message="If you want to update, Please need to be Activated"
+                    header="Confirmation"
+                    icon="pi pi-exclamation-triangle"
+                    accept={() => {
+                        setIsUpdateConfirmBoxVisible(false);
+                        dispatch(setIsCallCycleActivityReadOnly(true));
+                    }}
+                    reject={() => {
+                        setIsUpdateConfirmBoxVisible(false);
+                        dispatch(setIsCallCycleActivityReadOnly(true));
+                    }}
+                />
+
 
                 <ConfirmDialog
                     visible={isConfirmBoxVisible}
@@ -454,21 +480,21 @@ export const CallCycleDetails = ({ refetchList, setTriggerKey, isShow, setMessag
                     accept={handleCustomerDelete}
                     reject={() => console.log('Rejected')}
                 />
+
                 <CustomToastMessage status={messageStatuss || ''} labelText={labelTexts} state={opens} setState={setOpens} triggerKey={triggerKeys} />
             </div >
     );
 
     const footer = (
-
-        <div className='form-button-container'>
-            <span>Make sure you have verified all your changes before update</span>
-            <Button disabled={isSaving} type='button' variant='outline-green' className='btn-submit' onClick={handleExternalSubmit}>
-                {isNew ? (isSaving ? 'Saving...' : 'Save Details') : (isSaving ? 'Updating...' : 'Update Details')}
-            </Button>
-        </div>
-
+        !readonly || isNew ? (
+            <div className='form-button-container'>
+                <span>Make sure you have verified all your changes before update</span>
+                <Button disabled={isSaving} type='button' variant='outline-green' className='btn-submit' onClick={handleExternalSubmit}>
+                    {isNew ? (isSaving ? 'Saving...' : 'Save Details') : (isSaving ? 'Updating...' : 'Update Details')}
+                </Button>
+            </div>
+        ) : null
     );
 
     return <SectionMainBase header={header} main={main} footer={footer}></SectionMainBase>;
-
 };

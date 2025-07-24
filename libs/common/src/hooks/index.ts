@@ -4,3 +4,4 @@ export * from './useCheckedList';
 export * from './useResetTablePagination';
 export * from './useAutoTableRows';
 export * from './useClearQueryCache';
+export * from './useResetTableSorting';

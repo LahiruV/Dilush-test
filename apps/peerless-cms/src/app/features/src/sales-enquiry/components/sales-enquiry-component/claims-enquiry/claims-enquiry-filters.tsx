@@ -240,7 +240,7 @@ export const ClaimsEnquiryFilters = (props: ClaimsEnquiryFilterProps) => {
 
   // pay method
   const payMethodsList: any = [
-    { text: 'All', value: 'all' },
+    { text: 'All', value: '' },
     { text: 'Cr. Note', value: 'cr' },
     { text: 'Cheque', value: 'ch' },
   ];
@@ -249,8 +249,8 @@ export const ClaimsEnquiryFilters = (props: ClaimsEnquiryFilterProps) => {
 
   // claim type
   const claimTypesList: any = [
-    { text: 'All', value: 'all' },
-    { text: 'Dist', value: 'dist' },
+    { text: 'All', value: '' },
+    { text: 'Dist', value: 'DIST' },
   ];
   const defaultClaimType: any = claimTypesList[0];
 
@@ -258,7 +258,7 @@ export const ClaimsEnquiryFilters = (props: ClaimsEnquiryFilterProps) => {
 
   // claim status
   const claimStatusList: any = [
-    { text: 'All Claims', value: 'all' },
+    { text: 'All Claims', value: '' },
     { text: 'Approved', value: 'a' },
     { text: 'Processing', value: 'p' },
     { text: 'Rejected', value: 'r' },
@@ -333,19 +333,21 @@ export const ClaimsEnquiryFilters = (props: ClaimsEnquiryFilterProps) => {
     width: '208px',
   };
 
-  // useEffect(() => {
-  //   if (props.setIsActiveFilters) {
-  //     props.setIsActiveFilters(true);
-  //   }
-  // }, [])
-
   useEffect(() => {
     if (props.setIsActiveFilters) {
       props.setTotalOfClaims?.('$0.00');
     }
   }, [props.isClearFilters]);
 
-  const { formComponentRef } = useFilterForm({ isFormSubmit, setTriggerSubmit: (value) => dispatch(setTriggerClaimsEnquiryFiltersFormSubmit(value)), isClearFilters: props.isClearFilters, clearFilters });
+  const { formComponentRef } = useFilterForm({
+    isFormSubmit,
+    setTriggerSubmit: (value) => dispatch(setTriggerClaimsEnquiryFiltersFormSubmit(value)),
+    isClearFilters: props.isClearFilters,
+    clearFilters,
+    setIsActiveFilters: props.setIsActiveFilters,
+    filters: [fromDate, toDate, product, reason, parent, subParent, subParentGroup, rep, promo, customer, payMethod, claimType, claimStatus]
+  });
+
 
   return (
     <>

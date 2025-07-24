@@ -15,6 +15,7 @@ import { contactId, contactTypeEnum, sectionPathMap } from "@peerless/utils";
 import ToastMessages from "libs/controls/src/toasts-message/messages";
 import './leed-customer-activity-form.css';
 import { format } from "date-fns";
+import { toast } from "sonner";
 
 export interface LeedCustomerActivityFormProps { }
 
@@ -417,23 +418,25 @@ export function LeedCustomerActivityForm(props: LeedCustomerActivityFormProps) {
               onSuccess: (response) => {
                 setIsSave(false);
                 redirectToList();
+                toast.success('Activity Saved Successfully');
               },
               onError: (error) => {
                 setIsSave(false);
-                console.error('Failed to insert appointment');
+                toast.error('Failed to insert appointment');
               }
             });
           }
           else {
             setIsSave(false);
+            toast.success('Activity Saved Successfully');
             redirectToList();
           }
         }
       },
       onError: (error) => {
         setIsSave(false);
-        console.error('Failed to update activity');
-        messageMgr.showMessage("error", 'Error: ', 'Error occured');
+        console.error(error.message);
+        toast.error('Failed to update activity');
       }
     });
   }
@@ -552,20 +555,17 @@ export function LeedCustomerActivityForm(props: LeedCustomerActivityFormProps) {
       <footer>
         <div className='form-button-container footer-content'>
           <span className='footer-span-content'>Make sure you have verified all your changes before update</span>
-          {activityMode === pageModeEnum.New ? (
-            <ButtonWidget
-              id='customer-activity-save-button'
-              classNames='k-button-md k-rounded-md k-button-solid k-button-solid-primary footer-save-button'
-              Function={() => handleExternalSubmit()}
-              name={isSave ? 'Saving...' : 'Save Details'}
-            />
-          ) :
-            (<ButtonWidget
-              id='customer-activity-update-button'
-              classNames='k-button-md k-rounded-md k-button-solid k-button-solid-primary footer-save-button'
-              Function={() => handleExternalSubmit()}
-              name={isSave ? 'Updating...' : 'Update Details'}
-            />)}
+          <ButtonWidget
+            id="customer-activity-save-button"
+            classNames="k-button-md k-rounded-md k-button-solid k-button-solid-primary footer-save-button"
+            Function={() => handleExternalSubmit()}
+            name={
+              activityMode === pageModeEnum.New
+                ? (isSave ? "Saving..." : "Save Details")
+                : (isSave ? "Updating..." : "Update Details")
+            }
+          />
+
         </div>
       </footer>
 

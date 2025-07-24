@@ -4,22 +4,20 @@ import { GetCustomerPricelist } from '@peerless/queries';
 import { useEffect, useRef, useState } from 'react';
 import { useInView } from 'react-intersection-observer';
 import { GetCustomerPricelistParameters, RenderStatusContentTable } from '@peerless/models';
-import { SalesEnquiryCustomerPriceListDistributer } from '@peerless/common';
+import { SalesEnquiryCustomerPriceListDistributer, useResetTableSorting } from '@peerless/common';
 import { DataGrid } from '@peerless/controls';
-
 interface SalesEnquiryCustomerPriceListTableProps {
     heightOffset?: number;
 }
 
 const SalesEnquiryCustomerPriceListTable = ({ heightOffset }: SalesEnquiryCustomerPriceListTableProps) => {
-
     const dispatch = useDispatch();
     const { ref, inView } = useInView({ triggerOnce: false });
-    const { customerPriceListMainDropType, customerPriceListCustomerCode, customerPriceListEffectiveDate, customerPriceListAsAtDate, customerPriceListMainDrop, isFetchingCustomerPriceList, customerPriceListEndDate } = useSelector((state: RootState) => state.salesEnquiryCustomerPriceList);
+    const { customerPriceListMainDropType, customerPriceListCustomerCode, customerPriceListEffectiveDate, customerPriceListAsAtDate, customerPriceListMainDrop, isFetchingCustomerPriceList, customerPriceListEndDate, isFormSubmit } = useSelector((state: RootState) => state.salesEnquiryCustomerPriceList);
     const [pageState, setPageState] = useState({ first: 0, rows: 25 });
     const [pageSize, setPageSize] = useState(25)
     const [tableFilters, setTableFilters] = useState<any>();
-    const [multiSortMeta, setMultiSortMeta] = useState([]);
+    const [multiSortMeta, setMultiSortMeta] = useState<any[]>([]);
     const [orderBy, setOrderBy] = useState("catlog_code asc");
     const isInitialRender = useRef(true);
 
@@ -36,9 +34,9 @@ const SalesEnquiryCustomerPriceListTable = ({ heightOffset }: SalesEnquiryCustom
         startIndex: pageState.first,
         rowCount: pageState.rows,
         filterPara: tableFilters,
-    };
+    }
 
-    const { data: customerPricelistData, error, status } = GetCustomerPricelist(payload, isFetchingCustomerPriceList);
+    const { data: customerPricelistData, error, status, refetch } = GetCustomerPricelist(payload, isFetchingCustomerPriceList);
 
     const renderStatusContent = {
         isRenderStatusContentTable: true,
@@ -95,6 +93,17 @@ const SalesEnquiryCustomerPriceListTable = ({ heightOffset }: SalesEnquiryCustom
         }
         dispatch(setIsFetchingCustomerPriceList(true));
     }, [tableFilters]);
+
+
+    useResetTableSorting({
+        isFormSubmit,
+        multiSortMeta,
+        setMultiSortMeta,
+        orderBy,
+        setOrderBy: () => setOrderBy("catlog_code asc"),
+        dispatcher: () => dispatch(setIsFetchingCustomerPriceList(false)),
+        refetch,
+    });
 
     return (
         <div className='table-container'>

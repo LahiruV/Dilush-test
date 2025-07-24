@@ -29,6 +29,27 @@ type CallCyclePlannerDayProps = {
     setTriggerKeys: Function;
     setIsCallCycleActivityModalOpen: Function;
 }
+function getCurrentWeekdays(): Date[] {
+    const today = new Date();
+    const dayOfWeek = today.getDay();
+    const monday = new Date(today);
+    monday.setDate(today.getDate() - ((dayOfWeek + 6) % 7));
+
+    return Array.from({ length: 5 }, (_, i) => {
+        const d = new Date(monday);
+        d.setDate(monday.getDate() + i);
+        d.setHours(0, 0, 0, 0);
+        return d;
+    });
+}
+
+function getDateWithCurrentTime(date: Date) {
+    const now = new Date();
+    const rawDate = new Date(date);
+    rawDate.setHours(now.getHours(), now.getMinutes(), now.getSeconds(), now.getMilliseconds());
+    return rawDate;
+}
+
 const CallCyclePlannerDay = ({ callCycleDstributorList, setLabelTexts, setMessageStatus, setTriggerKeys, setIsCallCycleActivityModalOpen }: CallCyclePlannerDayProps) => {
 
     const dispatch = useDispatch();
@@ -36,19 +57,20 @@ const CallCyclePlannerDay = ({ callCycleDstributorList, setLabelTexts, setMessag
     const newList = callCycleDstributorList.find(day => day);
     const { loggedUser } = useSelector((state: RootState) => state.header);
     const { selectedCallCycleActivity } = useSelector((state: RootState) => state.callCycleActivity);
-    const [dueOnDayOne, setDueOnDayOne] = useState(new Date());
+    const weekdays = getCurrentWeekdays();
+    const [dueOnDayOne, setDueOnDayOne] = useState<Date>(getDateWithCurrentTime(weekdays[0]));
+    const [dueOnDayTwo, setDueOnDayTwo] = useState<Date>(getDateWithCurrentTime(weekdays[1]));
+    const [dueOnDayThree, setDueOnDayThree] = useState<Date>(getDateWithCurrentTime(weekdays[2]));
+    const [dueOnDayFour, setDueOnDayFour] = useState<Date>(getDateWithCurrentTime(weekdays[3]));
+    const [dueOnDayFive, setDueOnDayFive] = useState<Date>(getDateWithCurrentTime(weekdays[4]));
     const [startTimeDayOne, setStartTimeDayOne] = useState<Date | null>(new Date());
     const [selectedDayOne, setSelectedDayOne] = useState(false);
-    const [dueOnDayTwo, setDueOnDayTwo] = useState(new Date());
     const [startTimeDayTwo, setStartTimeDayTwo] = useState<Date | null>(new Date());
     const [selectedDayTwo, setSelectedDayTwo] = useState(false);
-    const [dueOnDayThree, setDueOnDayThree] = useState(new Date());
     const [startTimeDayThree, setStartTimeDayThree] = useState<Date | null>(new Date());
     const [selectedDayThree, setSelectedDayThree] = useState(false);
-    const [dueOnDayFour, setDueOnDayFour] = useState(new Date());
     const [startTimeDayFour, setStartTimeDayFour] = useState<Date | null>(new Date());
     const [selectedDayFour, setSelectedDayFour] = useState(false);
-    const [dueOnDayFive, setDueOnDayFive] = useState(new Date());
     const [startTimeDayFive, setStartTimeDayFive] = useState<Date | null>(new Date());
     const [selectedDayFive, setSelectedDayFive] = useState(false);
     const [repeatTimes, setRepeatTimes] = useState<DropDownData>(repeatArray[0]);

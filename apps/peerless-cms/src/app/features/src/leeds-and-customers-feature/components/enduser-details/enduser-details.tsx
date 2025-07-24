@@ -21,6 +21,7 @@ import { Messages } from 'primereact/messages';
 import { contactId, contactTypeName, sectionPathMap } from "@peerless/utils";
 import ToastMessages from "libs/controls/src/toasts-message/messages";
 import { useNavigate } from "react-router-dom";
+import { toast } from "sonner";
 
 export interface EnduserDetailProps {
   addSelectedCustomerAsDistributor?: boolean,
@@ -296,7 +297,7 @@ export function EnduserDetails(props: EnduserDetailProps) {
       }
       else if (isEnduserExist == true) {
         setIsEnduserCodeExist(true);
-        messageMgr.showMessage('error', 'Error: ', 'The enduser code you entered is already exist. Please enter a different code');
+        toast.error('The enduser code you entered is already exist. Please enter a different code');
       }
       else {
         if (isEnduserExist != null)
@@ -368,7 +369,7 @@ export function EnduserDetails(props: EnduserDetailProps) {
     mutation.mutate(payload, {
       onSuccess: (response: any) => {
         if (response.status) {
-          messageMgr.showMessage('success', 'Success: ', 'Successfully saved');
+          toast.success('Successfully Saved');
           //update the state with modified details
 
           if (props.returnOnSuccess != null && props.returnOnSuccess == true) {
@@ -402,7 +403,7 @@ export function EnduserDetails(props: EnduserDetailProps) {
             }
             else {
               dispatch(setIsAddEnduserModalOpen(false));
-              props.messageMgr.showMessage('success', 'Success: ', 'Enduser Saved');
+              toast.success('Enduser Saved');
               props.refetchList();
             }
           }
@@ -411,8 +412,8 @@ export function EnduserDetails(props: EnduserDetailProps) {
       },
       onError: (error: any) => {
         setIsSaving(false);
-        console.error('Failed to update:', error);
-        messageMgr.showMessage('error', 'Error: ', 'Error occured');
+        console.error(error.message);
+        toast.error('Error occured');
       }
     });
 

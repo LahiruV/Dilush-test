@@ -47,7 +47,15 @@ export function AdministratorRepMarketFilter(props: AdministratorRepMarketFilter
             clearFilters?.();
         }
     }, [props.isClearFilters])
+
     const defaultDropValue = dropDownData ? dropDownData[0] : undefined;
+
+    useEffect(() => {
+        if (props.setIsActiveFilters) {
+            props.setIsActiveFilters(true);
+        }
+    }, [])
+
     return (
         <>
             <Collapse in={props.isFiltersOpen}>

@@ -10,15 +10,12 @@ import { RootState } from '@peerless-cms/store';
 import AdministratorSettingsList from './administrator-settings-list/administrator-settings-list';
 import { SaveResponseTimeParameters } from '@peerless/models';
 import { useState } from 'react';
+import { toast } from 'sonner';
 
 export function AdministratorSettings() {
 
   const { responseTimeHrs } = useSelector((state: RootState) => state.administratorSettings);
-  const [status, setStatus] = useState<string>('');
-  const [labelText, setLabelText] = useState<string>('');
   const [isLoading, setIsLoading] = useState<boolean>(false);
-  const [open, setOpen] = useState(false);
-  const [triggerKey, setTriggerKey] = useState(0);
   const { saveResponseTimeMutate } = SaveResponseTime();
 
   const payload: SaveResponseTimeParameters = {
@@ -29,18 +26,13 @@ export function AdministratorSettings() {
     setIsLoading(true);
     saveResponseTimeMutate(payload, {
       onSuccess: () => {
-        setStatus('success-notification-color');
-        setLabelText('Save Successfully');
+        toast.success('Saved Successfully');
         setIsLoading(false);
-        setOpen(true);
-        setTriggerKey((prevKey) => prevKey + 1);
       },
-      onError: () => {
-        setStatus('error-notification-color');
-        setLabelText('Save Not Successfully');
+      onError: (error) => {
+        console.error(error.message);
+        toast.error('Save Not Successfully');
         setIsLoading(false);
-        setOpen(true);
-        setTriggerKey((prevKey) => prevKey + 1);
       }
     }
     )
@@ -67,7 +59,6 @@ export function AdministratorSettings() {
         Function={() => saveResponseTimeMutateFunction()}
         name={isLoading ? 'Saving...' : 'Save'}
       />
-      <CustomToastMessage status={status || ''} labelText={labelText} state={open} setState={setOpen} triggerKey={triggerKey} />
     </div>
   );
 

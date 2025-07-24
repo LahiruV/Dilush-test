@@ -186,6 +186,15 @@
     background-color: #19c5a81c !important;
 }
 
+.active-color-bg {
+    background-color: #388e3c !important;
+}
+
+.inactive-color-bg {
+    background-color: #b71c1c !important;
+}
+
+
 .public-holiday-color-bg {
     background-color: #ff9898 !important;
 }

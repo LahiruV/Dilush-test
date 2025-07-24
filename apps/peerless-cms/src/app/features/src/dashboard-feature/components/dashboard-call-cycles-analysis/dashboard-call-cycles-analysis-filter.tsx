@@ -100,7 +100,14 @@ export function DashBoardCallCyclesFilter(props: DashBoardCallCyclesFilterProps)
         width: '208px'
     }
 
-    const { formComponentRef } = useFilterForm({ isFormSubmit, setTriggerSubmit: (value) => dispatch(setTriggerCallCycleAnalysisFormSubmit(value)), isClearFilters: props.isClearFilters, clearFilters });
+    const { formComponentRef } = useFilterForm({
+        isFormSubmit,
+        setTriggerSubmit: (value) => dispatch(setTriggerCallCycleAnalysisFormSubmit(value)),
+        isClearFilters: props.isClearFilters,
+        clearFilters,
+        setIsActiveFilters: props.setIsActiveFilters,
+        filters: [durationData, callCyclesStartDate, callCyclesEndDate]
+    });
 
     useEffect(() => {
         if (props.isExporting) {

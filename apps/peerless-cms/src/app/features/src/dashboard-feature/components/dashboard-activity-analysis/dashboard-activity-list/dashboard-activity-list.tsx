@@ -4,7 +4,7 @@ import { getAllActivitiesByType } from '@peerless/queries';
 import { useEffect, useState } from 'react';
 import { useInView } from 'react-intersection-observer';
 import './dashboard-activity-list.css';
-import { ActivityAnalysisListDistributer, useResetTablePagination } from '@peerless/common';
+import { ActivityAnalysisListDistributer, useResetTablePagination, useResetTableSorting } from '@peerless/common';
 import { DataGrid } from '@peerless/controls';
 import { RenderStatusContentTable } from '@peerless/models';
 
@@ -51,7 +51,7 @@ const ActivityAnalysisList: React.FC<ActivityAnalysisListProps> = ({ heightOffse
 
   const dispatch = useDispatch();
   const { ref, inView } = useInView({ triggerOnce: false });
-  const { selectedActivityAnalysis, sEndDate, sStartDate, activityStatus, repActivity, searchByActivity, isFetchActivityAnalysisList } = useSelector((state: RootState) => state.dashboardActivityAnalysis);
+  const { selectedActivityAnalysis, sEndDate, sStartDate, activityStatus, repActivity, searchByActivity, isFetchActivityAnalysisList, isFormSubmit } = useSelector((state: RootState) => state.dashboardActivityAnalysis);
   const { loggedUser, managerMode } = useSelector((state: RootState) => ({
     originator: state.header.selectedOriginator,
     loggedUser: state.header.loggedUser,
@@ -61,7 +61,7 @@ const ActivityAnalysisList: React.FC<ActivityAnalysisListProps> = ({ heightOffse
   const [pageState, setPageState] = useState({ first: 1, rows: 20 });
 
   const [tableFilters, setTableFilters] = useState<any>();
-  const [multiSortMeta, setMultiSortMeta] = useState([]);
+  const [multiSortMeta, setMultiSortMeta] = useState<any[]>([]);
   const [orderBy, setOrderBy] = useState("startDate ASC");
 
   // useEffect(() => {
@@ -100,7 +100,7 @@ const ActivityAnalysisList: React.FC<ActivityAnalysisListProps> = ({ heightOffse
 
   useResetTablePagination(25, setPageState, [activityStatus.value, repActivity.userName, searchByActivity, sStartDate, sEndDate, managerMode]);
 
-  const { data: activityAnalysisData, error, status } = getAllActivitiesByType(payload, isFetchActivityAnalysisList);
+  const { data: activityAnalysisData, error, status, refetch } = getAllActivitiesByType(payload, isFetchActivityAnalysisList);
 
   const handleRowClick = (row: any) => {
     dispatch(setSelectedActivityAnalysis(row));
@@ -153,6 +153,16 @@ const ActivityAnalysisList: React.FC<ActivityAnalysisListProps> = ({ heightOffse
       dispatch(setIsFetchActivityAnalysisList(true));
     }
   }, [tableFilters]);
+
+  useResetTableSorting({
+    isFormSubmit,
+    multiSortMeta,
+    setMultiSortMeta,
+    orderBy,
+    setOrderBy: () => setOrderBy("startDate ASC"),
+    dispatcher: () => dispatch(setIsFetchActivityAnalysisList(false)),
+    refetch,
+  });
 
   return (
     <div className='table-container'>

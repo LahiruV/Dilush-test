@@ -4,7 +4,7 @@ import { Collapse } from 'react-bootstrap';
 import { RootState, setCustomerPriceListAsAtDate, setCustomerPriceListCustomerCode, setCustomerPriceListEffectiveDate, setCustomerPriceListEndDate, setCustomerPriceListMainDrop, setCustomerPriceListMainDropType, setIsFetchingCustomerPriceList, setTriggerCustomerPriceListFiltersFormSubmit } from '@peerless-cms/store';
 import { GetCustomerEffectiveDates, GetCustomerLookup, GetReps, GetCustomerPricelistType, GetCustomerPricelistCustomers } from '@peerless/queries';
 import { DatePickerWidget, DropDown, FilterNonButton, MultiColumnComboBoxWidget, ValidationModal } from '@peerless/controls';
-import { dropDownDataConverter, getDate } from '@peerless/common';
+import { dropDownDataConverter, getFormattedDateTime } from '@peerless/common';
 import { GetCustomerEffectiveDatesParameters, GetCustomerLookupParameters } from '@peerless/models';
 import { FilterForm, FilterFormGroup } from '@peerless-cms/features-common-components';
 import { useFilterForm } from '@peerless-cms/features'
@@ -48,14 +48,14 @@ export function SalesEnquiryCustomerPriceListFilter(props: SalesEnquiryCustomerP
   // const { data: customerLookup } = GetCustomerLookup(payloadCustomerLookup, true);
   const { data: customerEffectiveDates } = GetCustomerEffectiveDates(payloadCustomerEffectiveDates);
   const { data: customerPricelistType } = GetCustomerPricelistType(customerPriceListMainDrop?.value);
-  const { data: customerPricelistCustomers } = GetCustomerPricelistCustomers({ type: customerPriceListMainDrop?.value, code: customerPriceListMainDropType?.value });
+  const { data: customerPricelistCustomers, isError } = GetCustomerPricelistCustomers({ type: customerPriceListMainDrop?.value, code: customerPriceListMainDropType?.value });
 
   // const allRepsForLookupData = dropDownDataConverter.dropDownDataConverter(allRepsForLookup || [], 'name', 'repCode');
   const pricelistTypeData = dropDownDataConverter.dropDownDataConverter(customerPricelistType || [], 'description', 'tableCode');
   // const customerLookupData = dropDownDataConverter.dropDownDataConverter(customerLookup || [], 'tableDescription', 'tableCode');
   const customerLookupData = dropDownDataConverter.dropDownDataConverter(customerPricelistCustomers || [], 'name', 'custCode');
 
-  const customerEffectiveDatesMapped = customerEffectiveDates?.customerEffectiveDates.map((date: any) => ({ ...date, formattedDate: getDate(date.effectiveDate) })) || [];
+  const customerEffectiveDatesMapped = customerEffectiveDates?.customerEffectiveDates.map((date: any) => ({ ...date, formattedDate: getFormattedDateTime(date.effectiveDate) })) || [];
   const customerEffectiveDatesData = dropDownDataConverter.dropDownDataConverter(customerEffectiveDatesMapped, 'formattedDate', 'effectiveDate', undefined, undefined, ['endDate', 'customerCode', 'formattedDate']);
 
   const selectedcustomerEffectiveDatesData = {
@@ -64,7 +64,7 @@ export function SalesEnquiryCustomerPriceListFilter(props: SalesEnquiryCustomerP
     value: customerEffectiveDates?.selectedDate?.effectiveDate ?? '',
     endDate: customerEffectiveDates?.selectedDate?.endDate ?? '',
     customerCode: customerEffectiveDates?.selectedDate?.customerCode ?? '',
-    formattedDate: getDate(new Date(customerEffectiveDates?.selectedDate?.effectiveDate || '')) ?? ''
+    formattedDate: getFormattedDateTime(new Date(customerEffectiveDates?.selectedDate?.effectiveDate || '')) ?? ''
   }
 
   useEffect(() => {
@@ -120,8 +120,6 @@ export function SalesEnquiryCustomerPriceListFilter(props: SalesEnquiryCustomerP
   // const mainDefault = repDropData[0];
   // const repDefault = allRepsForLookupData.filter((rep: any) => rep.value === loggedUser.repCode)[0] || allRepsForLookupData[0] || allRepsForLookupData[0];
 
-  const { formComponentRef } = useFilterForm({ isFormSubmit, setTriggerSubmit: (value) => dispatch(setTriggerCustomerPriceListFiltersFormSubmit(value)), isClearFilters: props.isClearFilters, clearFilters });
-
   useEffect(() => {
     dispatch(setCustomerPriceListMainDrop(repDropData[0]));
     dispatch(setCustomerPriceListAsAtDate(new Date().toISOString()));
@@ -133,13 +131,22 @@ export function SalesEnquiryCustomerPriceListFilter(props: SalesEnquiryCustomerP
     dispatch(setCustomerPriceListEffectiveDate({ id: 0, text: '', value: '' }));
   }, [customerPricelistType])
 
+  const { formComponentRef } = useFilterForm({
+    isFormSubmit,
+    setTriggerSubmit: (value) => dispatch(setTriggerCustomerPriceListFiltersFormSubmit(value)),
+    isClearFilters: props.isClearFilters,
+    clearFilters,
+    setIsActiveFilters: props.setIsActiveFilters,
+    filters: [customerPriceListMainDrop, customerPriceListMainDropType, customerPriceListCustomerCode, customerPriceListEffectiveDate, customerPriceListAsAtDate, customerPriceListEndDate]
+  });
+
   return (
     <>
       <Collapse in={props.isFiltersOpen}>
         <div className="sales-enquiry-cus-tra filters-container">
           <FilterForm onSubmit={onFilterClick} ref={formComponentRef}>
             <div>
-              <FilterFormGroup label='Type'>
+              <FilterFormGroup label='Type' extraGap>
                 <DropDown id={"sales-enquiry-customer-main-drop"}
                   // defaultValue={mainDefault}
                   className={"administrator-filter filter-form-filter"}
@@ -154,7 +161,7 @@ export function SalesEnquiryCustomerPriceListFilter(props: SalesEnquiryCustomerP
                   popupSettings={popUpSettings} />
               </FilterFormGroup>
 
-              <FilterFormGroup label={customerPriceListMainDrop?.value || "Code"}>
+              <FilterFormGroup label={customerPriceListMainDrop?.value || "Code"} extraGap>
                 <MultiColumnComboBoxWidget
                   id={"sales-enquiry-customer-rep-group"}
                   className={"administrator-filter filter-form-filter"}
@@ -171,7 +178,7 @@ export function SalesEnquiryCustomerPriceListFilter(props: SalesEnquiryCustomerP
             </div>
 
             <div>
-              <FilterFormGroup label='Customer Code' isRequired={true}>
+              <FilterFormGroup label='Customer Code' isRequired={true} >
                 <MultiColumnComboBoxWidget
                   id={"sales-enquiry-customer-customer-code"}
                   className={"administrator-filter filter-form-filter"}
@@ -181,6 +188,7 @@ export function SalesEnquiryCustomerPriceListFilter(props: SalesEnquiryCustomerP
                   isFilterable={true}
                   textField={"value"}
                   valueField={"text"}
+                  isDisabled={!customerPricelistCustomers}
                   columns={[{ field: 'value', header: 'Code', width: '90px' }, { field: 'text', header: 'Name', width: '300px' }]}
                 />
               </FilterFormGroup>

@@ -49,7 +49,14 @@ export function DashBoardOpportunityFilter(props: DashBoardOpportunityFilterProp
         width: '208px'
     }
 
-    const { formComponentRef } = useFilterForm({ isFormSubmit, setTriggerSubmit: (value) => dispatch(setTriggerOpportunityAnalysisFormSubmit(value)), isClearFilters: props.isClearFilters, clearFilters });
+    const { formComponentRef } = useFilterForm({
+        isFormSubmit,
+        setTriggerSubmit: (value) => dispatch(setTriggerOpportunityAnalysisFormSubmit(value)),
+        isClearFilters: props.isClearFilters,
+        clearFilters,
+        setIsActiveFilters: props.setIsActiveFilters,
+        filters: [opportunityStage]
+    });
 
     return (
         <>
@@ -57,7 +64,7 @@ export function DashBoardOpportunityFilter(props: DashBoardOpportunityFilterProp
                 <div className="filters-container">
                     <FilterForm id='filter-form' onSubmit={onFilterClick} ref={formComponentRef}>
                         <div>
-                            <FilterFormGroup label='Stage' noLabelGap>
+                            <FilterFormGroup label='Stage' isShortLabel>
                                 <DropDown id={"opportunity-stage-drop"} className={"dashboard-filter filter-form-filter"} setValue={(e) => dispatch(setOpportunityStage(e))} defaultValue={opportunityStageDataDefault} value={opportunityStage} datalist={stageList} textField={"text"} dataItemKey={"value"} fillMode={"solid"} size={"small"} popupSettings={popUpSettings} />
                             </FilterFormGroup>
                         </div>

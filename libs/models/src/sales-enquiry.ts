@@ -54,6 +54,7 @@ export interface GetInvoiceEnquiryParameters {
     // productGroup: string;
     warehouse: string;
     invoiceNo: number;
+    batchNo: number;
     invoiceCreditNotesStatus: string;
     parent: string;
     // custGroup: string;

@@ -172,7 +172,14 @@ export function DashBoardActivityFilter(props: DashBoardActivityFilterProps) {
         width: '208px'
     }
 
-    const { formComponentRef } = useFilterForm({ isFormSubmit, setTriggerSubmit: (value) => dispatch(setTriggerActivityAnalysisFormSubmit(value)), isClearFilters: props.isClearFilters, clearFilters });
+    const { formComponentRef } = useFilterForm({
+        isFormSubmit,
+        setTriggerSubmit: (value) => dispatch(setTriggerActivityAnalysisFormSubmit(value)),
+        isClearFilters: props.isClearFilters,
+        clearFilters,
+        setIsActiveFilters: props.setIsActiveFilters,
+        filters: [repActivity, activityStatus, sStartDate, sEndDate, durationData]
+    });
 
     return (
         <>

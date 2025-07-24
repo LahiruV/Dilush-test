@@ -19,13 +19,13 @@ export function SalesEnquiryOutstandingOrders() {
     const headerBottomElements = (
         <div style={{ backgroundColor: '#fff' }}>
             < Stack direction="horizontal" gap={2}  >
-                <div style={{ backgroundColor: '#ff9898', color: 'white', textAlign: 'center', width: '95px', paddingTop: 5, paddingBottom: 5, fontSize: '12px', borderRadius: '8.5px', }}>Back Order</div>
-                <div style={{ backgroundColor: '#ec9730ff', color: 'white', textAlign: 'center', width: '95px', paddingTop: 5, paddingBottom: 5, fontSize: '12px', borderRadius: '8.5px' }}>Not Printed</div>
-                <div style={{ backgroundColor: '#f83b3bff', color: 'white', textAlign: 'center', width: '95px', paddingTop: 5, paddingBottom: 5, fontSize: '12px', borderRadius: '8.5px' }}>Notes Overdue</div>
-                <div style={{ backgroundColor: '#7e7ece', color: 'white', textAlign: 'center', width: '95px', paddingTop: 5, paddingBottom: 5, fontSize: '12px', borderRadius: '8.5px' }}>Plist On Hold</div>
-                <div style={{ backgroundColor: '#ac3735ff', color: 'white', textAlign: 'center', width: '80px', paddingTop: 5, paddingBottom: 5, fontSize: '12px', borderRadius: '8.5px' }}>Promised</div>
-                <div style={{ backgroundColor: '#3ec263', color: 'white', textAlign: 'center', width: '170px', paddingTop: 5, paddingBottom: 5, fontSize: '12px', borderRadius: '8.5px' }}>Un-Acknowledged EDI Orders</div>
-                <div style={{ backgroundColor: '#b3b329', color: 'white', textAlign: 'center', width: '150px', paddingTop: 5, paddingBottom: 5, fontSize: '12px', borderRadius: '8.5px' }}>Non-02, 05 Credit Status</div>
+                <div style={{ backgroundColor: '#FF9898', color: 'black', textAlign: 'center', width: '95px', paddingTop: 5, paddingBottom: 5, fontSize: '12px', borderRadius: '8.5px', }}>Back Order</div>
+                <div style={{ backgroundColor: '#FFB854', color: 'black', textAlign: 'center', width: '95px', paddingTop: 5, paddingBottom: 5, fontSize: '12px', borderRadius: '8.5px' }}>Not Printed</div>
+                <div style={{ backgroundColor: '#fc1414bd', color: 'black', textAlign: 'center', width: '95px', paddingTop: 5, paddingBottom: 5, fontSize: '12px', borderRadius: '8.5px' }}>Notes Overdue</div>
+                <div style={{ backgroundColor: '#9898FF', color: 'black', textAlign: 'center', width: '95px', paddingTop: 5, paddingBottom: 5, fontSize: '12px', borderRadius: '8.5px' }}>Plist On Hold</div>
+                <div style={{ backgroundColor: '#c91818b6', color: 'black', textAlign: 'center', width: '80px', paddingTop: 5, paddingBottom: 5, fontSize: '12px', borderRadius: '8.5px' }}>Promised</div>
+                <div style={{ backgroundColor: '#98FF98', color: 'black', textAlign: 'center', width: '170px', paddingTop: 5, paddingBottom: 5, fontSize: '12px', borderRadius: '8.5px' }}>Un-Acknowledged EDI Orders</div>
+                <div style={{ backgroundColor: '#FFFF00', color: 'black', textAlign: 'center', width: '150px', paddingTop: 5, paddingBottom: 5, fontSize: '12px', borderRadius: '8.5px' }}>Non-02, 05 Credit Status</div>
             </ Stack>
         </div>
     )

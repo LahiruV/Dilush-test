@@ -42,13 +42,23 @@ const OpportunityConversionHeader: React.FC = () => {
         return null;
     }
 
+    const customTooltip = (tooltipItem: any) => {
+        const idx = tooltipItem.dataIndex;
+        const item = LeaderCustomerOpportunityCountData[idx];
+
+        return [
+            `Amount: ${item.amount}`,
+            `Conversion Ratio: ${item.ratio}`,
+        ];
+    };
+
     return (
         <div>
             <Card>
                 <div className="dashboard-opportunity-conversion-container">
                     <div className="bar-chart-container-opportunity-conversion">
                         <div className="bar-chart-wrapper-opportunity-conversion">
-                            <BarChart categories={categories} series={series} legendPosition="bottom" legendAlign="center" displayLegend={false} />
+                            <BarChart categories={categories} series={series} legendPosition="bottom" legendAlign="center" displayLegend={false} customTooltipCallback={customTooltip} />
                         </div>
                     </div>
                 </div>

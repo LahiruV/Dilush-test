@@ -1,7 +1,7 @@
 import { callCycleActivityAreaMap } from "@peerless/utils";
 import { getPiIconName } from "../functions";
 import { BaseGrid, gridColumn, gridFilter, rowExpansion } from "./base-grid";
-import { rowOptions } from "@peerless/controls";
+import { ChipWidget, rowOptions } from "@peerless/controls";
 
 export class CallCycleActivityListDistributer extends BaseGrid {
     MAIN_GRID_ID = 'callCycleID';
@@ -29,6 +29,16 @@ export class CallCycleActivityListDistributer extends BaseGrid {
             columns: [
                 { field: 'callCycleID', header: 'Schedule Id', style: { width: '120px' }, sortable: true, filter: true, filterPlaceholder: "Filter By Name", filterMatchMode: 'contains' },
                 { field: 'description', header: 'Schedule', style: { width: '200px' }, sortable: true, filter: true, filterPlaceholder: "Filter By Type", filterMatchMode: 'contains' },
+                {
+                    field: 'delFlag', header: 'Status', style: { width: '120px' },
+                    body: (rowData: any) => ChipWidget({
+                        type: rowData?.delFlag === 'N' ? 'Active' : 'Inactive',
+                        className: rowData?.delFlag == 'N' ? 'active-color-bg' : 'inactive-color-bg',
+                        fontSize: '10px',
+                        textAlign: 'center',
+                        minWidth: '70px',
+                    })
+                },
                 { field: '', header: '', body: (rowData: any) => rowOptions(columnDropdownOptions, rowData, null, true, this.onRowClick), style: { width: '50px' } },
                 { field: 'aa', header: '', }
             ]

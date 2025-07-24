@@ -105,7 +105,6 @@ export function DashboardEndUserSalesFilter(props: DashboardEndUserSalesFilterPr
     const { data: euCustomerListData } = GetERPCustomers(true);
     const { data: endUsersListData } = GetAllEndusers(endUserPayload, true);
 
-
     const allRepsData = dropDownDataConverter.dropDownDataConverter(allReps || [], 'name', 'repCode',);
     const allCostPeriodData = dropDownDataConverter.dropDownDataConverter(allCostPeriod || [], 'month', 'costPeriod', '', true);
     const allCostYearsData = dropDownDataConverter.dropDownDataConverter(euSalesCostYearsListData || [], 'year', 'year');
@@ -116,9 +115,6 @@ export function DashboardEndUserSalesFilter(props: DashboardEndUserSalesFilterPr
         dispatch(setIsFetchEndUserSalesListReport(true));
         dispatch(setIsFetchPdfEndUserSalesListReport(true));
     }
-
-    const distrubutorDefault = allEuCustomerListData[0];
-    const repDefault = allRepsData[0];
 
     const clearFilters = () => {
         dispatch(setDashEndUserSalesCostPeriod(allCostPeriodData.filter((costPeriod: DropDownData) => costPeriod.value === euSalesCurrentCostPeriodData?.currentPeriod)[0] || allCostPeriodData[0]));
@@ -136,20 +132,22 @@ export function DashboardEndUserSalesFilter(props: DashboardEndUserSalesFilterPr
         if (allCostYearsData) {
             dispatch(setDashEndUserSalesCostYear(allCostYearsData.filter((costYear: DropDownData) => costYear.value === euSalesCurrentCostPeriodData?.currentYear)[0] || allCostYearsData[0]));
         }
-        if (allRepsData) {
-            dispatch(setDashEndUserSalesRep(allRepsData[0]));
-        }
-        if (allEuCustomerListData) {
-            dispatch(setDashEndUserSalesDistributor(allEuCustomerListData[0]));
-        }
+
         dispatch(setDashEndUserSalesCheckArea(checkBoxData[0]));
-    }, [allCostPeriod, euSalesCostYearsListData, allReps, euCustomerListData]);
+    }, [allCostPeriod, euSalesCostYearsListData, euSalesCurrentCostPeriodData]);
 
     const popUpSettings = {
         width: '208px'
     }
 
-    const { formComponentRef } = useFilterForm({ isFormSubmit, setTriggerSubmit: (value) => dispatch(setTriggerEndUserSalesFormSubmit(value)), isClearFilters: props.isClearFilters, clearFilters });
+    const { formComponentRef } = useFilterForm({
+        isFormSubmit,
+        setTriggerSubmit: (value) => dispatch(setTriggerEndUserSalesFormSubmit(value)),
+        isClearFilters: props.isClearFilters,
+        clearFilters,
+        setIsActiveFilters: props.setIsActiveFilters,
+        filters: [dashEnduserSalesCostYear, dashEnduserSalesCostPeriod, dashEnduserSalesDistributor, dashEnduserSalesEnduser, dashEnduserSalesRep, dashEnduserSalesCheckArea]
+    });
 
     return (
         <>
@@ -175,7 +173,7 @@ export function DashboardEndUserSalesFilter(props: DashboardEndUserSalesFilterPr
 
                         <div>
                             <FilterFormGroup label='Distributor'>
-                                <MultiColumnComboBoxWidget id={"end-user-sales-distributor"} className={"administrator-filter filter-form-filter"} setValue={(e) => dispatch(setDashEndUserSalesDistributor(e))} value={dashEnduserSalesDistributor} defaultValue={distrubutorDefault} datalist={allEuCustomerListData} isFilterable={true} textField={"value"} valueField={"text"} columns={[{ field: 'value', header: 'Customer Code', width: '122px' }, { field: 'text', header: 'Name', width: '300px' }]} />
+                                <MultiColumnComboBoxWidget id={"end-user-sales-distributor"} className={"administrator-filter filter-form-filter"} setValue={(e) => dispatch(setDashEndUserSalesDistributor(e))} value={dashEnduserSalesDistributor} datalist={allEuCustomerListData} isFilterable={true} textField={"value"} valueField={"text"} columns={[{ field: 'value', header: 'Customer Code', width: '122px' }, { field: 'text', header: 'Name', width: '300px' }]} />
                             </FilterFormGroup>
 
                             <FilterFormGroup label='End User'>
@@ -183,12 +181,11 @@ export function DashboardEndUserSalesFilter(props: DashboardEndUserSalesFilterPr
                                     isDisabled={isDisabledContractSales}
                                 />
                             </FilterFormGroup>
-
                         </div>
 
                         <div>
                             <FilterFormGroup label='Rep'>
-                                <MultiColumnComboBoxWidget id={"end-user-sales-rep"} className={"administrator-filter filter-form-filter"} setValue={(e) => dispatch(setDashEndUserSalesRep(e))} value={dashEnduserSalesRep} defaultValue={repDefault} datalist={allRepsData} isFilterable={true} textField={"value"} valueField={"text"} columns={[{ field: 'value', header: 'Code', width: '60px' }, { field: 'text', header: 'Name', width: '300px' }]} />
+                                <MultiColumnComboBoxWidget id={"end-user-sales-rep"} className={"administrator-filter filter-form-filter"} setValue={(e) => dispatch(setDashEndUserSalesRep(e))} value={dashEnduserSalesRep} datalist={allRepsData} isFilterable={true} textField={"value"} valueField={"text"} columns={[{ field: 'value', header: 'Code', width: '60px' }, { field: 'text', header: 'Name', width: '300px' }]} />
                             </FilterFormGroup>
 
                             <FilterFormGroup label='Check Area'>

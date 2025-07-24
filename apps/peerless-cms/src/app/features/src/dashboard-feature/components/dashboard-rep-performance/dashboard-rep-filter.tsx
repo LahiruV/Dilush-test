@@ -31,6 +31,12 @@ export function DashBoardRepFilter(props: DashBoardRepFilterProps) {
     }
   }, [props.isClearFilters])
 
+  useEffect(() => {
+    if (props.setIsActiveFilters) {
+      props.setIsActiveFilters(true);
+    }
+  }, [])
+
   return (
     <>
       <Collapse in={props.isFiltersOpen}>

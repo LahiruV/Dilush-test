@@ -9,7 +9,7 @@ export class ClaimsEnquiryProductGrid extends BaseGrid {
         return {
             idColumn: 'catlogCode',
             columns: [
-                { field: 'catlogCode', header: 'Product', headerStyle: { color: '#495057' }, style: { width: '50px', color: '#008c51', fontWeight: 'bold', }, sortable: false },
+                { field: 'catlogCode', header: 'Product', style: { width: '50px' }, sortable: false },
                 { field: 'description', header: 'Description', style: { width: '170px' }, sortable: false },
                 { field: 'ivceNo', header: 'Inv No', style: { width: '60px' }, sortable: false, filter: false, filterMatchMode: 'contains', align: 'right', },
                 { field: 'promoNo', header: 'Promo No', style: { width: '70px' }, sortable: false, align: 'right', },

@@ -30,7 +30,7 @@ import ExcelJS from 'exceljs';
 
 export const exportToExcel = async (data: any, coloumns: any, fileName: string, color = 'FFFFFF') => {
     const workbook = new ExcelJS.Workbook();
-    const worksheet = workbook.addWorksheet('Activity Analysis');
+    const worksheet = workbook.addWorksheet(fileName);
     worksheet.columns = coloumns;
 
     const headerRow = worksheet.getRow(1);

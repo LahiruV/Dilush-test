@@ -30,7 +30,8 @@ export interface BarChartProps {
     legendPosition?: "top" | "bottom" | "left" | "right";
     legendAlign?: "start" | "center" | "end";
     displayLegend?: boolean;
-    renderStatusContent?: any
+    renderStatusContent?: any;
+    customTooltipCallback?: (tooltipItem: any) => string | string[];
 }
 
 /**
@@ -49,13 +50,14 @@ export interface BarChartProps {
  * @param {boolean} [props.renderStatusContent.isFetch] - Flag to indicate if data is being fetched.
  * @param {string} [props.renderStatusContent.error] - Error message to be displayed if any.
  * @param {Function} [props.renderStatusContent.setStateFunction] - Function to set the state.
+ * @param {Function} [props.customTooltipCallback] - Optional custom tooltip callback function to format tooltip content.
  * 
  * @returns {JSX.Element} The rendered bar chart or status content.
  * 
  * @author @LahiruV 🐺
  * @date 2024-10-05
  */
-export function BarChart({ categories, series, legendPosition, legendAlign, displayLegend, renderStatusContent }: BarChartProps) {
+export function BarChart({ categories, series, legendPosition, legendAlign, displayLegend, renderStatusContent, customTooltipCallback }: BarChartProps) {
     const chartData = {
         labels: categories,
         datasets: series.map((series) => ({
@@ -75,6 +77,13 @@ export function BarChart({ categories, series, legendPosition, legendAlign, disp
             },
             tooltip: {
                 enabled: true,
+                callbacks: {
+                    label: customTooltipCallback
+                        ? customTooltipCallback
+                        : function (tooltipItem: any) {
+                            return `${tooltipItem.parsed.y}`;
+                        },
+                },
             },
         },
         scales: {

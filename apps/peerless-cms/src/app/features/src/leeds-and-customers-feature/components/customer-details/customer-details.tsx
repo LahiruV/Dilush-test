@@ -7,7 +7,7 @@ import * as fa from '@fortawesome/free-solid-svg-icons';
 import { useRef, useState } from 'react';
 import { ReadOnlyProvider } from "@peerless/providers";
 import { FormProvider, useForm } from "react-hook-form";
-import { ButtonWidget, CustomToastMessage, FormInput, PageLoader, ToastManager } from "@peerless/controls";
+import { ButtonWidget, FormInput, PageLoader, ToastManager } from "@peerless/controls";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from 'zod';
 import { findTableCodeByDescription, getMarketName } from "@peerless/common";
@@ -17,6 +17,7 @@ import { useMutation } from "@tanstack/react-query";
 import ToastMessages from "libs/controls/src/toasts-message/messages";
 import { contactId, contactTypeName, sectionPathMap } from "@peerless/utils";
 import { useNavigate } from "react-router-dom";
+import { toast } from "sonner";
 
 
 export interface CustomersDetailProps {
@@ -32,10 +33,6 @@ export function CustomersDetails(props: CustomersDetailProps) {
     const dispatch = useDispatch();
     const [isProcessing, setIsProcessing] = useState(false);
     const navigate = useNavigate();
-    const [status, setStatus] = useState<string>('');
-    const [labelText, setLabelText] = useState<string>('');
-    const [triggerKey, setTriggerKey] = useState(0);
-    const [open, setOpen] = useState(false);
 
     const { selectedLeedOrCustomer, readonly, originator, loggedUser, selectedCustomer, contactType, organisationCustomer, selectedOrganisation } = useSelector((state: RootState) => ({
         selectedLeedOrCustomer: state.leedsAndCustomers.selectedLeedOrCustomer,
@@ -194,18 +191,15 @@ export function CustomersDetails(props: CustomersDetailProps) {
                     }
                     else {
                         dispatch(updateDetails(true))
-                        setStatus('success-notification-color');
-                        setLabelText('Customer Updated Successfully');
-                        setTriggerKey((prevKey) => prevKey + 1);
+                        toast.success('Customer Updated Successfully');
                     }
                 }
             },
             onError: (error) => {
                 setIsProcessing(false);
                 dispatch(updateDetails(true))
-                setStatus('error-notification-color');
-                setLabelText('Customer Update Failed');
-                setTriggerKey((prevKey) => prevKey + 1);
+                toast.error('Customer Update Failed');
+                console.error(error.message);
             }
         });
     };
@@ -289,7 +283,6 @@ export function CustomersDetails(props: CustomersDetailProps) {
                     />
                 </>
             }
-            <CustomToastMessage status={status || ''} labelText={labelText} state={open} setState={setOpen} triggerKey={triggerKey} />
         </div>
     );
 

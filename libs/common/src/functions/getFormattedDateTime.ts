@@ -30,7 +30,7 @@ export const getDate = (pDate?: Date) => {
   return `${year}-${month}-${day}`;
 };
 
-export const getFormattedDateTime = (pDate?: Date) => {
+export const getFormattedDateTime = (pDate?: Date, separator: "-" | "/" = "/") => {
   let now = new Date();
 
   if (pDate)
@@ -40,5 +40,6 @@ export const getFormattedDateTime = (pDate?: Date) => {
   const year = now.getFullYear();
   const month = String(now.getMonth() + 1).padStart(2, '0');
   const day = String(now.getDate()).padStart(2, '0');
-  return `${day}-${month}-${year}`;
+  
+  return `${day}${separator}${month}${separator}${year}`;
 };

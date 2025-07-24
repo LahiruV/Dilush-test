@@ -39,3 +39,4 @@ export * from './kendo-table/kendo-table';
 export * from './button/filter-button-disnon';
 export * from './card3d/card3d';
 export * from './toasts-message/messages'
+export * from './custom-cell/custom-cell';

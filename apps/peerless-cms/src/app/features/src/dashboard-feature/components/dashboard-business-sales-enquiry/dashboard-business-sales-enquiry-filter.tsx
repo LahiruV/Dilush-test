@@ -107,8 +107,6 @@ export function DashBoardBusinessSalesEnquiryFilter(props: DashBoardBusinessSale
         width: '208px'
     }
 
-    const { formComponentRef } = useFilterForm({ isFormSubmit, setTriggerSubmit: (value) => dispatch(setTriggerBusinessSalesEnqFormSubmit(value)), isClearFilters: props.isClearFilters, clearFilters });
-
     useEffect(() => {
         dispatch(setBusinessSalesYear(yearDropData[0]));
         dispatch(setBusinessSalesEnqSales(salesEnqSalesDefault));
@@ -121,6 +119,15 @@ export function DashBoardBusinessSalesEnquiryFilter(props: DashBoardBusinessSale
             dispatch(setBusinessSalesiCostPeriod(allCostPeriodData.filter((costPeriod: DropDownData) => costPeriod.value === euSalesCurrentCostPeriodData?.currentPeriod)[0] || allCostPeriodData[0]));
         }
     }, [allMarketForLookup, allCostPeriod, euSalesCurrentCostPeriodData]);
+
+    const { formComponentRef } = useFilterForm({
+        isFormSubmit,
+        setTriggerSubmit: (value) => dispatch(setTriggerBusinessSalesEnqFormSubmit(value)),
+        isClearFilters: props.isClearFilters,
+        clearFilters,
+        setIsActiveFilters: props.setIsActiveFilters,
+        filters: [businessSalesEnqSales, businessSalesEnqSortBy, businessSalesEnqGroupBy, businessSalesmarket, businessSalesiCostPeriod, businessSalesYear]
+    });
 
     return (
         <>

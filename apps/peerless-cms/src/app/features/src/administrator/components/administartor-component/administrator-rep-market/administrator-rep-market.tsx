@@ -11,16 +11,13 @@ import { InsertRepMarketParameters } from '@peerless/models';
 import { HeaderFilterContainer } from '@peerless-cms/features-common-components';
 import { AdministratorRepMarketFilter } from './administrator-rep-market-filter'
 import './administrator-rep-market.css';
+import { toast } from 'sonner';
 
 export function AdministratorRepMarket() {
   const dispatch = useDispatch();
   const { administratorRep, administratorRepMarketList } = useSelector((state: RootState) => state.administrator);
   const { insertRepMarketMutate } = InsertRepMarket();
-  const [status, setStatus] = useState<string>('');
-  const [labelText, setLabelText] = useState<string>('');
   const [isLoading, setIsLoading] = useState<boolean>(false);
-  const [triggerKey, setTriggerKey] = useState(0);
-  const [open, setOpen] = useState(false);
 
   const payload: InsertRepMarketParameters = {
     repCode: administratorRep.value,
@@ -31,15 +28,12 @@ export function AdministratorRepMarket() {
     setIsLoading(true);
     insertRepMarketMutate(payload, {
       onSuccess: () => {
-        setStatus('success-notification-color');
-        setLabelText('Save Successfully');
-        setTriggerKey((prevKey) => prevKey + 1);
+        toast.success('Save Successfully');
         setIsLoading(false);
       },
-      onError: () => {
-        setStatus('error-notification-color');
-        setLabelText('Save Not Successfully');
-        setTriggerKey((prevKey) => prevKey + 1);
+      onError: (error) => {
+        console.error(error.message);
+        toast.error('Save Not Successfully');
         setIsLoading(false);
       }
     }
@@ -73,7 +67,6 @@ export function AdministratorRepMarket() {
         Function={() => repMarketMutateFunction()}
         name={isLoading ? 'Saving...' : 'Save'}
       />
-      <CustomToastMessage status={status || ''} labelText={labelText} state={open} setState={setOpen} triggerKey={triggerKey} />
     </div>
   );
 

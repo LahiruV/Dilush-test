@@ -68,10 +68,10 @@ export const HeaderFilterContainer = ({
   inlineElements,
   bottomBlockElements,
   setIsFilterExpanded,
-  isFiltersOpened,
+  isFiltersOpened = true,
   clearBtnText
 }: HeaderFilterContainerProps) => {
-  const [openFilters, setOpenFilters] = useState(isFiltersOpened || false);
+  const [openFilters, setOpenFilters] = useState(isFiltersOpened);
   const [isClearFilters, setIsClearFilters] = useState(false);
   const [isActiveFilters, setIsActiveFilters] = useState(false);
 
@@ -91,12 +91,13 @@ export const HeaderFilterContainer = ({
 
   return (
     <>
-      <div style={{ backgroundColor: "#fff" }}>
+      <div className="header-filter-container" style={{ backgroundColor: "#fff" }}>
         <ContainerHeader icon={icon} name={title}>
           <ButtonWidgetCollapse
             id={`${title.toLowerCase().replace(/\s+/g, "-")}-collapse`}
             state={openFilters}
             setState={setOpenFilters}
+            classNames={isActiveFilters ? "active-filters" : ""}
             isIconButton={true}
             buttonIcon={faFilter}
             iconButtonStyles={{

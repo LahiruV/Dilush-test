@@ -262,6 +262,8 @@ export function DataGrid({ dataTable, data, onRowTogglesCallback, expandedData, 
                 tableStyle={
                     { minWidth: '100%', width: width }
                 }
+            // paginatorTemplate="RowsPerPageDropdown FirstPageLink PrevPageLink CurrentPageReport NextPageLink LastPageLink"
+            // currentPageReportTemplate="{first} to {last} of {totalRecords}"
             >
                 {dataTable.hasRowExpansionTemplate() && <Column expander style={{ width: '3em' }} />}
                 {isSelectionColumnShow && selectionMode && <Column selectionMode={selectionMode} header={selectionColHeader} headerStyle={{ width: '3em' }} />}
@@ -283,6 +285,7 @@ export function DataGrid({ dataTable, data, onRowTogglesCallback, expandedData, 
                         footer={col.footer}
                         hidden={col.hidden}
                         bodyStyle={{ ...col.bodyStyle, textAlign: col.align, paddingLeft: '10px' }}
+                        footerStyle={{ textAlign: col.align, paddingLeft: '10px' }}
                     />
                 ))}
             </DataTable>

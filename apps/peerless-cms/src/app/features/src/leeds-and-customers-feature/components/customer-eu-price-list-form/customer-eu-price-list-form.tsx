@@ -17,6 +17,7 @@ import { contactId, contactTypeEnum } from "@peerless/utils";
 import { useMutation } from "@tanstack/react-query";
 import { Dialog } from "primereact/dialog";
 import ToastMessages from "libs/controls/src/toasts-message/messages";
+import { toast } from "sonner";
 
 //save enduser price list
 //enduser price history
@@ -136,14 +137,14 @@ export function CustomerEUPriceListForm(props: CustomerEUPriceListFormProps) {
         setIsSaving(false);
         if (response) {
           dispatch(setcustomerEUPriceList(productsLocalList));
-          messageMgr.showMessage('success', 'Success: ', 'Price list updated');
+          toast.success('Price list updated');
           setEnableRefetch(true);
         }
       },
       onError: (error: any) => {
         setIsSaving(false);
-        messageMgr.showMessage('error', 'Error: ', 'Error occured while updating Price list');
-        console.error('Failed to update');
+        toast.error('Error occured while updating Price list');
+        console.error(error.message);
       }
     });
   }
@@ -179,14 +180,14 @@ export function CustomerEUPriceListForm(props: CustomerEUPriceListFormProps) {
       onSuccess: (response: any) => {
         setIsSaving(false);
         if (response) {
-          messageMgr.showMessage("success", "Success", "Price list updated");
+          toast.success("Price list updated");
           setEffectiveDate(data.effectiveDate);
           setEnableRefetch(true);
         }
       },
       onError: (error: any) => {
         setIsSaving(false);
-        messageMgr.showMessage("error", "Error", "Error occured while updating price list");
+        toast.error("Error occured while updating price list");
         console.error('Failed to update');
       }
     });

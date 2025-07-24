@@ -5,17 +5,17 @@ import { useEffect, useState } from 'react';
 import { useInView } from 'react-intersection-observer';
 import { ListTable } from '@peerless-cms/features-common-components';
 import { LeaderCustomerOpportunityParameters, RenderStatusContentTable } from '@peerless/models';
-import { getDate, OpportunityConversionBottomListDistributer, useResetTablePagination } from '@peerless/common';
+import { getDate, OpportunityConversionBottomListDistributer, useResetTablePagination, useResetTableSorting } from '@peerless/common';
 import { DataGrid } from '@peerless/controls';
 
 const OpportunityConversionBottomList: React.FC = () => {
   const { ref, inView } = useInView({ triggerOnce: false });
   const dispatch = useDispatch();
   const { loggedUser } = useSelector((state: RootState) => state.header);
-  const { opportunityConversionStartDate, opportunityConversionEndDate, opportunityConversionState, opportunityConversionMarket, isLeaderCustomerOpportunityFetch, selectedOriginatorOpportunityConversion, childOriginatorsOpportunityConversion } = useSelector((state: RootState) => state.dashBoarOpportunityConversion);
+  const { opportunityConversionStartDate, opportunityConversionEndDate, opportunityConversionState, opportunityConversionMarket, isLeaderCustomerOpportunityFetch, selectedOriginatorOpportunityConversion, childOriginatorsOpportunityConversion, isFormSubmit } = useSelector((state: RootState) => state.dashBoarOpportunityConversion);
   const [pageState, setPageState] = useState({ first: 1, rows: 5 });
   const [pageSize, setPageSize] = useState(5);
-  const [multiSortMeta, setMultiSortMeta] = useState([]);
+  const [multiSortMeta, setMultiSortMeta] = useState<any[]>([]);
   const [orderBy, setOrderBy] = useState("originator ASC");
 
   const payload: LeaderCustomerOpportunityParameters = {
@@ -34,7 +34,7 @@ const OpportunityConversionBottomList: React.FC = () => {
 
   useResetTablePagination(5, setPageState, [opportunityConversionStartDate, opportunityConversionEndDate, opportunityConversionState, opportunityConversionMarket, selectedOriginatorOpportunityConversion]);
 
-  const { data: LeaderCustomerOpportunityData, error, status } = GetLeaderCustomerOpportunity(payload, isLeaderCustomerOpportunityFetch);
+  const { data: LeaderCustomerOpportunityData, error, status, refetch } = GetLeaderCustomerOpportunity(payload, isLeaderCustomerOpportunityFetch);
 
   const columns = [
     { name: 'Rep', selector: (row: any) => row.originator, sortable: true },
@@ -77,6 +77,16 @@ const OpportunityConversionBottomList: React.FC = () => {
     const { first, rows } = event;
     setPageState({ first, rows });
   };
+
+  useResetTableSorting({
+    isFormSubmit,
+    multiSortMeta,
+    setMultiSortMeta,
+    orderBy,
+    setOrderBy: () => setOrderBy("originator ASC"),
+    dispatcher: () => dispatch(setIsLeaderCustomerOpportunityFetch(false)),
+    refetch,
+  });
 
   return (
     <div className='call-cycles-analysis-list-content table-container'>

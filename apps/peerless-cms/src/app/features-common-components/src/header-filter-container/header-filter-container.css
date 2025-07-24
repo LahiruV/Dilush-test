@@ -1,3 +1,10 @@
+.header-filter-container .active-filters{
+  border-color: #e1a875;
+}
+.header-filter-container .active-filters:hover{
+  border-color: #249460;
+}
+
 .filter-button,
 .filter-clear-button,
 .excel-export-button,

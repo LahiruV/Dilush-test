@@ -17,7 +17,8 @@ interface SalesEnquiryInvoiceEnquiryState {
     invoiceCustomer: DropDownData;
     invoiceFromDate: string;
     invoiceToDate: string;
-    invoiceInvoiceNumber: string;
+    invoiceInvoiceNumber: '',
+    invoiceBatchNumber: string;
     invoiceRadio: string;
     invoiceRadio2: string;
     isFetchingInvoiceEnquiryList: boolean;
@@ -41,6 +42,7 @@ const initialState: SalesEnquiryInvoiceEnquiryState = {
     invoiceFromDate: date.toISOString(),
     invoiceToDate: date.toISOString(),
     invoiceInvoiceNumber: '',
+    invoiceBatchNumber: '',
     invoiceRadio: '',
     invoiceRadio2: '',
     isFetchingInvoiceEnquiryList: false,
@@ -95,6 +97,9 @@ export const salesEnquiryInvoiceEnquirySlice = createSlice({
         setInvoiceInvoiceNumber: (state, action) => {
             state.invoiceInvoiceNumber = action.payload
         },
+        setInvoiceBatchNumber: (state, action) => {
+            state.invoiceBatchNumber = action.payload
+        },
         setInvoiceRadio: (state, action) => {
             state.invoiceRadio = action.payload
         },
@@ -116,6 +121,6 @@ export const salesEnquiryInvoiceEnquirySlice = createSlice({
     }
 });
 
-export const { setInvoiceCustomerGroup, setInvoiceSubGroup, setInvoicePriceGroup, setInvoiceProductGroup, setInvoiceParent, setInvoiceMarket, setInvoiceRep, setInvoiceCatalogueType, setInvoiceState, setInvoiceBrand, setInvoiceCustomer, setInvoiceFromDate, setInvoiceToDate, setInvoiceInvoiceNumber, setInvoiceRadio, setInvoiceRadio2, setIsFetchingInvoiceEnquiryList, setTriggerInvoiceEnquiryFiltersFormSubmit, setSelectedInvoiceEnquiry, setInvoiceEnquiryTotalsData } = salesEnquiryInvoiceEnquirySlice.actions;
+export const { setInvoiceCustomerGroup, setInvoiceSubGroup, setInvoicePriceGroup, setInvoiceProductGroup, setInvoiceParent, setInvoiceMarket, setInvoiceRep, setInvoiceCatalogueType, setInvoiceState, setInvoiceBrand, setInvoiceCustomer, setInvoiceFromDate, setInvoiceToDate, setInvoiceInvoiceNumber, setInvoiceBatchNumber, setInvoiceRadio, setInvoiceRadio2, setIsFetchingInvoiceEnquiryList, setTriggerInvoiceEnquiryFiltersFormSubmit, setSelectedInvoiceEnquiry, setInvoiceEnquiryTotalsData } = salesEnquiryInvoiceEnquirySlice.actions;
 
 export default salesEnquiryInvoiceEnquirySlice.reducer;

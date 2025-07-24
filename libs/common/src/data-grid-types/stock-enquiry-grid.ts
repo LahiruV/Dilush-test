@@ -15,7 +15,7 @@ export class StockEnquiryGrid extends BaseGrid {
             idColumn: 'stockNo',
             columns: [
                 { field: 'lineNumber', header: 'Line', style: { width: '50px' }, sortable: false, filter: true, filterMatchMode: FilterMatchMode.CONTAINS },
-                { field: 'catalogCode', header: 'Product Code', headerStyle: { color: '#495057' }, style: { width: '70px', color: '#008c51', fontWeight: 'bold', }, sortable: false },
+                { field: 'catalogCode', header: 'Product Code', headerStyle: { color: '#495057' }, style: { width: '70px' }, sortable: false },
                 { field: 'catalogCodeManufacturer', header: 'Manufacture Code', style: { width: '100px' }, sortable: false, filter: false }, //, filterMatchMode: FilterMatchMode.CONTAINS
                 { field: 'description', header: 'Description', sortable: false, filter: true, filterMatchMode: FilterMatchMode.CONTAINS },
                 { field: 'productCategory', header: 'Prod Cat', style: { width: '50px' }, sortable: false },

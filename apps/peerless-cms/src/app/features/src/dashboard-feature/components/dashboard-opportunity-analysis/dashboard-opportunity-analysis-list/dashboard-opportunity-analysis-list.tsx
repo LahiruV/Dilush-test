@@ -5,17 +5,17 @@ import { useEffect, useState } from 'react';
 import { useInView } from 'react-intersection-observer';
 import './dashboard-opportunity-analysis-list.css';
 import { OpportunityAnalysisParameters, RenderStatusContentTable } from '@peerless/models';
-import { OpportunityAnalysisDistributer, useResetTablePagination, useClearQueryCache } from '@peerless/common';
+import { OpportunityAnalysisDistributer, useResetTablePagination, useClearQueryCache, useResetTableSorting } from '@peerless/common';
 import { DataGrid } from '@peerless/controls';
 
 const OpportunityAnalysisList: React.FC = () => {
   const dispatch = useDispatch();
   const { ref, inView } = useInView({ triggerOnce: false });
   const { loggedUser } = useSelector((state: RootState) => state.header);
-  const { opportunityStage, selectedOpportunityAnalysis, isDashboardOpportunityAnalysisFetch, selectedOriginatorOpportunityAnalysis } = useSelector((state: RootState) => state.dashboardOpportunityAnalysis);
+  const { opportunityStage, selectedOpportunityAnalysis, isDashboardOpportunityAnalysisFetch, selectedOriginatorOpportunityAnalysis, isFormSubmit } = useSelector((state: RootState) => state.dashboardOpportunityAnalysis);
   const [pageState, setPageState] = useState({ first: 1, rows: 11 });
   const [pageSize, setPageSize] = useState(11);
-  const [multiSortMeta, setMultiSortMeta] = useState([]);
+  const [multiSortMeta, setMultiSortMeta] = useState<any[]>([]);
   const [orderBy, setOrderBy] = useState("closeDate ASC");
   const [tableFilters, setTableFilters] = useState<any>();
 
@@ -33,7 +33,7 @@ const OpportunityAnalysisList: React.FC = () => {
     opportunityAnalysisFilterPara: tableFilters,
   };
   useResetTablePagination(11, setPageState, [opportunityStage.value, selectedOriginatorOpportunityAnalysis.userName]);
-  const { data: opportunityAnalysisData, error, status } = GetAllOpportunities(payload, opportunityStage.value, isDashboardOpportunityAnalysisFetch);
+  const { data: opportunityAnalysisData, error, status, refetch } = GetAllOpportunities(payload, opportunityStage.value, isDashboardOpportunityAnalysisFetch);
 
   useEffect(() => {
     return () => clearCache(['opportunity-analysis-list']);
@@ -118,6 +118,16 @@ const OpportunityAnalysisList: React.FC = () => {
       closeDate: { value: null, matchMode: 'contains' }
     }))
   }, []);
+
+  useResetTableSorting({
+    isFormSubmit,
+    multiSortMeta,
+    setMultiSortMeta,
+    orderBy,
+    setOrderBy: () => setOrderBy("leadStage ASC"),
+    dispatcher: () => dispatch(setIsDashboardOpportunityAnalysisFetch(false)),
+    refetch,
+  });
 
   return (
     <div className='opportunity-analysis-list-content'>

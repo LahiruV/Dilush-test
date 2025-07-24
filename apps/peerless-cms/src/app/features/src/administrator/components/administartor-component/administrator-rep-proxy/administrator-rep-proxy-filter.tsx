@@ -50,6 +50,12 @@ export function AdministratorRepProxyFilter(props: AdministratorRepProxyFilterPr
         }
     }, [props.isClearFilters])
 
+    useEffect(() => {
+        if (props.setIsActiveFilters) {
+            props.setIsActiveFilters(true);
+        }
+    }, [])
+
     return (
         <>
             <Collapse in={props.isFiltersOpen}>

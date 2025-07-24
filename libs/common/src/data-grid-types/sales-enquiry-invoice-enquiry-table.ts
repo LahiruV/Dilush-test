@@ -19,7 +19,7 @@ export class SalesEnquiryInvoiceEnquiryListDistributer extends BaseGrid {
         return {
             idColumn: this.MAIN_GRID_ID,
             columns: [
-                { field: 'invoiceNo', header: 'Doc No', headerStyle: { color: '#495057' }, style: { color: '#008c51', fontWeight: 'bold', }, sortable: false, filter: false, filterPlaceholder: "Filter By Customer Code", filterMatchMode: 'contains' },
+                { field: 'invoiceNo', header: 'Doc No', headerStyle: { color: '#495057' }, sortable: false, filter: false, filterPlaceholder: "Filter By Customer Code", filterMatchMode: 'contains' },
                 { field: 'customerCode', header: 'Cust Code', sortable: false, filter: false, filterPlaceholder: "Filter By Customer Code", filterMatchMode: 'contains' },
                 { field: 'dateShipped', header: 'Shipped Date', style: { width: '120px' }, sortable: false, body: (rowData: any) => getFormattedDateTime(rowData.dateShipped), filter: false, filterPlaceholder: "Filter By Shipped Date", filterMatchMode: 'contains' },
                 { field: 'catalogCode', header: 'Product', sortable: false, filter: false, filterPlaceholder: "Filter By Product Code", filterMatchMode: 'contains' },

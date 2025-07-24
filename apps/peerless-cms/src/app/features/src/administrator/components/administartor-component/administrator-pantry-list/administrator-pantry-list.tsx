@@ -10,7 +10,7 @@ import './administrator-pantry-list.css';
 import { InsertPlistTemplateHeader } from '@peerless/queries';
 import { InsertPlistTemplateHeaderParameters } from '@peerless/models';
 import { useState } from 'react';
-import { randomKeyFunction } from '@peerless/common';
+import { toast } from 'sonner';
 
 export function AdministratorPantryList() {
     const { insertPlistTemplateHeaderMutate } = InsertPlistTemplateHeader();
@@ -22,25 +22,18 @@ export function AdministratorPantryList() {
         businessType: administratorBusinessTemplate.businessType,
         templateDetails: administratorPantryList
     } as InsertPlistTemplateHeaderParameters
-    const [status, setStatus] = useState<string>('');
-    const [labelText, setLabelText] = useState<string>('');
-    const [triggerKey, setTriggerKey] = useState(0);
     const [isLoading, setIsLoading] = useState<boolean>(false);
-    const [open, setOpen] = useState(false);
 
     const saveMutateFunction = () => {
         setIsLoading(true);
         insertPlistTemplateHeaderMutate(payload, {
             onSuccess: () => {
-                setStatus('success-notification-color');
-                setLabelText('Save Successfully');
-                setTriggerKey((prevKey) => prevKey + 1);
+                toast.success('Save Successfully');
                 setIsLoading(false);
             },
-            onError: () => {
-                setStatus('error-notification-color');
-                setLabelText('Save Not Successfully');
-                setTriggerKey((prevKey) => prevKey + 1);
+            onError: (error) => {
+                toast.error('Save Not Successfully');
+                console.error(error.message);
                 setIsLoading(false);
             }
         }
@@ -66,7 +59,6 @@ export function AdministratorPantryList() {
                 Function={() => saveMutateFunction()}
                 name={isLoading ? 'Saving...' : 'Save'}
             />
-            <CustomToastMessage status={status || ''} labelText={labelText} state={open} setState={setOpen} triggerKey={triggerKey} />
         </div>
     );
 

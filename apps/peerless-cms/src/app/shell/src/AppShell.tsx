@@ -13,19 +13,19 @@ export const AppShell: FC = () => {
   const persistor = persistStore(store);
   return (
     <ReactQueryProvider>
-      <AuthProvider>
-        <AppStateProvider>
-          <BrowserRouter>
+      <BrowserRouter>
+        <AuthProvider>
+          <AppStateProvider>
             <Provider store={store}>
               <PersistGate persistor={persistor}>
                 <AxiosProvider />
                 <PeerlessCMSBaseLayout />
+                <Toaster richColors closeButton />
               </PersistGate>
             </Provider>
-          </BrowserRouter>
-        </AppStateProvider>
-      </AuthProvider>
-      <Toaster richColors closeButton />
+          </AppStateProvider>
+        </AuthProvider>
+      </BrowserRouter>
     </ReactQueryProvider>
   );
 };

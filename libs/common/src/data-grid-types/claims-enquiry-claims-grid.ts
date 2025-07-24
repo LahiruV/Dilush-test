@@ -11,14 +11,14 @@ export class ClaimsEnquiryClaimsGrid extends BaseGrid {
         return {
             idColumn: 'claimNo',
             columns: [
-                { field: 'claimNo', header: 'Claim No', headerStyle: { color: '#495057' }, style: { width: '50px', color: '#008c51', fontWeight: 'bold', }, sortable: false, filter: true, filterMatchMode: FilterMatchMode.CONTAINS },
+                { field: 'claimNo', header: 'Claim No', style: { width: '50px' }, sortable: false, filter: true, filterMatchMode: FilterMatchMode.CONTAINS },
                 { field: 'custClaimNo', header: 'Cust Clm', style: { width: '160px' }, sortable: false, filter: true, filterMatchMode: FilterMatchMode.CONTAINS },
                 {
-                    field: 'dateClaim', header: 'Claim Date', body: (rowData: any) => format(new Date(rowData.dateClaim), 'dd-MM-yyyy'), style: { width: '110px' },
+                    field: 'dateClaim', header: 'Claim Date', body: (rowData: any) => format(new Date(rowData.dateClaim), 'dd/MM/yyyy'), style: { width: '110px' },
                     sortable: false, filter: false, filterMatchMode: FilterMatchMode.EQUALS, filterTemplate: DateFilterTemplate
                 },
                 {
-                    field: 'dateEntered', header: 'Entered', body: (rowData: any) => format(new Date(rowData.dateEntered), 'dd-MM-yyyy'), style: { width: '110px' },
+                    field: 'dateEntered', header: 'Entered', body: (rowData: any) => format(new Date(rowData.dateEntered), 'dd/MM/yyyy'), style: { width: '110px' },
                     sortable: false, filter: true, filterMatchMode: FilterMatchMode.EQUALS, filterTemplate: DateFilterTemplate
                 },
                 { field: 'forApproval', header: 'For App', style: { width: '60px' }, sortable: false, headerStyle: { textAlign: 'right' } },
