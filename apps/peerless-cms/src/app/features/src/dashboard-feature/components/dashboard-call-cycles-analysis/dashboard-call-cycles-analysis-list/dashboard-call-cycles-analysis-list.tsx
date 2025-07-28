@@ -13,8 +13,8 @@ const CallCyclesAnalysisList: React.FC = () => {
   const { ref, inView } = useInView({ triggerOnce: false });
   const dispatch = useDispatch();
   const { callCyclesStartDate, callCyclesEndDate, isCallCyclesAnalysisListFetch, selectedOriginatorCallCyclesAnalysis, childOriginatorsCallCyclesAnalysis, isFormSubmit } = useSelector((state: RootState) => state.dashboardCallCyclesAnalysis);
-  const [pageState, setPageState] = useState({ first: 1, rows: 9 });
-  const [pageSize, setPageSize] = useState(9);
+  const [pageState, setPageState] = useState({ first: 0, rows: 8 });
+  const [pageSize, setPageSize] = useState(8);
   const [multiSortMeta, setMultiSortMeta] = useState<any[]>([]);
   const [orderBy, setOrderBy] = useState("leadStage ASC");
   const [tableFilters, setTableFilters] = useState<any>();
@@ -36,7 +36,7 @@ const CallCyclesAnalysisList: React.FC = () => {
     callCyclesAnalysisFilterFilterPara: tableFilters,
   };
 
-  useResetTablePagination(9, setPageState, [selectedOriginatorCallCyclesAnalysis, callCyclesStartDate, callCyclesEndDate, childOriginatorsCallCyclesAnalysis]);
+  useResetTablePagination(8, setPageState, [selectedOriginatorCallCyclesAnalysis, callCyclesStartDate, callCyclesEndDate, childOriginatorsCallCyclesAnalysis], 0);
 
   const { data: callCyclesAnalysisData, error, status, refetch } = GetAllCallCycles(payload, isCallCyclesAnalysisListFetch);
 
@@ -118,7 +118,7 @@ const CallCyclesAnalysisList: React.FC = () => {
       <DataGrid
         dataTable={callCycleAnalysisList}
         data={callCyclesAnalysisData}
-        // scrollHeight={'490px'}
+        // scrollHeight={'480px'}
         renderStatusContent={renderStatusContent}
         enablePagination={true}
         pageSize={pageSize}
@@ -131,6 +131,7 @@ const CallCyclesAnalysisList: React.FC = () => {
         isScrollable={true}
         isAutoScrollHeight={true}
         cssClasses={'sticky-header'}
+        isFullDetailPagination={true}
       />
       <div ref={ref} style={{ height: '1px' }} />
     </div>

@@ -43,7 +43,7 @@ export const homeContactsAPIMap: { [key: string]: string } = {
 };
 
 export const sectionPathMap: { [key: string]: string } = {
-  [leadContact]: '/leeds-and-customers/',
+  [leadContact]: '/leeds-and-customers/lead/',
   [customerContact]: '/leeds-and-customers/customer/',
   [enduserContact]: '/leeds-and-customers/enduser/',
   [organisationContact]: '/organisation/',

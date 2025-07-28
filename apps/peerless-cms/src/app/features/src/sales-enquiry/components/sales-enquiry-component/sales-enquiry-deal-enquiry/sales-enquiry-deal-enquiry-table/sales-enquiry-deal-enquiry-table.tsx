@@ -15,9 +15,9 @@ const SalesEnquiryDealEnquiryListTable = ({ heightOffset }: SalesEnquiryDealEnqu
 
     const { ref, inView } = useInView({ triggerOnce: false });
     const dispatch = useDispatch();
-    const { isFetchingDealEnquiryList, dealEnquiryMarketDrop, dealEnquiryAsAtDate, dealEnquiryParentDrop, dealEnquirySubParentDrop, dealEnquiryRepDrop, dealEnquirySubGroupDrop, dealEnquiryPriceGroupDrop, dealEnquiryStatesDrop, dealCatalogueType, showForwardDeals } = useSelector((state: RootState) => state.salesEnquiryDealEnquiry);
+    const { isFetchingDealEnquiryList, dealEnquiryMarketDrop, dealEnquiryAsAtDate, dealEnquiryParentDrop, dealEnquirySubParentDrop, dealEnquiryRepDrop, dealEnquirySubGroupDrop, dealEnquiryPriceGroupDrop, dealEnquiryStatesDrop, dealCatalogueType, showForwardDeals, dealName, dealCustomer, dealEnquiryProductDrop } = useSelector((state: RootState) => state.salesEnquiryDealEnquiry);
     const { loggedUser, childOriginators } = useSelector((state: RootState) => state.header);
-    const [pageState, setPageState] = useState({ first: 1, rows: 18 });
+    const [pageState, setPageState] = useState({ first: 0, rows: 18 });
     const [pageSize, setPageSize] = useState(18);
 
     const payload: DealEnquiryParameters = {
@@ -32,8 +32,10 @@ const SalesEnquiryDealEnquiryListTable = ({ heightOffset }: SalesEnquiryDealEnqu
         subParent: dealEnquirySubParentDrop?.value || '',
         subParentGroup: dealEnquirySubGroupDrop?.value || '',
         priceGroup: dealEnquiryPriceGroupDrop?.value || '',
-        // state: dealEnquiryStatesDrop?.value || '',
         catalogueType: dealCatalogueType?.value || '',
+        custCode: dealCustomer,
+        catlogCode: dealEnquiryProductDrop?.value || '',
+        dealName: dealName,
         orderBy: 'cust_code asc',
         additionalParams: '',
         ignorePagination: false,
@@ -41,7 +43,7 @@ const SalesEnquiryDealEnquiryListTable = ({ heightOffset }: SalesEnquiryDealEnqu
         rowCount: pageState.rows
     };
 
-    useResetTablePagination(18, setPageState, [dealEnquiryMarketDrop, dealEnquiryAsAtDate, dealEnquiryParentDrop, dealEnquiryRepDrop, dealEnquirySubGroupDrop, dealEnquiryPriceGroupDrop, dealEnquiryStatesDrop, showForwardDeals]);
+    useResetTablePagination(18, setPageState, [dealEnquiryMarketDrop, dealEnquiryAsAtDate, dealEnquiryParentDrop, dealEnquiryRepDrop, dealEnquirySubGroupDrop, dealEnquiryPriceGroupDrop, dealEnquiryStatesDrop, showForwardDeals, dealCatalogueType, dealName, dealCustomer, dealEnquiryProductDrop], 0);
 
     const { data: dealEnquiryListData, error, status } = GetDealEnquiry(payload, isFetchingDealEnquiryList);
 
@@ -92,6 +94,7 @@ const SalesEnquiryDealEnquiryListTable = ({ heightOffset }: SalesEnquiryDealEnqu
                 isAutoScrollHeight={true}
                 cssClasses={'sticky-header'}
                 heightOffset={heightOffset}
+                isFullDetailPagination={true}
                 width='1550px'
             />
             <div ref={ref} style={{ height: '1px' }} />

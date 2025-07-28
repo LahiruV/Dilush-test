@@ -92,13 +92,14 @@ const LeaveListTable: React.FC<LeaveListTableProps> = ({ heightOffset }) => {
                 totalRecords={LeaveListData && countRecords} onPage={onPage} cssClasses={'sticky-header'} isScrollable={true}
                 isAutoScrollHeight={true}
                 heightOffset={heightOffset}
+                isFullDetailPagination={true}
             />
 
             <Dialog visible={isAddLeaveModalOpen} onHide={() => setVisible(true)} header='Leave Application Form'>
                 {(
                     <div>
                         < LeaveEnter closeAddLeaveModal={closeAddLeaveModal} leaveListViewData={publicleaveListViewData} onClose={() => {
-                            toast.success(`Leave Request Has Been Forwarded To ${loggedUser.parentOriginator.toLocaleUpperCase()} For Approval`);
+                            toast.success(`Leave request has been forwarded to ${loggedUser.parentOriginator.toLocaleUpperCase()} for approval`);
                         }} />
                     </div>
                 )}

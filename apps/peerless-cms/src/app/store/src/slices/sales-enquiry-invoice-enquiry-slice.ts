@@ -2,6 +2,9 @@ import { DropDownData } from '@peerless/models';
 import { createSlice } from '@reduxjs/toolkit';
 
 const date = new Date();
+const fromDate = new Date();
+fromDate.setMonth(fromDate.getMonth() - 1);
+const isoFromDate = fromDate.toISOString();
 
 interface SalesEnquiryInvoiceEnquiryState {
     invoiceCustomerGroup: DropDownData;
@@ -39,7 +42,7 @@ const initialState: SalesEnquiryInvoiceEnquiryState = {
     invoiceState: {} as DropDownData,
     invoiceBrand: {} as DropDownData,
     invoiceCustomer: {} as DropDownData,
-    invoiceFromDate: date.toISOString(),
+    invoiceFromDate: isoFromDate,
     invoiceToDate: date.toISOString(),
     invoiceInvoiceNumber: '',
     invoiceBatchNumber: '',
@@ -107,10 +110,10 @@ export const salesEnquiryInvoiceEnquirySlice = createSlice({
             state.invoiceRadio2 = action.payload
         },
         setIsFetchingInvoiceEnquiryList: (state, action) => {
-            state.isFetchingInvoiceEnquiryList = action.payload            
+            state.isFetchingInvoiceEnquiryList = action.payload
         },
-        setTriggerInvoiceEnquiryFiltersFormSubmit: (state,action) => {
-            state.isFormSubmit = action.payload;            
+        setTriggerInvoiceEnquiryFiltersFormSubmit: (state, action) => {
+            state.isFormSubmit = action.payload;
         },
         setSelectedInvoiceEnquiry: (state, action) => {
             state.selectedInvoiceEnquiry = action.payload;

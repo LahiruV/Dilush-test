@@ -130,7 +130,7 @@ export const PeerlessCMSBaseLayout: FC<CommonProps> = () => {
   useEffect(() => {
     if (isAuthenticated && window.location.pathname === '/login') {
       // navigate('/dashboard/activityAnalysis');
-      navigate('/leeds-and-customers');
+      navigate('/leeds-and-customers/lead');
     }
     if (!isAuthenticated) {
       navigate('/login');
@@ -143,7 +143,9 @@ export const PeerlessCMSBaseLayout: FC<CommonProps> = () => {
     <Routes>
       <Route path="/login" Component={LoginPage} />
       <Route element={<PrivateRouteValidator />}>
+
         <Route path="/" element={<LeedsAndCustomersPage />} />
+
         <Route path="/organisation" element={<OrganisationPage />}>
           <Route index element={<OrganisationSection />} />
           <Route path=":id" element={<OrganisationDetailSection />}>
@@ -186,27 +188,19 @@ export const PeerlessCMSBaseLayout: FC<CommonProps> = () => {
             </Route>
           </Route>
         </Route>
-        <Route path="/leeds-and-customers" element={<LeedsAndCustomersPage />}>
+
+        <Route path="/leeds-and-customers/lead" element={<LeedsAndCustomersPage />}>
           <Route index element={<LeedsAndCustomersSection />} />
           <Route path=":id" element={<LeedAndCustomerDetailSection />}>
             <Route index element={<LeedsCustomersDetails />} />
-            <Route
-              path="contact-details"
-              element={<LeedsAndCustomersContactDetail />}
-            />
+            <Route path="contact-details" element={<LeedsAndCustomersContactDetail />} />
             <Route path="addresses" element={<LeedCustomerAddresses />}>
               <Route index element={<LeedCustomerAddressList />} />
               <Route path="update" element={<LeedCustomerAddressForm />} />
             </Route>
-            <Route
-              path="contact-person"
-              element={<LeedCustomerContactPerson />}
-            >
+            <Route path="contact-person" element={<LeedCustomerContactPerson />}>
               <Route index element={<LeedCustomerContactPersonList />} />
-              <Route
-                path="update"
-                element={<LeedCustomerContactPersonForm />}
-              />
+              <Route path="update" element={<LeedCustomerContactPersonForm />} />
             </Route>
             <Route path="activity" element={<LeedCustomerActivity />}>
               <Route index element={<LeedCustomerActivityList />} />
@@ -219,12 +213,14 @@ export const PeerlessCMSBaseLayout: FC<CommonProps> = () => {
             </Route>
             <Route path="emails" element={<LeedCustomerEmails />} />
           </Route>
-          <Route path="customer/:id" element={<LeedAndCustomerDetailSection />}>
+          <Route path="new" element={<LeedAndCustomerInfoSection />} />
+        </Route>
+
+        <Route path="/leeds-and-customers/customer" element={<LeedsAndCustomersPage />}>
+          <Route index element={<LeedsAndCustomersSection />} />
+          <Route path=":id" element={<LeedAndCustomerDetailSection />}>
             <Route index element={<CustomersDetails />} />
-            <Route
-              path="contact-details"
-              element={<CustomersContactDetail />}
-            />
+            <Route path="contact-details" element={<CustomersContactDetail />} />
             <Route path="sales-history" element={<CustomerSalesHistory />} />
             <Route path="addresses" element={<CustomersAddress />}>
               <Route index element={<LeedCustomerAddressList />} />
@@ -232,10 +228,7 @@ export const PeerlessCMSBaseLayout: FC<CommonProps> = () => {
             </Route>
             <Route path="contact-person" element={<CustomerContactPerson />}>
               <Route index element={<LeedCustomerContactPersonList />} />
-              <Route
-                path="update"
-                element={<LeedCustomerContactPersonForm />}
-              />
+              <Route path="update" element={<LeedCustomerContactPersonForm />} />
             </Route>
             <Route path="endusers" element={<CustomerEndusers />}>
               <Route index element={<CustomerEndusersList />} />
@@ -262,14 +255,16 @@ export const PeerlessCMSBaseLayout: FC<CommonProps> = () => {
               <Route path="update" element={<CustomerCRMOrdersForm />} />
             </Route>
           </Route>
-          <Route path="enduser/:id" element={<LeedAndCustomerDetailSection />}>
+          <Route path="new" element={<LeedAndCustomerInfoSection />} />
+        </Route>
+
+        <Route path="/leeds-and-customers/enduser" element={<LeedsAndCustomersPage />}>
+          <Route index element={<LeedsAndCustomersSection />} />
+          <Route path=":id" element={<LeedAndCustomerDetailSection />}>
             <Route index element={<EnduserDetails />} />
             <Route path="contact-person" element={<EnduserContactPerson />}>
               <Route index element={<LeedCustomerContactPersonList />} />
-              <Route
-                path="update"
-                element={<LeedCustomerContactPersonForm />}
-              />
+              <Route path="update" element={<LeedCustomerContactPersonForm />} />
             </Route>
             <Route path="activity" element={<EnduserActivity />}>
               <Route index element={<LeedCustomerActivityList />} />
@@ -293,6 +288,7 @@ export const PeerlessCMSBaseLayout: FC<CommonProps> = () => {
           </Route>
           <Route path="new" element={<LeedAndCustomerInfoSection />} />
         </Route>
+
         <Route path="/dashboard" element={<DashboardPage />}>
           <Route element={<DashboardSection />}>
             <Route index element={<DashboardActivityAnalysis />} />
@@ -335,6 +331,7 @@ export const PeerlessCMSBaseLayout: FC<CommonProps> = () => {
             />
           </Route>
         </Route>
+
         <Route path="/activity-planner" element={<ActivityPlannerPage />}>
           <Route element={<ActivityPlannerSection />}>
             <Route index element={<ActivityPlanner />} />
@@ -350,6 +347,7 @@ export const PeerlessCMSBaseLayout: FC<CommonProps> = () => {
             <Route path="pantry-list" element={<AdministratorPantryList />} />
           </Route>
         </Route>
+
         <Route path="/sales-enquiry" element={<SalesEnquiryPage />}>
           <Route element={<SalesEnquirySection />}>
             <Route index element={<ClaimsEnquiry />} />
@@ -375,30 +373,6 @@ export const PeerlessCMSBaseLayout: FC<CommonProps> = () => {
           </Route>
         </Route>
 
-        {/* <Route path="/sales-enquiry2" element={<SalesEnquiryPage />}>
-          <Route element={<SalesEnquirySection />}>
-            <Route index element={<ClaimsEnquiry />} />
-            <Route
-              path="customer-pricelist"
-              element={<SalesEnquiryCustomerPriceList />}
-            />
-            <Route path="deal-enquiry" element={<SalesEnquiryDealEnquiry />} />
-            <Route
-              path="invoice-enquiry"
-              element={<SalesEnquiryInvoiceEnquiry />}
-            />
-            <Route
-              path="outstanding-orders"
-              element={<SalesEnquiryOutstandingOrders />}
-            />
-            <Route path="stock-enquiry" element={<StockEnquiry />} />
-            <Route
-              path="quarterly-unit-sales"
-              element={<QuarterlyUnitSales />}
-            />
-          </Route>
-        </Route> */}
-
         <Route path="/call-cycle" element={<CallCyclePage />}>
           <Route index element={<CallCycleSection />} />
           <Route path=":id" element={<CallCycleDetailSection />}>
@@ -415,6 +389,7 @@ export const PeerlessCMSBaseLayout: FC<CommonProps> = () => {
         </Route>
         <Route element={<AboutPage />} path="/about" />
       </Route>
+
     </Routes>
   );
 };

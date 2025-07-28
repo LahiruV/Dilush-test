@@ -72,6 +72,7 @@ export function SalesEnquiryDealEnquiryFilter(props: SalesEnquiryDealEnquiryFilt
 
     const payloadAllMarketForLookup: GetAllMarketForLookupParameters = {
         originator: loggedUser.userName,
+        catalogType: "",
         childOriginators: childOriginators,
         defaultDepartmentId: loggedUser.defaultDepartmentId,
         additionalParams: "group_type = 'MA'",

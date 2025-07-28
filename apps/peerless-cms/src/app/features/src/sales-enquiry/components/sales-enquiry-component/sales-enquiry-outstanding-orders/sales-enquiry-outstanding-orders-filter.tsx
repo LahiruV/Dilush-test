@@ -1,16 +1,17 @@
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Collapse } from 'react-bootstrap';
 import {
-    RootState, setIsFetchingOutstandingOrdersList, setOutstandingOrdersBackOrderOnly, setOutstandingOrdersCatalogueType, setOutstandingOrdersCurrentOrCompleted, setOutstandingOrdersCustomer,
-    setOutstandingOrdersCustomerGroup, setOutstandingOrdersExDc, setOutstandingOrdersFromDate, setOutstandingOrdersMarket, setOutstandingOrdersOrderType, setOutstandingOrdersParent, setOutstandingOrdersPriceGroup,
+    RootState, setIsDateDisabledOutStandingOrders, setIsFetchingOutstandingOrdersList, setOutstandingOrdersBackOrderOnly, setOutstandingOrdersCatalogueType, setOutstandingOrdersCurrentOrCompleted, setOutstandingOrdersCustomer,
+    setOutstandingOrdersCustomerGroup, setOutstandingOrdersCustOrderNo, setOutstandingOrdersExDc, setOutstandingOrdersFromDate, setOutstandingOrdersMarket, setOutstandingOrdersOrderNumber, setOutstandingOrdersOrderType, setOutstandingOrdersParent, setOutstandingOrdersPriceGroup,
+    setOutstandingOrdersProductCode,
     setOutstandingOrdersRadio, setOutstandingOrdersRep, setOutstandingOrdersStates, setOutstandingOrdersSubGroup, setOutstandingOrdersSubParent, setOutstandingOrdersToDate,
     setTriggerOutstandingOrdersFiltersFormSubmit
 } from '@peerless-cms/store';
-import { DatePickerWidget, DropDown, FilterNonButton, MultiColumnComboBoxWidget, RadioButtonWidget } from '@peerless/controls';
-import { GetAllMarketForLookup, GetAllParentCustomersLookup, GetAllWareHouses, GetCustomerLookup, GetGeneralLookupEntries, GetLookup } from '@peerless/queries';
+import { DatePickerWidget, DropDown, FilterNonButton, InputWidget, MultiColumnComboBoxWidget, RadioButtonWidget } from '@peerless/controls';
+import { GetAllMarketForLookup, GetAllParentCustomersLookup, GetAllWareHouses, GetCustomerLookup, GetGeneralLookupEntries, GetLookup, GetReps } from '@peerless/queries';
 import { dropDownDataConverter } from '@peerless/common';
-import { GetAllMarketForLookupParameters, GetAllParentCustomersLookupParameters, GetAllWareHousesParameters, GetCustomerLookupParameters, GetGeneralLookupEntriesParameters } from '@peerless/models';
+import { DropDownData, GetAllMarketForLookupParameters, GetAllParentCustomersLookupParameters, GetAllWareHousesParameters, GetCustomerLookupParameters, GetGeneralLookupEntriesParameters } from '@peerless/models';
 import { FilterForm, FilterFormGroup } from '@peerless-cms/features-common-components';
 import { useFilterForm } from '@peerless-cms/features';
 
@@ -64,7 +65,9 @@ export function SalesEnquiryOutstandingOrdersFilter(props: SalesEnquiryOutstandi
     const { isFormSubmit, outstandingOrdersCustomer, outstandingOrdersSubGroup, outstandingOrdersPriceGroup, outstandingOrdersParent,
         outstandingOrdersSubParent, outstandingOrdersMarket, outstandingOrdersExDc, outstandingOrdersCatalogueType,
         outstandingOrdersOrderType, outstandingOrdersFromDate, outstandingOrdersToDate, outstandingOrdersRadio,
-        outstandingOrdersCurrentOrCompleted } = useSelector((state: RootState) => state.salesEnquiryOutstandingOrders);
+        outstandingOrdersCurrentOrCompleted, outstandingOrdersRep, isDateDisabledOutStandingOrders, outstandingOrdersOrderNumber,
+        outstandingOrdersCustOrderNo, outstandingOrdersProductCode
+    } = useSelector((state: RootState) => state.salesEnquiryOutstandingOrders);
 
     const payloadParentCustomer: GetAllParentCustomersLookupParameters = {
         originator: loggedUser.userName,
@@ -138,6 +141,8 @@ export function SalesEnquiryOutstandingOrdersFilter(props: SalesEnquiryOutstandi
     const { data: priceGroupLookup } = GetGeneralLookupEntries(payloadPriceGroupLookup, true)
     const { data: allWareHouses } = GetAllWareHouses(payloadAllWareHouses, true);
     const { data: subparent } = GetLookup('subparentgroup', true);
+    const { data: allRepsForLookup } = GetReps(true);
+
 
     const customerLookupData = dropDownDataConverter.dropDownDataConverter(customerLookup || [], 'tableDescription', 'tableCode');
     const parentCustomerData = dropDownDataConverter.dropDownDataConverter(parentCustomer || [], 'tableDescription', 'tableCode');
@@ -147,6 +152,11 @@ export function SalesEnquiryOutstandingOrdersFilter(props: SalesEnquiryOutstandi
     const customerGroupLookupData = dropDownDataConverter.dropDownDataConverter(customerGroupLookup || [], 'tableDescription', 'tableCode');
     const allWareHousesData = dropDownDataConverter.dropDownDataConverter(allWareHouses || [], 'tableDescription', 'tableCode');
     const subParentLookupData = dropDownDataConverter.dropDownDataConverter(subparent || [], 'tableDescription', 'tableCode');
+    const allRepsForLookupData = dropDownDataConverter.dropDownDataConverter(allRepsForLookup || [], 'name', 'repCode');
+
+    const repMatch = allRepsForLookupData?.find(
+        (rep: DropDownData) => rep.value === loggedUser.repCode
+    );
 
     const modifiedCustomerGroupLookupData = [{ id: 0, text: 'All', value: '' }, ...customerGroupLookupData];
 
@@ -160,7 +170,9 @@ export function SalesEnquiryOutstandingOrdersFilter(props: SalesEnquiryOutstandi
         dispatch(setOutstandingOrdersSubGroup({ id: 0, text: '', value: '' }));
         dispatch(setOutstandingOrdersMarket({ id: 0, text: '', value: '' }));
         dispatch(setOutstandingOrdersPriceGroup({ id: 0, text: '', value: '' }));
-        dispatch(setOutstandingOrdersRep({ id: 0, text: '', value: '' }));
+        dispatch(setOutstandingOrdersRep(repMatch
+            ? repMatch
+            : { id: 0, text: '', value: '' }));
         dispatch(setOutstandingOrdersExDc({ id: 0, text: '', value: '' }));
         dispatch(setOutstandingOrdersCustomerGroup({ id: 0, text: '', value: '' }));
         dispatch(setOutstandingOrdersSubParent({ id: 0, text: '', value: '' }));
@@ -172,6 +184,9 @@ export function SalesEnquiryOutstandingOrdersFilter(props: SalesEnquiryOutstandi
         dispatch(setOutstandingOrdersCurrentOrCompleted(currentOrCompletedOptions[0]));
         dispatch(setOutstandingOrdersBackOrderOnly(false));
         dispatch(setOutstandingOrdersRadio("1"));
+        dispatch(setOutstandingOrdersCustOrderNo(''));
+        dispatch(setOutstandingOrdersOrderNumber(''));
+        dispatch(setOutstandingOrdersProductCode(''));
     }
 
     const catalogueTypeDefault = productTypeOptions[0];
@@ -186,6 +201,19 @@ export function SalesEnquiryOutstandingOrdersFilter(props: SalesEnquiryOutstandi
     }, [allWareHouses, customerGroupLookup]);
 
     useEffect(() => {
+        dispatch(setOutstandingOrdersCustomer({ id: 0, text: '', value: '' }));
+        dispatch(setOutstandingOrdersParent({ id: 0, text: '', value: '' }));
+        dispatch(setOutstandingOrdersSubGroup({ id: 0, text: '', value: '' }));
+        dispatch(setOutstandingOrdersMarket({ id: 0, text: '', value: '' }));
+        dispatch(setOutstandingOrdersPriceGroup({ id: 0, text: '', value: '' }));
+        if (allRepsForLookupData) {
+            dispatch(setOutstandingOrdersRep(repMatch
+                ? repMatch
+                : { id: 0, text: '', value: '' }));
+        }
+        dispatch(setOutstandingOrdersExDc({ id: 0, text: '', value: '' }));
+        dispatch(setOutstandingOrdersCustomerGroup({ id: 0, text: '', value: '' }));
+        dispatch(setOutstandingOrdersSubParent({ id: 0, text: '', value: '' }));
         dispatch(setOutstandingOrdersCatalogueType(productTypeOptions[0]));
         dispatch(setOutstandingOrdersOrderType(orderTypeOptions[0]));
         dispatch(setOutstandingOrdersFromDate(new Date().toISOString()));
@@ -193,7 +221,10 @@ export function SalesEnquiryOutstandingOrdersFilter(props: SalesEnquiryOutstandi
         dispatch(setOutstandingOrdersCurrentOrCompleted(currentOrCompletedOptions[0]));
         dispatch(setOutstandingOrdersBackOrderOnly(false));
         dispatch(setOutstandingOrdersRadio("1"));
-    }, [dispatch])
+        dispatch(setOutstandingOrdersCustOrderNo(''));
+        dispatch(setOutstandingOrdersOrderNumber(''));
+        dispatch(setOutstandingOrdersProductCode(''));
+    }, [dispatch, allRepsForLookup])
 
     const popUpSettings = {
         width: '208px'
@@ -208,24 +239,35 @@ export function SalesEnquiryOutstandingOrdersFilter(props: SalesEnquiryOutstandi
         filters: [outstandingOrdersFromDate, outstandingOrdersToDate, outstandingOrdersCatalogueType, outstandingOrdersCurrentOrCompleted, outstandingOrdersCustomer, outstandingOrdersPriceGroup, outstandingOrdersParent, outstandingOrdersSubGroup, outstandingOrdersSubParent, outstandingOrdersMarket, outstandingOrdersOrderType, outstandingOrdersExDc, outstandingOrdersRadio]
     });
 
+    useEffect(() => {
+        if (outstandingOrdersCurrentOrCompleted.value === '1') {
+            dispatch(setIsDateDisabledOutStandingOrders(true));
+            return
+        }
+        dispatch(setIsDateDisabledOutStandingOrders(false));
+    }, [outstandingOrdersCurrentOrCompleted.value, dispatch]);
+
     return (
         <>
             <Collapse in={props.isFiltersOpen}>
                 <div className="filters-container">
                     <FilterForm id='filter-form' onSubmit={onFilterClick} ref={formComponentRef}>
                         <div>
+                            <FilterFormGroup label='Current Or Completed'>
+                                <DropDown id={"sales-enquiry-outstanding-orders-current-or-completed"} className={"administrator-filter filter-form-filter"} setValue={(e) => dispatch(setOutstandingOrdersCurrentOrCompleted(e))} value={outstandingOrdersCurrentOrCompleted} defaultValue={currentOrCompletedDefault} datalist={currentOrCompletedOptions} textField={"text"} dataItemKey={"value"} fillMode={"solid"} size={"small"} popupSettings={popUpSettings} />
+                            </FilterFormGroup>
                             <FilterFormGroup label='Duration' hasColumns>
-                                <DatePickerWidget id={"sales-enquiry-outstanding-orders-from-date"} className={"dashboard-filter datepicker-custom"} setValue={(e) => dispatch(setOutstandingOrdersFromDate(e))} value={outstandingOrdersFromDate} />
-                                <DatePickerWidget id={"sales-enquiry-outstanding-orders-to-date"} className={"dashboard-filter datepicker-custom datepicker-custom-nsp"} setValue={(e) => dispatch(setOutstandingOrdersToDate(e))} value={outstandingOrdersToDate} />
+                                <DatePickerWidget id={"sales-enquiry-outstanding-orders-from-date"} className={"dashboard-filter datepicker-custom"} format='dd/MM/yyyy' setValue={(e) => dispatch(setOutstandingOrdersFromDate(e))} value={outstandingOrdersFromDate} isDisabled={isDateDisabledOutStandingOrders} />
+                                <DatePickerWidget id={"sales-enquiry-outstanding-orders-to-date"} className={"dashboard-filter datepicker-custom datepicker-custom-nsp"} format='dd/MM/yyyy' setValue={(e) => dispatch(setOutstandingOrdersToDate(e))} value={outstandingOrdersToDate} isDisabled={isDateDisabledOutStandingOrders} />
                             </FilterFormGroup>
                             <FilterFormGroup label='Product Type'>
                                 <DropDown id={"sales-enquiry-outstanding-orders-catalogue-type"} className={"administrator-filter filter-form-filter"} setValue={(e) => dispatch(setOutstandingOrdersCatalogueType(e))} value={outstandingOrdersCatalogueType} defaultValue={catalogueTypeDefault} datalist={productTypeOptions} textField={"text"} dataItemKey={"value"} fillMode={"solid"} size={"small"} popupSettings={popUpSettings} />
                             </FilterFormGroup>
-                            <FilterFormGroup label='Current Or Completed'>
-                                <DropDown id={"sales-enquiry-outstanding-orders-current-or-completed"} className={"administrator-filter filter-form-filter"} setValue={(e) => dispatch(setOutstandingOrdersCurrentOrCompleted(e))} value={outstandingOrdersCurrentOrCompleted} defaultValue={currentOrCompletedDefault} datalist={currentOrCompletedOptions} textField={"text"} dataItemKey={"value"} fillMode={"solid"} size={"small"} popupSettings={popUpSettings} />
-                            </FilterFormGroup>
                             <FilterFormGroup label='Customer'>
                                 <MultiColumnComboBoxWidget id={"sales-enquiry-outstanding-orders-customer"} className={"dashboard-filter filter-form-filter"} setValue={(e) => dispatch(setOutstandingOrdersCustomer(e))} value={outstandingOrdersCustomer} datalist={customerLookupData} isClearable={true} isClearFilter={true} isFilterable={true} textField={"text"} valueField={"value"} columns={[{ field: 'value', header: 'Code', width: '110px' }, { field: 'text', header: 'Name', width: '300px' }]} />
+                            </FilterFormGroup>
+                            <FilterFormGroup label='Order Number'>
+                                <InputWidget id={"sales-enquiry-outstanding-orders-order-number"} className={"administrator-filter filter-form-filter"} setValue={(e) => { dispatch(setOutstandingOrdersOrderNumber(e)) }} value={outstandingOrdersOrderNumber} type='string' />
                             </FilterFormGroup>
                         </div>
 
@@ -242,9 +284,15 @@ export function SalesEnquiryOutstandingOrdersFilter(props: SalesEnquiryOutstandi
                             <FilterFormGroup label='Sub Parent Group'>
                                 <MultiColumnComboBoxWidget id={"sales-enquiry-outstanding-orders-parent-drop"} className={"administrator-filter filter-form-filter"} setValue={(e) => dispatch(setOutstandingOrdersSubParent(e))} value={outstandingOrdersSubParent} datalist={subParentLookupData} isFilterable={true} textField={"value"} valueField={"text"} columns={[{ field: 'value', header: 'Code', width: '150px' }, { field: 'text', header: 'Description', width: '300px' }]} />
                             </FilterFormGroup>
+                            <FilterFormGroup label='Product Code'>
+                                <InputWidget id={"sales-enquiry-outstanding-orders-product-code"} className={"administrator-filter filter-form-filter"} setValue={(e) => { dispatch(setOutstandingOrdersProductCode(e)) }} value={outstandingOrdersProductCode} type='string' />
+                            </FilterFormGroup>
                         </div>
 
                         <div>
+                            <FilterFormGroup label='Rep'>
+                                <MultiColumnComboBoxWidget id={"sales-enquiry-outstanding-orders-rep"} className={"dashboard-filter filter-form-filter"} setValue={(e) => dispatch(setOutstandingOrdersRep(e))} value={outstandingOrdersRep} datalist={allRepsForLookupData} isClearable={true} isClearFilter={true} isFilterable={true} textField={"text"} valueField={"value"} columns={[{ field: 'value', header: 'Code', width: '110px' }, { field: 'text', header: 'Name', width: '300px' }]} />
+                            </FilterFormGroup>
                             <FilterFormGroup label='Market'>
                                 <MultiColumnComboBoxWidget id={"sales-enquiry-outstanding-orders-market"} className={"dashboard-filter filter-form-filter"} setValue={(e) => dispatch(setOutstandingOrdersMarket(e))} value={outstandingOrdersMarket} datalist={allMarketForLookupData} isClearable={true} isClearFilter={true} isFilterable={true} textField={"text"} valueField={"value"} columns={[{ field: 'value', header: 'Code', width: '110px' }, { field: 'text', header: 'Name', width: '300px' }]} />
                             </FilterFormGroup>
@@ -254,8 +302,10 @@ export function SalesEnquiryOutstandingOrdersFilter(props: SalesEnquiryOutstandi
                             <FilterFormGroup label='Ex DC'>
                                 <MultiColumnComboBoxWidget id={"sales-enquiry-outstanding-orders-ex-dc"} className={"dashboard-filter filter-form-filter"} setValue={(e) => dispatch(setOutstandingOrdersExDc(e))} value={outstandingOrdersExDc} datalist={allWareHousesData} isFilterable={true} textField={"text"} valueField={"value"} columns={[{ field: 'value', header: 'Code', width: '110px' }, { field: 'text', header: 'Name', width: '300px' }]} />
                             </FilterFormGroup>
-
-                            <FilterFormGroup hasColumns columnWrapperStyle={{ flexWrap: 'wrap', gap: '5px 10px', paddingTop: '8px' }}>
+                            <FilterFormGroup label='Cust Order No'>
+                                <InputWidget id={"sales-enquiry-outstanding-orders-cust-order-no"} className={"administrator-filter filter-form-filter"} setValue={(e) => { dispatch(setOutstandingOrdersCustOrderNo(e)) }} value={outstandingOrdersCustOrderNo} type='string' />
+                            </FilterFormGroup>
+                            <FilterFormGroup hasColumns columnWrapperStyle={{ flexWrap: 'wrap', gap: '5px 5px', paddingTop: '8px' }}>
                                 <RadioButtonWidget
                                     id="sales-enquiry-outstanding-orders-date-required"
                                     className="sales-enquiry-radio-check filter-form-group-radio"

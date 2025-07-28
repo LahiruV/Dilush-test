@@ -19,7 +19,7 @@ const DashboardEndUserPriceReportList: React.FC<EndUserPriceReportListProps> = (
     const { repCodeEndUserPrice, baseCodeEndUserPrice, asAtDateEndUserPrice, isFetchEndUserPriceList, isFetchEndUserPriceListReport, isPdfView } = useSelector((state: RootState) => state.dashboardEndUserPrice);
     const { loggedUser } = useSelector((state: RootState) => state.header);
     const [tableFilters, setTableFilters] = useState<any>();
-    const [pageState, setPageState] = useState({ first: 1, rows: 25 });
+    const [pageState, setPageState] = useState({ first: 0, rows: 25 });
     const [pageSize, setPageSize] = useState(25);
     const [countValue, setCountValue] = useState(0);
 
@@ -42,7 +42,7 @@ const DashboardEndUserPriceReportList: React.FC<EndUserPriceReportListProps> = (
         produtPriceFilterPara: tableFilters,
     }
 
-    useResetTablePagination(25, setPageState, [asAtDateEndUserPrice, loggedUser.userName, repCodeEndUserPrice?.value, baseCodeEndUserPrice?.value, tableFilters]);
+    useResetTablePagination(25, setPageState, [asAtDateEndUserPrice, loggedUser.userName, repCodeEndUserPrice?.value, baseCodeEndUserPrice?.value, tableFilters], 0);
 
     const { data: generateEndUserPricePdfData, status: reportStatus, error: reportEror } = GenerateEndUserPricePdf(reportPayload, isFetchEndUserPriceListReport)
     const { data: enduserProdutPriceList, error, status } = GetEnduserProdutPrice(payload, isFetchEndUserPriceList, countValue);
@@ -130,6 +130,7 @@ const DashboardEndUserPriceReportList: React.FC<EndUserPriceReportListProps> = (
                             cssClasses={'sticky-header'}
                             totalRecords={enduserProdutPriceList ? enduserProdutPriceList.totalRecord : 0}
                             heightOffset={heightOffset}
+                            isFullDetailPagination={true}
                         />
                         <div ref={ref} style={{ height: '1px' }} />
                     </div>

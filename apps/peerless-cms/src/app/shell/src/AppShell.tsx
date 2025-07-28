@@ -20,7 +20,7 @@ export const AppShell: FC = () => {
               <PersistGate persistor={persistor}>
                 <AxiosProvider />
                 <PeerlessCMSBaseLayout />
-                <Toaster richColors closeButton />
+                <Toaster richColors closeButton position="bottom-center" />
               </PersistGate>
             </Provider>
           </AppStateProvider>

@@ -28,11 +28,11 @@ export function AdministratorPantryList() {
         setIsLoading(true);
         insertPlistTemplateHeaderMutate(payload, {
             onSuccess: () => {
-                toast.success('Save Successfully');
+                toast.success('Pantry list saved successfully');
                 setIsLoading(false);
             },
             onError: (error) => {
-                toast.error('Save Not Successfully');
+                toast.error('Pantry list failed to save');
                 console.error(error.message);
                 setIsLoading(false);
             }

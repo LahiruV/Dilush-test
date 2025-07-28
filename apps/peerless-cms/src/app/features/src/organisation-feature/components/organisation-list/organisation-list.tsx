@@ -17,7 +17,7 @@ export const OrganisationList = (props: OrganisationListProps) => {
     const navigate = useNavigate();
     const messagesRef = useRef<any>(null);
     const messageMgr = new ToastManager(messagesRef);
-    const [pageState, setPageState] = useState({ first: 1, rows: 20 });
+    const [pageState, setPageState] = useState({ first: 0, rows: 20 });
     const { searchText, organisationTypes, selectedOrganisation, queryEndabled, originator, contactType, isAddOrganisationModalOpen } = useSelector((state: RootState) => ({
         searchText: state.organisations.searchText,
         organisationTypes: state.organisations.organisationTypes,
@@ -71,7 +71,7 @@ export const OrganisationList = (props: OrganisationListProps) => {
     const { data: organisationsData, error, status, isLoading, refetch } = getOrganisationList(payload, queryEndabled);
 
     useEffect(() => {
-        setPageState({ first: 1, rows: 20 });
+        setPageState({ first: 0, rows: 20 });
     }, [searchText, organisationTypes]);
 
     const renderStatusContent = {
@@ -103,6 +103,7 @@ export const OrganisationList = (props: OrganisationListProps) => {
                 isAutoScrollHeight={true}
                 cssClasses={'sticky-header'}
                 isSelectionColumnShow={false}
+                isFullDetailPagination={true}
             />
 
             <Dialog visible={isAddOrganisationModalOpen} onHide={closeAddOrganisationModal} header='Add Organisation'>

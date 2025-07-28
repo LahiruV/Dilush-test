@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import * as fa from '@fortawesome/free-solid-svg-icons';
 import SectionMainBase from "../../../lib/section-main-base";
 import { useInView } from "react-intersection-observer";
-import { RootState, setIsDealPopupOpen, setLoadData, setIsFetchingLeadCustomerPriceList } from "@peerless-cms/store";
+import { RootState, setIsDealPopupOpen, setLoadData, setIsFetchingLeadCustomerPriceList, setTriggerCustomerPriceFiltersFormSubmit } from "@peerless-cms/store";
 import { getCustomerDeals, getCustomerPriceList } from "@peerless/queries";
 import { CustomerPriceGrid, DealGrid } from "@peerless/common";
 import './customer-price.css';
@@ -12,6 +12,8 @@ import { DataGrid } from "@peerless/controls";
 import { Dialog } from "primereact/dialog";
 import { contactTypeName } from "@peerless/utils";
 import { RenderStatusContentTable } from "@peerless/models";
+import { HeaderFilterContainer } from "@peerless-cms/features-common-components";
+import { CustomerPriceFilters } from "./customer-price-filters";
 
 export interface CustomerPriceProps { }
 
@@ -73,7 +75,8 @@ export function CustomerPrice(props: CustomerPriceProps) {
   }
 
   const payload = {
-    repCode: cusPriceRepGroup?.value || '',
+    type: "Rep Code",
+    code: cusPriceRepGroup?.value || '',
     custCode: selectedLeedOrCustomer.customerCode,
     effectiveDate: cusPriceEffectiveDate?.value || '',
     asAtDate: asAtDate,
@@ -160,23 +163,36 @@ export function CustomerPrice(props: CustomerPriceProps) {
     } : null);
   }
 
+  const handleExternalSubmit = () => {
+    dispatch(setTriggerCustomerPriceFiltersFormSubmit(true));
+  };
+
   const header = (
-    <div className="lead-customer-detail-section-header-container">
-      <span className="center-align section-title">
-        {contactTypeName[contactType]}
-        <FontAwesomeIcon icon={fa.faChevronRight} className="breadcrumb-separator" />
-        <span className="center-align section-title"><FontAwesomeIcon className="header-icon" icon={fa.faTag} size='1x' />Customer Price</span>
-        <span className="font-light">&nbsp; | &nbsp;</span>
-        <span className="center-align section-title font-light">{`(${selectedLeedOrCustomer.name})`}</span>
-      </span>
-    </div>
+    <HeaderFilterContainer title="Customer Price" icon={fa.faTag} renderFilters={({ isFiltersOpen, isClearFilters, setIsActiveFilters }) => (
+      <CustomerPriceFilters isFiltersOpen={isFiltersOpen} isClearFilters={isClearFilters} setIsActiveFilters={setIsActiveFilters} />
+    )}
+      onFilterClick={handleExternalSubmit}
+      isFetching={isFetchingLeadCustomerPriceList}
+      titleInlineBeforeElements={
+        <>
+          {contactTypeName[contactType]}
+          <FontAwesomeIcon icon={fa.faChevronRight} className="breadcrumb-separator" />
+        </>
+      }
+      titleInlineAfterElements={
+        <>
+          <span className="font-light">&nbsp; | &nbsp;</span>
+          <span className="section-title font-light sub-heading-clipped">{`(${selectedLeedOrCustomer.name})`}</span>
+        </>
+      }
+    />
   );
 
   const main = (
     <div>
       <DataGrid
         dataTable={custPriceGrid}
-        data={customerPriceListData || []}
+        data={customerPriceListData?.response || []}
         renderStatusContent={renderStatusContent}
         emptyMessage={loadData ? 'No records found' : 'Please click on filter to view data'}
         onPage={onPage}

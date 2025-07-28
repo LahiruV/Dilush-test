@@ -1,11 +1,16 @@
-import { FormEvent, ReactNode, forwardRef, useImperativeHandle, useRef } from 'react';
+import { FormEvent, ReactNode, forwardRef, useImperativeHandle, useRef, CSSProperties } from 'react';
 import './filter-form.css';
+
+interface ExtendedCSSProperties extends CSSProperties {
+  '--min-width'?: string;
+}
 
 interface FilterFormProps {
   id?: string;
   className?: string;
   onSubmit: () => void;
   children: ReactNode;
+  styles?: ExtendedCSSProperties;
 }
 
 export interface FormComponentHandles {
@@ -33,7 +38,7 @@ export const FilterForm = forwardRef<FormComponentHandles, FilterFormProps>((pro
   }
 
   return (
-    <form id={props.id} className={`filter-form ${props.className}`} ref={formRef} onSubmit={submitHandler}>
+    <form id={props.id} className={`filter-form ${props.className}`} ref={formRef} onSubmit={submitHandler} style={props.styles}>
       {props.children}
     </form>
   )

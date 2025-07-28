@@ -31,8 +31,10 @@ const SalesEnquiryCustomerPriceListTable = ({ heightOffset }: SalesEnquiryCustom
         additionalParams: '',
         orderBy: orderBy,
         ignorePagination: false,
-        startIndex: pageState.first,
-        rowCount: pageState.rows,
+        // startIndex: pageState.first,
+        // rowCount: pageState.rows,
+        numberOfRecords: pageState.rows,
+        nextRecord: pageState.first,
         filterPara: tableFilters,
     }
 
@@ -109,7 +111,7 @@ const SalesEnquiryCustomerPriceListTable = ({ heightOffset }: SalesEnquiryCustom
         <div className='table-container'>
             <DataGrid
                 dataTable={salesEnquiryCustomerPrice}
-                data={customerPricelistData || []}
+                data={customerPricelistData?.response || []}
                 renderStatusContent={renderStatusContent}
                 onPage={onPage}
                 onFilterCallback={onFilterStock}
@@ -118,6 +120,11 @@ const SalesEnquiryCustomerPriceListTable = ({ heightOffset }: SalesEnquiryCustom
                 isAutoScrollHeight={true}
                 cssClasses={'sticky-header'}
                 heightOffset={heightOffset}
+                enablePagination={true}
+                firstIndex={pageState.first}
+                totalRecords={customerPricelistData?.totalRecord || 0}
+                pageSize={pageState.rows}
+                isServerSidePaging={true}
             />
             <div ref={ref} style={{ height: '1px' }} />
         </div>

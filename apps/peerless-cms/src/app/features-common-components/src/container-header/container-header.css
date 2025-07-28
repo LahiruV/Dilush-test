@@ -1,5 +1,6 @@
 .container-header {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 30px;
   width: 100%;
@@ -26,4 +27,12 @@
   margin-left: 3px;
   margin-bottom: 3px;
   font-size: 27px;
+}
+
+.sub-heading-clipped {
+  overflow: hidden;
+  display: block;
+  max-width: 250px;
+  text-overflow: ellipsis;
+  text-wrap: nowrap;
 }

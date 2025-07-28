@@ -1,4 +1,4 @@
-import { getDate, getFormattedDateTime } from "../functions";
+import { getFormattedDateTimeWithTime } from "../functions";
 import { BaseGrid, gridColumn, gridFilter, rowExpansion } from "./base-grid";
 
 export class EndUserTransferLogListDistributer extends BaseGrid {
@@ -24,7 +24,7 @@ export class EndUserTransferLogListDistributer extends BaseGrid {
             columns: [
                 { field: 'enduserCode', header: 'End User Code', sortable: true, filter: true, filterPlaceholder: "Filter By Code", filterMatchMode: 'contains', style: { width: '200px' } },
                 { field: 'enduserName', header: 'End User Name', sortable: true, filter: true, filterPlaceholder: "Filter By Name", filterMatchMode: 'contains', style: { width: '200px' } },
-                { field: 'transferredOn', header: 'Transferred On', sortable: true, body: (rowData: any) => getFormattedDateTime(rowData.transferredOn), filter: true, filterPlaceholder: "Filter By Date", filterMatchMode: 'contains', style: { width: '200px' } },
+                { field: 'transferredOn', header: 'Transferred On', sortable: true, body: (rowData: any) => getFormattedDateTimeWithTime(rowData.transferredOn), filter: true, filterPlaceholder: "Filter By Date", filterMatchMode: 'contains', style: { width: '200px' } },
                 { field: 'oldCustomer', header: 'Old Customer', sortable: true, filter: true, filterPlaceholder: "Filter By Old Customer", filterMatchMode: 'contains' },
                 { field: 'newCustomer', header: 'New Customer', sortable: true, filter: true, filterPlaceholder: "Filter By New Customer", filterMatchMode: 'contains', style: { width: '200px' } }
             ]

@@ -16,6 +16,7 @@ import { EnduserListGrid } from "@peerless/common";
 import { Dialog } from "primereact/dialog";
 import { RenderStatusContentTable } from "@peerless/models";
 import ToastMessages from "libs/controls/src/toasts-message/messages";
+import { toast } from "sonner";
 
 export interface CustomerEndusersListProps { }
 
@@ -100,11 +101,13 @@ export function CustomerEndusersList(props: CustomerEndusersListProps) {
     setIsTransfer(true);
     mutationSaveEnduserTransfer.mutate(transferPayload, {
       onSuccess: (responseSaveImage) => {
+        toast.success('Enduser transferred successfully');
         setIsTransfer(false);
         closeEnduserTransferModal();
         refetch();
       },
       onError: (error) => {
+        toast.error('Error occurred while transferring enduser');
         setIsTransfer(false);
         closeEnduserTransferModal();
         messageMgr.showMessage("error", 'Error: ', 'Error occured while updating');

@@ -21,24 +21,112 @@ export class SalesEnquiryInvoiceEnquiryListDistributer extends BaseGrid {
             columns: [
                 { field: 'invoiceNo', header: 'Doc No', headerStyle: { color: '#495057' }, sortable: false, filter: false, filterPlaceholder: "Filter By Customer Code", filterMatchMode: 'contains' },
                 { field: 'customerCode', header: 'Cust Code', sortable: false, filter: false, filterPlaceholder: "Filter By Customer Code", filterMatchMode: 'contains' },
-                { field: 'dateShipped', header: 'Shipped Date', style: { width: '120px' }, sortable: false, body: (rowData: any) => getFormattedDateTime(rowData.dateShipped), filter: false, filterPlaceholder: "Filter By Shipped Date", filterMatchMode: 'contains' },
+                {
+                    field: 'dateShipped',
+                    header: 'Shipped Date',
+                    style: { width: '120px' },
+                    sortable: false,
+                    body: (rowData: any) => getFormattedDateTime(rowData.dateShipped),
+                    filter: false,
+                    filterPlaceholder: "Filter By Shipped Date",
+                    filterMatchMode: 'contains'
+                },
                 { field: 'catalogCode', header: 'Product', sortable: false, filter: false, filterPlaceholder: "Filter By Product Code", filterMatchMode: 'contains' },
-                { field: 'carrierCode', header: 'Cust Order No', sortable: false, filter: false, filterPlaceholder: "Filter By Customer Name", filterMatchMode: 'contains' },
+                { field: 'customerOrderNo', header: 'Cust Order No', sortable: false, filter: false, filterPlaceholder: "Filter By Customer Name", filterMatchMode: 'contains' },
                 { field: 'customerRepCode', header: 'Rep', sortable: false, filter: false, filterPlaceholder: "Filter By Customer Name", filterMatchMode: 'contains', hidden: this.cusRepType },
                 { field: 'bakeryRepCode', header: 'BK Rep', sortable: false, filter: false, filterPlaceholder: "Filter By Customer Name", filterMatchMode: 'contains', hidden: this.cusRepType },
                 { field: 'invoiceRepCode', header: 'I Rep', sortable: false, filter: false, filterPlaceholder: "Filter By Customer Name", filterMatchMode: 'contains', hidden: this.invRepType },
-                { field: 'dispatchedQty', header: 'Desp Qty', sortable: false, body: (rowData: any) => Math.round(rowData?.dispatchedQty * 100) / 100, filter: false, filterPlaceholder: "Filter By Desp Qty", filterMatchMode: 'contains', align: 'right', },
-                { field: 'tonnes', header: 'Tonnes', sortable: false, filter: false, body: (rowData: any) => Math.round(rowData?.tonnes * 100) / 100, filterPlaceholder: "Filter By Customer Name", filterMatchMode: 'contains', align: 'right' },
-                { field: 'price', header: 'Price', sortable: false, body: (rowData: any) => Math.round(rowData?.price * 100) / 100, filter: false, filterPlaceholder: "Filter By Price", filterMatchMode: 'contains', align: 'right' },
+                {
+                    field: 'dispatchedQty',
+                    header: 'Desp Qty',
+                    sortable: false,
+                    body: (rowData: any) =>
+                        Number(Number(rowData.dispatchedQty || 0).toFixed(2)).toLocaleString(undefined, {
+                            minimumFractionDigits: 2,
+                            maximumFractionDigits: 2
+                        }),
+                    filter: false,
+                    filterPlaceholder: "Filter By Desp Qty",
+                    filterMatchMode: 'contains',
+                    align: 'right',
+                },
+                {
+                    field: 'tonnes',
+                    header: 'Tonnes',
+                    sortable: false,
+                    filter: false,
+                    body: (rowData: any) =>
+                        Number(Number(rowData.tonnes || 0).toFixed(2)).toLocaleString(undefined, {
+                            minimumFractionDigits: 2,
+                            maximumFractionDigits: 2
+                        }),
+                    filterPlaceholder: "Filter By Customer Name",
+                    filterMatchMode: 'contains',
+                    align: 'right'
+                },
+                {
+                    field: 'price',
+                    header: 'Price',
+                    sortable: false,
+                    body: (rowData: any) =>
+                        Number(Number(rowData.price || 0).toFixed(2)).toLocaleString(undefined, {
+                            minimumFractionDigits: 2,
+                            maximumFractionDigits: 2
+                        }),
+                    filter: false,
+                    filterPlaceholder: "Filter By Price",
+                    filterMatchMode: 'contains',
+                    align: 'right'
+                },
                 { field: 'discountPercent', header: 'Disc', sortable: false, filter: false, filterPlaceholder: "Filter By Customer Name", filterMatchMode: 'contains' },
-                { field: 'discountedPrice', header: 'Nt Price', sortable: false, filter: false, filterPlaceholder: "Filter By Customer Name", filterMatchMode: 'contains', align: 'right' },
-                { field: 'netAmount', header: 'Net Amount', sortable: false, body: (rowData: any) => Math.round(rowData?.netAmount * 100) / 100, filter: false, filterPlaceholder: "Filter By Net Amount", filterMatchMode: 'contains', align: 'right' },
+                {
+                    field: 'discountedPrice',
+                    header: 'Nt Price',
+                    sortable: false,
+                    filter: false,
+                    filterPlaceholder: "Filter By Customer Name",
+                    filterMatchMode: 'contains',
+                    align: 'right',
+                    body: (rowData: any) =>
+                        Number(Number(rowData.discountedPrice || 0).toFixed(2)).toLocaleString(undefined, {
+                            minimumFractionDigits: 2,
+                            maximumFractionDigits: 2
+                        })
+                },
+                {
+                    field: 'netAmount',
+                    header: 'Net Amount',
+                    sortable: false,
+                    body: (rowData: any) =>
+                        Number(Number(rowData.netAmount || 0).toFixed(2)).toLocaleString(undefined, {
+                            minimumFractionDigits: 2,
+                            maximumFractionDigits: 2
+                        }),
+                    filter: false,
+                    filterPlaceholder: "Filter By Net Amount",
+                    filterMatchMode: 'contains',
+                    align: 'right'
+                },
                 { field: 'status', header: 'S', sortable: false, filter: false, filterPlaceholder: "Filter By Net Amount", filterMatchMode: 'contains' },
                 { field: 'manifestNo', header: 'Manifest No', sortable: false, filter: false, filterPlaceholder: "Filter By Customer Name", filterMatchMode: 'contains' },
                 { field: 'priceListNo', header: 'PList No', sortable: false, filter: false, filterPlaceholder: "Filter By Customer Name", filterMatchMode: 'contains' },
                 { field: 'salesOrderNo', header: 'Order No', sortable: false, filter: false, filterPlaceholder: "Filter By Customer Name", filterMatchMode: 'contains' },
-                { field: 'gstAmount', header: 'Gst Amt', sortable: false, filter: false, body: (rowData: any) => Math.round(rowData?.gstAmount * 100) / 100, filterPlaceholder: "Filter By Customer Name", filterMatchMode: 'contains', align: 'right' },
-                { field: 'aa', header: '', sortable: false, filter: false, filterPlaceholder: "Filter By Customer Name", filterMatchMode: 'contains' },
+                {
+                    field: 'gstAmount',
+                    header: 'Gst Amt',
+                    sortable: false,
+                    filter: false,
+                    body: (rowData: any) =>
+                        Number(Number(rowData.gstAmount || 0).toFixed(2)).toLocaleString(undefined, {
+                            minimumFractionDigits: 2,
+                            maximumFractionDigits: 2
+                        }),
+                    filterPlaceholder: "Filter By Customer Name",
+                    filterMatchMode: 'contains',
+                    align: 'right'
+                },
+                { field: 'aa', header: '', },
+                // body: (rowData: any) => (rowData.gst || 0).toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })
             ]
         }
     }

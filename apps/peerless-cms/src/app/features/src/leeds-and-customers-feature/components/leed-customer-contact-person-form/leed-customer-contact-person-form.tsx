@@ -248,11 +248,11 @@ export function LeedCustomerContactPersonForm(props: LeedCustomerContactPersonFo
 
           if (props.isPopup != null && props.isPopup) {
             dispatch(setIsAddContactModalOpen(false));
-            toast.success(contactPersonPageMode == pageModeEnum.New ? 'Contact Person Saved Successfully' : 'Contact Person Updated Successfully')
+            toast.success(contactPersonPageMode == pageModeEnum.New ? 'Contact person saved successfully' : 'Contact person updated successfully')
           }
           else {
             dispatch(setContactPersonPageMode(pageModeEnum.List));
-            toast.success(contactPersonPageMode == pageModeEnum.New ? 'Contact Person Saved Successfully' : 'Contact Person Updated Successfully')
+            toast.success(contactPersonPageMode == pageModeEnum.New ? 'Contact person saved successfully' : 'Contact person updated successfully')
             setTimeout(() => {
               navigate(`${sectionPathMap[contactType]}${contactType == contactTypeEnum.organisation ? selectedOrganisation?.[contactId[contactType]] : selectedLeedOrCustomer?.[contactId[contactType]]}/contact-person`);
             }, 800);
@@ -273,11 +273,11 @@ export function LeedCustomerContactPersonForm(props: LeedCustomerContactPersonFo
         setIsSave(false);
         console.error(error.message);
         if (props.isPopup != null && props.isPopup) {
-          toast.error(contactPersonPageMode === pageModeEnum.New ? 'Contact Person Save Failed' : 'Contact Person Update Failed')
+          toast.error(contactPersonPageMode === pageModeEnum.New ? 'Contact person save failed' : 'Contact person update failed')
           // props.messageMgr?.showMessage('error', 'Error: ', (contactPersonPageMode == pageModeEnum.New ? 'Error occured while saving.' : 'Error occured while updating.'));
         }
         else {
-          toast.error(contactPersonPageMode === pageModeEnum.New ? 'Contact Person Save Failed' : 'Contact Person Update Failed')
+          toast.error(contactPersonPageMode === pageModeEnum.New ? 'Contact person save failed' : 'Contact person update failed')
           // messageMgr.showMessage('error', 'Error: ', (contactPersonPageMode == pageModeEnum.New ? 'Error occured while saving.' : 'Error occured while updating.'));
         }
       }

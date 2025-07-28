@@ -9,6 +9,7 @@ import { ButtonWidget, ToastManager, ToastMessages } from '@peerless/controls';
 import { DeactivateCallCycle } from '@peerless/queries';
 import { DeactivateCallCycleParameters } from '@peerless/models';
 import { useQueryClient } from '@tanstack/react-query';
+import { toast } from 'sonner';
 
 
 export interface CallCycleAreasProps { }
@@ -70,12 +71,14 @@ export function CallCycleAreas(props: CallCycleAreasProps) {
                 setIsDeActivated(!isDeActivated);
                 setIsActiveStatusOpen(false);
 
-                messageMgr.showMessage('success', 'Success: ', `${isDeActivated ? 'Deactivated' : 'Activated'}`);
+                // messageMgr.showMessage('success', 'Success: ', `${isDeActivated ? 'Deactivated' : 'Activated'}`);
+                toast.success(`${isDeActivated ? 'Deactivated' : 'Activated'} Successfully`);
             },
             onError: () => {
                 setIsProcessing(false);
                 closeActiveStatusModal();
-                messageMgr.showMessage('error', 'Error: ', 'Error occurred while updating');
+                // messageMgr.showMessage('error', 'Error: ', 'Error occurred while updating');
+                toast.error(`${isDeActivated ? 'Deactivation' : 'Activation'} Failed`);
             }
         });
     }

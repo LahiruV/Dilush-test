@@ -8,6 +8,7 @@ import {
     GridFooterCellProps
 } from '@progress/kendo-react-grid';
 import { CompositeFilterDescriptor, filterBy } from '@progress/kendo-data-query';
+import './kendo-table.css';
 
 export interface ColumnDefinition {
     field: string;
@@ -29,10 +30,12 @@ export interface KendoDataGridWidgetProps<T> {
     lockFirstColumn?: boolean;
     className?: string;
     maxHeight?: string;
+    isRowSelectable?: boolean;
 }
 
 export function KendoDataGridWidget<T>(props: KendoDataGridWidgetProps<T>) {
     const [page, setPage] = useState({ skip: 0, take: props.pageSize || 10 });
+    const [selectedRow, setSelectedRow] = useState<T | null>(null);
     const [filter, setFilter] = useState<CompositeFilterDescriptor>({ logic: 'and', filters: [] });
 
     const filteredData = filterBy(props.data, filter);
@@ -43,6 +46,19 @@ export function KendoDataGridWidget<T>(props: KendoDataGridWidgetProps<T>) {
         setFilter(e.filter as CompositeFilterDescriptor);
         setPage({ skip: 0, take: page.take });
     };
+
+    const rowRender = (trElement: React.ReactElement, rowProps: any) => {
+        const isSelected = selectedRow === rowProps.dataItem;
+        const className = `${trElement.props.className ?? ''} ${isSelected ? 'selected-row' : ''}`.trim();
+
+        return React.cloneElement(trElement, {
+            className,
+            onClick: (event: React.MouseEvent<HTMLTableRowElement>) => {
+                setSelectedRow(rowProps.dataItem);
+            }
+        });
+    };
+
 
     return (
         <div style={{ overflowX: 'auto', maxHeight: '80vh' }}>
@@ -59,6 +75,7 @@ export function KendoDataGridWidget<T>(props: KendoDataGridWidgetProps<T>) {
                 filter={filter}
                 onPageChange={handlePageChange}
                 onFilterChange={handleFilterChange}
+                rowRender={props.isRowSelectable ? rowRender : undefined}
             >
                 {props.columns.map((col, index) => (
                     <Column

@@ -10,6 +10,9 @@ interface SalesEnquiryDealEnquiryState {
     dealEnquiryRepDrop: DropDownData;
     dealEnquiryStatesDrop: DropDownData;
     dealCatalogueType: DropDownData;
+    dealEnquiryProductDrop: DropDownData;
+    dealCustomer: string;
+    dealName: string;
     dealEnquiryAsAtDate: string;
     showForwardDeals: boolean;
     isFetchingDealEnquiryList: boolean;
@@ -25,6 +28,9 @@ const initialState: SalesEnquiryDealEnquiryState = {
     dealEnquiryRepDrop: {} as DropDownData,
     dealEnquiryStatesDrop: {} as DropDownData,
     dealCatalogueType: {} as DropDownData,
+    dealEnquiryProductDrop: {} as DropDownData,
+    dealCustomer: '',
+    dealName: '',
     dealEnquiryAsAtDate: '',
     showForwardDeals: true,
     isFetchingDealEnquiryList: false,
@@ -70,10 +76,19 @@ export const salesEnquiryDealEnquirySlice = createSlice({
         },
         setTriggerDealEnquiryFiltersFormSubmit: (state, action) => {
             state.isFormSubmit = action.payload;
+        },
+        setDealEnquiryProductDrop: (state, action) => {
+            state.dealEnquiryProductDrop = action.payload;
+        },
+        setDealCustomer: (state, action) => {
+            state.dealCustomer = action.payload;
+        },
+        setDealName: (state, action) => {
+            state.dealName = action.payload;
         }
     }
 });
 
-export const { setDealEnquiryParentDrop, setDealEnquirySubParentDrop, setDealEnquirySubGroupDrop, setDealEnquiryPriceGroupDrop, setDealEnquiryMarketDrop, setDealEnquiryRepDrop, setDealEnquiryStatesDrop, setDealCatalogueType, setDealEnquiryAsAtDate, setIsFetchingDealEnquiryList, setShowForwardDeals, setTriggerDealEnquiryFiltersFormSubmit } = salesEnquiryDealEnquirySlice.actions;
+export const { setDealEnquiryParentDrop, setDealEnquirySubParentDrop, setDealEnquirySubGroupDrop, setDealEnquiryPriceGroupDrop, setDealEnquiryMarketDrop, setDealEnquiryRepDrop, setDealEnquiryStatesDrop, setDealCatalogueType, setDealEnquiryAsAtDate, setIsFetchingDealEnquiryList, setShowForwardDeals, setTriggerDealEnquiryFiltersFormSubmit, setDealEnquiryProductDrop, setDealCustomer, setDealName } = salesEnquiryDealEnquirySlice.actions;
 
 export default salesEnquiryDealEnquirySlice.reducer;

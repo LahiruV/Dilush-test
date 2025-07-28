@@ -126,6 +126,7 @@ export interface GetAllMarketForLookupParameters {
     orderBy: string;
     startIndex: number;
     rowCount: number;
+    catalogType?: string;
 }
 
 export interface AllMarketForLookup {

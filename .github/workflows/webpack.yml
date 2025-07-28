@@ -33,7 +33,9 @@ jobs:
             ${{ runner.os }}-nx-
 
       - name: Install Dependencies
-        run: npm ci --legacy-peer-deps --force
+        run: |
+          npm i --legacy-peer-deps --force
+          npm i --force
 
       - name: Activate Kendo UI License
         run: npx kendo-ui-license activate

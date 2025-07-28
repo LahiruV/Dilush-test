@@ -143,7 +143,7 @@ export function CustomerCRMOrdersForm(props: CustomerCRMOrdersFormProps) {
       else {
         //setIsEnableEnduserQuery(false);
         setIsButtonDisabled(true);
-        toast.error('Selected Customer Does Not Accept TIOs');
+        toast.error('Selected customer does not accept TIOs');
       }
     }
   }, [isTIOAcceptCustomerResult]);
@@ -345,8 +345,18 @@ export function CustomerCRMOrdersForm(props: CustomerCRMOrdersFormProps) {
     }
     else {
       payload = getEnduserParameters(data);
+
+      const isOrderQuantityValid = payload.Detail.some((item: any) => item.order_qty > 0);
+
+      if (!isOrderQuantityValid) {
+        setIsSaving(false);
+        // messageMgr.showMessage('error', 'Error: ', 'Please enter a valid order quantity');
+        toast.warning('Please enter a valid order quantity');
+        return;
+      }
     }
     setIsSaving(true);
+
 
     //re-assign if needed
     if (crmOrdersPageMode == pageModeEnum.Edit && data.custCode != selectedCRMOrder.custCode) {
@@ -354,11 +364,11 @@ export function CustomerCRMOrdersForm(props: CustomerCRMOrdersFormProps) {
       mutationReAssignOrder.mutate(reAssignPayload, {
         onSuccess: (response) => {
           if (response == true) {
-            toast.success('Order Re-Assigned Successfully');
+            toast.success('Order re-assigned successfully');
           }
         },
         onError: (error) => {
-          toast.error('Error Occured While Updating the Status');
+          toast.error('Error occurred while updating the status of the order');
           console.error(error.message);
         }
       });
@@ -370,14 +380,15 @@ export function CustomerCRMOrdersForm(props: CustomerCRMOrdersFormProps) {
         if (contactType == contactTypeEnum.customer) {
           if (response > 0) {
             if (crmOrdersPageMode == pageModeEnum.New) {
+              toast.success('Order saved successfully');
               navigate(`${sectionPathMap[contactType]}${selectedLeedOrCustomer?.[contactId[contactType]]}/${successSubUrl}`);
             }
             else {
-              toast.success('Order Saved Successfully');
+              toast.success('Order saved successfully');
             }
           }
           else {
-            toast.error('Order Request Failed');
+            toast.error('Order request failed');
           }
         }
         else { //enduser
@@ -391,13 +402,13 @@ export function CustomerCRMOrdersForm(props: CustomerCRMOrdersFormProps) {
             if (crmOrdersPageMode == pageModeEnum.New) {
               dispatch(setCrmOrdersPageMode(pageModeEnum.Edit));
             }
-            toast.success('Order Saved Successfully');
+            toast.success('Order saved successfully');
             if (response.mailStatus == false) {
               toast.error('Your TIO has not been emailed to the Distributor. Please try again using the Re-send Button');
             }
           }
           else {
-            toast.error('Order Request Failed');
+            toast.error('Order request failed');
           }
         }
       },
@@ -439,19 +450,20 @@ export function CustomerCRMOrdersForm(props: CustomerCRMOrdersFormProps) {
         setIsCompleting(false);
         if (response > 0) {
           if (crmOrdersPageMode == pageModeEnum.New) {
+            toast.success('Order completed successfully');
             navigate(`${sectionPathMap[contactType]}${selectedLeedOrCustomer?.[contactId[contactType]]}/crm-orders`);
           }
           else {
-            toast.success('Order Completed');
+            toast.success('Order completed successfully');
           }
         }
         else {
-          toast.error('Order Request Failed');
+          toast.error('Order request failed');
         }
       },
       onError: (error) => {
         setIsCompleting(false);
-        toast.error('Error Occured While Completing the Order');
+        toast.error('Error occurred while completing the order');
         console.error(error.message);
       }
     });
@@ -570,13 +582,15 @@ export function CustomerCRMOrdersForm(props: CustomerCRMOrdersFormProps) {
       onSuccess: (response) => {
         setIsSendingMail(false);
         if (response == true) {
-          toast.success('Email Sent Successfully');
+          toast.success('Email sent successfully');
         }
-
+        else {
+          toast.error('Email sending failed');
+        }
       },
       onError: (error) => {
         setIsSendingMail(false);
-        toast.error('Email Sending Failed. Please Try Again Later');
+        toast.error('Email sending failed. Please try again later');
         console.error(error.message);
       }
     });
@@ -624,7 +638,7 @@ export function CustomerCRMOrdersForm(props: CustomerCRMOrdersFormProps) {
           <span className="prev-order-indicator-color"></span>
           <span className="common-indicator-text">Previously ordered</span>
         </div>
-        <DataGrid dataTable={crmOrderCustomerPriceTable} data={pricingData} scrollHeight={'240px'} editMode={'cell'} rowClassName={rowClassName} renderStatusContent={renderStatusContent} />
+        <DataGrid cssClasses={'sticky-header'} dataTable={crmOrderCustomerPriceTable} data={pricingData} scrollHeight={'240px'} editMode={'cell'} rowClassName={rowClassName} renderStatusContent={renderStatusContent} />
       </div>
 
       <footer>

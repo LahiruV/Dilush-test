@@ -1,6 +1,6 @@
 import { useDispatch, useSelector } from 'react-redux';
 import { RootState, decrement, increment, pageModeEnum, resetFilter, resetSelectedContactType, resetShowLeastActive, setEnduserDetailPageMode, setFilter, setIsAddEnduserModalOpen, setIsAddLeadModalOpen, setLeadDetailPageMode, setSearchBy, setSelectedContactType, setSelectedLeedOrCustomer, updateDetails } from '@peerless-cms/store';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import Button from 'react-bootstrap/Button';
 import ButtonGroup from 'react-bootstrap/ButtonGroup';
 import { faCake, faClose, faCopy, faMap, faPerson, faPhone } from '@fortawesome/free-solid-svg-icons';
@@ -50,6 +50,7 @@ function LeedsAndCustomersFilter() {
   const [saveType, setSaveType] = useState<any>();
   const [statusType, setStatusType] = useState<any>(null);
   const [occurrenceType, setOccurrenceType] = useState<any>(null);
+  const location = useLocation();
 
   useEffect(() => {
     if (dispatch) {
@@ -150,6 +151,18 @@ function LeedsAndCustomersFilter() {
     setRepType(repTypes.find(f => f.value == loggedUser.repType));
   }
 
+  useEffect(() => {
+    if (location?.pathname) {
+      if (location.pathname.includes('/lead')) {
+        dispatch(setSelectedContactType('lead'));
+      } else if (location.pathname.includes('/customer')) {
+        dispatch(setSelectedContactType('customer'));
+      } else if (location.pathname.includes('/enduser')) {
+        dispatch(setSelectedContactType('enduser'));
+      }
+    }
+  }, [location.pathname, dispatch]);
+
   return (
     <div>
       {/* <div className='filter-top-container'>        
@@ -174,7 +187,7 @@ function LeedsAndCustomersFilter() {
         <span className='container-title margin-top-10'>FILTERS</span>
         <div className='filter-bottom-content'>
           <SearchBox />
-          <DropDown id={"filter-contact-type-drop"}
+          {/* <DropDown id={"filter-contact-type-drop"}
             className={"filter-combo"}
             setValue={(e) => onChangeContactType(e)}
             value={contactType}
@@ -184,7 +197,7 @@ function LeedsAndCustomersFilter() {
             fillMode={"outline"}
             size={"small"}
             popupSettings={contactPopUpSettings}
-          />
+          /> */}
           {/* <DropDown id={"filter-save-type-drop"} 
             className={"filter-combo"} 
             setValue={(e) => onChangeSaveType(e)} 

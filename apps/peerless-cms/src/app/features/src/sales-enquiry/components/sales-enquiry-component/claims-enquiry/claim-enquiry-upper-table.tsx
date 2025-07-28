@@ -58,6 +58,7 @@ export function ClaimsEnquiryUpperTable({ claimsEnquiryList, isFetchingClaimsEnq
                 width="1350px"
                 isScrollable={true}
                 scrollHeight={350}
+                isFullDetailPagination={true}
             // heightOffset={100}
             />
             <div ref={ref} style={{ height: '1px' }} />

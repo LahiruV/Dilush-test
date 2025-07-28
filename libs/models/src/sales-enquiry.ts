@@ -10,8 +10,11 @@ export interface DealEnquiryParameters {
     subParent: string;
     subParentGroup: string;
     priceGroup: string;
+    custCode: string;
+    catlogCode: string;
+    dealName: string;
     // state: string;
-    catalogueType:string;
+    catalogueType: string;
     orderBy: string;
     additionalParams: string;
     ignorePagination: boolean;
@@ -64,7 +67,7 @@ export interface GetInvoiceEnquiryParameters {
     // brand: string;
     orderBy: string;
     additionalParams: string;
-    // repCode: string;
+    repCode: string;
     loggedUserRepCode: string;
     childReps: string;
     clientType: string;
@@ -84,8 +87,10 @@ export interface GetCustomerPricelistParameters {
     additionalParams: string;
     orderBy: string;
     ignorePagination: boolean;
-    startIndex: number;
-    rowCount: number;
+    // startIndex: number;
+    // rowCount: number;
+    numberOfRecords: number;
+    nextRecord: number;
     filterPara: any
     endDate: string
 }

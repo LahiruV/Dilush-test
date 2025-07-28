@@ -20,6 +20,8 @@ interface CustomerPageFilterState {
   state: any,
   isSalesHistoryFetch: boolean;
   isFetchingLeadCustomerPriceList: boolean;
+  isCustomerSalesHistoryFiltersFormSubmit: boolean;
+  isCustomerPriceFiltersFormSubmit: boolean;
 }
 
 const initialState: CustomerPageFilterState = {
@@ -38,6 +40,8 @@ const initialState: CustomerPageFilterState = {
   cusCurrentOrCompleted: { text: 'Current', value: '1' },
   cusCatalogueType: { text: 'F - Refinery Products', value: 'F' },
   isFetchingLeadCustomerPriceList: false,
+  isCustomerSalesHistoryFiltersFormSubmit: false,
+  isCustomerPriceFiltersFormSubmit: false,
 };
 
 export const customerPageFilterSlice = createSlice({
@@ -95,13 +99,19 @@ export const customerPageFilterSlice = createSlice({
     setIsFetchingLeadCustomerPriceList: (state, action) => {
       state.isFetchingLeadCustomerPriceList = action.payload;
     },
+    setTriggerCustomerSalesHistoryFiltersFormSubmit: (state,action) => {
+      state.isCustomerSalesHistoryFiltersFormSubmit = action.payload;
+    },
+    setTriggerCustomerPriceFiltersFormSubmit: (state,action) => {
+      state.isCustomerPriceFiltersFormSubmit = action.payload;
+    },
   },
 });
 
 export const { setSalesHistoryBy, setOutstandingOrderType, setLoadData, setInView,
   setEnduserStatus, setAsAtDate,  setCusPriceEffectiveDate, setCusPriceRepGroup, setState, setIsSalesHistoryFetch,
   resetEnduserStatus, setCustomerAddressStatus, resetCustomerAddressStatus,
-  setCusSalesOrderType, setCusCurrentOrCompleted, setCusCatalogueType, setIsFetchingLeadCustomerPriceList } =
+  setCusSalesOrderType, setCusCurrentOrCompleted, setCusCatalogueType, setIsFetchingLeadCustomerPriceList, setTriggerCustomerSalesHistoryFiltersFormSubmit, setTriggerCustomerPriceFiltersFormSubmit } =
   customerPageFilterSlice.actions;
 
 export default customerPageFilterSlice.reducer;

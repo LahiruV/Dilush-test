@@ -1,6 +1,6 @@
 import { FeaturesBase } from "@peerless-cms/features";
 import { RootState, setIsFetchingStockEnquiryList, setSelectedStockEnquiry, setTriggerStockEnquiryFiltersFormSubmit } from "@peerless-cms/store";
-import { StockEnquiryGrid } from "@peerless/common";
+import { StockEnquiryGrid, useResetTablePagination } from "@peerless/common";
 import { DataGrid } from "@peerless/controls";
 import { useEffect, useRef, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
@@ -52,6 +52,10 @@ export function StockEnquiry() {
         TableFilters: tableFilters,
         IsExported: exportedProductsOnly,
     }
+
+    useResetTablePagination(22, setPageState, [
+        exdc?.value, productCode?.value, productType?.value, targetMarket?.value, productOwner?.value, market?.value, view?.value, dateType, showWip, showPromoForecast, showPromoSales, critical, short, exportedProductsOnly, tableFilters
+    ], 0);
 
     const { data: stockEnquiryList, status, error, isLoading } = getStockEnquiry(payload, isFetchingStockEnquiryList);
 
@@ -155,6 +159,7 @@ export function StockEnquiry() {
                     isSelectionColumnShow={false}
                     heightOffset={isFilterExpanded ? 324 : 42}
                     width="1900px"
+                    isFullDetailPagination={true}
                 />
             </div>
 

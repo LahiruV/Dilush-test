@@ -11,6 +11,7 @@ import { ActivityGrid } from "@peerless/common";
 import { useMutation } from "@tanstack/react-query";
 import ToastMessages from "libs/controls/src/toasts-message/messages";
 import { RenderStatusContentTable } from "@peerless/models";
+import { toast } from "sonner";
 
 export interface LeedCustomerActivityListProps { }
 
@@ -122,11 +123,12 @@ export function LeedCustomerActivityList(props: LeedCustomerActivityListProps) {
       mutationAppointment.mutate(appointmentRequest, {
         onSuccess: (response) => {
           refetch();
-          messageMgr.showMessage('success', 'Success: ', 'Sent to calendar');
+          // messageMgr.showMessage('success', 'Success: ', 'Sent to calendar');
+          toast.success('Sent to calendar');
         },
         onError: (error) => {
-          messageMgr.showMessage('error', 'Error: ', 'Error occured');
-          console.error('Failed to insert appointment');
+          // messageMgr.showMessage('error', 'Error: ', 'Error occured');
+          toast.error('Failed to send to calendar');
         }
       });
     }

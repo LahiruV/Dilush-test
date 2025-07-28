@@ -127,6 +127,12 @@ const leaveSubNavLinks = [
   { id: 'leave-view', path: '/leave/leave-view', icon: fa2.faCalendar, label: 'View Leave' }
 ]
 
+const leadsAndCustomersSubNavLinks = [
+  { id: 'lead', path: '/leeds-and-customers/lead', icon: fa2.faAddressCard, label: 'Lead' },
+  { id: 'customer', path: '/leeds-and-customers/customer', icon: fa2.faAddressCard, label: 'Customer' },
+  { id: 'enduser', path: '/leeds-and-customers/enduser', icon: fa2.faAddressCard, label: 'End User' },
+]
+
 // Define your icon mapping here
 const iconMapping: any = {
   analytics: fa.faHourglassEmpty,
@@ -164,6 +170,7 @@ export function MainNavigation(props: MainNavigationProps) {
       title: 'Leads & Customers',
       path: '/leeds-and-customers',
       icon: 'leadsAndCustomers',
+      subNavData: leadsAndCustomersSubNavLinks,
     },
     {
       id: 3,

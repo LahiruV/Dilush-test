@@ -52,6 +52,7 @@ export interface DataGridProps {
     isAutoScrollHeight?: boolean;
     heightOffset?: number;
     width?: string;
+    isFullDetailPagination?: boolean;
 }
 
 type ExpandedRowsType = { [key: number]: boolean };
@@ -59,7 +60,7 @@ type ExpandedRowsType = { [key: number]: boolean };
 export function DataGrid({ dataTable, data, onRowTogglesCallback, expandedData, scrollHeight,
     editMode, onCellEditComplete, rowClassName, selectionMode, selectedRow, setSelectedRow, selectionColHeader, renderStatusContent, isSelectionColumnShow = true,
     rowGroupMode, groupRowsBy, sortMode, sortField, sortOrder, expandableRowGroups, rowGroupHeaderTemplate, rowGroupFooterTemplate, emptyMessage, isScrollable,
-    style, cssClasses, onFilterCallback, enablePagination, pageSize, isServerSidePaging, firstIndex, totalRecords, onPage, isShowPageOptions, isAutoScrollHeight, heightOffset, width, uniqueId }: DataGridProps) {
+    style, cssClasses, onFilterCallback, enablePagination, pageSize, isServerSidePaging, firstIndex, totalRecords, onPage, isShowPageOptions, isAutoScrollHeight, heightOffset, width, uniqueId, isFullDetailPagination }: DataGridProps) {
     const [expandedRows, setExpandedRows] = useState<ExpandedRowsType>([]);
     const [loadingRows, setLoadingRows] = useState<{ [key: number]: boolean }>({});
 
@@ -122,7 +123,7 @@ export function DataGrid({ dataTable, data, onRowTogglesCallback, expandedData, 
                                 style={col.style}
                                 body={col.body}
                                 footer={col.footer}
-                                bodyStyle={col.bodyStyle ?? { paddingLeft: '10px' }}
+                                bodyStyle={{ paddingLeft: '10px', ...col.bodyStyle }}
                             />
                         ))}
                     </DataTable>
@@ -262,8 +263,11 @@ export function DataGrid({ dataTable, data, onRowTogglesCallback, expandedData, 
                 tableStyle={
                     { minWidth: '100%', width: width }
                 }
-            // paginatorTemplate="RowsPerPageDropdown FirstPageLink PrevPageLink CurrentPageReport NextPageLink LastPageLink"
-            // currentPageReportTemplate="{first} to {last} of {totalRecords}"
+                {...(isFullDetailPagination && {
+                    paginatorTemplate:
+                        "RowsPerPageDropdown FirstPageLink PrevPageLink CurrentPageReport NextPageLink LastPageLink",
+                    currentPageReportTemplate: "{first} to {last} of {totalRecords}",
+                })}
             >
                 {dataTable.hasRowExpansionTemplate() && <Column expander style={{ width: '3em' }} />}
                 {isSelectionColumnShow && selectionMode && <Column selectionMode={selectionMode} header={selectionColHeader} headerStyle={{ width: '3em' }} />}
@@ -284,7 +288,7 @@ export function DataGrid({ dataTable, data, onRowTogglesCallback, expandedData, 
                         onCellEditComplete={onCellEditComplete}
                         footer={col.footer}
                         hidden={col.hidden}
-                        bodyStyle={{ ...col.bodyStyle, textAlign: col.align, paddingLeft: '10px' }}
+                        bodyStyle={{ textAlign: col.align, paddingLeft: '10px', ...col.bodyStyle }}
                         footerStyle={{ textAlign: col.align, paddingLeft: '10px' }}
                     />
                 ))}

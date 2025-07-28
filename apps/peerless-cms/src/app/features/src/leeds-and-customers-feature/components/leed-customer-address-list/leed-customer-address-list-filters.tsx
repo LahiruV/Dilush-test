@@ -1,8 +1,14 @@
+import { useDispatch, useSelector } from "react-redux";
+import { Collapse } from "react-bootstrap";
+import { FilterFormGroup } from "@peerless-cms/features-common-components";
 import { resetCustomerAddressStatus, resetEnduserStatus, RootState, setCustomerAddressStatus, setEnduserStatus } from "@peerless-cms/store";
 import { DropDown } from "@peerless/controls";
-import { useDispatch, useSelector } from "react-redux";
 
-export interface LeedCustomerAddressListFiltersProps { }
+export interface LeedCustomerAddressListFiltersProps {
+    isFiltersOpen?: boolean;
+    isClearFilters?: boolean;
+    setIsActiveFilters?: (isActive: boolean) => void;
+}
 
 export function LeedCustomerAddressListFilters(props: LeedCustomerAddressListFiltersProps) {
     const dispatch = useDispatch();
@@ -17,28 +23,29 @@ export function LeedCustomerAddressListFilters(props: LeedCustomerAddressListFil
     }));
 
     const custPopUpSettings = {
-        width: '150px'
+        width: '208px'
     }
 
     return (
-        <div className="sales-history-filter-container">
-            <span className="filter-title">Filters</span>
-            <div className="">
-                <div className='dashboard-filter-header'>Address Status </div>
-                <DropDown id={"filter-customer-endusers-drop"}
-                    className={"filter-combo filter-align-left"}
-                    setValue={(e) => (e == null ? dispatch(resetCustomerAddressStatus(e)) : dispatch(setCustomerAddressStatus(e)))}
-                    value={customerAddressStatus}
-                    datalist={statusList}
-                    textField={"text"}
-                    dataItemKey={"value"}
-                    fillMode={"outline"}
-                    size={"small"}
-                    popupSettings={custPopUpSettings}
-                />
+        <Collapse in={props.isFiltersOpen}>
+            <div>
+                <div style={{ display: "grid", gridTemplateColumns: 'repeat(auto-fill, minmax(320px, 1fr))', padding: '10px' }}>
+                    <FilterFormGroup label="Address Status">
+                        <DropDown id={"filter-customer-endusers-drop"}
+                            className={"filter-combo filter-align-left filter-form-filter"}
+                            setValue={(e) => (e == null ? dispatch(resetCustomerAddressStatus(e)) : dispatch(setCustomerAddressStatus(e)))}
+                            value={customerAddressStatus}
+                            datalist={statusList}
+                            textField={"text"}
+                            dataItemKey={"value"}
+                            fillMode={"outline"}
+                            size={"small"}
+                            popupSettings={custPopUpSettings}
+                        />
+                    </FilterFormGroup>
+                </div>
             </div>
-            {/* <a href='javascript:void(0)' className='clear-filters-link' onClick={clearFilters}>Clear all filters</a> */}
-        </ div>
+        </Collapse>
     );
 
 

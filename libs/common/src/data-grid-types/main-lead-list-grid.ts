@@ -1,7 +1,7 @@
 import { contactId, contactTypeEnum, leadCustomerAreaMap } from "@peerless/utils";
 import { BaseGrid, gridColumn, gridFilter, rowExpansion } from "./base-grid";
 import { ChipWidget, rowOptions, TextWidget } from "@peerless/controls";
-import { getFormattedDateTime, getPiIconName } from "../functions";
+import { getFormattedDateTime, getPiIconName, getDate } from "../functions";
 
 export class MainLeadListGrid extends BaseGrid {
     gridOptionCallback = null;
@@ -61,7 +61,7 @@ export class MainLeadListGrid extends BaseGrid {
                 { field: 'grade', header: 'GRADE', sortable: false, hidden: (this.contactType != contactTypeEnum.customer), style: { width: '80px' }, },
                 { field: 'grade', header: 'GRADE', sortable: false, hidden: (this.contactType != contactTypeEnum.enduser), style: { width: '80px' }, },
                 { field: 'customerCategoryDescription', header: 'CUSTOMER CATEGORY', sortable: false, hidden: (this.contactType != contactTypeEnum.enduser), style: { width: '140px' }, },
-                { field: 'lastActiveDate', header: 'LAST ACTIVITY DATE', body: (rowData: any) => getFormattedDateTime(rowData.endDate), sortable: false, hidden: (this.contactType != contactTypeEnum.customer), style: { width: '125px' }, },
+                { field: 'lastActiveDate', header: 'LAST ACTIVITY DATE', body: (rowData: any) => rowData?.lastActiveDate !== null && getDate(rowData.lastActiveDate).toString() != '1-01-01' ? getFormattedDateTime(rowData.lastActiveDate) : "", sortable: false, hidden: (this.contactType != contactTypeEnum.customer), style: { width: '125px' }, },
                 { field: '', header: '', body: (rowData: any) => rowOptions(columnDropdownOptions, rowData, null, true, this.onRowClick), bodyStyle: { display: 'contents', textAlign: 'right' }, style: { width: '50px' }, }
             ]
         }

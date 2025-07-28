@@ -16,8 +16,8 @@ const DashboardEndUserTransferLogList: React.FC<EndUserTransferLogListProps> = (
   const { ref, inView } = useInView({ triggerOnce: false });
   const { endUserLogStartDate, endUserLogEndDate, searchByDashEndUserLogs, isDashEndUserTransferLogsListFetch, childOriginatorsDashEndUserTransferLogs, isFormSubmit } = useSelector((state: RootState) => state.dashboardEndUserTransferLogs);
   const { loggedUser } = useSelector((state: RootState) => state.header);
-  const [pageState, setPageState] = useState({ first: 1, rows: 20 });
-  const [pageSize, setPageSize] = useState(20);
+  const [pageState, setPageState] = useState({ first: 0, rows: 19 });
+  const [pageSize, setPageSize] = useState(19);
   const [multiSortMeta, setMultiSortMeta] = useState<any[]>([]);
   const [orderBy, setOrderBy] = useState("enduserCode ASC");
   const [tableFilters, setTableFilters] = useState<any>({
@@ -44,7 +44,7 @@ const DashboardEndUserTransferLogList: React.FC<EndUserTransferLogListProps> = (
     endUserTransferLogFilterPara: tableFilters,
   };
 
-  useResetTablePagination(20, setPageState, [endUserLogStartDate, endUserLogEndDate, childOriginatorsDashEndUserTransferLogs]);
+  useResetTablePagination(19, setPageState, [endUserLogStartDate, endUserLogEndDate, childOriginatorsDashEndUserTransferLogs], 0);
 
   const { data: endUserTransferLogsData, error, status, refetch } = GetEndUserTransferLog(payload, isDashEndUserTransferLogsListFetch);
 
@@ -129,6 +129,7 @@ const DashboardEndUserTransferLogList: React.FC<EndUserTransferLogListProps> = (
         cssClasses={'sticky-header'}
         sortMode='multiple'
         heightOffset={heightOffset}
+        isFullDetailPagination={true}
       />
       <div ref={ref} style={{ height: '1px' }} />
     </div>

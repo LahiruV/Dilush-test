@@ -21,6 +21,10 @@ interface SalesEnquiryOutstandingOrdersState {
     outstandingOrdersBackOrderOnly: boolean;
     isFetchingOutstandingOrdersList: boolean;
     isFormSubmit: boolean;
+    isDateDisabledOutStandingOrders: boolean;
+    outstandingOrdersCustOrderNo: string;
+    outstandingOrdersOrderNumber: string;
+    outstandingOrdersProductCode: string;
 }
 
 const initialState: SalesEnquiryOutstandingOrdersState = {
@@ -42,7 +46,11 @@ const initialState: SalesEnquiryOutstandingOrdersState = {
     outstandingOrdersCurrentOrCompleted: {} as DropDownData,
     outstandingOrdersBackOrderOnly: false,
     isFetchingOutstandingOrdersList: false,
-    isFormSubmit: false
+    isFormSubmit: false,
+    isDateDisabledOutStandingOrders: false,
+    outstandingOrdersCustOrderNo: '',
+    outstandingOrdersOrderNumber: '',
+    outstandingOrdersProductCode: ''
 };
 
 export const salesEnquiryOutstandingOrdersSlice = createSlice({
@@ -105,10 +113,22 @@ export const salesEnquiryOutstandingOrdersSlice = createSlice({
         },
         setOutstandingOrdersSubParent: (state, action) => {
             state.outstandingOrdersSubParent = action.payload;
-        }
+        },
+        setIsDateDisabledOutStandingOrders: (state, action) => {
+            state.isDateDisabledOutStandingOrders = action.payload;
+        },
+        setOutstandingOrdersCustOrderNo: (state, action) => {
+            state.outstandingOrdersCustOrderNo = action.payload;
+        },
+        setOutstandingOrdersOrderNumber: (state, action) => {
+            state.outstandingOrdersOrderNumber = action.payload;
+        },
+        setOutstandingOrdersProductCode: (state, action) => {
+            state.outstandingOrdersProductCode = action.payload;
+        },
     }
 });
 
-export const { setOutstandingOrdersCustomer, setOutstandingOrdersCustomerGroup, setOutstandingOrdersSubGroup, setOutstandingOrdersPriceGroup, setOutstandingOrdersParent, setOutstandingOrdersMarket, setOutstandingOrdersRep, setOutstandingOrdersExDc, setOutstandingOrdersCatalogueType, setOutstandingOrdersOrderType, setOutstandingOrdersStates, setOutstandingOrdersFromDate, setOutstandingOrdersToDate, setOutstandingOrdersRadio, setOutstandingOrdersCurrentOrCompleted, setOutstandingOrdersBackOrderOnly, setIsFetchingOutstandingOrdersList, setTriggerOutstandingOrdersFiltersFormSubmit, setOutstandingOrdersSubParent } = salesEnquiryOutstandingOrdersSlice.actions;
+export const { setOutstandingOrdersCustomer, setOutstandingOrdersCustomerGroup, setOutstandingOrdersSubGroup, setOutstandingOrdersPriceGroup, setOutstandingOrdersParent, setOutstandingOrdersMarket, setOutstandingOrdersRep, setOutstandingOrdersExDc, setOutstandingOrdersCatalogueType, setOutstandingOrdersOrderType, setOutstandingOrdersStates, setOutstandingOrdersFromDate, setOutstandingOrdersToDate, setOutstandingOrdersRadio, setOutstandingOrdersCurrentOrCompleted, setOutstandingOrdersBackOrderOnly, setIsFetchingOutstandingOrdersList, setTriggerOutstandingOrdersFiltersFormSubmit, setOutstandingOrdersSubParent, setIsDateDisabledOutStandingOrders, setOutstandingOrdersCustOrderNo, setOutstandingOrdersOrderNumber, setOutstandingOrdersProductCode } = salesEnquiryOutstandingOrdersSlice.actions;
 
 export default salesEnquiryOutstandingOrdersSlice.reducer;

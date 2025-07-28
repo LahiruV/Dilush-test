@@ -1,5 +1,5 @@
-import { BarChartV2, ListTable } from "@peerless-cms/features-common-components";
-import { RootState, setDebtorChartData, setIsSalesHistoryFetch, setSalesHistoryChartData, setSetDebtorTotalSales, setSetSalesHistoryTotalSales } from "@peerless-cms/store";
+import { BarChartV2, HeaderFilterContainer, ListTable } from "@peerless-cms/features-common-components";
+import { RootState, setDebtorChartData, setIsSalesHistoryFetch, setSalesHistoryChartData, setSetDebtorTotalSales, setSetSalesHistoryTotalSales, setTriggerCustomerSalesHistoryFiltersFormSubmit } from "@peerless-cms/store";
 import { useDispatch, useSelector } from "react-redux";
 import './customer-sales-history.css';
 import { format } from "date-fns";
@@ -7,12 +7,13 @@ import SectionMainBase from "../../../lib/section-main-base";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import * as fa from '@fortawesome/free-solid-svg-icons';
 import { getCustomerOutstandingDeliveryList, useDebtorData, useDeliveryData, useSalesData } from "@peerless/queries";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import { DataGrid } from "@peerless/controls";
 import { SalesHistoryGrid } from "@peerless/common";
 import { RenderStatusContentTable } from "@peerless/models";
 import { contactTypeName } from "@peerless/utils";
+import { CustomerSalesHistoryFilters } from "./customer-sales-history-filters";
 
 export interface CustomerSalesHistoryProps { }
 
@@ -20,16 +21,11 @@ export function CustomerSalesHistory(props: CustomerSalesHistoryProps) {
     const { ref, inView } = useInView({ triggerOnce: false });
     const dispatch = useDispatch();
     let salesHistoryTotal: any = 0;
-    const { selectedLeedOrCustomer, outstandingOrderType, salesHistoryBy, isSalesHistoryFetch, contactType, cusSalesOrderType, cusCurrentOrCompleted, cusCatalogueType } = useSelector((state: RootState) => ({
+    const { selectedLeedOrCustomer, contactType } = useSelector((state: RootState) => ({
         selectedLeedOrCustomer: state.leedsAndCustomers.selectedLeedOrCustomer,
-        outstandingOrderType: state.customerPageFilters.outstandingOrderType,
-        salesHistoryBy: state.customerPageFilters.salesHistoryBy,
-        isSalesHistoryFetch: state.customerPageFilters.isSalesHistoryFetch,
         contactType: state.leedsAndCustomers.selectedContactType,
-        cusSalesOrderType: state.customerPageFilters.cusSalesOrderType,
-        cusCurrentOrCompleted: state.customerPageFilters.cusCurrentOrCompleted,
-        cusCatalogueType: state.customerPageFilters.cusCatalogueType,
     }));
+    const { outstandingOrderType, salesHistoryBy, isSalesHistoryFetch, cusSalesOrderType, cusCurrentOrCompleted, cusCatalogueType } = useSelector((state: RootState) => (state.customerPageFilters));
 
     const chartSalesAxis: any = {
         yLabel: 'Sales',
@@ -167,18 +163,29 @@ export function CustomerSalesHistory(props: CustomerSalesHistoryProps) {
 
     let salesHistoryGrid = new SalesHistoryGrid();
 
+    const handleExternalSubmit = () => {
+        dispatch(setTriggerCustomerSalesHistoryFiltersFormSubmit(true));
+    };
+
     const header = (
-        <div className="lead-customer-detail-section-header-container margin-bottom-20">
-            <span className="center-align section-title">
-                {contactTypeName[contactType]}
-                <FontAwesomeIcon icon={fa.faChevronRight} className="breadcrumb-separator" />
-                <span className="center-align section-title"><FontAwesomeIcon className="header-icon" icon={fa.faChartLine} size='1x' />
-                    Sales History
-                </span>
-                <span className="font-light">&nbsp; | &nbsp;</span>
-                <span className="center-align section-title font-light">{`(${selectedLeedOrCustomer.name})`}</span>
-            </span>
-        </div>
+        <HeaderFilterContainer title="Sales History" icon={fa.faChartLine} renderFilters={({ isFiltersOpen, isClearFilters, setIsActiveFilters }) => (
+            <CustomerSalesHistoryFilters isFiltersOpen={isFiltersOpen} isClearFilters={isClearFilters} setIsActiveFilters={setIsActiveFilters} />
+        )}
+            onFilterClick={handleExternalSubmit}
+            isFetching={isSalesHistoryFetch}
+            titleInlineBeforeElements={
+                <>
+                    {contactTypeName[contactType]}
+                    <FontAwesomeIcon icon={fa.faChevronRight} className="breadcrumb-separator" />
+                </>
+            }
+            titleInlineAfterElements={
+                <>
+                    <span className="font-light">&nbsp; | &nbsp;</span>
+                    <span className="section-title font-light sub-heading-clipped">{`(${selectedLeedOrCustomer.name})`}</span>
+                </>
+            }
+        />
     );
 
     const main = (

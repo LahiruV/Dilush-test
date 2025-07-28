@@ -26,12 +26,12 @@ export function AdministratorSettings() {
     setIsLoading(true);
     saveResponseTimeMutate(payload, {
       onSuccess: () => {
-        toast.success('Saved Successfully');
+        toast.success(' Response Time saved successfully');
         setIsLoading(false);
       },
       onError: (error) => {
         console.error(error.message);
-        toast.error('Save Not Successfully');
+        toast.error('Response Time failed to save');
         setIsLoading(false);
       }
     }

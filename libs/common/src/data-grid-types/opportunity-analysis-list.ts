@@ -28,7 +28,7 @@ export class OpportunityAnalysisDistributer extends BaseGrid {
                 { field: 'probability', header: '%', sortable: true, align: 'right', body: (rowData: any) => rowData?.probability.toFixed(2), filter: true, filterPlaceholder: "Filter By Probability", filterMatchMode: 'contains', style: { width: '80px' } },
                 { field: 'amount', header: 'Amount', sortable: true, align: 'right', body: (rowData: any) => rowData?.amount.toFixed(2), filter: true, filterPlaceholder: "Filter By Amount", filterMatchMode: 'contains', style: { width: '80px' } },
                 { field: 'units', header: 'Units', sortable: true, align: 'right', body: (rowData: any) => rowData?.units.toFixed(2), filter: true, filterPlaceholder: "Filter By Units", filterMatchMode: 'contains', style: { width: '80px' } },
-                { field: 'tonnes', header: 'Tons', sortable: true, align: 'right', body: (rowData: any) => rowData?.tonnes.toFixed(2), filter: true, filterPlaceholder: "Filter By Tons", filterMatchMode: 'contains', style: { width: '80px' } },
+                { field: 'tonnes', header: 'Tonnes', sortable: true, align: 'right', body: (rowData: any) => rowData?.tonnes.toFixed(2), filter: true, filterPlaceholder: "Filter By Tons", filterMatchMode: 'contains', style: { width: '80px' } },
                 {
                     field: 'leadStage', header: 'Lead Stage', style: { width: '120px' }, sortable: true, filter: true, filterPlaceholder: "Filter By Stage", filterMatchMode: 'contains',
                     body: (rowData: any) => ChipWidget({

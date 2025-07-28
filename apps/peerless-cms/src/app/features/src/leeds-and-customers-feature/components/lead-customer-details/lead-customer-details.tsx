@@ -261,7 +261,7 @@ export function LeedsCustomersDetails(props: LeedsCustomersDetailProps) {
           if (isNewLead) {
             dispatch(setIsAddLeadModalOpen(false));
             props.refetchList();
-            toast.success('Details Saved Successfully');
+            toast.success('Lead saved successfully');
           }
           else {
             dispatch(updateDetails(true));
@@ -286,23 +286,23 @@ export function LeedsCustomersDetails(props: LeedsCustomersDetailProps) {
               description: data.description
             }
             dispatch(setSelectedLeedOrCustomer(updatedLead));
-            toast.success('Details Successfully Updated');
+            toast.success('Lead successfully updated');
           }
 
         }
         else {
           if (isNewLead) {
-            toast.error('Error Occurred While Updating Lead');
+            toast.error('Error occurred while saving lead');
           }
           else {
-            toast.error('Error Occurred While Updating Lead');
+            toast.error('Error occurred while updating lead');
           }
         }
       },
       onError: (error) => {
         setIsSaving(false);
         console.error(error.message);
-        toast.error('Failed to update lead');
+        toast.error(error.message || 'An error occurred while processing your request');
       }
     });
   };

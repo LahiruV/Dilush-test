@@ -17,6 +17,7 @@ import { Dialog } from "primereact/dialog";
 import ToastMessages from "libs/controls/src/toasts-message/messages";
 import { RenderStatusContentTable } from "@peerless/models";
 import { ConfirmDialog } from "primereact/confirmdialog";
+import { toast } from "sonner";
 
 export interface LeedCustomerDocumentsProps { }
 
@@ -70,10 +71,12 @@ export function LeedCustomerDocuments(props: LeedCustomerDocumentsProps) {
     setIsProcessing(false);
     refetch();
     if (response) {
-      messageMgr.showMessage('success', 'Success: ', 'Document deleted');
+      // messageMgr.showMessage('success', 'Success: ', 'Document deleted');
+      toast.success('Document deleted successfully');
     }
     else {
-      messageMgr.showMessage('error', 'Error: ', 'Error occurred while deleting the document');
+      // messageMgr.showMessage('error', 'Error: ', 'Error occurred while deleting the document');
+      toast.error('Error occurred while deleting the document');
     }
   }
 
@@ -161,7 +164,8 @@ export function LeedCustomerDocuments(props: LeedCustomerDocumentsProps) {
 
         // Upload file and wait for completion
         setMessage(`Uploading ${file.name}...`);
-        messageMgr.showMessage('success', '', `Uploading ${file.name}...`);
+        // messageMgr.showMessage('success', '', `Uploading ${file.name}...`);
+        toast.success(`Uploading ${file.name}...`);
         await mutationSaveFile.mutateAsync(filePayload);
 
         uploadedFiles.push(file.name); // Add to successful uploads
@@ -169,9 +173,11 @@ export function LeedCustomerDocuments(props: LeedCustomerDocumentsProps) {
 
       // After all uploads
       refetch();
-      messageMgr.showMessage('success', 'Success: ', 'Files uploaded');
+      // messageMgr.showMessage('success', 'Success: ', 'Files uploaded');
+      toast.success('Files uploaded successfully');
       setMessage(`${uploadedFiles.join(', ')} ${uploadedFiles.length > 1 ? 'are' : 'is'} successfully uploaded.`);
     } catch (error) {
+      toast.error('Error uploading files');
       console.error('Error uploading files');
     }
   };

@@ -28,11 +28,11 @@ export function AdministratorRepProxy() {
     setIsLoading(true);
     insertRepProxyMutate(payload, {
       onSuccess: () => {
-        toast.success('Save Successfully');
+        toast.success('Rep Proxy saved successfully');
         setIsLoading(false);
       },
       onError: (error) => {
-        toast.error('Save Not Successfully');
+        toast.error('Rep Proxy failed to save');
         setIsLoading(false);
         console.error(error.message);
       }

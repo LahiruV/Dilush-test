@@ -13,7 +13,7 @@ const OpportunityConversionBottomList: React.FC = () => {
   const dispatch = useDispatch();
   const { loggedUser } = useSelector((state: RootState) => state.header);
   const { opportunityConversionStartDate, opportunityConversionEndDate, opportunityConversionState, opportunityConversionMarket, isLeaderCustomerOpportunityFetch, selectedOriginatorOpportunityConversion, childOriginatorsOpportunityConversion, isFormSubmit } = useSelector((state: RootState) => state.dashBoarOpportunityConversion);
-  const [pageState, setPageState] = useState({ first: 1, rows: 5 });
+  const [pageState, setPageState] = useState({ first: 0, rows: 5 });
   const [pageSize, setPageSize] = useState(5);
   const [multiSortMeta, setMultiSortMeta] = useState<any[]>([]);
   const [orderBy, setOrderBy] = useState("originator ASC");
@@ -32,7 +32,7 @@ const OpportunityConversionBottomList: React.FC = () => {
     rowCount: pageState.rows
   };
 
-  useResetTablePagination(5, setPageState, [opportunityConversionStartDate, opportunityConversionEndDate, opportunityConversionState, opportunityConversionMarket, selectedOriginatorOpportunityConversion]);
+  useResetTablePagination(5, setPageState, [opportunityConversionStartDate, opportunityConversionEndDate, opportunityConversionState, opportunityConversionMarket, selectedOriginatorOpportunityConversion], 0);
 
   const { data: LeaderCustomerOpportunityData, error, status, refetch } = GetLeaderCustomerOpportunity(payload, isLeaderCustomerOpportunityFetch);
 
@@ -105,6 +105,7 @@ const OpportunityConversionBottomList: React.FC = () => {
         isScrollable={true}
         isAutoScrollHeight={true}
         cssClasses={'sticky-header'}
+        isFullDetailPagination={true}
       />
       <div ref={ref} style={{ height: '1px' }} />
     </div>

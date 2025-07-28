@@ -24,7 +24,9 @@ const activityStatusList = [
 export interface DashBoardActivityFilterProps {
     isFiltersOpen?: boolean;
     isClearFilters?: boolean;
+    isExporting?: boolean;
     setIsActiveFilters?: (isActive: boolean) => void;
+    setIsExporting?: (isExporting: boolean) => void;
 }
 
 /**
@@ -82,7 +84,6 @@ export function DashBoardActivityFilter(props: DashBoardActivityFilterProps) {
     const { sStartDate, sEndDate, activityStatus, repActivityList, repActivity, searchByActivity, isFetchActivityAnalysisList, isFormSubmit } = useSelector((state: RootState) => state.dashboardActivityAnalysis);
     const { loggedUser, isManagerMode, selectedOriginator } = useSelector((state: RootState) => state.header);
     const modifiedList = [{ name: "Select All", userName: "All" }, { ...loggedUser }, ...repActivityList];
-    const [isExporting, setIsExporting] = useState(false);
     const { responseData: childOriginatorsListData } = GetChildOriginatorsList({
         originator: loggedUser.userName,
         childOriginators: `(originator = '${loggedUser.userName}')`,
@@ -105,7 +106,7 @@ export function DashBoardActivityFilter(props: DashBoardActivityFilterProps) {
         ignorePagination: true,
     };
 
-    GetAllActivitiesByTypeExcel({ ...payload, rowCount: 20, startIndex: 1 }, isExporting, setIsExporting, true);
+    GetAllActivitiesByTypeExcel({ ...payload, rowCount: 999999, startIndex: 0 }, props.isExporting ?? false, props.setIsExporting, true);
 
     const onFilterClick = async () => {
         dispatch(setSelectedActivityAnalysis({}));

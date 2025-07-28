@@ -28,12 +28,12 @@ export function AdministratorRepMarket() {
     setIsLoading(true);
     insertRepMarketMutate(payload, {
       onSuccess: () => {
-        toast.success('Save Successfully');
+        toast.success('Rep Market saved successfully');
         setIsLoading(false);
       },
       onError: (error) => {
         console.error(error.message);
-        toast.error('Save Not Successfully');
+        toast.error('Rep Market failed to save');
         setIsLoading(false);
       }
     }

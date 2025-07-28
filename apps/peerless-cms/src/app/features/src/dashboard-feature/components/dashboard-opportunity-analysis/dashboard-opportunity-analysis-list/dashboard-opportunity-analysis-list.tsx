@@ -13,8 +13,8 @@ const OpportunityAnalysisList: React.FC = () => {
   const { ref, inView } = useInView({ triggerOnce: false });
   const { loggedUser } = useSelector((state: RootState) => state.header);
   const { opportunityStage, selectedOpportunityAnalysis, isDashboardOpportunityAnalysisFetch, selectedOriginatorOpportunityAnalysis, isFormSubmit } = useSelector((state: RootState) => state.dashboardOpportunityAnalysis);
-  const [pageState, setPageState] = useState({ first: 1, rows: 11 });
-  const [pageSize, setPageSize] = useState(11);
+  const [pageState, setPageState] = useState({ first: 0, rows: 10 });
+  const [pageSize, setPageSize] = useState(10);
   const [multiSortMeta, setMultiSortMeta] = useState<any[]>([]);
   const [orderBy, setOrderBy] = useState("closeDate ASC");
   const [tableFilters, setTableFilters] = useState<any>();
@@ -32,7 +32,7 @@ const OpportunityAnalysisList: React.FC = () => {
     rowCount: pageState.rows,
     opportunityAnalysisFilterPara: tableFilters,
   };
-  useResetTablePagination(11, setPageState, [opportunityStage.value, selectedOriginatorOpportunityAnalysis.userName]);
+  useResetTablePagination(10, setPageState, [opportunityStage.value, selectedOriginatorOpportunityAnalysis.userName], 0);
   const { data: opportunityAnalysisData, error, status, refetch } = GetAllOpportunities(payload, opportunityStage.value, isDashboardOpportunityAnalysisFetch);
 
   useEffect(() => {
@@ -134,7 +134,6 @@ const OpportunityAnalysisList: React.FC = () => {
       <DataGrid
         dataTable={opportunityAnalysisTable}
         data={opportunityAnalysisData}
-        // scrollHeight={'634px'}
         selectedRow={selectedOpportunityAnalysis}
         setSelectedRow={handleRowClick}
         selectionMode='single'
@@ -152,6 +151,7 @@ const OpportunityAnalysisList: React.FC = () => {
         cssClasses={'sticky-header'}
         isSelectionColumnShow={false}
         width='1000px'
+        isFullDetailPagination={true}
       />
       <div ref={ref} style={{ height: '1px' }} />
     </div>

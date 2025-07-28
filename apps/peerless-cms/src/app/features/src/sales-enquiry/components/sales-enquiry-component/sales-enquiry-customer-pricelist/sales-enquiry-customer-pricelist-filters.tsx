@@ -137,7 +137,7 @@ export function SalesEnquiryCustomerPriceListFilter(props: SalesEnquiryCustomerP
     isClearFilters: props.isClearFilters,
     clearFilters,
     setIsActiveFilters: props.setIsActiveFilters,
-    filters: [customerPriceListMainDrop, customerPriceListMainDropType, customerPriceListCustomerCode, customerPriceListEffectiveDate, customerPriceListAsAtDate, customerPriceListEndDate]
+    filters: [customerPriceListMainDropType, customerPriceListCustomerCode, customerPriceListEffectiveDate, customerPriceListAsAtDate]
   });
 
   return (
@@ -146,7 +146,7 @@ export function SalesEnquiryCustomerPriceListFilter(props: SalesEnquiryCustomerP
         <div className="sales-enquiry-cus-tra filters-container">
           <FilterForm onSubmit={onFilterClick} ref={formComponentRef}>
             <div>
-              <FilterFormGroup label='Type' extraGap>
+              {/* <FilterFormGroup label='Type' extraGap>
                 <DropDown id={"sales-enquiry-customer-main-drop"}
                   // defaultValue={mainDefault}
                   className={"administrator-filter filter-form-filter"}
@@ -159,7 +159,7 @@ export function SalesEnquiryCustomerPriceListFilter(props: SalesEnquiryCustomerP
                   fillMode={"outline"}
                   size={"small"}
                   popupSettings={popUpSettings} />
-              </FilterFormGroup>
+              </FilterFormGroup> */}
 
               <FilterFormGroup label={customerPriceListMainDrop?.value || "Code"} extraGap>
                 <MultiColumnComboBoxWidget
@@ -188,11 +188,13 @@ export function SalesEnquiryCustomerPriceListFilter(props: SalesEnquiryCustomerP
                   isFilterable={true}
                   textField={"value"}
                   valueField={"text"}
-                  isDisabled={!customerPricelistCustomers}
+                  // isDisabled={!customerPricelistCustomers}
                   columns={[{ field: 'value', header: 'Code', width: '90px' }, { field: 'text', header: 'Name', width: '300px' }]}
                 />
               </FilterFormGroup>
+            </div>
 
+            <div>
               <FilterFormGroup label='Effective Date'>
                 <MultiColumnComboBoxWidget
                   id={"sales-enquiry-customer-effective-date"}
@@ -217,7 +219,7 @@ export function SalesEnquiryCustomerPriceListFilter(props: SalesEnquiryCustomerP
                   setValue={(e) => (dispatch(setCustomerPriceListAsAtDate(e)))}
                   value={customerPriceListAsAtDate} />
               </FilterFormGroup>
-              <FilterFormGroup label='End Date'>
+              {/* <FilterFormGroup label='End Date'>
                 <DatePickerWidget
                   id={"sales-enquiry-customer-as-at-date"}
                   className={"dashboard-filter filter-form-filter"}
@@ -225,7 +227,7 @@ export function SalesEnquiryCustomerPriceListFilter(props: SalesEnquiryCustomerP
                   setValue={(e) => (dispatch(setCustomerPriceListEndDate(e)))}
                   value={customerPriceListEndDate}
                   isDisabled />
-              </FilterFormGroup>
+              </FilterFormGroup> */}
             </div>
             <FilterNonButton type='submit' />
           </FilterForm>

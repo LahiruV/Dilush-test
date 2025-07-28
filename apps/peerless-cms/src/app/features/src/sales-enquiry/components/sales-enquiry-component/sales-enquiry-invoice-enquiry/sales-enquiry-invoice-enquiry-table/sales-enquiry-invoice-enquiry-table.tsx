@@ -44,8 +44,8 @@ const SalesEnquiryInvoiceEnquiryListTable = ({ heightOffset }: SalesEnquiryInvoi
         toDate: invoiceToDate,
         // productGroup: "",
         warehouse: invoiceProductGroup?.value,
-        invoiceNo: parseInt(invoiceInvoiceNumber),
-        batchNo: parseInt(invoiceBatchNumber),
+        invoiceNo: (invoiceInvoiceNumber === '') ? 0 : parseInt(invoiceInvoiceNumber),
+        batchNo: (invoiceBatchNumber === '') ? 0 : parseInt(invoiceBatchNumber),
         invoiceCreditNotesStatus: invoiceRadio,
         parent: invoiceParent?.value,
         // custGroup: invoiceCustomerGroup?.value,
@@ -55,7 +55,7 @@ const SalesEnquiryInvoiceEnquiryListTable = ({ heightOffset }: SalesEnquiryInvoi
         subParentGroup: invoiceBrand?.value,
         orderBy: "ivce_no asc",
         additionalParams: "",
-        // repCode: invoiceRep?.value,
+        repCode: invoiceRep?.value,
         loggedUserRepCode: loggedUser?.repCode,
         childReps: selectedOriginator?.childReps,
         // childReps: '',
@@ -135,7 +135,7 @@ const SalesEnquiryInvoiceEnquiryListTable = ({ heightOffset }: SalesEnquiryInvoi
         invoiceMarket?.value,
         invoiceBrand?.value,
         invoiceRep?.value,
-    ]);
+    ], 0);
 
     useEffect(() => {
         if (isFetchingInvoiceEnquiryList) {
@@ -186,6 +186,7 @@ const SalesEnquiryInvoiceEnquiryListTable = ({ heightOffset }: SalesEnquiryInvoi
                 cssClasses={'sticky-header'}
                 width={'1240px'}
                 heightOffset={heightOffset}
+                isFullDetailPagination={true}
             />
             <div ref={ref} style={{ height: '1px' }} />
         </div>

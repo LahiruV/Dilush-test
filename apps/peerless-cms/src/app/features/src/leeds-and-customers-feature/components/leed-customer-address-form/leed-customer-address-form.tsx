@@ -128,8 +128,8 @@ export function LeedCustomerAddressForm(props: LeedCustomerAddressFormProps) {
         phone: (addressMode === pageModeEnum.New ? '' : (selectedAddress.telephone ? selectedAddress.telephone.trim() : '')),
         mobile: (addressMode === pageModeEnum.New ? '' : (selectedAddress.mobile ? selectedAddress.mobile : '')),
         fax: (addressMode === pageModeEnum.New ? '' : (selectedAddress.fax ? selectedAddress.fax.trim() : '')),
-        longitude: (addressMode === pageModeEnum.New ? '' : contactType == contactTypeEnum.organisation ? (selectedAddress.geoLon ? selectedAddress.geoLon : '') : (selectedAddress.longitude ? selectedAddress.longitude : '')),
-        latitude: (addressMode === pageModeEnum.New ? '' : contactType == contactTypeEnum.organisation ? (selectedAddress.geoLat ? selectedAddress.geoLat : '') : (selectedAddress.latitude ? selectedAddress.latitude : '')),
+        longitude: (addressMode === pageModeEnum.New ? '' : contactType == contactTypeEnum.organisation ? (selectedAddress.geoLon ? String(selectedAddress.geoLon) : '') : (selectedAddress.longitude ? String(selectedAddress.longitude) : '')),
+        latitude: (addressMode === pageModeEnum.New ? '' : contactType == contactTypeEnum.organisation ? (selectedAddress.geoLat ? String(selectedAddress.geoLat) : '') : (selectedAddress.latitude ? String(selectedAddress.latitude) : '')),
         dpid: (addressMode === pageModeEnum.New ? '' : (selectedAddress.dpid ? selectedAddress.dpid : '')),
         isPrimary: (addressMode === pageModeEnum.New ? false : (selectedAddress.isPrimaryAddress == 'Y' ? true : false)),
         geoGoogle: (addressMode === pageModeEnum.New ? '' : (selectedAddress.geoGoogle ? selectedAddress.geoGoogle : '')),
@@ -214,14 +214,14 @@ export function LeedCustomerAddressForm(props: LeedCustomerAddressFormProps) {
             dispatch(setSelectedAddress(updatedAddress));
           }
           dispatch(setAddressPageMode(pageModeEnum.List));
-          toast.success(addressMode === pageModeEnum.New ? 'Address Saved Successfully' : 'Address Updated Successfully')
+          toast.success(addressMode === pageModeEnum.New ? 'Address saved successfully' : 'Address updated successfully')
           navigate(`${sectionPathMap[contactType]}${contactType == contactTypeEnum.organisation ? selectedOrganisation?.[contactId[contactType]] : selectedLeedOrCustomer?.[contactId[contactType]]}/addresses`);
         }
       },
       onError: (error) => {
         setIsProcessing(false);
         console.error(error.message);
-        toast.error(addressMode === pageModeEnum.New ? 'Address Save Failed' : 'Address Update Failed')
+        toast.error(addressMode === pageModeEnum.New ? 'Address save failed' : 'Address update failed')
       }
     });
   };

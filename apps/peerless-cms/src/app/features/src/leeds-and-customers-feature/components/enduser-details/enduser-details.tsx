@@ -369,7 +369,7 @@ export function EnduserDetails(props: EnduserDetailProps) {
     mutation.mutate(payload, {
       onSuccess: (response: any) => {
         if (response.status) {
-          toast.success('Successfully Saved');
+          toast.success('Enduser saved successfully');
           //update the state with modified details
 
           if (props.returnOnSuccess != null && props.returnOnSuccess == true) {
@@ -403,7 +403,7 @@ export function EnduserDetails(props: EnduserDetailProps) {
             }
             else {
               dispatch(setIsAddEnduserModalOpen(false));
-              toast.success('Enduser Saved');
+              toast.success('Enduser saved successfully');
               props.refetchList();
             }
           }
@@ -413,7 +413,7 @@ export function EnduserDetails(props: EnduserDetailProps) {
       onError: (error: any) => {
         setIsSaving(false);
         console.error(error.message);
-        toast.error('Error occured');
+        toast.error('Error occurred while saving enduser');
       }
     });
 
@@ -438,7 +438,7 @@ export function EnduserDetails(props: EnduserDetailProps) {
       {readonly ? (
         <button className="header-btn-update" onClick={() => dispatch(updateDetails(false))}><FontAwesomeIcon className="btn-icon" icon={fa.faPenAlt} size='1x' />Update Details</button>
       ) : (
-        <Button className='header-btn-cancel' variant='outline-dark' onClick={() => dispatch(updateDetails(true))}>
+        <Button className='header-btn-cancel' onClick={() => dispatch(updateDetails(true))}>
           Cancel
         </Button>
       )}

@@ -231,7 +231,7 @@ const CallCyclePlannerDay = ({ callCycleDstributorList, setLabelTexts, setMessag
                             Due On
                         </span>
                         <div>
-                            <DatePickerWidget id="due-on-one" size="small" fillMode="solid" value={dueOnDayOne} setValue={(e) => setDueOnDayOne(e)} />
+                            <DatePickerWidget id="due-on-one" format='dd/MM/yyyy' size="small" fillMode="solid" value={dueOnDayOne} setValue={(e) => setDueOnDayOne(e)} />
                         </div>
                     </div >
                     <div className="flex pad-top-5">
@@ -260,7 +260,7 @@ const CallCyclePlannerDay = ({ callCycleDstributorList, setLabelTexts, setMessag
                             Due On
                         </span>
                         <div>
-                            <DatePickerWidget id="due-on-two" size="small" fillMode="solid" value={dueOnDayTwo} setValue={(e) => setDueOnDayTwo(e)} />
+                            <DatePickerWidget id="due-on-two" format='dd/MM/yyyy' size="small" fillMode="solid" value={dueOnDayTwo} setValue={(e) => setDueOnDayTwo(e)} />
                         </div>
                     </div >
                     <div className="flex pad-top-5">
@@ -289,7 +289,7 @@ const CallCyclePlannerDay = ({ callCycleDstributorList, setLabelTexts, setMessag
                             Due On
                         </span>
                         <div>
-                            <DatePickerWidget id="due-on-three" size="small" fillMode="solid" value={dueOnDayThree} setValue={(e) => setDueOnDayThree(e)} />
+                            <DatePickerWidget id="due-on-three" format='dd/MM/yyyy' size="small" fillMode="solid" value={dueOnDayThree} setValue={(e) => setDueOnDayThree(e)} />
                         </div>
                     </div >
                     <div className="flex pad-top-5">
@@ -318,7 +318,7 @@ const CallCyclePlannerDay = ({ callCycleDstributorList, setLabelTexts, setMessag
                             Due On
                         </span>
                         <div>
-                            <DatePickerWidget id="due-on-four" size="small" fillMode="solid" value={dueOnDayFour} setValue={(e) => setDueOnDayFour(e)} />
+                            <DatePickerWidget id="due-on-four" format='dd/MM/yyyy' size="small" fillMode="solid" value={dueOnDayFour} setValue={(e) => setDueOnDayFour(e)} />
                         </div>
                     </div >
                     <div className="flex pad-top-5">
@@ -347,7 +347,7 @@ const CallCyclePlannerDay = ({ callCycleDstributorList, setLabelTexts, setMessag
                             Due On
                         </span>
                         <div>
-                            <DatePickerWidget id="due-on-five" size="small" fillMode="solid" value={dueOnDayFive} setValue={(e) => setDueOnDayFive(e)} />
+                            <DatePickerWidget id="due-on-five" format='dd/MM/yyyy' size="small" fillMode="solid" value={dueOnDayFive} setValue={(e) => setDueOnDayFive(e)} />
                         </div>
                     </div >
                     <div className="flex pad-top-5">

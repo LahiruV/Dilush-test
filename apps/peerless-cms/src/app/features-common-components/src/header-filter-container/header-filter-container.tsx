@@ -1,4 +1,4 @@
-import { Dispatch, ReactNode, SetStateAction, useEffect, useState } from "react";
+import { Dispatch, ReactNode, SetStateAction, useEffect, useState, CSSProperties } from "react";
 import {
   type IconDefinition,
   faFilter,
@@ -25,6 +25,10 @@ interface HeaderFilterContainerProps {
   setIsFilterExpanded?: Dispatch<SetStateAction<boolean>>;
   isFiltersOpened?: boolean;
   clearBtnText?: string;
+  headerStyle?: CSSProperties;
+  titleInlineBeforeElements?: ReactNode;
+  titleInlineAfterElements?: ReactNode;
+  hideClearFilters?: boolean;
 }
 
 /**
@@ -39,6 +43,11 @@ interface HeaderFilterContainerProps {
  * @param {ReactNode=} props.bottomBlockElements - Block elements to be added after filters
  * @param {Boolean=} props.isFiltersOpened - Default filter open state
  * @param {string=} props.clearBtnText - Optional text for clear button
+ * @param {Function=} props.setIsFilterExpanded - Function to set filter expanded state
+ * @param {CSSProperties=} props.headerStyle - Optional styles for the header
+ * @param {ReactNode=} props.titleInlineBeforeElements - Elements to be added before title
+ * @param {ReactNode=} props.titleInlineAfterElements - Elements to be added after title
+ * @param {boolean=} props.hideClearFilters - Flag to hide clear filters button
  * @returns {JSX.Element} Header filter container
  * 
  * @example
@@ -69,7 +78,11 @@ export const HeaderFilterContainer = ({
   bottomBlockElements,
   setIsFilterExpanded,
   isFiltersOpened = true,
-  clearBtnText
+  clearBtnText,
+  headerStyle = {},
+  titleInlineBeforeElements,
+  titleInlineAfterElements,
+  hideClearFilters = false,
 }: HeaderFilterContainerProps) => {
   const [openFilters, setOpenFilters] = useState(isFiltersOpened);
   const [isClearFilters, setIsClearFilters] = useState(false);
@@ -92,7 +105,7 @@ export const HeaderFilterContainer = ({
   return (
     <>
       <div className="header-filter-container" style={{ backgroundColor: "#fff" }}>
-        <ContainerHeader icon={icon} name={title}>
+        <ContainerHeader icon={icon} name={title} style={{ ...headerStyle }} titleInlineBeforeElements={titleInlineBeforeElements} titleInlineAfterElements={titleInlineAfterElements}>
           <ButtonWidgetCollapse
             id={`${title.toLowerCase().replace(/\s+/g, "-")}-collapse`}
             state={openFilters}
@@ -118,13 +131,15 @@ export const HeaderFilterContainer = ({
             />
           )}
 
-          <ButtonWidget
-            id="clear-button"
-            name={clearBtnText || "Clear Filters"}
-            type="button"
-            Function={handleClearFilters}
-            classNames="filter-clear-button"
-          />
+          {!hideClearFilters && (
+            <ButtonWidget
+              id="clear-button"
+              name={clearBtnText || "Clear Filters"}
+              type="button"
+              Function={handleClearFilters}
+              classNames="filter-clear-button"
+            />
+          )}
 
           {inlineElements}
         </ContainerHeader>

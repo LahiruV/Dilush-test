@@ -1,12 +1,19 @@
-import { RootState, setAsAtDate, setCusPriceEffectiveDate, setLoadData, setIsFetchingLeadCustomerPriceList, setCusPriceRepGroup } from "@peerless-cms/store";
-import { dropDownDataConverter, getDate, getDateTime } from "@peerless/common";
-import { FormInput, MultiColumnComboBoxWidget } from "@peerless/controls";
-import { DropDownData, GetCustomerEffectiveDatesParameters, } from "@peerless/models";
-import { GetCustomerEffectiveDates, GetReps, } from "@peerless/queries";
 import { useEffect, useState, useRef } from "react";
 import { useDispatch, useSelector } from "react-redux";
+import { Collapse } from "react-bootstrap";
+import { FilterForm, FilterFormGroup } from "@peerless-cms/features-common-components";
+import { RootState, setAsAtDate, setCusPriceEffectiveDate, setLoadData, setIsFetchingLeadCustomerPriceList, setCusPriceRepGroup, setTriggerCustomerPriceFiltersFormSubmit } from "@peerless-cms/store";
+import { dropDownDataConverter, getDate, getDateTime } from "@peerless/common";
+import { DropDown, FilterNonButton, FormInput, MultiColumnComboBoxWidget } from "@peerless/controls";
+import { DropDownData, GetCustomerEffectiveDatesParameters, } from "@peerless/models";
+import { GetCustomerEffectiveDates, GetReps, } from "@peerless/queries";
+import { useFilterForm } from '@peerless-cms/features'
 
-export interface CustomerPriceFiltersProps { }
+export interface CustomerPriceFiltersProps {
+    isFiltersOpen?: boolean;
+    isClearFilters?: boolean;
+    setIsActiveFilters?: (isActive: boolean) => void;
+}
 
 export function CustomerPriceFilters(props: CustomerPriceFiltersProps) {
     const [selectedAsAtDate, setSelectedAsAtDate] = useState(getDate());
@@ -15,9 +22,10 @@ export function CustomerPriceFilters(props: CustomerPriceFiltersProps) {
 
     const dispatch = useDispatch();
 
-    const { selectedLeedOrCustomer, loggedUser } = useSelector((state: RootState) => ({
+    const { selectedLeedOrCustomer, loggedUser, isCustomerPriceFiltersFormSubmit } = useSelector((state: RootState) => ({
         selectedLeedOrCustomer: state.leedsAndCustomers.selectedLeedOrCustomer,
         loggedUser: state.header.loggedUser,
+        isCustomerPriceFiltersFormSubmit: state.customerPageFilters.isCustomerPriceFiltersFormSubmit,
     }));
     const handleDateChange = (event: any) => {
         setSelectedAsAtDate(event.target.value);
@@ -38,6 +46,7 @@ export function CustomerPriceFilters(props: CustomerPriceFiltersProps) {
     }
 
     const repDefault = filterRepCode() || allRepsForLookupData[0];
+    const effectiveDateDefault = customerEffectiveDatesData[0] || { id: 0, text: '', value: '' };
 
     useEffect(() => {
         if (allRepsForLookup) {
@@ -69,8 +78,17 @@ export function CustomerPriceFilters(props: CustomerPriceFiltersProps) {
                 initialRender.current = false;
             }
         }
-
     }, [allRepsForLookup, customerEffectiveDates, effectiveDate]);
+
+    const popUpSettings = {
+        width: '208px'
+    }
+
+    const clearFilters = () => {
+        setSelectedAsAtDate(getDate());
+        setRepGroup(repDefault);
+        setEffectiveDate(effectiveDateDefault);
+    }
 
     const onFilterClick = () => {
         dispatch(setIsFetchingLeadCustomerPriceList(true));
@@ -80,59 +98,61 @@ export function CustomerPriceFilters(props: CustomerPriceFiltersProps) {
         dispatch(setCusPriceEffectiveDate(effectiveDate));
     }
 
+    const { formComponentRef } = useFilterForm({
+        isFormSubmit: isCustomerPriceFiltersFormSubmit,
+        setTriggerSubmit: (value) => dispatch(setTriggerCustomerPriceFiltersFormSubmit(value)),
+        isClearFilters: props.isClearFilters,
+        clearFilters
+    })
+
     return (
-        <div className="common-filter-container">
-            <span className="filter-title">Filters</span>
-            <form onSubmit={(e) => {
-                e.preventDefault();
-                onFilterClick();
-            }}>
-                <div>
-                    <div className='common-filter-header'> As at Date </div>
-                    <input type="date" className="input-controller" value={selectedAsAtDate} onChange={handleDateChange} />
-                </div>
-                <div className="paddingTop-12">
-                    <div className='dashboard-filter-header'> Rep Group </div>
-                    <MultiColumnComboBoxWidget
-                        id={"sales-enquiry-customer-rep-group"}
-                        className={"administrator-filter"}
-                        setValue={(e) => setRepGroup(e)}
-                        defaultValue={repDefault}
-                        value={repGroup}
-                        datalist={allRepsForLookupData}
-                        isFilterable={true}
-                        textField={"value"}
-                        valueField={"text"}
-                        columns={[{ field: 'value', header: 'Rep Code', width: '90px' }, { field: 'text', header: 'Name', width: '200px' }]}
-                    />
-                </div>
-                <div className="paddingTop-12">
-                    <div className='dashboard-filter-header'> Effective Date </div>
-                    <MultiColumnComboBoxWidget
-                        id={"sales-enquiry-customer-effective-date"}
-                        className={"administrator-filter"}
-                        setValue={(e) => (setEffectiveDate(e))}
-                        value={effectiveDate}
-                        datalist={customerEffectiveDatesData}
-                        isFilterable={true}
-                        textField={"value"}
-                        valueField={"text"}
-                        columns={[{ field: 'value', header: 'Effective Date', width: '200px' }, { field: 'customerCode', header: 'Customer Code', width: '100px' }]}
-                    />
-                </div>
+        <>
+            <Collapse in={props.isFiltersOpen}>
+                <div className="filters-container">
+                    <FilterForm id="filter-form" onSubmit={onFilterClick} ref={formComponentRef} >
+                        <div>
+                            <FilterFormGroup label="As at Date">
+                                <input type="date" className="input-controller filter-form-filter" value={selectedAsAtDate} onChange={handleDateChange} />
+                            </FilterFormGroup>
+                        </div>
 
-                <button
-                    id="activity-filter-button"
-                    className="k-button-md k-rounded-md k-button-solid k-button-solid-tertiary dash-filter-button dash-filter-btn"
-                    type="submit"
-                >
-                    Filter
-                </button>
+                        <div>
+                            <FilterFormGroup label="Rep Group">
+                                <MultiColumnComboBoxWidget
+                                    id={"sales-enquiry-customer-rep-group"}
+                                    className={"administrator-filter filter-form-filter"}
+                                    setValue={(e) => setRepGroup(e)}
+                                    defaultValue={repDefault}
+                                    value={repGroup}
+                                    datalist={allRepsForLookupData}
+                                    isFilterable={true}
+                                    textField={"value"}
+                                    valueField={"text"}
+                                    columns={[{ field: 'value', header: 'Rep Code', width: '90px' }, { field: 'text', header: 'Name', width: '200px' }]}
+                                    popupSettings={popUpSettings}
+                                />
+                            </FilterFormGroup>
+                        </div>
 
-                {/* <a href='javascript:void(0)' className='clear-filters-link' onClick={clearFilters}>Clear all filters</a> */}
-            </ form >
-        </ div >
+                        <div>
+                            <FilterFormGroup label="Effective Date">
+                                <DropDown
+                                    id={"sales-enquiry-customer-effective-date"}
+                                    className={"administrator-filter filter-form-filter"}
+                                    setValue={(e) => (setEffectiveDate(e))}
+                                    value={effectiveDate}
+                                    datalist={customerEffectiveDatesData}
+                                    isFilterable={true}
+                                    textField={"value"}
+                                    popupSettings={popUpSettings}
+                                />
+                            </FilterFormGroup>
+                        </div>
+
+                        <FilterNonButton type="submit" />
+                    </FilterForm>
+                </ div >
+            </Collapse >
+        </>
     );
-
-
 }

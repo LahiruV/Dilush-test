@@ -4,20 +4,20 @@
 }
 
 .header-btn-cancel {
-    color: #fff;
-    border: 1px solid #e74c3c;
-    font-size: 12px;
-    padding: 5px 10px;
-    border-radius: 4px;
-    width: 90px;
-    height: 29px;
-    background-color: #e74c3c;
+    color: #fff !important;
+    border: 1px solid #e74c3c !important;
+    font-size: 12px !important;
+    padding: 5px 10px !important;
+    border-radius: 4px !important;
+    width: 90px !important;
+    height: 29px !important;
+    background-color: #e74c3c !important;
 }
 
 .header-btn-cancel:hover {
-    color: #fff;
-    background-color: #c0392b;
-    border-color: #c0392b;
+    color: #fff !important;
+    background-color: #c0392b !important;
+    border-color: #c0392b !important;
 }
 
 .margin-bottom-20 {

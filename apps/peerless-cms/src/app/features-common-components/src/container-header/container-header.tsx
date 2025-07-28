@@ -8,20 +8,22 @@ export interface ContainerHeaderProps {
     name: string;
     children?: ReactNode;
     style?: CSSProperties;
+    titleInlineBeforeElements?: ReactNode;
+    titleInlineAfterElements?: ReactNode;
 }
 
-export function ContainerHeader(props: ContainerHeaderProps) {
-    return (
-        <div className="container-header" style={props.style}>
-            <div>
-                <span className="center-align">
-                    <FontAwesomeIcon className="container-header-icon" icon={props.icon} size='1x' />
-                    {props.name}
-                </span>
-            </div>
-            {props.children}
+export const ContainerHeader = ({ icon, name, children, style, titleInlineBeforeElements, titleInlineAfterElements }: ContainerHeaderProps) => (
+    <div className="container-header" style={style}>
+        <div>
+            <span className="center-align">
+                {titleInlineBeforeElements}
+                <FontAwesomeIcon className="container-header-icon" icon={icon} size='1x' />
+                {name}
+                {titleInlineAfterElements}
+            </span>
         </div>
-    );
-}
+        {children}
+    </div>
+)
 
 export default ContainerHeader;

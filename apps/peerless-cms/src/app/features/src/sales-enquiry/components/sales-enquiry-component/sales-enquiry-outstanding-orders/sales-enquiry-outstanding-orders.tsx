@@ -46,7 +46,7 @@ export function SalesEnquiryOutstandingOrders() {
     )
     const main = (
         <div className='content'>
-            <SalesEnquiryOutstandingOrdersListTable heightOffset={isFilterExpanded ? 225 : 50} />
+            <SalesEnquiryOutstandingOrdersListTable heightOffset={isFilterExpanded ? 280 : 70} />
         </div>
     );
 

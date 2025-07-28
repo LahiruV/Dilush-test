@@ -105,6 +105,7 @@ const DashBoardBusinessSalesEnquiryTable: React.FC<DashBoardBusinessSalesEnquiry
                 lockFirstColumn={true}
                 pageSize={999999}
                 maxHeight={heightOffset?.toString()}
+                isRowSelectable={true}
             />
         </div>
 

@@ -1,11 +1,18 @@
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { ClearFilterBox, KendoDropdown } from "@peerless-cms/features-common-components";
-import { RootState, setCusCatalogueType, setCusCurrentOrCompleted, setCusSalesOrderType, setIsSalesHistoryFetch, setOutstandingOrderType, setSalesHistoryBy } from "@peerless-cms/store";
+import { Collapse } from "react-bootstrap";
+import { ClearFilterBox, FilterForm, FilterFormGroup, KendoDropdown } from "@peerless-cms/features-common-components";
+import { RootState, setCusCatalogueType, setCusCurrentOrCompleted, setCusSalesOrderType, setIsSalesHistoryFetch, setOutstandingOrderType, setSalesHistoryBy, setTriggerCustomerSalesHistoryFiltersFormSubmit } from "@peerless-cms/store";
 import './customer-sales-history-filters.css';
-import { ButtonWidget, DropDown } from "@peerless/controls";
+import { ButtonWidget, DropDown, FilterNonButton } from "@peerless/controls";
+import { useFilterForm } from '@peerless-cms/features'
 
-export interface CustomerSalesHistoryFiltersProps { }
+export interface CustomerSalesHistoryFiltersProps {
+    isFiltersOpen?: boolean;
+    isClearFilters?: boolean;
+    setIsActiveFilters?: (isActive: boolean) => void;
+    setTotalOfClaims?: (total: string) => void;
+}
 
 export function CustomerSalesHistoryFilters(props: CustomerSalesHistoryFiltersProps) {
     const dispatch = useDispatch();
@@ -31,7 +38,7 @@ export function CustomerSalesHistoryFilters(props: CustomerSalesHistoryFiltersPr
         { id: 4, text: 'X - Sundry Expenses', value: 'X' },
     ];
 
-    const { salesHistoryBy, outstandingOrderType, isSalesHistoryFetch, cusCurrentOrCompleted, cusSalesOrderType, cusCatalogueType } = useSelector((state: RootState) => (state.customerPageFilters));
+    const { salesHistoryBy, outstandingOrderType, isSalesHistoryFetch, cusCurrentOrCompleted, cusSalesOrderType, cusCatalogueType, isCustomerSalesHistoryFiltersFormSubmit } = useSelector((state: RootState) => (state.customerPageFilters));
 
     const defaultSalesBy = salesByList[0];
     const defaultOutstandingOrderType = outstandingOrderTypes[0];
@@ -39,7 +46,7 @@ export function CustomerSalesHistoryFilters(props: CustomerSalesHistoryFiltersPr
     const currentOrCompletedDefault = currentOrCompletedOptions[0];
     const catalogueTypeDefault = productTypeOptions[0];
 
-    const onFilterClick = () => { //just to fire the event        
+    const onFilterClick = () => {
         dispatch(setIsSalesHistoryFetch(true));
     }
 
@@ -52,43 +59,58 @@ export function CustomerSalesHistoryFilters(props: CustomerSalesHistoryFiltersPr
     }
 
     const popUpSettings = {
-        width: '150px'
+        width: '208px'
     }
 
     useEffect(() => {
-        onFilterClick();
+        clearFilters();
     }, [])
 
+    const { formComponentRef } = useFilterForm({
+        isFormSubmit: isCustomerSalesHistoryFiltersFormSubmit,
+        setTriggerSubmit: (value) => dispatch(setTriggerCustomerSalesHistoryFiltersFormSubmit(value)),
+        isClearFilters: props.isClearFilters,
+        clearFilters,
+        noSubmit: true,
+        setIsActiveFilters: props.setIsActiveFilters,
+        filters: [salesHistoryBy, outstandingOrderType, cusSalesOrderType, cusCurrentOrCompleted, cusCatalogueType]
+    })
+
     return (
-        <div className="sales-history-filter-container">
-            <ClearFilterBox onClick={clearFilters} />
-            <form onSubmit={(e) => {
-                e.preventDefault();
-                onFilterClick();
-            }}>
-                <div>
-                    <div className='dashboard-filter-header'> Sales By </div>
-                    <DropDown id={"sales-by-drop"} className={"administrator-filter"} setValue={(e) => dispatch(setSalesHistoryBy(e))} defaultValue={defaultSalesBy} value={salesHistoryBy} datalist={salesByList} textField={"text"} dataItemKey={"value"} fillMode={"outline"} size={"small"} popupSettings={popUpSettings} />
-                </div>
-                <hr />
-                <div>
-                    <div className='dashboard-filter-header'> Market </div>
-                    <DropDown id={"outstanding-orders-drop"} className={"administrator-filter"} setValue={(e) => dispatch(setOutstandingOrderType(e))} defaultValue={defaultOutstandingOrderType} value={outstandingOrderType} datalist={outstandingOrderTypes} textField={"text"} dataItemKey={"value"} fillMode={"outline"} size={"small"} popupSettings={popUpSettings} />
-                </div>
-                <div className='paddingTop-12'>
-                    <div className='dashboard-filter-header'> Current Or Completed </div>
-                    <DropDown id={"current-or-completed"} className={"administrator-filter"} setValue={(e) => dispatch(setCusCurrentOrCompleted(e))} value={cusCurrentOrCompleted} defaultValue={currentOrCompletedDefault} datalist={currentOrCompletedOptions} textField={"text"} dataItemKey={"value"} fillMode={"solid"} size={"small"} popupSettings={popUpSettings} />
-                </div>
-                <div className='paddingTop-12'>
-                    <div className='dashboard-filter-header'> Order Type </div>
-                    <DropDown id={"orders-order-type"} className={"administrator-filter"} setValue={(e) => dispatch(setCusSalesOrderType(e))} value={cusSalesOrderType} defaultValue={orderTypeDefault} datalist={orderTypeOptions} textField={"text"} dataItemKey={"value"} fillMode={"solid"} size={"small"} popupSettings={popUpSettings} />
-                </div>
-                <div className='paddingTop-12'>
-                    <div className='dashboard-filter-header'>Product Type </div>
-                    <DropDown id={"product-type"} className={"administrator-filter"} setValue={(e) => dispatch(setCusCatalogueType(e))} value={cusCatalogueType} defaultValue={catalogueTypeDefault} datalist={productTypeOptions} textField={"text"} dataItemKey={"value"} fillMode={"solid"} size={"small"} popupSettings={popUpSettings} />
-                </div>
-                <ButtonWidget id='call-cycle-filter-button' classNames=' k-button-md k-rounded-md k-button-solid k-button-solid-tertiary dash-filter-button dash-filter-btn' type="submit" isDisabled={isSalesHistoryFetch} isFetching={true} />
-            </ form>
-        </ div>
+        <>
+            <Collapse in={props.isFiltersOpen}>
+                <div className="sales-history-filter-container filters-container">
+                    <FilterForm id='filter-form' onSubmit={onFilterClick} ref={formComponentRef}>
+                        <div>
+                            <FilterFormGroup label="Sales By">
+                                <DropDown id={"sales-by-drop"} className={"administrator-filter filter-form-filter"} setValue={(e) => dispatch(setSalesHistoryBy(e))} defaultValue={defaultSalesBy} value={salesHistoryBy} datalist={salesByList} textField={"text"} dataItemKey={"value"} fillMode={"outline"} size={"small"} popupSettings={popUpSettings} />
+                            </FilterFormGroup>
+
+                            <FilterFormGroup label="Market">
+                                <DropDown id={"outstanding-orders-drop"} className={"administrator-filter filter-form-filter"} setValue={(e) => dispatch(setOutstandingOrderType(e))} defaultValue={defaultOutstandingOrderType} value={outstandingOrderType} datalist={outstandingOrderTypes} textField={"text"} dataItemKey={"value"} fillMode={"outline"} size={"small"} popupSettings={popUpSettings} />
+                            </FilterFormGroup>
+                        </div>
+
+                        <div>
+                            <FilterFormGroup label="Current Or Completed">
+                                <DropDown id={"current-or-completed"} className={"administrator-filter filter-form-filter"} setValue={(e) => dispatch(setCusCurrentOrCompleted(e))} value={cusCurrentOrCompleted} defaultValue={currentOrCompletedDefault} datalist={currentOrCompletedOptions} textField={"text"} dataItemKey={"value"} fillMode={"solid"} size={"small"} popupSettings={popUpSettings} />
+                            </FilterFormGroup>
+
+                            <FilterFormGroup label="Order Type">
+                                <DropDown id={"orders-order-type"} className={"administrator-filter filter-form-filter"} setValue={(e) => dispatch(setCusSalesOrderType(e))} value={cusSalesOrderType} defaultValue={orderTypeDefault} datalist={orderTypeOptions} textField={"text"} dataItemKey={"value"} fillMode={"solid"} size={"small"} popupSettings={popUpSettings} />
+                            </FilterFormGroup>
+                        </div>
+
+                        <div>
+                            <FilterFormGroup label="Product Type">
+                                <DropDown id={"product-type"} className={"administrator-filter filter-form-filter"} setValue={(e) => dispatch(setCusCatalogueType(e))} value={cusCatalogueType} defaultValue={catalogueTypeDefault} datalist={productTypeOptions} textField={"text"} dataItemKey={"value"} fillMode={"solid"} size={"small"} popupSettings={popUpSettings} />
+                            </FilterFormGroup>
+                        </div>
+
+                        <FilterNonButton type="submit" />
+                    </FilterForm>
+                </ div>
+            </Collapse>
+        </>
     );
 }

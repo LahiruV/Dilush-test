@@ -649,14 +649,14 @@ export function LeaveEnter({
                 setIsSave(false);
                 handleReset(true);
                 closeAddLeaveModal();
-                toast.success(`Leave Request Has Been Forwarded To ${loggedUser.parentOriginator.toLocaleUpperCase()} For Approval`)
+                toast.success(`Leave request has been forwarded to ${loggedUser.parentOriginator.toLocaleUpperCase()} for approval`)
                 // onClose?.();
                 dispatch(setIsFetchingLeaveEntryList(true));
                 dispatch(setIsFetchingShowLeaveList(true));
             },
             onError: (error) => {
                 console.error(error.message);
-                toast.error("Leave Request Failed");
+                toast.error("Leave request failed");
                 setIsSave(false);
             },
         });
@@ -703,14 +703,14 @@ export function LeaveEnter({
                 setIsSave(false);
                 handleReset(true);
                 closeAddLeaveModal();
-                toast.success(`Leave Request Has Been Forwarded To ${loggedUser.parentOriginator.toLocaleUpperCase()} For Approval`);
+                toast.success(`Leave request has been forwarded to ${loggedUser.parentOriginator.toLocaleUpperCase()} for approval`);
                 // onClose?.();
                 dispatch(setIsFetchingLeaveEntryList(true));
                 dispatch(setIsFetchingShowLeaveList(true));
             },
             onError: (error) => {
                 console.error(error.message);
-                toast.error("Leave Request Failed");
+                toast.error("Leave request failed");
                 setIsSave(false);
             },
         });

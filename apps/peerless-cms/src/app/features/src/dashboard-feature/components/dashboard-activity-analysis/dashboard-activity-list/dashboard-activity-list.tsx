@@ -58,7 +58,7 @@ const ActivityAnalysisList: React.FC<ActivityAnalysisListProps> = ({ heightOffse
     managerMode: state.header.isManagerMode
   }));
   const [pageSize, setPageSize] = useState(20);
-  const [pageState, setPageState] = useState({ first: 1, rows: 20 });
+  const [pageState, setPageState] = useState({ first: 0, rows: 20 });
 
   const [tableFilters, setTableFilters] = useState<any>();
   const [multiSortMeta, setMultiSortMeta] = useState<any[]>([]);
@@ -98,7 +98,7 @@ const ActivityAnalysisList: React.FC<ActivityAnalysisListProps> = ({ heightOffse
     activityAnalysisFilterFilterPara: tableFilters,
   };
 
-  useResetTablePagination(25, setPageState, [activityStatus.value, repActivity.userName, searchByActivity, sStartDate, sEndDate, managerMode]);
+  useResetTablePagination(20, setPageState, [activityStatus.value, repActivity.userName, searchByActivity, sStartDate, sEndDate, managerMode], 0);
 
   const { data: activityAnalysisData, error, status, refetch } = getAllActivitiesByType(payload, isFetchActivityAnalysisList);
 
@@ -186,6 +186,7 @@ const ActivityAnalysisList: React.FC<ActivityAnalysisListProps> = ({ heightOffse
         cssClasses={'sticky-header'}
         isSelectionColumnShow={false}
         heightOffset={heightOffset}
+        isFullDetailPagination={true}
       />
       <div ref={ref} style={{ height: '1px' }} />
     </div>

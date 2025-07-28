@@ -45,35 +45,6 @@ import { ActivityAPI } from '@peerless/utils';
  * @returns {Promise<Object|null>} return.nextPageParam - The parameters for the next page, or null if there are no more pages.
  * @throws {Error} Throws an error if the request fails.
  */
-// const fetchAllActivitiesByType = async ({ pageParam }: { pageParam: { startIndex: number, rowCount: number, payload: ActivityAnalysisParameters } }):
-//     Promise<{ data: ActivityAnalysis[], nextPageParam: { startIndex: number, rowCount: number, payload: ActivityAnalysisParameters } | null }> => {
-//     const { startIndex, rowCount, payload } = pageParam;
-//     payload.startIndex = startIndex;
-//     payload.rowCount = rowCount;
-
-//     try {
-//         const response = await getAxiosInstance().post<ActivityAnalysis[]>(
-//             ActivityAPI.Get_All_Activities_By_Type,
-//             payload
-//         );
-//         const items = response.data;
-//         const nextStartIndex = startIndex + 1;
-//         const hasMoreData = items.length === rowCount;
-
-//         return {
-//             data: items,
-//             nextPageParam: hasMoreData ? { startIndex: nextStartIndex, rowCount, payload } : null,
-//         };
-//     } catch (error) {
-//         if (axios.isAxiosError(error)) {
-//             console.error('Request failed with status:', error.response?.status);
-//             console.error('Response data:', error.response?.data);
-//         } else {
-//             console.error('An unexpected error occurred:', error);
-//         }
-//         throw error;
-//     }
-// };
 
 export const getAllActivitiesByType = (payload: ActivityAnalysisParameters, isExecute: boolean) => {
     const fetchFunction = async (payload: any) => {

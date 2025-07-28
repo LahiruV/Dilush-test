@@ -230,10 +230,10 @@ export function LeedCustomerOpportunityForm(props: LeedCustomerOpportunityFormPr
               amount: data.amount
             }
             dispatch(setSelectedOpportunity(updatedOpportunity));
-            toast.success('Opportunity Updated Successfully');
+            toast.success('Opportunity updated successfully');
           }
           else {
-            toast.success('Opportunity Created Successfully');
+            toast.success('Opportunity created successfully');
             navigate(`${sectionPathMap[contactType]}${selectedLeedOrCustomer?.[contactId[contactType]]}/opportunity`);
           }
         }

@@ -42,7 +42,7 @@ export function DashBoardEndUserTransferLogsFilter(props: DashBoardEndUserTransf
     const endDates = new Date();
     const startDates = subtractMonths(endDates, 3);
 
-    GetEndUserTransferLogsExcel({ ...payload, rowCount: 1000, startIndex: 1 }, isExporting, setIsExporting, true);//Need to change
+    GetEndUserTransferLogsExcel({ ...payload, rowCount: 9999, startIndex: 1 }, isExporting, setIsExporting, true);
 
     const onFilterClick = async () => {
         setChildOriginatorsDashEndUserTransferLogs(childOriginators);

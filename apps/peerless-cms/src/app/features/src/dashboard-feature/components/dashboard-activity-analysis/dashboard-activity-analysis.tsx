@@ -9,6 +9,7 @@ import { HeaderFilterContainer, InfoBox } from "@peerless-cms/features-common-co
 import { RootState, setSelectedArea, setTriggerActivityAnalysisFormSubmit } from "@peerless-cms/store";
 import { getDate } from "@peerless/common";
 import { DashBoardActivityFilter } from './dashboard-activity-filter'
+import { ButtonWidget } from "@peerless/controls";
 
 /**
  * Component that displays the activity analysis information.
@@ -66,7 +67,11 @@ export function DashboardActivityAnalysis() {
   const dispatch = useDispatch();
   const [isFilterExpanded, setIsFilterExpanded] = useState(false);
   const { isFetchActivityAnalysisList } = useSelector((state: RootState) => state.dashboardActivityAnalysis);
+  const [isExporting, setIsExporting] = useState(false);
 
+  const handleExportClick = () => {
+    setIsExporting(true);
+  }
   const handleExternalSubmit = () => {
     dispatch(setTriggerActivityAnalysisFormSubmit(true));
   };
@@ -74,11 +79,14 @@ export function DashboardActivityAnalysis() {
   const header = (
     <>
       <HeaderFilterContainer title="Activity Analysis" icon={fa2.faCopy} renderFilters={({ isFiltersOpen, isClearFilters, setIsActiveFilters }) => (
-        <DashBoardActivityFilter isFiltersOpen={isFiltersOpen} isClearFilters={isClearFilters} setIsActiveFilters={setIsActiveFilters} />
+        <DashBoardActivityFilter isFiltersOpen={isFiltersOpen} isClearFilters={isClearFilters} setIsActiveFilters={setIsActiveFilters} isExporting={isExporting} setIsExporting={setIsExporting} />
       )}
         onFilterClick={handleExternalSubmit}
         isFetching={isFetchActivityAnalysisList}
         setIsFilterExpanded={setIsFilterExpanded}
+        inlineElements={
+          <ButtonWidget id='activity-analysis-excel-button' classNames='excel-export-button' Function={handleExportClick} isDisabled={isExporting} isExporting={true} />
+        }
       />
     </>
   )

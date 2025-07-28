@@ -418,7 +418,7 @@ export function LeedCustomerActivityForm(props: LeedCustomerActivityFormProps) {
               onSuccess: (response) => {
                 setIsSave(false);
                 redirectToList();
-                toast.success('Activity Saved Successfully');
+                toast.success('Activity saved successfully');
               },
               onError: (error) => {
                 setIsSave(false);
@@ -428,7 +428,7 @@ export function LeedCustomerActivityForm(props: LeedCustomerActivityFormProps) {
           }
           else {
             setIsSave(false);
-            toast.success('Activity Saved Successfully');
+            toast.success('Activity saved successfully');
             redirectToList();
           }
         }

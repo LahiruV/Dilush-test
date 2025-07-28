@@ -191,14 +191,14 @@ export function CustomersDetails(props: CustomersDetailProps) {
                     }
                     else {
                         dispatch(updateDetails(true))
-                        toast.success('Customer Updated Successfully');
+                        toast.success('Customer updated successfully');
                     }
                 }
             },
             onError: (error) => {
                 setIsProcessing(false);
                 dispatch(updateDetails(true))
-                toast.error('Customer Update Failed');
+                toast.error('Customer update failed');
                 console.error(error.message);
             }
         });

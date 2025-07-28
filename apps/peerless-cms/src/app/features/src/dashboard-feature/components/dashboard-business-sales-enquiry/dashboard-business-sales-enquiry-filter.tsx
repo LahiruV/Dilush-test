@@ -35,7 +35,6 @@ const dropDownDataGroupBy = [
     { text: "Rep. Group", value: "repgroup", id: 9 },
     { text: "Rep", value: "rep", id: 10 },
     { text: "State", value: "state", id: 11 },
-    { text: "All Reps", value: "ALL", id: 12 },
 ];
 
 const yearDropData = [
